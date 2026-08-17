@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "about": "The Artist",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "education": "Education",
+    "book": "Book"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "BMV Makeup",
+      "title": "The art",
+      "titleAccent": "of beauty.",
+      "cta": "Discover the work"
+    },
+
+    "artist": {
+      "eyebrow": "Meet the artist",
+      "title": "Beauty is personal.",
+      "titleAccent": "Makeup should be too.",
+      "paragraph1": "Brazilian makeup artist based in Barcelona, creating beauty experiences shaped around each face, personality and moment.",
+      "paragraph2": "From timeless beauty to bold creative work, every look begins with the same idea: enhancing identity rather than hiding it.",
+      "cta": "Discover Bruno"
+    },
+
+    "work": {
+      "eyebrow": "Explore the work",
+      "title": "One artist.",
+      "titleAccent": "Many expressions.",
+      "cta": "Explore all services",
+
+      "items": {
+        "weddings": {
+          "title": "Weddings",
+          "description": "For moments you'll remember forever."
+        },
+        "campaigns": {
+          "title": "Campaigns",
+          "description": "Beauty created for brands and stories."
+        },
+        "social": {
+          "title": "Social",
+          "description": "Elevated beauty for your moments."
+        },
+        "photoshoots": {
+          "title": "Photoshoots",
+          "description": "Makeup designed for the lens."
+        },
+        "artistic": {
+          "title": "Artistic",
+          "description": "No rules. Just creation."
+        },
+        "audiovisual": {
+          "title": "Audiovisual",
+          "description": "Beauty made for camera."
+        }
+      }
+    },
+
+    "selectedWork": {
+      "eyebrow": "Selected work",
+      "title": "Faces become",
+      "titleAccent": "the canvas.",
+      "description": "A selection of beauty, editorial and creative work.",
+      "cta": "View portfolio"
+    },
+
+    "weddings": {
+      "eyebrow": "Weddings",
+      "title": "From prep",
+      "titleAccent": "to celebration.",
+      "description": "Every detail matters long before the final look. A bridal experience created around the person, the moment and everything that comes with it.",
+      "cta": "Discover the bridal experience"
+    },
+
+    "behindTheBrush": {
+      "eyebrow": "Behind the brush",
+      "title": "More than",
+      "titleAccent": "the final look.",
+      "paragraph1": "The work begins long before the final photo. Preparation, trust, conversation and the small details are part of every BMV experience.",
+      "paragraph2": "Behind every finished look is a process shaped around the person in the chair.",
+      "statement1": "Artistry.",
+      "statement2": "Connection.",
+      "statement3": "Experience."
+    },
+
+    "reviews": {
+      "eyebrow": "Kind words",
+      "title": "Beauty is seen.",
+      "titleAccent": "Experience is felt.",
+      "footerLine1": "Real experiences.",
+      "footerLine2": "Real people.",
+      "google": "Google Reviews",
+      "bodas": "Bodas.net"
+    }
+  }
+}

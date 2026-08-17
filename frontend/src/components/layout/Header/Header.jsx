@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./Header.module.css";
 
 function Header() {
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       <a href="/" className={styles.brand} aria-label="BMV Makeup - Home">
@@ -9,11 +13,13 @@ function Header() {
       </a>
 
       <nav className={styles.navigation} aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#about">{t("navigation.about")}</a>
+        <a href="#services">{t("navigation.services")}</a>
+        <a href="#portfolio">{t("navigation.portfolio")}</a>
+        <a href="#education">{t("navigation.education")}</a>
+
         <a href="#contact" className={styles.booking}>
-          Book
+          {t("navigation.book")}
         </a>
       </nav>
     </header>
