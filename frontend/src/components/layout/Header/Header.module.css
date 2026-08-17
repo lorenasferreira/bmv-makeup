@@ -76,3 +76,34 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 900px) {
+  .header {
+    padding-top: 1.5rem;
+  }
+
+  .navigation {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 1.25rem;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .navigation {
+    gap: 0;
+  }
+
+  .navigation a:not(.booking) {
+    display: none;
+  }
+
+  .booking {
+    font-size: 0.68rem;
+  }
+}

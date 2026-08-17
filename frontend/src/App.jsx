@@ -1,8 +1,15 @@
+import Header from "./components/layout/Header/Header";
+import Hero from "./components/sections/home/Hero/Hero";
+
 function App() {
   return (
-    <main>
-      <h1>BMV Makeup</h1>
-    </main>
+    <>
+      <Header />
+
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
 
