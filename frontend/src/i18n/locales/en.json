@@ -93,6 +93,16 @@
       "footerLine2": "Real people.",
       "google": "Google Reviews",
       "bodas": "Bodas.net"
+    },
+    "education": {
+      "eyebrow": "Education",
+      "title": "Beauty,",
+      "titleAccent": "shared.",
+      "description": "Learn with Bruno through self-makeup sessions, professional education and workshops designed to turn technique into confidence.",
+      "selfMakeup": "Self-Makeup",
+      "professional": "Professional Education",
+      "workshops": "Workshops",
+      "cta": "Explore education"
     }
   }
 }

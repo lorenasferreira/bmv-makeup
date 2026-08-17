@@ -6,6 +6,7 @@ import SelectedWork from "./components/sections/home/SelectedWork/SelectedWork";
 import WeddingsPreview from "./components/sections/home/WeddingsPreview/WeddingsPreview";
 import BehindTheBrush from "./components/sections/home/BehindTheBrush/BehindTheBrush";
 import KindWords from "./components/sections/home/KindWords/KindWords";
+import EducationPreview from "./components/sections/home/EducationPreview/EducationPreview";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <WeddingsPreview />
         <BehindTheBrush />
         <KindWords />
+        <EducationPreview />
       </main>
     </>
   );
