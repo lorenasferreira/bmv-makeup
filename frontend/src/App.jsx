@@ -4,6 +4,8 @@ import MeetBruno from "./components/sections/home/MeetBruno/MeetBruno";
 import ExploreTheWork from "./components/sections/home/ExploreTheWork/ExploreTheWork";
 import SelectedWork from "./components/sections/home/SelectedWork/SelectedWork";
 import WeddingsPreview from "./components/sections/home/WeddingsPreview/WeddingsPreview";
+import BehindTheBrush from "./components/sections/home/BehindTheBrush/BehindTheBrush";
+import KindWords from "./components/sections/home/KindWords/KindWords";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <ExploreTheWork />
         <SelectedWork />
         <WeddingsPreview />
+        <BehindTheBrush />
+        <KindWords />
       </main>
     </>
   );
