@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./MeetBruno.module.css";
 
 function MeetBruno() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section} id="about">
       <div className={styles.imageColumn}>
@@ -10,28 +14,21 @@ function MeetBruno() {
       </div>
 
       <div className={styles.content}>
-        <p className={styles.eyebrow}>Meet the artist</p>
+        <p className={styles.eyebrow}>{t("home.artist.eyebrow")}</p>
 
         <h2>
-          Beauty is personal.
+          {t("home.artist.title")}
           <br />
-          <em>Makeup should be too.</em>
+          <em>{t("home.artist.titleAccent")}</em>
         </h2>
 
         <div className={styles.copy}>
-          <p>
-            Brazilian makeup artist based in Barcelona, creating beauty
-            experiences shaped around each face, personality and moment.
-          </p>
-
-          <p>
-            From timeless beauty to bold creative work, every look begins with
-            the same idea: enhancing identity rather than hiding it.
-          </p>
+          <p>{t("home.artist.paragraph1")}</p>
+          <p>{t("home.artist.paragraph2")}</p>
         </div>
 
-        <a href="#about-bruno" className={styles.link}>
-          Discover Bruno
+        <a href="/about" className={styles.link}>
+          {t("home.artist.cta")}
           <span aria-hidden="true">→</span>
         </a>
       </div>

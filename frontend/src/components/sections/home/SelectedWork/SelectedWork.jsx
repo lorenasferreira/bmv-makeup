@@ -1,43 +1,27 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./SelectedWork.module.css";
 
 const works = [
-  {
-    id: 1,
-    className: "heroWork",
-    label: "Beauty Portrait",
-  },
-  {
-    id: 2,
-    className: "portraitWork",
-    label: "Editorial",
-  },
-  {
-    id: 3,
-    className: "detailWork",
-    label: "Beauty Detail",
-  },
-  {
-    id: 4,
-    className: "wideWork",
-    label: "Campaign",
-  },
-  {
-    id: 5,
-    className: "finalWork",
-    label: "Artistic",
-  },
+  { id: 1, className: "heroWork", label: "Beauty Portrait" },
+  { id: 2, className: "portraitWork", label: "Editorial" },
+  { id: 3, className: "detailWork", label: "Beauty Detail" },
+  { id: 4, className: "wideWork", label: "Campaign" },
+  { id: 5, className: "finalWork", label: "Artistic" },
 ];
 
 function SelectedWork() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section} id="portfolio">
       <header className={styles.heading}>
-        <p className={styles.eyebrow}>Selected work</p>
+        <p className={styles.eyebrow}>{t("home.selectedWork.eyebrow")}</p>
 
         <h2>
-          Faces become
+          {t("home.selectedWork.title")}
           <br />
-          <em>the canvas.</em>
+          <em>{t("home.selectedWork.titleAccent")}</em>
         </h2>
       </header>
 
@@ -55,14 +39,10 @@ function SelectedWork() {
       </div>
 
       <div className={styles.footer}>
-        <p>
-          A selection of beauty, editorial
-          <br />
-          and creative work.
-        </p>
+        <p>{t("home.selectedWork.description")}</p>
 
         <a href="/portfolio" className={styles.link}>
-          View portfolio
+          {t("home.selectedWork.cta")}
           <span aria-hidden="true">→</span>
         </a>
       </div>

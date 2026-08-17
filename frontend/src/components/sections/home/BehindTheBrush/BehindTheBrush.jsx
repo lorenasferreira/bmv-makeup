@@ -1,47 +1,32 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./BehindTheBrush.module.css";
 
 const moments = [
-  {
-    id: 1,
-    label: "Skin Preparation",
-    className: "large",
-  },
-  {
-    id: 2,
-    label: "Behind the Scenes",
-    className: "smallTop",
-  },
-  {
-    id: 3,
-    label: "Client Moment",
-    className: "smallBottom",
-  },
+  { id: 1, label: "Skin Preparation", className: "large" },
+  { id: 2, label: "Behind the Scenes", className: "smallTop" },
+  { id: 3, label: "Client Moment", className: "smallBottom" },
 ];
 
 function BehindTheBrush() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.heading}>
-        <p className={styles.eyebrow}>Behind the brush</p>
+        <p className={styles.eyebrow}>{t("home.behindTheBrush.eyebrow")}</p>
 
         <h2>
-          More than
+          {t("home.behindTheBrush.title")}
           <br />
-          <em>the final look.</em>
+          <em>{t("home.behindTheBrush.titleAccent")}</em>
         </h2>
       </div>
 
       <div className={styles.layout}>
         <div className={styles.copy}>
-          <p>
-            The work begins long before the final photo. Preparation, trust,
-            conversation and the small details are part of every BMV experience.
-          </p>
-
-          <p>
-            Behind every finished look is a process shaped around the person in
-            the chair.
-          </p>
+          <p>{t("home.behindTheBrush.paragraph1")}</p>
+          <p>{t("home.behindTheBrush.paragraph2")}</p>
         </div>
 
         <div className={styles.gallery}>
@@ -57,9 +42,9 @@ function BehindTheBrush() {
       </div>
 
       <div className={styles.statement}>
-        <span>Artistry.</span>
-        <span>Connection.</span>
-        <span>Experience.</span>
+        <span>{t("home.behindTheBrush.statement1")}</span>
+        <span>{t("home.behindTheBrush.statement2")}</span>
+        <span>{t("home.behindTheBrush.statement3")}</span>
       </div>
     </section>
   );

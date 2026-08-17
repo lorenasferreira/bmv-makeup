@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./KindWords.module.css";
 
 const reviews = [
@@ -18,15 +20,17 @@ const reviews = [
 ];
 
 function KindWords() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.intro}>
-        <p className={styles.eyebrow}>Kind words</p>
+        <p className={styles.eyebrow}>{t("home.reviews.eyebrow")}</p>
 
         <h2>
-          Beauty is seen.
+          {t("home.reviews.title")}
           <br />
-          <em>Experience is felt.</em>
+          <em>{t("home.reviews.titleAccent")}</em>
         </h2>
       </div>
 
@@ -58,19 +62,19 @@ function KindWords() {
 
       <div className={styles.bottom}>
         <p>
-          Real experiences.
+          {t("home.reviews.footerLine1")}
           <br />
-          Real people.
+          {t("home.reviews.footerLine2")}
         </p>
 
         <div className={styles.externalLinks}>
           <a href="#google-reviews">
-            Google Reviews
+            {t("home.reviews.google")}
             <span aria-hidden="true">↗</span>
           </a>
 
           <a href="#bodas-reviews">
-            Bodas.net
+            {t("home.reviews.bodas")}
             <span aria-hidden="true">↗</span>
           </a>
         </div>

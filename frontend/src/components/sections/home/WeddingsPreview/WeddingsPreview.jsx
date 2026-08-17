@@ -1,25 +1,25 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./WeddingsPreview.module.css";
 
 function WeddingsPreview() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section} id="weddings">
       <div className={styles.content}>
-        <p className={styles.eyebrow}>Weddings</p>
+        <p className={styles.eyebrow}>{t("home.weddings.eyebrow")}</p>
 
         <h2>
-          From prep
+          {t("home.weddings.title")}
           <br />
-          <em>to celebration.</em>
+          <em>{t("home.weddings.titleAccent")}</em>
         </h2>
 
-        <p className={styles.description}>
-          Every detail matters long before the final look. A bridal experience
-          created around the person, the moment and everything that comes with
-          it.
-        </p>
+        <p className={styles.description}>{t("home.weddings.description")}</p>
 
         <a href="/services/weddings" className={styles.link}>
-          Discover the bridal experience
+          {t("home.weddings.cta")}
           <span aria-hidden="true">→</span>
         </a>
       </div>
