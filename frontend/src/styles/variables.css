@@ -1,0 +1,41 @@
+:root {
+  /* Brand */
+  --color-bmv-green: #173605;
+  --color-bmv-green-dark: #102603;
+  --color-bmv-green-soft: #36552a;
+
+  /* Neutrals */
+  --color-primary: #2d2926;
+  --color-primary-dark: #1d1a18;
+  --color-secondary: #8d8172;
+  --color-tertiary: #e2ded0;
+
+  /* Backgrounds */
+  --color-background: #f9f8f5;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f2efe9;
+
+  /* Text */
+  --color-text: #2d2926;
+  --color-text-light: #746d66;
+  --color-text-inverted: #ffffff;
+
+  /* UI */
+  --color-border: #e2ded0;
+  --color-accent: var(--color-bmv-green);
+
+  /* Layout */
+  --page-max-width: 1440px;
+  --page-padding: clamp(1.25rem, 4vw, 5rem);
+
+  /* Motion */
+  --transition-fast: 180ms ease;
+  --transition-default: 350ms ease;
+  --transition-slow: 700ms ease;
+  --transition-hero: 1200ms ease;
+
+  /* Typography */
+--font-editorial: "Bodoni Moda", Georgia, serif;
+--font-primary: "DM Sans", Arial, sans-serif;
+}
+
