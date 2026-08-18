@@ -7,6 +7,7 @@ import WeddingsPreview from "./components/sections/home/WeddingsPreview/Weddings
 import BehindTheBrush from "./components/sections/home/BehindTheBrush/BehindTheBrush";
 import KindWords from "./components/sections/home/KindWords/KindWords";
 import EducationPreview from "./components/sections/home/EducationPreview/EducationPreview";
+import InstagramPreview from "./components/sections/home/InstagramPreview/InstagramPreview";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <BehindTheBrush />
         <KindWords />
         <EducationPreview />
+        <InstagramPreview />
       </main>
     </>
   );

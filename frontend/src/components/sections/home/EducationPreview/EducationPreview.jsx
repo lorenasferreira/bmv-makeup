@@ -11,8 +11,6 @@ function EducationPreview() {
         <div className={styles.imagePlaceholder}>
           <span>Beauty Education</span>
         </div>
-
-        <span className={styles.index}>08</span>
       </div>
 
       <div className={styles.content}>
