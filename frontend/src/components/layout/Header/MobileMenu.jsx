@@ -100,10 +100,11 @@ function MobileMenu({ isOpen, onClose }) {
             href="https://www.instagram.com/bmvmakeup/"
             target="_blank"
             rel="noreferrer"
-            className={styles.instagramLink}
           >
-            Instagram
-            <span className={styles.externalArrow} aria-hidden="true" />
+            <span className={styles.externalLink}>
+              Instagram
+              <FiArrowUpRight aria-hidden="true" />
+            </span>
           </a>
 
           <div className={styles.languages}>

@@ -154,36 +154,15 @@
   opacity: 0.65;
 }
 
-.instagramLink {
+.externalLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.35rem;
 }
 
-.externalArrow {
-  position: relative;
-
-  width: 0.65rem;
-  height: 0.65rem;
-
-  border-top: 1px solid currentColor;
-  border-right: 1px solid currentColor;
-}
-
-.externalArrow::after {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: -0.12rem;
-
+.externalLink svg {
   width: 0.85rem;
-  height: 1px;
-
-  background: currentColor;
-
-  transform: rotate(-45deg);
-  transform-origin: center;
+  height: 0.85rem;
 }
 
 .languages {
