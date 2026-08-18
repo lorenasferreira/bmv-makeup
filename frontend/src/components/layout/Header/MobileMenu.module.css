@@ -165,35 +165,10 @@
   height: 0.85rem;
 }
 
-.languages {
-  display: flex;
-  gap: 0.65rem;
-}
-
-.languages button {
-  padding: 0;
-
-  border: 0;
-
-  background: transparent;
-  color: rgb(255 255 255 / 50%);
-
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-
-  transition: color var(--transition-fast);
-}
-
-.languages button:hover {
-  color: var(--color-text-inverted);
-}
-
 .backdrop:focus-visible,
 .closeButton:focus-visible,
 .navigation a:focus-visible,
-.footer > a:focus-visible,
-.languages button:focus-visible {
+.footer > a:focus-visible {
   outline: 2px solid var(--color-tertiary);
   outline-offset: 4px;
 }

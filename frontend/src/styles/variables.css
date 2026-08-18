@@ -11,7 +11,7 @@
   --color-tertiary: #e2ded0;
 
   /* Backgrounds */
-  --color-background: #f9f8f5;
+  --color-background: #f4efe7;
   --color-surface: #ffffff;
   --color-surface-soft: #f2efe9;
 
@@ -19,6 +19,7 @@
   --color-text: #2d2926;
   --color-text-light: #746d66;
   --color-text-inverted: #ffffff;
+  --color-heading: #3f3935;
 
   /* UI */
   --color-border: #e2ded0;

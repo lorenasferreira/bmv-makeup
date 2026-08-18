@@ -17,8 +17,10 @@
 
     "artist": {
       "eyebrow": "Meet the artist",
-      "title": "Beauty is personal.",
-      "titleAccent": "Makeup should be too.",
+      "title": "Beauty is",
+      "titleHighlight": "personal.",
+      "titleSecond": "Makeup",
+      "titleSecondHighlight": "should be too.",
       "paragraph1": "Brazilian makeup artist based in Barcelona, creating beauty experiences shaped around each face, personality and moment.",
       "paragraph2": "From timeless beauty to bold creative work, every look begins with the same idea: enhancing identity rather than hiding it.",
       "cta": "Discover Bruno"

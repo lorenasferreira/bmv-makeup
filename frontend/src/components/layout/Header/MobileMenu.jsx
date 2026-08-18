@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FiArrowUpRight, FiX } from "react-icons/fi";
+import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 
 import styles from "./MobileMenu.module.css";
 
@@ -107,12 +108,7 @@ function MobileMenu({ isOpen, onClose }) {
             </span>
           </a>
 
-          <div className={styles.languages}>
-            <button type="button">PT</button>
-            <button type="button">ES</button>
-            <button type="button">EN</button>
-            <button type="button">CA</button>
-          </div>
+          <LanguageSwitcher variant="mobile" />
         </div>
       </aside>
     </div>

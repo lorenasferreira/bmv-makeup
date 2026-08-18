@@ -16,10 +16,24 @@ function MeetBruno() {
       <div className={styles.content}>
         <p className={styles.eyebrow}>{t("home.artist.eyebrow")}</p>
 
-        <h2>
-          {t("home.artist.title")}
-          <br />
-          <em>{t("home.artist.titleAccent")}</em>
+        <h2 className={styles.title}>
+          <span className={styles.titleLine}>
+            <span className={styles.titleBase}>{t("home.artist.title")} </span>
+
+            <em className={styles.titleHighlight}>
+              {t("home.artist.titleHighlight")}
+            </em>
+          </span>
+
+          <span className={styles.titleLine}>
+            <span className={styles.titleBase}>
+              {t("home.artist.titleSecond")}{" "}
+            </span>
+
+            <em className={styles.titleHighlightItalic}>
+              {t("home.artist.titleSecondHighlight")}
+            </em>
+          </span>
         </h2>
 
         <div className={styles.copy}>

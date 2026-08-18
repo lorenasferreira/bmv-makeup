@@ -51,19 +51,43 @@
   text-transform: uppercase;
 }
 
-.content h2 {
-  font-family: var(--font-editorial);
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.7rem, 1.2vw, 1.2rem);
+
   font-size: clamp(3rem, 5.5vw, 6rem);
   font-weight: 400;
   line-height: 0.95;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.025em;
 }
 
-.content h2 em {
+.titleLine {
+  display: block;
+}
+
+.titleBase {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+.titleHighlight,
+.titleHighlightItalic {
   color: var(--color-bmv-green);
 
+  font-family: var(--font-editorial);
+
+  font-optical-sizing: auto;
+}
+
+.titleHighlight {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.titleHighlightItalic {
+  font-style: italic;
+   font-weight: 400;
 }
 
 .copy {
@@ -148,13 +172,19 @@
     aspect-ratio: 4 / 5;
   }
 
-  .eyebrow {
-    margin-bottom: 1.5rem;
-  }
+.title {
+  gap: 0.85rem;
+}
 
-  .content h2 {
-    font-size: clamp(3.2rem, 14vw, 4.5rem);
-  }
+.titleLine:first-child {
+  font-size: clamp(2.7rem, 12vw, 4rem);
+  line-height: 0.95;
+}
+
+.titleLine:last-child {
+  font-size: clamp(2rem, 9vw, 3rem);
+  line-height: 1;
+}
 
   .copy {
     gap: 1.25rem;

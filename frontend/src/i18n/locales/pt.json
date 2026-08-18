@@ -1,1 +1,145 @@
-{}
+{
+  "navigation": {
+    "about": "O Artista",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "education": "Educação",
+    "book": "Agendar"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "BMV Makeup",
+      "title": "A arte",
+      "titleAccent": "da beleza.",
+      "cta": "Conheça o trabalho"
+    },
+
+    "artist": {
+      "eyebrow": "Conheça o artista",
+      "title": "Beleza é",
+      "titleHighlight": "pessoal.",
+      "titleSecond": "Maquiagem",
+      "titleSecondHighlight": "também deveria ser.",
+      "paragraph1": "Maquiador brasileiro baseado em Barcelona, Bruno cria experiências de beleza pensadas para cada rosto, personalidade e momento.",
+      "paragraph2": "Da beleza atemporal às criações mais ousadas, cada trabalho parte da mesma ideia: valorizar a identidade, nunca escondê-la.",
+      "cta": "Conheça Bruno"
+    },
+
+    "work": {
+      "eyebrow": "Explore o trabalho",
+      "title": "Um artista.",
+      "titleAccent": "Muitas expressões.",
+      "cta": "Conheça todos os serviços",
+
+      "items": {
+        "weddings": {
+          "title": "Casamentos",
+          "description": "Para momentos que ficam para sempre."
+        },
+        "campaigns": {
+          "title": "Campanhas",
+          "description": "Beleza criada para marcas e histórias."
+        },
+        "social": {
+          "title": "Social",
+          "description": "Beleza elevada para os seus momentos."
+        },
+        "photoshoots": {
+          "title": "Ensaios",
+          "description": "Maquiagem pensada para as lentes."
+        },
+        "artistic": {
+          "title": "Artístico",
+          "description": "Sem regras. Apenas criação."
+        },
+        "audiovisual": {
+          "title": "Audiovisual",
+          "description": "Beleza pensada para as câmeras."
+        }
+      }
+    },
+
+    "selectedWork": {
+      "eyebrow": "Trabalhos selecionados",
+      "title": "Rostos se tornam",
+      "titleAccent": "telas.",
+      "description": "Uma seleção de trabalhos de beleza, editorial e criação artística.",
+      "cta": "Ver portfólio"
+    },
+
+    "weddings": {
+      "eyebrow": "Casamentos",
+      "title": "Da preparação",
+      "titleAccent": "à celebração.",
+      "description": "Cada detalhe importa muito antes do resultado final. Uma experiência bridal criada em torno da pessoa, do momento e de tudo o que faz parte dele.",
+      "cta": "Descubra a experiência bridal"
+    },
+
+    "behindTheBrush": {
+      "eyebrow": "Por trás dos pincéis",
+      "title": "Muito além",
+      "titleAccent": "do resultado final.",
+      "paragraph1": "O trabalho começa muito antes da foto final. Preparação, confiança, conversa e pequenos detalhes fazem parte de cada experiência BMV.",
+      "paragraph2": "Por trás de cada resultado existe um processo construído em torno de quem está na cadeira.",
+      "statement1": "Arte.",
+      "statement2": "Conexão.",
+      "statement3": "Experiência."
+    },
+
+    "reviews": {
+      "eyebrow": "Palavras de quem viveu",
+      "title": "A beleza se vê.",
+      "titleAccent": "A experiência se sente.",
+      "footerLine1": "Experiências reais.",
+      "footerLine2": "Pessoas reais.",
+      "google": "Avaliações no Google",
+      "bodas": "Bodas.net"
+    },
+
+    "education": {
+      "eyebrow": "Educação",
+      "title": "Beleza,",
+      "titleAccent": "compartilhada.",
+      "description": "Aprenda com Bruno através de sessões de automaquiagem, formação profissional e workshops criados para transformar técnica em confiança.",
+      "selfMakeup": "Automaquiagem",
+      "professional": "Formação Profissional",
+      "workshops": "Workshops",
+      "cta": "Conheça os cursos"
+    },
+
+    "instagram": {
+      "eyebrow": "Instagram",
+      "handle": "@bmvmakeup",
+      "title": "Um pouco mais",
+      "titleAccent": "dos bastidores.",
+      "description": "Trabalhos recentes, detalhes e momentos do universo criativo de Bruno.",
+      "cta": "Seguir no Instagram"
+    },
+
+    "cta": {
+      "eyebrow": "Vamos criar",
+      "title": "Tem algo",
+      "titleAccent": "em mente?",
+      "description": "Seja um casamento, campanha, ensaio, evento ou projeto criativo, vamos conversar sobre a sua ideia.",
+      "primary": "Entre em contato",
+      "secondary": "Conheça os serviços"
+    }
+  },
+
+  "footer": {
+    "tagline": "Maquiagem artística em Barcelona.",
+    "navigation": "Navegação",
+    "contact": "Contato",
+    "social": "Social",
+    "artist": "O Artista",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "education": "Educação",
+    "reviews": "Avaliações",
+    "book": "Entre em contato",
+    "instagram": "Instagram",
+    "copyright": "BMV Makeup. Todos os direitos reservados.",
+    "credit": "Design e desenvolvimento por Lorena Ferreira"
+  }
+}

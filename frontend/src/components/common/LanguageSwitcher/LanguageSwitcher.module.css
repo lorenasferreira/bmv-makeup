@@ -1,0 +1,54 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.switcher button {
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+  color: inherit;
+
+  opacity: 0.5;
+
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+
+  transition:
+    opacity var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.switcher button:hover,
+.switcher button:focus-visible {
+  opacity: 1;
+}
+
+.switcher button:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+
+.switcher .active {
+  opacity: 1;
+}
+
+/* Header desktop */
+.header {
+  color: inherit;
+}
+
+/* Drawer mobile */
+.mobile {
+  color: var(--color-text-inverted);
+}
+
+@media (max-width: 640px) {
+  .header {
+    display: none;
+  }
+}

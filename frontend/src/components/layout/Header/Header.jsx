@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
+import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 
 import MobileMenu from "./MobileMenu";
 
@@ -25,16 +26,20 @@ function Header() {
         <a href="/contact">{t("navigation.book")}</a>
       </nav>
 
-      <button
-        type="button"
-        className={styles.menuButton}
-        aria-label="Open navigation menu"
-        aria-expanded={isMenuOpen}
-        aria-controls="mobile-navigation"
-        onClick={() => setIsMenuOpen(true)}
-      >
-        <FiMenu aria-hidden="true" />
-      </button>
+      <div className={styles.actions}>
+        <LanguageSwitcher variant="header" />
+
+        <button
+          type="button"
+          className={styles.menuButton}
+          aria-label="Open navigation menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setIsMenuOpen(true)}
+        >
+          <FiMenu aria-hidden="true" />
+        </button>
+      </div>
 
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </header>

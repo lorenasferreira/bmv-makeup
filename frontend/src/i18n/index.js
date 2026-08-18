@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
     pt: { translation: pt },
     ca: { translation: ca },
   },
-  lng: "en",
+  lng: localStorage.getItem("bmv-language") || "en",
   fallbackLng: "en",
 
   interpolation: {
