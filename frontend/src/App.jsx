@@ -9,6 +9,7 @@ import KindWords from "./components/sections/home/KindWords/KindWords";
 import EducationPreview from "./components/sections/home/EducationPreview/EducationPreview";
 import InstagramPreview from "./components/sections/home/InstagramPreview/InstagramPreview";
 import FinalCTA from "./components/sections/home/FinalCTA/FinalCTA";
+import Footer from "./components/layout/Footer/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <EducationPreview />
         <InstagramPreview />
         <FinalCTA />
+        <Footer />
       </main>
     </>
   );

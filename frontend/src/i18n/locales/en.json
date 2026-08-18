@@ -120,5 +120,20 @@
       "primary": "Get in touch",
       "secondary": "Explore services"
     }
+  },
+  "footer": {
+    "tagline": "Makeup artistry in Barcelona.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social",
+    "artist": "The Artist",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "education": "Education",
+    "reviews": "Reviews",
+    "book": "Get in touch",
+    "instagram": "Instagram",
+    "copyright": "BMV Makeup. All rights reserved.",
+    "credit": "Designed & developed by Lorena Ferreira"
   }
 }
