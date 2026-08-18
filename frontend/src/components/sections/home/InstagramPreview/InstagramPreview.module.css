@@ -30,7 +30,7 @@
 }
 
 .heading h2 {
-  font-family: var(--font-editorial);
+  font-family: var(--font-section);
   font-size: clamp(3.5rem, 6vw, 7rem);
   font-weight: 400;
   line-height: 0.9;
@@ -232,7 +232,7 @@
 }
 
 @media (max-width: 640px) {
-  .section {
+   .section {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -242,8 +242,17 @@
   }
 
   .heading h2 {
-    font-size: clamp(3.6rem, 16vw, 5rem);
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
+    line-height: 0.95;
   }
+
+  .heading h2 em {
+    display: block;
+
+    margin-top: 0.25rem;
+
+    font-size: clamp(3rem, 10vw, 4rem);
+    line-height: 0.95; }
 
   .feed {
     grid-template-columns: repeat(2, 1fr);

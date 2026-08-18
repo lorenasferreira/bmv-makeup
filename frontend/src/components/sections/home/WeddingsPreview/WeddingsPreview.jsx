@@ -12,7 +12,6 @@ function WeddingsPreview() {
 
         <h2>
           {t("home.weddings.title")}
-          <br />
           <em>{t("home.weddings.titleAccent")}</em>
         </h2>
 
@@ -32,8 +31,6 @@ function WeddingsPreview() {
         <div className={styles.secondaryImage}>
           <span>Bruno Working</span>
         </div>
-
-        <span className={styles.number}>05</span>
       </div>
     </section>
   );

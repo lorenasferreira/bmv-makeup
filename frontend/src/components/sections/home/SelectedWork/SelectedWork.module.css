@@ -29,7 +29,7 @@
 .heading h2 {
   max-width: 950px;
 
-  font-family: var(--font-editorial);
+  font-family: var(--font-section);
   font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 400;
   line-height: 0.88;

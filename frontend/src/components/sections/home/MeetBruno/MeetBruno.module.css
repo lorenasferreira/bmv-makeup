@@ -30,7 +30,7 @@
 .imagePlaceholder span {
   color: var(--color-secondary);
 
-  font-family: var(--font-editorial);
+  font-family: var(--font-section);
   font-size: clamp(1.5rem, 3vw, 3rem);
   font-style: italic;
 }
@@ -75,7 +75,7 @@
 .titleHighlightItalic {
   color: var(--color-bmv-green);
 
-  font-family: var(--font-editorial);
+  font-family: var(--font-section);
 
   font-optical-sizing: auto;
 }
@@ -137,7 +137,7 @@
 
   color: rgb(23 54 5 / 4%);
 
-  font-family: var(--font-editorial);
+  font-family: var(--font-section);
   font-size: clamp(10rem, 25vw, 25rem);
   line-height: 1;
 

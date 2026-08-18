@@ -53,7 +53,12 @@ function InstagramPreview() {
       <footer className={styles.footer}>
         <span>{t("home.instagram.handle")}</span>
 
-        <a href="#" className={styles.link}>
+        <a
+          href="https://www.instagram.com/bmvmakeup/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           {t("home.instagram.cta")}
           <span aria-hidden="true">↗</span>
         </a>

@@ -36,7 +36,8 @@
   --transition-hero: 1200ms ease;
 
   /* Typography */
---font-editorial: "Bodoni Moda", Georgia, serif;
 --font-primary: "DM Sans", Arial, sans-serif;
+--font-section: "Lora", Georgia, serif;
+--font-editorial: "Bodoni Moda", Georgia, serif;
 }
 
