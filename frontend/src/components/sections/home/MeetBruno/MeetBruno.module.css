@@ -61,6 +61,8 @@
 
 .content h2 em {
   color: var(--color-bmv-green);
+
+  font-style: normal;
   font-weight: 400;
 }
 

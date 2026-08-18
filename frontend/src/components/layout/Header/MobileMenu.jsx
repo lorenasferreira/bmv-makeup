@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { FiX } from "react-icons/fi";
+import { FiArrowUpRight, FiX } from "react-icons/fi";
 
 import styles from "./MobileMenu.module.css";
 
@@ -100,8 +100,10 @@ function MobileMenu({ isOpen, onClose }) {
             href="https://www.instagram.com/bmvmakeup/"
             target="_blank"
             rel="noreferrer"
+            className={styles.instagramLink}
           >
-            Instagram ↗
+            Instagram
+            <span className={styles.externalArrow} aria-hidden="true" />
           </a>
 
           <div className={styles.languages}>
