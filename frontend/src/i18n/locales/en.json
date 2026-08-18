@@ -104,13 +104,21 @@
       "workshops": "Workshops",
       "cta": "Explore education"
     },
-  "instagram": {
-    "eyebrow": "Instagram",
-    "handle": "@bmvmakeup",
-    "title": "A little more",
-    "titleAccent": "behind the scenes.",
-    "description": "Recent work, details and moments from Bruno's creative world.",
-    "cta": "Follow on Instagram"
+    "instagram": {
+      "eyebrow": "Instagram",
+      "handle": "@bmvmakeup",
+      "title": "A little more",
+      "titleAccent": "behind the scenes.",
+      "description": "Recent work, details and moments from Bruno's creative world.",
+      "cta": "Follow on Instagram"
+    },
+    "cta": {
+      "eyebrow": "Let's create",
+      "title": "Have something",
+      "titleAccent": "in mind?",
+      "description": "Whether it's a wedding, campaign, photoshoot, event or creative project, let's talk about what you have in mind.",
+      "primary": "Get in touch",
+      "secondary": "Explore services"
+    }
   }
-}
 }

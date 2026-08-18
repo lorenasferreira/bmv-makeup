@@ -8,6 +8,7 @@ import BehindTheBrush from "./components/sections/home/BehindTheBrush/BehindTheB
 import KindWords from "./components/sections/home/KindWords/KindWords";
 import EducationPreview from "./components/sections/home/EducationPreview/EducationPreview";
 import InstagramPreview from "./components/sections/home/InstagramPreview/InstagramPreview";
+import FinalCTA from "./components/sections/home/FinalCTA/FinalCTA";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <KindWords />
         <EducationPreview />
         <InstagramPreview />
+        <FinalCTA />
       </main>
     </>
   );

@@ -1,0 +1,135 @@
+.section {
+  position: relative;
+
+  display: grid;
+  min-height: 85vh;
+  place-items: center;
+
+  padding: clamp(7rem, 12vw, 13rem) var(--page-padding);
+
+  overflow: hidden;
+
+  background: var(--color-primary-dark);
+  color: var(--color-text-inverted);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1000px;
+
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 2rem;
+
+  color: var(--color-tertiary);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.content h2 {
+  font-family: var(--font-editorial);
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+}
+
+.content h2 em {
+  color: var(--color-tertiary);
+  font-weight: 400;
+}
+
+.description {
+  max-width: 620px;
+
+  margin: clamp(2rem, 4vw, 3.5rem) auto 0;
+
+  color: rgb(255 255 255 / 66%);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.primary,
+.secondary {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 1.4rem;
+
+  background: var(--color-text-inverted);
+  color: var(--color-primary-dark);
+
+  transition:
+    gap var(--transition-default),
+    transform var(--transition-fast);
+}
+
+.primary:hover {
+  gap: 1.4rem;
+  transform: translateY(-2px);
+}
+
+.secondary {
+  padding-bottom: 0.35rem;
+
+  border-bottom: 1px solid rgb(255 255 255 / 45%);
+}
+
+.brandMark {
+  position: absolute;
+  left: 50%;
+  bottom: -0.2em;
+
+  transform: translateX(-50%);
+
+  color: rgb(255 255 255 / 3.5%);
+
+  font-family: var(--font-editorial);
+  font-size: clamp(14rem, 35vw, 34rem);
+  line-height: 1;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 640px) {
+  .section {
+    min-height: 75vh;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+
+  .content h2 {
+    font-size: clamp(4rem, 18vw, 6rem);
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
