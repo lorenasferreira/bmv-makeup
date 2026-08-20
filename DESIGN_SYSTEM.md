@@ -1,55 +1,53 @@
 # BMV Makeup — Design System
 
-A lightweight reference for maintaining visual and code consistency across the project.
+Visual and UI reference for maintaining consistency across BMV Makeup.
 
-This system should evolve with the product. It is a guide, not a set of rigid rules.
+This is a living system. Reuse the visual language without forcing every section into the same layout.
 
 ---
 
 ## Visual Direction
 
-The brand should feel:
+BMV should feel:
 
-- Editorial
-- Premium
-- Artistic
-- Contemporary
-- Human
-- Portrait-led
-- Sophisticated
+* Editorial
+* Premium
+* Artistic
+* Contemporary
+* Human
+* Sophisticated
+* Photography-led
 
-The website should feel closer to a beauty editorial and artist portfolio than a traditional salon website.
+The website should feel closer to a **beauty editorial / artist portfolio** than a traditional salon website.
 
-Balance:
+The work should always remain the visual protagonist.
 
-- Polished makeup photography
-- Bruno working
-- Real clients
-- Behind-the-scenes moments
-- Creative and editorial work
+### Avoid
 
-Avoid:
+* Generic beauty templates
+* Pink, glitter and makeup clichés
+* Excessive gold
+* Excessive cards
+* Heavy shadows
+* Repetitive grids
+* Decorative elements without purpose
+* Overly feminine visual clichés
+* Making the brand exclusively bridal
 
-- Generic beauty templates
-- Excessive cards and shadows
-- Pink, glitter or makeup clichés
-- Repetitive layouts
-- Making the brand exclusively bridal
-- Decorative elements without purpose
+Consistency should come from the **visual language**, not from repeating the same composition.
 
 ---
 
-## Colors
+# Color System
 
-Color tokens are defined in:
+Tokens are defined in:
 
 `src/styles/variables.css`
-
-Initial palette:
 
 ```css
 --color-primary: #2d2926;
 --color-primary-dark: #1d1a18;
+
 --color-bmv-green: #173605;
 
 --color-secondary: #8d8172;
@@ -60,240 +58,247 @@ Initial palette:
 
 --color-text: #2d2926;
 --color-text-light: #746d66;
+
 --color-border: #e2ded0;
 
 --color-accent: var(--color-bmv-green);
-````
+```
 
-The BMV green comes from the existing brand identity and should be used as a subtle signature.
+Use existing tokens instead of hardcoded colors whenever possible.
+
+## BMV Green
+
+`#173605` comes from the existing BMV identity.
+
+Treat it as a **signature**, not the dominant interface color.
 
 Good uses:
 
 * Small labels
+* Links
 * Active states
 * Thin lines
-* Links
 * Hover details
-* Small editorial accents
+* Editorial accents
 
-Avoid large amounts of green competing with the photography.
-
-Prefer design tokens over hardcoded colors.
+Avoid large green areas that compete with photography unless a specific composition clearly benefits from it.
 
 ---
 
-## Typography
+# Typography
 
-The visual direction combines:
+Typography works through contrast.
 
-### Editorial Serif
+The project currently uses three roles:
 
-Used selectively for:
+```css
+var(--font-editorial)
+var(--font-section)
+var(--font-primary)
+```
 
-* Hero
-* Large titles
+## Editorial
+
+Use `--font-editorial` selectively for moments that should feel expressive or magazine-like.
+
+Examples:
+
+* Hero typography
+* Names
 * Quotes
-* High-impact editorial moments
+* Selected editorial details
+* High-impact brand moments
 
-### Clean Sans Serif
+Do not use it automatically for every large heading.
 
-Used for:
+## Section
+
+Use `--font-section` for major section statements and large internal-page headings.
+
+Examples:
+
+* Section titles
+* Manifesto statements
+* Large CTAs
+* Narrative headings
+
+This is generally easier to read at large sizes while maintaining the editorial character of the site.
+
+## Primary
+
+Use `--font-primary` for functional and long-form content.
+
+Examples:
 
 * Paragraphs
 * Navigation
 * Buttons
 * Labels
 * Prices
+* Forms
 * UI elements
 
-Initial references:
+### Principle
 
-* Bodoni Moda
-* DM Sans
-
-Final fonts should be validated during implementation.
-
-Do not use the editorial font everywhere. Contrast creates impact.
+Typography hierarchy should come from **role and contrast**, not simply font size.
 
 ---
 
-## Photography
+# Photography
 
-Photography is the main visual element of the website.
+Photography is the primary visual material of BMV Makeup.
 
 Prioritize:
 
 * Faces
 * Makeup close-ups
-* Portraits
 * Bruno working
+* Bruno portraits
 * Real clients
-* Behind the scenes
-* Bridal
+* Beauty portraits
+* Weddings
 * Campaigns
-* Social makeup
-* Artistic makeup
 * Photoshoots
+* Artistic makeup
 * Audiovisual work
+* Behind-the-scenes moments
 
-Avoid generic lifestyle imagery where makeup is not the focus.
+Avoid generic lifestyle photography where makeup, artistry or Bruno's work is not meaningfully present.
 
-Until Bruno's final material is available, use placeholders to validate layout, cropping and responsiveness.
+## Cropping
 
----
+Do not force one crop to work everywhere.
 
-## Hero
+Desktop and mobile may use:
 
-The Hero should create the strongest visual impact on the Home.
+* Different crops
+* Different positioning
+* Different image proportions
+* Separate assets when necessary
 
-Current direction:
-
-* Near full-screen
-* Photography-led
-* Minimal text
-* Approximately 6 rotating images
-* Smooth automatic transitions
-
-Preferred sequence:
-
-1. Bruno working
-2. Beauty portrait
-3. Bridal
-4. Campaign / editorial
-5. Artistic makeup
-6. Another contrasting service or style
-
-The first image should preferably show Bruno working.
-
-Avoid large carousel arrows or controls competing with the photography.
+Use `object-fit: cover` intentionally and validate the subject position at each breakpoint.
 
 ---
 
-## Layout
+# Layout
 
-Use:
+Prefer:
 
 * Large photography
 * Generous negative space
 * Asymmetry
-* Portrait-oriented compositions
-* Different image proportions
+* Portrait compositions
+* Mixed image proportions
+* Strong typography
 * Editorial rhythm
+* Occasional full-width visual moments
 
-Sections should feel connected without looking identical.
+Sections should feel related without looking identical.
 
-Do not repeat the same grid or card structure simply for consistency.
+Avoid repeatedly solving sections with:
 
-Consistency should come from the visual language.
+```text
+Title
+↓
+3 cards
+↓
+CTA
+```
 
----
-
-## Brand Presence
-
-### BMV
-
-Use the BMV logo intentionally in:
-
-* Header
-* Loader
-* Footer
-* Favicon
-* Selected brand moments
-
-Avoid unnecessary repetition.
-
-### Barcelona
-
-Represent Barcelona subtly through:
-
-* Light
-* Architecture
-* Interiors
-* Balconies
-* Streets
-* Background details
-
-Avoid tourism imagery.
-
-### Brazilian Identity
-
-Bruno's Brazilian background can appear through his story, personality and approach.
-
-Avoid flags, green-and-yellow combinations and obvious Brazilian clichés.
+Different content may require different compositions.
 
 ---
 
-## Services
+# Editorial Rhythm
 
-Current categories discussed with Bruno:
+Pages should alternate visual density.
 
-* Weddings
-* Campaigns
-* Social / Everyday Makeup
-* Photoshoots
-* Artistic Makeup
-* Audiovisual / Camera Makeup
-* Courses
-* Appointments
+A useful rhythm may include:
 
-Courses and appointments may display pricing.
+```text
+Large visual impact
+↓
+Negative space
+↓
+Typography-led moment
+↓
+Photography
+↓
+Movement or contrast
+↓
+Quiet content
+```
 
-Final names and grouping can evolve during development.
+Do not make every section equally loud.
 
----
-
-## Home Direction
-
-Current ideas:
-
-1. Header
-2. Hero
-3. Meet Bruno
-4. Selected Work / Services
-5. Experience / Behind the Scenes
-6. Courses & Appointments
-7. Reviews
-8. Instagram Preview
-9. Final CTA
-10. Footer
-
-The order is not final.
-
-Build and validate one section at a time.
+The user should have moments to visually breathe.
 
 ---
 
-## Motion
+# Motion
 
-Possible interactions:
+Motion should reinforce the content.
+
+Current visual language may include:
 
 * Hero image transitions
-* Subtle image reveals
+* Slow editorial marquees
+* Image reveals
 * Soft fades
-* Small hover interactions
+* Subtle hover interactions
 * BMV logo loader
 
-Animations should support the experience without competing with the content.
+The About page establishes a useful motion pattern with two editorial marquees moving in opposite directions.
 
-Avoid decorative motion without purpose.
+Motion should generally feel:
+
+* Smooth
+* Slow
+* Intentional
+* Secondary to photography
+
+Avoid animation simply because an element can move.
+
+## Accessibility
+
+Respect:
+
+```css
+@media (prefers-reduced-motion: reduce)
+```
+
+Continuous animations should have a non-animated fallback.
 
 ---
 
-## Spacing
+# Spacing
 
-Prefer responsive spacing:
+Prefer responsive spacing with:
 
 ```css
 clamp(...)
 ```
 
-Use generous negative space when it improves hierarchy and photography.
+Use generous spacing when it strengthens:
 
-Avoid arbitrary spacing when an existing pattern can be reused.
+* Hierarchy
+* Photography
+* Editorial composition
+* Separation between narrative moments
+
+Avoid arbitrary spacing when an established pattern already works.
+
+Page-level horizontal spacing should use the existing:
+
+```css
+var(--page-padding)
+```
+
+whenever appropriate.
 
 ---
 
-## Borders & Shadows
+# Borders & Shadows
 
 Prefer subtle hairline borders:
 
@@ -301,20 +306,30 @@ Prefer subtle hairline borders:
 1px solid var(--color-border);
 ```
 
+Dark sections may use subtle transparent light borders when necessary.
+
 Avoid shadows by default.
+
+If depth can be created through:
+
+* spacing
+* typography
+* photography
+* contrast
+* borders
+
+prefer those methods.
 
 ---
 
-## Responsive Strategy
+# Responsive Design
 
 Development order:
 
 ```text
 Desktop
-↓
-Tablet
-↓
-Mobile
+→ Tablet
+→ Mobile
 ```
 
 Responsive design may change:
@@ -325,27 +340,171 @@ Responsive design may change:
 * Spacing
 * Alignment
 * Content order
+* Typography
+* Motion speed
 
 Mobile should not simply be a smaller desktop.
 
+Preserve the **idea of the composition**, not necessarily its exact geometry.
+
 ---
 
-## Component Architecture
+# Hero Language
 
-Create components only when they are actually needed.
+Heroes should establish a strong visual hierarchy quickly.
 
-Possible structure as the project grows:
+Prefer:
 
-```text
-components/
-├── common/
-├── layout/
-└── sections/
+* Photography-led compositions
+* Limited copy
+* Strong typography
+* Minimal controls
+* Intentional image cropping
+
+The Home Hero uses rotating photography and should remain the strongest initial visual moment of the site.
+
+Internal-page heroes may use different compositions while remaining part of the same visual language.
+
+Do not copy the Home Hero structure onto every page.
+
+---
+
+# Labels
+
+Small uppercase labels are part of the editorial language.
+
+Typical characteristics:
+
+```css
+font-size: 0.68rem;
+font-weight: 500;
+letter-spacing: 0.16em;
+text-transform: uppercase;
 ```
 
-Do not create empty folders or abstractions for hypothetical future use.
+They may use the accent color or a context-specific muted color.
 
-### Component Structure
+Labels can include:
+
+* Section names
+* Numbers
+* Categories
+* Small contextual information
+
+Avoid overusing them on every element.
+
+---
+
+# CTAs & Links
+
+CTAs should feel integrated into the editorial design rather than like generic application buttons.
+
+Possible treatments:
+
+* Underlined text links
+* Minimal buttons
+* Arrow links
+* Small uppercase labels
+
+Use stronger button treatments only when the action requires greater prominence.
+
+Hover states should remain subtle.
+
+---
+
+# Brand Presence
+
+## BMV
+
+Use the BMV identity intentionally in:
+
+* Header
+* Loader
+* Footer
+* Favicon
+* Selected brand moments
+
+Avoid repeating the logo simply to fill space.
+
+## Barcelona
+
+Barcelona may appear through:
+
+* Light
+* Architecture
+* Interiors
+* Balconies
+* Streets
+* Environmental details
+
+Avoid tourism imagery.
+
+## Brazilian Identity
+
+Bruno's Brazilian background should appear naturally through:
+
+* Story
+* Personality
+* Voice
+* Photography
+* Approach
+
+Avoid:
+
+* Flags as decoration
+* Green-and-yellow combinations
+* Brazilian visual clichés
+
+Identity should feel human, not themed.
+
+---
+
+# UI Principles
+
+Prefer interfaces that feel:
+
+* Quiet
+* Intentional
+* Spacious
+* Easy to navigate
+
+Avoid unnecessary:
+
+* Cards
+* Containers
+* Badges
+* Pills
+* Shadows
+* Icons
+
+Not every piece of information needs a visual container.
+
+---
+
+# CSS Modules
+
+Component styles use CSS Modules.
+
+Class names:
+
+```css
+heroImage
+sectionTitle
+navigationLink
+imageWrapper
+```
+
+Use camelCase and describe the element's role.
+
+Keep styles with the component that owns them.
+
+When a page becomes too large, split it by **meaningful visual responsibility**, not simply to reduce line count.
+
+---
+
+# Component Visual Ownership
+
+Typical component structure:
 
 ```text
 ComponentName/
@@ -353,77 +512,71 @@ ComponentName/
 └── ComponentName.module.css
 ```
 
----
+A component should generally own:
 
-## Code Conventions
+* Its layout
+* Its responsive behavior
+* Its local visual states
+* Its local animation
 
-### Components
+Global tokens belong in the shared style system.
 
-PascalCase:
-
-```text
-Hero
-Header
-MeetBruno
-InstagramPreview
-```
-
-### CSS Modules
-
-camelCase:
-
-```text
-heroImage
-navigationLink
-serviceLabel
-```
-
-### Import Order
-
-1. External libraries
-2. Components
-3. Assets
-4. CSS Module
+Do not move component-specific styling into global CSS simply to reuse a few declarations.
 
 ---
 
-## Before Creating a Component
+# Reuse
 
-Ask:
+Reuse:
 
-1. What is its purpose?
-2. Do we need it now?
-3. Is it page-specific or genuinely reusable?
-4. Does a component already exist that solves this?
-5. Does it contribute to the user journey?
+* Tokens
+* Typography roles
+* Spacing logic
+* Motion language
+* Interaction patterns
+* Responsive principles
 
-Then build.
+Do **not** force reuse of an entire layout simply because another section already exists.
+
+For BMV:
+
+**Reuse the system, not the composition.**
 
 ---
 
-## Development Principle
+# Visual QA
 
-Current workflow:
+Before considering a major section complete, check:
 
-```text
-Foundation
-↓
-Header + Hero
-↓
-Validate Desktop
-↓
-Tablet
-↓
-Mobile
-↓
-Next Home Section
-↓
-Repeat
-```
+### Desktop
 
-Do not create unnecessary folders, abstractions or backend functionality before they are required.
+* Hierarchy
+* Photography
+* Negative space
+* Alignment
+* Visual rhythm
 
-Reuse the **system**, not the visual identity, in future projects.
+### Tablet
 
-```
-```
+* Composition still makes sense
+* Typography does not dominate unexpectedly
+* Image crops remain intentional
+
+### Mobile
+
+* Content order feels natural
+* Text remains readable
+* Images retain their subject
+* No accidental horizontal overflow
+* Motion still works appropriately
+* Touch targets remain usable
+
+---
+
+# Core Principle
+
+The interface exists to frame Bruno's work.
+
+When choosing between a decorative UI element and giving the photography, typography or content more space:
+
+**prefer the work.**
