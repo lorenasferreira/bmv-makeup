@@ -1,29 +1,36 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
-import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
+import { Link, useLocation } from "react-router-dom";
 
+import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 
 import styles from "./Header.module.css";
 
 function Header() {
   const { t } = useTranslation();
+  const location = useLocation();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const isHome = location.pathname === "/";
+
   return (
-    <header className={styles.header}>
-      <a href="/" className={styles.brand} aria-label="BMV Makeup - Home">
+    <header
+      className={`${styles.header} ${!isHome ? styles.headerInternal : ""}`}
+    >
+      <Link to="/" className={styles.brand} aria-label="BMV Makeup - Home">
         BMV
         <span>Makeup</span>
-      </a>
+      </Link>
 
       <nav className={styles.navigation} aria-label="Main navigation">
-        <a href="/about">{t("navigation.about")}</a>
-        <a href="/services">{t("navigation.services")}</a>
-        <a href="/portfolio">{t("navigation.portfolio")}</a>
-        <a href="/education">{t("navigation.education")}</a>
-        <a href="/contact">{t("navigation.book")}</a>
+        <Link to="/about">{t("navigation.about")}</Link>
+        <Link to="/services">{t("navigation.services")}</Link>
+        <Link to="/portfolio">{t("navigation.portfolio")}</Link>
+        <Link to="/education">{t("navigation.education")}</Link>
+        <Link to="/contact">{t("navigation.book")}</Link>
       </nav>
 
       <div className={styles.actions}>

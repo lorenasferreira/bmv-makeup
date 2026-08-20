@@ -1,0 +1,151 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+  grid-template-areas:
+    "heading image"
+    "intro image";
+  min-height: calc(100vh - 90px);
+  padding: clamp(4rem, 8vw, 8rem) var(--page-padding);
+  column-gap: clamp(3rem, 8vw, 9rem);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.heroHeading {
+  grid-area: heading;
+  align-self: end;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -0.045em;
+}
+
+.title span {
+  display: block;
+  margin-left: clamp(2rem, 7vw, 7rem);
+}
+
+.imageWrapper {
+  grid-area: image;
+  align-self: stretch;
+  overflow: hidden;
+  min-height: 650px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroIntro {
+  grid-area: intro;
+  display: grid;
+  grid-template-columns: 0.65fr 1fr;
+  align-items: end;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-top: clamp(4rem, 7vw, 7rem);
+}
+
+.location {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.1;
+}
+
+.description {
+  max-width: 30rem;
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr 0.85fr;
+    column-gap: 3rem;
+  }
+
+  .title {
+    font-size: clamp(4.5rem, 10vw, 7rem);
+  }
+
+  .title span {
+    margin-left: 2rem;
+  }
+
+  .imageWrapper {
+    min-height: 560px;
+  }
+
+  .heroIntro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    display: flex;
+    min-height: auto;
+    flex-direction: column;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .heroHeading {
+    position: relative;
+    z-index: 2;
+  }
+
+  .eyebrow {
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: clamp(4.2rem, 22vw, 6.5rem);
+  }
+
+  .title span {
+    margin-left: clamp(1.5rem, 10vw, 3rem);
+  }
+
+  .imageWrapper {
+    width: 82%;
+    min-height: 0;
+    aspect-ratio: 3 / 4;
+    margin-top: -0.75rem;
+    margin-left: auto;
+  }
+
+  .heroIntro {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .location {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.88rem;
+  }
+}
