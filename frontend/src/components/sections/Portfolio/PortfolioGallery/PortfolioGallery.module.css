@@ -1,0 +1,287 @@
+.section {
+  padding: 0 var(--page-padding) clamp(8rem, 14vw, 14rem);
+  background: var(--color-background);
+}
+
+.filtersWrapper {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.4rem 0;
+  margin-bottom: clamp(5rem, 9vw, 9rem);
+  background: rgba(249, 248, 245, 0.94);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(14px);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+.filter {
+  position: relative;
+  padding: 0 0 0.35rem;
+  color: var(--color-text-light);
+  background: none;
+  border: 0;
+  font-family: var(--font-primary);
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color var(--transition-default);
+}
+
+.filter::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--color-bmv-green);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-default);
+}
+
+.filter:hover,
+.active {
+  color: var(--color-bmv-green);
+}
+
+.active::after {
+  transform: scaleX(1);
+}
+
+.count {
+  flex-shrink: 0;
+  color: var(--color-text-light);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: clamp(3rem, 7vw, 8rem) clamp(1.5rem, 3vw, 3.5rem);
+  align-items: start;
+}
+
+.item {
+  min-width: 0;
+  margin: 0;
+  animation: reveal 500ms ease both;
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-tertiary);
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.item:hover img {
+  transform: scale(1.025);
+}
+
+.item figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  color: var(--color-text-light);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.large {
+  grid-column: span 7;
+}
+
+.large .imageWrapper {
+  aspect-ratio: 4 / 5;
+}
+
+.portrait {
+  grid-column: span 4;
+  margin-top: clamp(3rem, 7vw, 8rem);
+}
+
+.portrait .imageWrapper {
+  aspect-ratio: 3 / 4;
+}
+
+.small {
+  grid-column: span 3;
+  align-self: center;
+  margin-top: clamp(5rem, 10vw, 12rem);
+}
+
+.small .imageWrapper {
+  aspect-ratio: 4 / 5;
+}
+
+.wide {
+  grid-column: span 8;
+  margin-left: auto;
+}
+
+.wide .imageWrapper {
+  aspect-ratio: 16 / 10;
+}
+
+.medium {
+  grid-column: span 5;
+  margin-top: clamp(2rem, 5vw, 6rem);
+}
+
+.medium .imageWrapper {
+  aspect-ratio: 4 / 5;
+}
+
+.item:nth-child(6n + 2) {
+  justify-self: end;
+}
+
+.item:nth-child(7n + 4) {
+  transform: translateX(clamp(0rem, 3vw, 3rem));
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .filtersWrapper {
+    position: relative;
+    top: auto;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 5rem 2rem;
+  }
+
+  .large {
+    grid-column: span 5;
+  }
+
+  .portrait {
+    grid-column: span 3;
+  }
+
+  .small {
+    grid-column: span 3;
+  }
+
+  .wide {
+    grid-column: span 6;
+  }
+
+  .medium {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-bottom: 8rem;
+  }
+
+  .filtersWrapper {
+    margin-bottom: 4rem;
+  }
+
+  .filters {
+    gap: 1rem 1.4rem;
+  }
+
+  .count {
+    margin-top: 0.5rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  .item {
+    width: 100%;
+    margin: 0;
+    transform: none;
+  }
+
+  .large {
+    width: 100%;
+  }
+
+  .portrait {
+    width: 72%;
+    margin-left: auto;
+  }
+
+  .small {
+    width: 58%;
+  }
+
+  .wide {
+    width: 92%;
+    margin-left: auto;
+  }
+
+  .medium {
+    width: 78%;
+  }
+
+  .item:nth-child(4n + 3) {
+    margin-left: auto;
+  }
+
+  .item:nth-child(7n + 4) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    animation: none;
+  }
+
+  .imageWrapper img,
+  .filter,
+  .filter::after {
+    transition: none;
+  }
+}

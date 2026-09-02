@@ -26,6 +26,7 @@ function Header() {
       </Link>
 
       <nav className={styles.navigation} aria-label="Main navigation">
+        <Link to="/">{t("navigation.home")}</Link>
         <Link to="/about">{t("navigation.about")}</Link>
         <Link to="/services">{t("navigation.services")}</Link>
         <Link to="/portfolio">{t("navigation.portfolio")}</Link>
