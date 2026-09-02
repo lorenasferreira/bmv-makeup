@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   try {
     const profileUrl =
       `https://graph.instagram.com/me` +
-      `?fields=id,username` +
+      `?fields=id,username,profile_picture_url` +
       `&access_token=${encodeURIComponent(token)}`;
 
     const mediaFields = [
@@ -59,6 +59,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       username: profile.username,
+      profilePictureUrl: profile.profile_picture_url || null,
       posts,
     });
   } catch {
