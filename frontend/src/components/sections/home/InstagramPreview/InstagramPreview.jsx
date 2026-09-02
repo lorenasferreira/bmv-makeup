@@ -70,16 +70,16 @@ function InstagramPreview() {
 
             return (
               <article key={post.id} className={styles.post}>
-                <div className={styles.postHeader}>
+                <header className={styles.postHeader}>
                   <div className={styles.avatar}>
                     {(username || "BMV").charAt(0).toUpperCase()}
                   </div>
 
-                  <div>
+                  <div className={styles.postMeta}>
                     <strong>@{username || "bmvmakeup"}</strong>
                     <span>{formatDate(post.timestamp)}</span>
                   </div>
-                </div>
+                </header>
 
                 <a
                   href={post.permalink}
@@ -107,8 +107,10 @@ function InstagramPreview() {
                       href={post.permalink}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={styles.postLink}
                     >
-                      Ver no Instagram ↗
+                      Ver no Instagram
+                      <span aria-hidden="true">↗</span>
                     </a>
                   </div>
                 )}

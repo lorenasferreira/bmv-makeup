@@ -68,7 +68,9 @@
 .feed {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.2rem, 2vw, 2rem);
+  gap:
+    clamp(4rem, 7vw, 7rem)
+    clamp(1.5rem, 3vw, 3rem);
 
   max-width: 1500px;
   margin: 0 auto;
@@ -76,11 +78,6 @@
 
 .post {
   min-width: 0;
-
-  overflow: hidden;
-
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
 }
 
 .postHeader {
@@ -88,10 +85,30 @@
   align-items: center;
   gap: 0.8rem;
 
-  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
 }
 
-.postHeader > div:last-child {
+.avatar {
+  display: grid;
+  place-items: center;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background: transparent;
+  color: var(--color-text);
+
+  font-family: var(--font-editorial);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.postMeta {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
@@ -99,85 +116,63 @@
   min-width: 0;
 }
 
-.postHeader strong {
+.postMeta strong {
   overflow: hidden;
 
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.03em;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.postHeader span {
+.postMeta span {
   color: var(--color-text-light);
 
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
-}
-
-.avatar {
-  display: grid;
-  place-items: center;
-
-  width: 2.25rem;
-  height: 2.25rem;
-
-  flex-shrink: 0;
-
-  border-radius: 50%;
-
-  background: var(--color-primary);
-  color: var(--color-background);
-
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
 }
 
 .media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 
   width: 100%;
-  aspect-ratio: 4 / 5;
 
   overflow: hidden;
 
-  background: var(--color-background);
+  background: transparent;
 }
 
 .media img {
   display: block;
 
   width: 100%;
-  height: 100%;
-
-  object-fit: contain;
+  height: auto;
 
   transition: transform 700ms ease;
 }
 
 .media:hover img {
-  transform: scale(1.015);
+  transform: scale(1.012);
 }
 
 .caption {
-  padding: 1rem;
+  padding-top: 1.2rem;
 }
 
 .caption p {
   display: -webkit-box;
 
-  margin: 0 0 0.9rem;
+  margin: 0 0 1rem;
 
   overflow: hidden;
 
   color: var(--color-text);
 
   font-size: 0.78rem;
-  line-height: 1.55;
+  line-height: 1.65;
 
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -186,27 +181,33 @@
   font-weight: 600;
 }
 
-.caption a {
+.postLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.5rem;
+
+  padding-bottom: 0.2rem;
+
+  border-bottom: 1px solid var(--color-border);
 
   color: var(--color-text-light);
 
-  font-size: 0.64rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
 
   transition:
+    gap var(--transition-default),
     color var(--transition-default),
-    gap var(--transition-default);
+    border-color var(--transition-default);
 }
 
-.caption a:hover {
-  gap: 0.55rem;
+.postLink:hover {
+  gap: 0.8rem;
 
+  border-color: var(--color-text);
   color: var(--color-text);
 }
 
@@ -216,7 +217,7 @@
   align-items: center;
 
   max-width: 1500px;
-  margin: clamp(4rem, 7vw, 7rem) auto 0;
+  margin: clamp(5rem, 8vw, 8rem) auto 0;
   padding-top: 1.5rem;
 
   border-top: 1px solid var(--color-border);
@@ -293,7 +294,7 @@
 
   .feed {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 
     width: calc(100% + var(--page-padding));
     max-width: none;
@@ -301,7 +302,7 @@
     overflow-x: auto;
 
     padding-right: var(--page-padding);
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -321,18 +322,6 @@
     scroll-snap-align: start;
   }
 
-  .media {
-    aspect-ratio: 4 / 5;
-  }
-
-  .postHeader {
-    padding: 0.8rem;
-  }
-
-  .caption {
-    padding: 0.85rem;
-  }
-
   .footer {
     align-items: flex-start;
     gap: 2rem;
@@ -341,7 +330,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .media img,
-  .caption a,
+  .postLink,
   .link {
     transition: none;
   }
