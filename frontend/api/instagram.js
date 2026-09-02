@@ -8,7 +8,12 @@ export default async function handler(req, res) {
   }
 
   try {
-    const fields = [
+    const profileUrl =
+      `https://graph.instagram.com/me` +
+      `?fields=id,username` +
+      `&access_token=${encodeURIComponent(token)}`;
+
+    const mediaFields = [
       "id",
       "caption",
       "media_type",
@@ -18,22 +23,26 @@ export default async function handler(req, res) {
       "timestamp",
     ].join(",");
 
-    const url =
+    const mediaUrl =
       `https://graph.instagram.com/me/media` +
-      `?fields=${fields}` +
+      `?fields=${mediaFields}` +
       `&access_token=${encodeURIComponent(token)}`;
 
-    const response = await fetch(url);
-    const data = await response.json();
+    const [profileResponse, mediaResponse] = await Promise.all([
+      fetch(profileUrl),
+      fetch(mediaUrl),
+    ]);
 
-    if (!response.ok) {
-      return res.status(response.status).json({
+    const profile = await profileResponse.json();
+    const media = await mediaResponse.json();
+
+    if (!profileResponse.ok || !mediaResponse.ok) {
+      return res.status(500).json({
         error: "Instagram API request failed",
-        details: data,
       });
     }
 
-    const posts = (data.data || []).map((post) => ({
+    const posts = (media.data || []).map((post) => ({
       id: post.id,
       caption: post.caption || "",
       mediaType: post.media_type,
@@ -49,9 +58,10 @@ export default async function handler(req, res) {
     );
 
     return res.status(200).json({
+      username: profile.username,
       posts,
     });
-  } catch (error) {
+  } catch {
     return res.status(500).json({
       error: "Unable to load Instagram posts",
     });

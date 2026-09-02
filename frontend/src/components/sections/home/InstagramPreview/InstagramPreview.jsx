@@ -7,6 +7,7 @@ function InstagramPreview() {
   const { t } = useTranslation();
 
   const [instagramPosts, setInstagramPosts] = useState([]);
+  const [username, setUsername] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
@@ -21,6 +22,7 @@ function InstagramPreview() {
 
         const data = await response.json();
 
+        setUsername(data.username || "");
         setInstagramPosts((data.posts || []).slice(0, 6));
       } catch {
         setHasError(true);
@@ -31,6 +33,14 @@ function InstagramPreview() {
 
     loadInstagramPosts();
   }, []);
+
+  function formatDate(timestamp) {
+    return new Intl.DateTimeFormat("pt-BR", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    }).format(new Date(timestamp));
+  }
 
   return (
     <section className={styles.section}>
@@ -46,7 +56,7 @@ function InstagramPreview() {
         </div>
 
         <div className={styles.intro}>
-          <span className={styles.handle}>{t("home.instagram.handle")}</span>
+          <span className={styles.handle}>@{username || "bmvmakeup"}</span>
 
           <p>{t("home.instagram.description")}</p>
         </div>
@@ -54,34 +64,62 @@ function InstagramPreview() {
 
       {!isLoading && !hasError && instagramPosts.length > 0 && (
         <div className={styles.feed}>
-          {instagramPosts.map((post, index) => {
+          {instagramPosts.map((post) => {
             const imageUrl =
               post.mediaType === "VIDEO" ? post.thumbnailUrl : post.mediaUrl;
 
             return (
-              <a
-                key={post.id}
-                href={post.permalink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.post} ${styles[`post${index + 1}`]}`}
-                aria-label={post.caption || "Instagram post"}
-              >
-                {imageUrl && (
-                  <img src={imageUrl} alt={post.caption || ""} loading="lazy" />
-                )}
+              <article key={post.id} className={styles.post}>
+                <div className={styles.postHeader}>
+                  <div className={styles.avatar}>
+                    {(username || "BMV").charAt(0).toUpperCase()}
+                  </div>
 
-                <span className={styles.postIndex}>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </a>
+                  <div>
+                    <strong>@{username || "bmvmakeup"}</strong>
+                    <span>{formatDate(post.timestamp)}</span>
+                  </div>
+                </div>
+
+                <a
+                  href={post.permalink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.media}
+                  aria-label={post.caption || "Instagram post"}
+                >
+                  {imageUrl && (
+                    <img
+                      src={imageUrl}
+                      alt={post.caption || ""}
+                      loading="lazy"
+                    />
+                  )}
+                </a>
+
+                {post.caption && (
+                  <div className={styles.caption}>
+                    <p>
+                      <strong>@{username || "bmvmakeup"}</strong> {post.caption}
+                    </p>
+
+                    <a
+                      href={post.permalink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver no Instagram ↗
+                    </a>
+                  </div>
+                )}
+              </article>
             );
           })}
         </div>
       )}
 
       <footer className={styles.footer}>
-        <span>{t("home.instagram.handle")}</span>
+        <span>@{username || "bmvmakeup"}</span>
 
         <a
           href="https://www.instagram.com/bmvmakeup/"
