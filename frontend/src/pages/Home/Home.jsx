@@ -14,9 +14,9 @@ function Home() {
     <>
         <Hero />
         <MeetBruno />
-      <WeddingsPreview />
-      <ExploreTheWork />
+        <ExploreTheWork />
         <SelectedWork />
+        <WeddingsPreview />
         <BehindTheBrush />
         <KindWords />
         <EducationPreview />
