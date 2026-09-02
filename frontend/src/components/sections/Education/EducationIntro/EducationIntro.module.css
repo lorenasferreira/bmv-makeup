@@ -1,0 +1,67 @@
+.section {
+  padding: clamp(7rem, 12vw, 12rem) var(--page-padding);
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(5rem, 9vw, 9rem);
+  color: var(--color-tertiary);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sectionLabel span:first-child {
+  color: var(--color-secondary);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.55fr);
+  gap: clamp(4rem, 10vw, 11rem);
+  align-items: end;
+}
+
+.content h2 {
+  margin: 0;
+  font-family: var(--font-section);
+  font-size: clamp(4rem, 7vw, 7.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+}
+
+.content h2 em {
+  color: var(--color-tertiary);
+  font-weight: 400;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.copy p {
+  margin: 0;
+  color: var(--color-tertiary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .content h2 {
+    font-size: clamp(3.7rem, 16vw, 5.5rem);
+  }
+}
