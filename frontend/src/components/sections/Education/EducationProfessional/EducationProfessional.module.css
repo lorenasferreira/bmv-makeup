@@ -199,4 +199,21 @@
   .condition {
     grid-column: auto;
   }
+  
+  .section {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .section h2 {
+    max-width: 100%;
+    font-size: clamp(3.2rem, 15vw, 5rem);
+    line-height: 0.88;
+    overflow-wrap: break-word;
+  }
+
+  .section h2 em,
+  .section h2 span {
+    margin-left: 0.75rem;
+  }
 }

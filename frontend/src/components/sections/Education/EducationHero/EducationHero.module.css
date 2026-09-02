@@ -103,3 +103,21 @@
     width: 82%;
   }
 }
+
+@media (max-width: 640px) {
+  .hero {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(3.5rem, 16vw, 5.5rem);
+    line-height: 0.86;
+    overflow-wrap: break-word;
+  }
+
+  .hero h1 span {
+    margin-left: 0.75rem;
+  }
+}

@@ -64,4 +64,14 @@
   .content h2 {
     font-size: clamp(3.7rem, 16vw, 5.5rem);
   }
+  
+  .section h2 {
+    font-size: clamp(2.7rem, 11vw, 3.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+  }
+
+  .section h2 em {
+    margin-left: 0.5rem;
+  }
 }

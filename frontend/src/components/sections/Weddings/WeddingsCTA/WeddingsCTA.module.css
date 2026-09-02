@@ -1,0 +1,77 @@
+.section {
+  display: flex;
+  min-height: 85vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(8rem, 13vw, 13rem) var(--page-padding);
+  background: var(--color-bmv-green);
+  color: var(--color-background);
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: clamp(3rem, 6vw, 6rem);
+  color: var(--color-tertiary);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  margin: 0;
+  font-family: var(--font-section);
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -0.055em;
+}
+
+.section h2 em {
+  color: var(--color-tertiary);
+  font-weight: 400;
+}
+
+.section p {
+  max-width: 480px;
+  margin: clamp(3rem, 5vw, 5rem) auto 0;
+  color: var(--color-tertiary);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  color: var(--color-background);
+  border-bottom: 1px solid var(--color-background);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: gap var(--transition-default);
+}
+
+.cta:hover {
+  gap: 1.8rem;
+}
+
+@media (max-width: 640px) {
+  .section {
+    min-height: 75vh;
+  }
+
+  .section h2 {
+    font-size: clamp(4.2rem, 20vw, 6.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta {
+    transition: none;
+  }
+}

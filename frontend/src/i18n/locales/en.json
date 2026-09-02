@@ -5,7 +5,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "education": "Education",
-    "book": "Book"
+    "book": "Book now"
   },
 
   "home": {
@@ -71,7 +71,7 @@
 
     "weddings": {
       "eyebrow": "Weddings",
-      "title": "From prep",
+      "title": "From Vision",
       "titleAccent": "to celebration.",
       "description": "Every detail matters long before the final look. A bridal experience created around the person, the moment and everything that comes with it.",
       "cta": "Discover the bridal experience"

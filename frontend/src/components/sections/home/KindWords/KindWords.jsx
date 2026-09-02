@@ -189,7 +189,7 @@ function KindWords() {
         </p>
 
         <div className={styles.externalLinks}>
-          <a href="#google-reviews">
+          <a href="https://maps.app.goo.gl/ytKqqcuCR61eWxrr6">
             {t("home.reviews.google")}
             <span aria-hidden="true">↗</span>
           </a>

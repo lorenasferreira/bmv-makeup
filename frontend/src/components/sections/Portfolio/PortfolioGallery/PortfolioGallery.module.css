@@ -1,6 +1,7 @@
 .section {
   padding: 0 var(--page-padding) clamp(8rem, 14vw, 14rem);
   background: var(--color-background);
+  overflow-x: hidden;
 }
 
 .filtersWrapper {
@@ -220,15 +221,37 @@
   }
 
   .filtersWrapper {
+    display: block;
+    width: calc(100% + (var(--page-padding) * 2));
+    margin-right: calc(var(--page-padding) * -1);
     margin-bottom: 4rem;
+    margin-left: calc(var(--page-padding) * -1);
+    padding: 1.2rem 0;
+    overflow: hidden;
   }
 
   .filters {
-    gap: 1rem 1.4rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
+    padding: 0 var(--page-padding);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 
   .count {
-    margin-top: 0.5rem;
+    display: none;
   }
 
   .gallery {
@@ -239,6 +262,7 @@
 
   .item {
     width: 100%;
+    max-width: 100%;
     margin: 0;
     transform: none;
   }
