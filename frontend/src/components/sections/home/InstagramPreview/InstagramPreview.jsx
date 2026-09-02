@@ -1,11 +1,36 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-
-import instagramPosts from "../../../../data/instagramPosts";
 
 import styles from "./InstagramPreview.module.css";
 
 function InstagramPreview() {
   const { t } = useTranslation();
+
+  const [instagramPosts, setInstagramPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    async function loadInstagramPosts() {
+      try {
+        const response = await fetch("/api/instagram");
+
+        if (!response.ok) {
+          throw new Error("Unable to load Instagram posts");
+        }
+
+        const data = await response.json();
+
+        setInstagramPosts((data.posts || []).slice(0, 6));
+      } catch {
+        setHasError(true);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    loadInstagramPosts();
+  }, []);
 
   return (
     <section className={styles.section}>
@@ -27,28 +52,33 @@ function InstagramPreview() {
         </div>
       </header>
 
-      <div className={styles.feed}>
-        {instagramPosts.map((post, index) => (
-          <a
-            key={post.id}
-            href={post.permalink}
-            className={`${styles.post} ${styles[`post${index + 1}`]}`}
-            aria-label={post.caption}
-          >
-            {post.imageUrl ? (
-              <img src={post.imageUrl} alt={post.caption} loading="lazy" />
-            ) : (
-              <div className={styles.placeholder}>
-                <span>{post.placeholder}</span>
-              </div>
-            )}
+      {!isLoading && !hasError && instagramPosts.length > 0 && (
+        <div className={styles.feed}>
+          {instagramPosts.map((post, index) => {
+            const imageUrl =
+              post.mediaType === "VIDEO" ? post.thumbnailUrl : post.mediaUrl;
 
-            <span className={styles.postIndex}>
-              {String(index + 1).padStart(2, "0")}
-            </span>
-          </a>
-        ))}
-      </div>
+            return (
+              <a
+                key={post.id}
+                href={post.permalink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.post} ${styles[`post${index + 1}`]}`}
+                aria-label={post.caption || "Instagram post"}
+              >
+                {imageUrl && (
+                  <img src={imageUrl} alt={post.caption || ""} loading="lazy" />
+                )}
+
+                <span className={styles.postIndex}>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      )}
 
       <footer className={styles.footer}>
         <span>{t("home.instagram.handle")}</span>
