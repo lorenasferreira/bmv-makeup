@@ -43,7 +43,7 @@
 .eyebrow {
   margin-bottom: clamp(2rem, 4vw, 4rem);
 
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 
   font-size: 0.68rem;
   font-weight: 600;
@@ -73,7 +73,7 @@
 
 .titleHighlight,
 .titleHighlightItalic {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 
   font-family: var(--font-section);
 
@@ -87,7 +87,7 @@
 
 .titleHighlightItalic {
   font-style: italic;
-   font-weight: 400;
+  font-weight: 400;
 }
 
 .copy {
@@ -114,9 +114,9 @@
   margin-top: 3rem;
   padding-bottom: 0.4rem;
 
-  border-bottom: 1px solid var(--color-bmv-green);
+  border-bottom: 1px solid var(--color-accent);
 
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 
   font-size: 0.7rem;
   font-weight: 600;
@@ -172,19 +172,19 @@
     aspect-ratio: 4 / 5;
   }
 
-.title {
-  gap: 0.85rem;
-}
+  .title {
+    gap: 0.85rem;
+  }
 
-.titleLine:first-child {
-  font-size: clamp(2.7rem, 12vw, 4rem);
-  line-height: 0.95;
-}
+  .titleLine:first-child {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    line-height: 0.95;
+  }
 
-.titleLine:last-child {
-  font-size: clamp(2rem, 9vw, 3rem);
-  line-height: 1;
-}
+  .titleLine:last-child {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1;
+  }
 
   .copy {
     gap: 1.25rem;

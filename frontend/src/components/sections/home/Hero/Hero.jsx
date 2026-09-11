@@ -1,19 +1,57 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+
 import styles from "./Hero.module.css";
 
 const slides = [
-  { id: 1, label: "Bruno Working" },
-  { id: 2, label: "Beauty Portrait" },
-  { id: 3, label: "Bridal" },
-  { id: 4, label: "Campaign / Editorial" },
-  { id: 5, label: "Artistic Makeup" },
-  { id: 6, label: "Audiovisual / Social" },
+  {
+    id: 1,
+    label: "Bruno Working",
+    image: "/assets/images/home/hero/bruno-working.JPG",
+    tone: "warm",
+    position: "center 25%",
+  },
+  {
+    id: 2,
+    label: "Beauty Portrait",
+    image: "/assets/images/home/hero/beauty-portrait.jpg",
+    tone: "rose",
+    position: "center 22%",
+  },
+  {
+    id: 3,
+    label: "Bridal",
+    image: "/assets/images/home/hero/bridal.jpg",
+    tone: "sand",
+    position: "center center",
+  },
+  {
+    id: 4,
+    label: "Campaign / Editorial",
+    image: "/assets/images/home/hero/campaign-editorial.JPG",
+    tone: "olive",
+    position: "center 20%",
+  },
+  {
+    id: 5,
+    label: "Artistic Makeup",
+    image: "/assets/images/home/hero/artistic-makeup.HEIC",
+    tone: "terracotta",
+    position: "center 18%",
+  },
+  {
+    id: 6,
+    label: "Audiovisual / Social",
+    image: "/assets/images/home/hero/audiovisual-social.heic",
+    tone: "deep",
+    position: "center 22%",
+  },
 ];
 
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
   const { t } = useTranslation();
+
   useEffect(() => {
     const interval = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % slides.length);
@@ -30,9 +68,9 @@ function Hero() {
             key={slide.id}
             className={`${styles.slide} ${
               index === activeSlide ? styles.active : ""
-            }`}
+            } ${styles[slide.tone]}`}
           >
-            <span>{slide.label}</span>
+            <img src={slide.image} alt="" />
           </div>
         ))}
       </div>

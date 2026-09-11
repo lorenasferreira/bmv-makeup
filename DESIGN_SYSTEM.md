@@ -10,13 +10,13 @@ This is a living system. Reuse the visual language without forcing every section
 
 BMV should feel:
 
-* Editorial
-* Premium
-* Artistic
-* Contemporary
-* Human
-* Sophisticated
-* Photography-led
+- Editorial
+- Premium
+- Artistic
+- Contemporary
+- Human
+- Sophisticated
+- Photography-led
 
 The website should feel closer to a **beauty editorial / artist portfolio** than a traditional salon website.
 
@@ -24,15 +24,15 @@ The work should always remain the visual protagonist.
 
 ### Avoid
 
-* Generic beauty templates
-* Pink, glitter and makeup clichés
-* Excessive gold
-* Excessive cards
-* Heavy shadows
-* Repetitive grids
-* Decorative elements without purpose
-* Overly feminine visual clichés
-* Making the brand exclusively bridal
+- Generic beauty templates
+- Pink, glitter and makeup clichés
+- Excessive gold
+- Excessive cards
+- Heavy shadows
+- Repetitive grids
+- Decorative elements without purpose
+- Overly feminine visual clichés
+- Making the brand exclusively bridal
 
 Consistency should come from the **visual language**, not from repeating the same composition.
 
@@ -61,7 +61,7 @@ Tokens are defined in:
 
 --color-border: #e2ded0;
 
---color-accent: var(--color-bmv-green);
+--color-accent: var(--color-accent);
 ```
 
 Use existing tokens instead of hardcoded colors whenever possible.
@@ -74,12 +74,12 @@ Treat it as a **signature**, not the dominant interface color.
 
 Good uses:
 
-* Small labels
-* Links
-* Active states
-* Thin lines
-* Hover details
-* Editorial accents
+- Small labels
+- Links
+- Active states
+- Thin lines
+- Hover details
+- Editorial accents
 
 Avoid large green areas that compete with photography unless a specific composition clearly benefits from it.
 
@@ -103,11 +103,11 @@ Use `--font-editorial` selectively for moments that should feel expressive or ma
 
 Examples:
 
-* Hero typography
-* Names
-* Quotes
-* Selected editorial details
-* High-impact brand moments
+- Hero typography
+- Names
+- Quotes
+- Selected editorial details
+- High-impact brand moments
 
 Do not use it automatically for every large heading.
 
@@ -117,10 +117,10 @@ Use `--font-section` for major section statements and large internal-page headin
 
 Examples:
 
-* Section titles
-* Manifesto statements
-* Large CTAs
-* Narrative headings
+- Section titles
+- Manifesto statements
+- Large CTAs
+- Narrative headings
 
 This is generally easier to read at large sizes while maintaining the editorial character of the site.
 
@@ -130,13 +130,13 @@ Use `--font-primary` for functional and long-form content.
 
 Examples:
 
-* Paragraphs
-* Navigation
-* Buttons
-* Labels
-* Prices
-* Forms
-* UI elements
+- Paragraphs
+- Navigation
+- Buttons
+- Labels
+- Prices
+- Forms
+- UI elements
 
 ### Principle
 
@@ -150,18 +150,18 @@ Photography is the primary visual material of BMV Makeup.
 
 Prioritize:
 
-* Faces
-* Makeup close-ups
-* Bruno working
-* Bruno portraits
-* Real clients
-* Beauty portraits
-* Weddings
-* Campaigns
-* Photoshoots
-* Artistic makeup
-* Audiovisual work
-* Behind-the-scenes moments
+- Faces
+- Makeup close-ups
+- Bruno working
+- Bruno portraits
+- Real clients
+- Beauty portraits
+- Weddings
+- Campaigns
+- Photoshoots
+- Artistic makeup
+- Audiovisual work
+- Behind-the-scenes moments
 
 Avoid generic lifestyle photography where makeup, artistry or Bruno's work is not meaningfully present.
 
@@ -171,10 +171,10 @@ Do not force one crop to work everywhere.
 
 Desktop and mobile may use:
 
-* Different crops
-* Different positioning
-* Different image proportions
-* Separate assets when necessary
+- Different crops
+- Different positioning
+- Different image proportions
+- Separate assets when necessary
 
 Use `object-fit: cover` intentionally and validate the subject position at each breakpoint.
 
@@ -184,14 +184,14 @@ Use `object-fit: cover` intentionally and validate the subject position at each 
 
 Prefer:
 
-* Large photography
-* Generous negative space
-* Asymmetry
-* Portrait compositions
-* Mixed image proportions
-* Strong typography
-* Editorial rhythm
-* Occasional full-width visual moments
+- Large photography
+- Generous negative space
+- Asymmetry
+- Portrait compositions
+- Mixed image proportions
+- Strong typography
+- Editorial rhythm
+- Occasional full-width visual moments
 
 Sections should feel related without looking identical.
 
@@ -241,21 +241,21 @@ Motion should reinforce the content.
 
 Current visual language may include:
 
-* Hero image transitions
-* Slow editorial marquees
-* Image reveals
-* Soft fades
-* Subtle hover interactions
-* BMV logo loader
+- Hero image transitions
+- Slow editorial marquees
+- Image reveals
+- Soft fades
+- Subtle hover interactions
+- BMV logo loader
 
 The About page establishes a useful motion pattern with two editorial marquees moving in opposite directions.
 
 Motion should generally feel:
 
-* Smooth
-* Slow
-* Intentional
-* Secondary to photography
+- Smooth
+- Slow
+- Intentional
+- Secondary to photography
 
 Avoid animation simply because an element can move.
 
@@ -264,7 +264,7 @@ Avoid animation simply because an element can move.
 Respect:
 
 ```css
-@media (prefers-reduced-motion: reduce)
+@media (prefers-reduced-motion: reduce);
 ```
 
 Continuous animations should have a non-animated fallback.
@@ -281,10 +281,10 @@ clamp(...)
 
 Use generous spacing when it strengthens:
 
-* Hierarchy
-* Photography
-* Editorial composition
-* Separation between narrative moments
+- Hierarchy
+- Photography
+- Editorial composition
+- Separation between narrative moments
 
 Avoid arbitrary spacing when an established pattern already works.
 
@@ -312,11 +312,11 @@ Avoid shadows by default.
 
 If depth can be created through:
 
-* spacing
-* typography
-* photography
-* contrast
-* borders
+- spacing
+- typography
+- photography
+- contrast
+- borders
 
 prefer those methods.
 
@@ -334,14 +334,14 @@ Desktop
 
 Responsive design may change:
 
-* Layout
-* Image crop
-* Scale
-* Spacing
-* Alignment
-* Content order
-* Typography
-* Motion speed
+- Layout
+- Image crop
+- Scale
+- Spacing
+- Alignment
+- Content order
+- Typography
+- Motion speed
 
 Mobile should not simply be a smaller desktop.
 
@@ -355,11 +355,11 @@ Heroes should establish a strong visual hierarchy quickly.
 
 Prefer:
 
-* Photography-led compositions
-* Limited copy
-* Strong typography
-* Minimal controls
-* Intentional image cropping
+- Photography-led compositions
+- Limited copy
+- Strong typography
+- Minimal controls
+- Intentional image cropping
 
 The Home Hero uses rotating photography and should remain the strongest initial visual moment of the site.
 
@@ -386,10 +386,10 @@ They may use the accent color or a context-specific muted color.
 
 Labels can include:
 
-* Section names
-* Numbers
-* Categories
-* Small contextual information
+- Section names
+- Numbers
+- Categories
+- Small contextual information
 
 Avoid overusing them on every element.
 
@@ -401,10 +401,10 @@ CTAs should feel integrated into the editorial design rather than like generic a
 
 Possible treatments:
 
-* Underlined text links
-* Minimal buttons
-* Arrow links
-* Small uppercase labels
+- Underlined text links
+- Minimal buttons
+- Arrow links
+- Small uppercase labels
 
 Use stronger button treatments only when the action requires greater prominence.
 
@@ -418,11 +418,11 @@ Hover states should remain subtle.
 
 Use the BMV identity intentionally in:
 
-* Header
-* Loader
-* Footer
-* Favicon
-* Selected brand moments
+- Header
+- Loader
+- Footer
+- Favicon
+- Selected brand moments
 
 Avoid repeating the logo simply to fill space.
 
@@ -430,12 +430,12 @@ Avoid repeating the logo simply to fill space.
 
 Barcelona may appear through:
 
-* Light
-* Architecture
-* Interiors
-* Balconies
-* Streets
-* Environmental details
+- Light
+- Architecture
+- Interiors
+- Balconies
+- Streets
+- Environmental details
 
 Avoid tourism imagery.
 
@@ -443,17 +443,17 @@ Avoid tourism imagery.
 
 Bruno's Brazilian background should appear naturally through:
 
-* Story
-* Personality
-* Voice
-* Photography
-* Approach
+- Story
+- Personality
+- Voice
+- Photography
+- Approach
 
 Avoid:
 
-* Flags as decoration
-* Green-and-yellow combinations
-* Brazilian visual clichés
+- Flags as decoration
+- Green-and-yellow combinations
+- Brazilian visual clichés
 
 Identity should feel human, not themed.
 
@@ -463,19 +463,19 @@ Identity should feel human, not themed.
 
 Prefer interfaces that feel:
 
-* Quiet
-* Intentional
-* Spacious
-* Easy to navigate
+- Quiet
+- Intentional
+- Spacious
+- Easy to navigate
 
 Avoid unnecessary:
 
-* Cards
-* Containers
-* Badges
-* Pills
-* Shadows
-* Icons
+- Cards
+- Containers
+- Badges
+- Pills
+- Shadows
+- Icons
 
 Not every piece of information needs a visual container.
 
@@ -514,10 +514,10 @@ ComponentName/
 
 A component should generally own:
 
-* Its layout
-* Its responsive behavior
-* Its local visual states
-* Its local animation
+- Its layout
+- Its responsive behavior
+- Its local visual states
+- Its local animation
 
 Global tokens belong in the shared style system.
 
@@ -529,12 +529,12 @@ Do not move component-specific styling into global CSS simply to reuse a few dec
 
 Reuse:
 
-* Tokens
-* Typography roles
-* Spacing logic
-* Motion language
-* Interaction patterns
-* Responsive principles
+- Tokens
+- Typography roles
+- Spacing logic
+- Motion language
+- Interaction patterns
+- Responsive principles
 
 Do **not** force reuse of an entire layout simply because another section already exists.
 
@@ -550,26 +550,26 @@ Before considering a major section complete, check:
 
 ### Desktop
 
-* Hierarchy
-* Photography
-* Negative space
-* Alignment
-* Visual rhythm
+- Hierarchy
+- Photography
+- Negative space
+- Alignment
+- Visual rhythm
 
 ### Tablet
 
-* Composition still makes sense
-* Typography does not dominate unexpectedly
-* Image crops remain intentional
+- Composition still makes sense
+- Typography does not dominate unexpectedly
+- Image crops remain intentional
 
 ### Mobile
 
-* Content order feels natural
-* Text remains readable
-* Images retain their subject
-* No accidental horizontal overflow
-* Motion still works appropriately
-* Touch targets remain usable
+- Content order feels natural
+- Text remains readable
+- Images retain their subject
+- No accidental horizontal overflow
+- Motion still works appropriately
+- Touch targets remain usable
 
 ---
 

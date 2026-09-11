@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   padding: clamp(8rem, 13vw, 13rem) var(--page-padding);
-  background: var(--color-bmv-green);
+  background: var(--color-accent);
   color: var(--color-background);
   text-align: center;
 }

@@ -48,7 +48,7 @@
   bottom: 0;
   left: 0;
   height: 1px;
-  background: var(--color-bmv-green);
+  background: var(--color-accent);
   content: "";
   transform: scaleX(0);
   transform-origin: left;
@@ -57,7 +57,7 @@
 
 .filter:hover,
 .active {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .active::after {

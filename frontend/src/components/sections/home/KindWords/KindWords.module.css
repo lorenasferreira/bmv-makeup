@@ -12,7 +12,7 @@
 
 .eyebrow {
   padding-top: 0.9rem;
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.25em;
@@ -29,7 +29,7 @@
 }
 
 .intro h2 em {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-weight: 400;
 }
 
@@ -50,7 +50,7 @@
 
 .quoteMark {
   height: 90px;
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-family: var(--font-editorial);
   font-size: clamp(7rem, 11vw, 11rem);
   font-weight: 400;
@@ -99,7 +99,7 @@
 
 .stars {
   margin-top: 0.3rem;
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-size: 0.62rem;
   letter-spacing: 0.12em;
 }
@@ -152,7 +152,7 @@
 
 .indicatorActive::after {
   height: 2px;
-  background: var(--color-bmv-green);
+  background: var(--color-accent);
 }
 
 .controls {
@@ -192,8 +192,8 @@
 }
 
 .controls button:hover {
-  color: var(--color-bmv-green);
-  border-color: var(--color-bmv-green);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
   transform: translateY(-2px);
 }
 
@@ -241,8 +241,8 @@
 }
 
 .externalLinks a:hover {
-  color: var(--color-bmv-green);
-  border-color: var(--color-bmv-green);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 @keyframes reviewReveal {

@@ -75,7 +75,7 @@
 }
 
 .navigation a:hover {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 /* Bottom */
@@ -135,7 +135,7 @@
 }
 
 .socials a:hover {
-  background: var(--color-bmv-green);
+  background: var(--color-accent);
   color: var(--color-text-inverted);
 
   transform: translateY(-2px);

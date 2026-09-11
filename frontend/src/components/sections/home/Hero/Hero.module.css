@@ -16,53 +16,107 @@
 }
 
 .slide {
-  display: grid;
-  place-items: center;
-
   opacity: 0;
+
   background: var(--color-primary-dark);
 
   transition: opacity var(--transition-hero);
 }
 
-.slide:nth-child(2) {
-  background: #494039;
+.slide::after {
+  position: absolute;
+  inset: 0;
+
+  content: "";
+
+  pointer-events: none;
 }
 
-.slide:nth-child(3) {
-  background: #75685e;
-}
+.slide img {
+  width: 100%;
+  height: 100%;
 
-.slide:nth-child(4) {
-  background: #363a34;
-}
+  object-fit: cover;
 
-.slide:nth-child(5) {
-  background: #584c46;
-}
+  transform: scale(1.02);
 
-.slide:nth-child(6) {
-  background: #272c27;
+  transition: transform 6s ease;
 }
 
 .slide.active {
   opacity: 1;
 }
 
-.slide span {
-  color: rgb(255 255 255 / 18%);
+.slide.active img {
+  transform: scale(1.08);
+}
 
-  font-family: var(--font-editorial);
-  font-size: clamp(2rem, 6vw, 6rem);
-  font-style: italic;
+.warm::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(38 27 22 / 58%) 0%,
+      rgb(73 55 46 / 22%) 55%,
+      rgb(0 0 0 / 10%) 100%
+    );
+}
+
+.rose::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(87 42 41 / 58%) 0%,
+      rgb(173 96 72 / 24%) 55%,
+      rgb(0 0 0 / 8%) 100%
+    );
+}
+
+.sand::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(65 51 42 / 56%) 0%,
+      rgb(141 129 114 / 18%) 55%,
+      rgb(0 0 0 / 8%) 100%
+    );
+}
+
+.olive::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(29 39 30 / 60%) 0%,
+      rgb(54 76 45 / 20%) 55%,
+      rgb(0 0 0 / 8%) 100%
+    );
+}
+
+.terracotta::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(82 42 31 / 60%) 0%,
+      rgb(173 96 72 / 28%) 55%,
+      rgb(0 0 0 / 8%) 100%
+    );
+}
+
+.deep::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(20 22 21 / 66%) 0%,
+      rgb(39 44 39 / 28%) 55%,
+      rgb(0 0 0 / 10%) 100%
+    );
 }
 
 .overlay {
   background:
     linear-gradient(
       90deg,
-      rgb(0 0 0 / 38%) 0%,
-      rgb(0 0 0 / 8%) 55%,
+      rgb(0 0 0 / 28%) 0%,
+      rgb(0 0 0 / 5%) 55%,
       transparent 100%
     );
 }
@@ -121,6 +175,7 @@
 
 .cta:hover {
   gap: 1.5rem;
+
   border-color: currentColor;
 }
 
@@ -141,12 +196,53 @@
 .counterLine {
   width: 2.5rem;
   height: 1px;
+
   background: rgb(255 255 255 / 55%);
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding-top: 7rem;
+  }
+
+  .content h1 {
+    font-size: clamp(4.5rem, 12vw, 7rem);
+  }
+
+  .counter {
+    bottom: 2rem;
+  }
+
+  .warm::after,
+  .rose::after,
+  .sand::after,
+  .olive::after,
+  .terracotta::after,
+  .deep::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(0 0 0 / 8%) 10%,
+        rgb(0 0 0 / 16%) 50%,
+        rgb(0 0 0 / 58%) 100%
+      );
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(0 0 0 / 4%) 15%,
+        transparent 45%,
+        rgb(0 0 0 / 22%) 100%
+      );
+  }
 }
 
 @media (max-width: 768px) {
   .content {
     justify-content: flex-end;
+
     padding-top: 7rem;
     padding-bottom: 6rem;
   }
@@ -168,34 +264,6 @@
     right: var(--page-padding);
     bottom: 2rem;
   }
-
-  .slide span {
-    padding: var(--page-padding);
-    font-size: clamp(2rem, 12vw, 4rem);
-    text-align: center;
-  }
-
-  .overlay {
-    background:
-      linear-gradient(
-        180deg,
-        rgb(0 0 0 / 8%) 20%,
-        rgb(0 0 0 / 55%) 100%
-      );
-  }
-}
-@media (max-width: 900px) {
-  .content {
-    padding-top: 7rem;
-  }
-
-  .content h1 {
-    font-size: clamp(4.5rem, 12vw, 7rem);
-  }
-
-  .counter {
-    bottom: 2rem;
-  }
 }
 
 @media (max-width: 640px) {
@@ -208,6 +276,7 @@
 
   .eyebrow {
     margin-bottom: 1rem;
+
     font-size: 0.62rem;
   }
 
@@ -220,6 +289,7 @@
 
   .cta {
     margin-top: 2.25rem;
+
     font-size: 0.65rem;
   }
 
@@ -232,19 +302,29 @@
     width: 1.75rem;
   }
 
-  .slide span {
-    padding: var(--page-padding);
-
-    font-size: clamp(2rem, 12vw, 4rem);
-    text-align: center;
+  .slide img {
+    object-position: center;
   }
 
   .overlay {
-    background: linear-gradient(
-      180deg,
-      rgb(0 0 0 / 5%) 20%,
-      rgb(0 0 0 / 15%) 50%,
-      rgb(0 0 0 / 65%) 100%
-    );
+    background:
+      linear-gradient(
+        180deg,
+        rgb(0 0 0 / 2%) 10%,
+        transparent 40%,
+        rgb(0 0 0 / 32%) 70%,
+        rgb(0 0 0 / 62%) 100%
+      );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .slide img {
+    transition: none;
+  }
+
+  .slide.active img {
+    transform: none;
   }
 }

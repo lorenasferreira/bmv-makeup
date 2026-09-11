@@ -7,7 +7,7 @@
 .eyebrow {
   display: block;
   margin-bottom: clamp(3rem, 6vw, 6rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -27,7 +27,7 @@
 .section h2 em {
   display: block;
   margin-left: clamp(2rem, 9vw, 10rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-weight: 400;
 }
 

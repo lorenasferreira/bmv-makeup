@@ -4,8 +4,7 @@
   max-width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding: clamp(4rem, 7vw, 7rem) var(--page-padding)
-    clamp(3rem, 5vw, 5rem);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-padding) clamp(3rem, 5vw, 5rem);
   background: var(--color-background);
   overflow: hidden;
 }
@@ -28,7 +27,7 @@
 }
 
 .eyebrow {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .meta {
@@ -55,7 +54,7 @@
 .heading h1 span {
   display: block;
   margin-left: clamp(2rem, 10vw, 12rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .bottom p {
@@ -72,7 +71,7 @@
 }
 
 @media (max-width: 700px) {
- .hero {
+  .hero {
     min-height: 82vh;
     padding-top: 4rem;
     padding-bottom: 3rem;

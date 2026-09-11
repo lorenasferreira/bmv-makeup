@@ -1,7 +1,6 @@
 .hero {
   min-height: calc(100vh - 90px);
-  padding: clamp(4rem, 7vw, 7rem) var(--page-padding)
-    clamp(5rem, 8vw, 8rem);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-padding) clamp(5rem, 8vw, 8rem);
   background: var(--color-background);
 }
 
@@ -20,7 +19,7 @@
 }
 
 .eyebrow {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .meta {
@@ -45,7 +44,7 @@
 .title h1 span {
   display: block;
   margin-left: clamp(2rem, 10vw, 12rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .bottom {

@@ -22,7 +22,7 @@
 }
 
 .label span:first-child {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .status {
@@ -50,7 +50,7 @@
 }
 
 .content h2 em {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-weight: 400;
 }
 

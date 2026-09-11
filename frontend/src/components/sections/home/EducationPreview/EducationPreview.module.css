@@ -8,7 +8,7 @@
 
   overflow: hidden;
 
-  background: var(--color-bmv-green);
+  background: var(--color-accent);
   color: var(--color-text-inverted);
 }
 
@@ -161,15 +161,15 @@
   }
 
   .content h2 {
-  font-size: clamp(2.8rem, 12vw, 4.2rem);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-}
+    font-size: clamp(2.8rem, 12vw, 4.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
 
-.content h2 em {
-  display: inline-block;
-  max-width: 100%;
-}
+  .content h2 em {
+    display: inline-block;
+    max-width: 100%;
+  }
 
   .description {
     margin-top: 2rem;

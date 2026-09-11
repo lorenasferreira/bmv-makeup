@@ -19,7 +19,7 @@
 .eyebrow {
   display: block;
   margin-bottom: clamp(2rem, 4vw, 4rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -39,7 +39,7 @@
 .heading h1 span {
   display: block;
   margin-left: clamp(2rem, 6vw, 7rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .visual {

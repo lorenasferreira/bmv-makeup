@@ -23,7 +23,7 @@
 }
 
 .sectionLabel span:first-child {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .header h2 {
@@ -36,7 +36,7 @@
 }
 
 .header h2 em {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-weight: 400;
 }
 
@@ -88,7 +88,7 @@
 .courseName {
   display: block;
   margin-bottom: 1.2rem;
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.15em;

@@ -35,7 +35,7 @@
 }
 
 .sectionLabel span:first-child {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .content h2 {

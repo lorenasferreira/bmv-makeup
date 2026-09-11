@@ -52,7 +52,7 @@
 }
 
 .eyebrow {
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .number {
@@ -71,7 +71,7 @@
 .heading h1 span {
   display: block;
   margin-left: clamp(2rem, 5vw, 6rem);
-  color: var(--color-bmv-green);
+  color: var(--color-accent);
 }
 
 .heading p {
