@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./WeddingsReviews.module.css";
 
 const reviews = [
@@ -5,33 +7,35 @@ const reviews = [
     name: "Clare",
     source: "Bodas.net",
     image: "/assets/images/reviews/clare.webp",
-    title: "Confiança desde a prova até o casamento.",
-    text: "Clare destacou todo o acompanhamento durante o processo, da preparação do look à execução no dia do casamento, além da segurança de se sentir compreendida em cada escolha.",
+    title: "weddings.reviews.items.clare.title",
+    text: "weddings.reviews.items.clare.description",
   },
   {
     name: "Marina",
     source: "Bodas.net",
     image: "/assets/images/reviews/marina.webp",
-    title: "Uma experiência construída com calma.",
-    text: "Marina ressaltou o cuidado durante todo o processo bridal, a atenção aos detalhes e a tranquilidade de chegar ao casamento sabendo que o resultado já havia sido construído em conjunto.",
+    title: "weddings.reviews.items.marina.title",
+    text: "weddings.reviews.items.marina.description",
   },
 ];
 
 function WeddingsReviews() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.header}>
         <div className={styles.label}>
           <span>03</span>
-          <span>Kind Words</span>
+          <span>{t("weddings.reviews.eyebrow")}</span>
         </div>
 
         <h2>
-          Quando confiança
+          {t("weddings.reviews.title")}
           <br />
-          também faz parte
+          {t("weddings.reviews.titleSecond")}
           <br />
-          <em>da beleza.</em>
+          <em>{t("weddings.reviews.titleAccent")}</em>
         </h2>
       </div>
 
@@ -50,8 +54,8 @@ function WeddingsReviews() {
             </div>
 
             <div className={styles.reviewContent}>
-              <h3>{review.title}</h3>
-              <p>{review.text}</p>
+              <h3>{t(review.title)}</h3>
+              <p>{t(review.text)}</p>
             </div>
           </article>
         ))}
@@ -63,7 +67,7 @@ function WeddingsReviews() {
         rel="noreferrer"
         className={styles.external}
       >
-        Ver avaliações no Bodas.net
+        {t("weddings.reviews.cta")}
         <span aria-hidden="true">↗</span>
       </a>
     </section>

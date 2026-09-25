@@ -283,7 +283,7 @@
   }
 
   .intro h2 {
-    font-size: clamp(3.5rem, 15vw, 5rem);
+    font-size: clamp(3rem, 15vw, 5rem);
   }
 
   .review {

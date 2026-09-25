@@ -10,10 +10,13 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Education from "./pages/Education/Education";
 import Contact from "./pages/Contact/Contact";
 import Weddings from "./pages/Weddings/Weddings";
+import NotFound from "./pages/NotFound/NotFound";
+import RouteScroll from "./components/common/RouteScroll/RouteScroll";
 
 function App() {
   return (
     <BrowserRouter>
+      <RouteScroll />
       <Header />
 
       <Routes>
@@ -24,6 +27,7 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/weddings" element={<Weddings />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

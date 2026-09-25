@@ -7,55 +7,97 @@ import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 
 import styles from "./MobileMenu.module.css";
 
-function MobileMenu({ isOpen, onClose }) {
+function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
   const { t } = useTranslation();
 
   const closeButtonRef = useRef(null);
+  const dialogRef = useRef(null);
 
   useEffect(() => {
     if (!isOpen) {
-      document.body.style.overflow = "";
       return;
     }
 
+    // Keep this breakpoint aligned with Header and LanguageSwitcher CSS.
+    const mobileLayout = window.matchMedia("(max-width: 1000px)");
+    if (!mobileLayout.matches) {
+      onClose();
+      return;
+    }
+
+    const dialog = dialogRef.current;
+    const trigger = triggerRef.current;
+    const desktopFocusTarget = desktopFocusRef.current;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousRootOverflow = document.documentElement.style.overflow;
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
-    window.requestAnimationFrame(() => {
-      closeButtonRef.current?.focus();
-    });
+    dialog.showModal();
+    closeButtonRef.current?.focus({ preventScroll: true });
 
-    const handleEscape = (event) => {
-      if (event.key === "Escape") {
+    const handleLayoutChange = () => {
+      if (!mobileLayout.matches) {
         onClose();
       }
     };
 
-    document.addEventListener("keydown", handleEscape);
+    mobileLayout.addEventListener("change", handleLayoutChange);
+    window.addEventListener("popstate", onClose);
 
     return () => {
-      document.body.style.overflow = "";
-      document.removeEventListener("keydown", handleEscape);
+      mobileLayout.removeEventListener("change", handleLayoutChange);
+      window.removeEventListener("popstate", onClose);
+      dialog.close();
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousRootOverflow;
+
+      const target = mobileLayout.matches ? trigger : desktopFocusTarget;
+      if (target?.isConnected) {
+        target.focus({ preventScroll: true });
+      }
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, triggerRef, desktopFocusRef]);
 
   return (
-    <div
+    <dialog
+      ref={dialogRef}
+      id="mobile-navigation"
       className={`${styles.layer} ${isOpen ? styles.open : ""}`}
-      aria-hidden={!isOpen}
+      aria-label={t("accessibility.mobileNavigation")}
+      onKeyDown={(event) => {
+        if (event.key !== "Tab") return;
+
+        const controls = event.currentTarget.querySelectorAll(
+          'aside a[href], aside button:not([disabled])',
+        );
+        const first = controls[0];
+        const last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last?.focus({ preventScroll: true });
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first?.focus({ preventScroll: true });
+        }
+      }}
+      onCancel={(event) => {
+        event.preventDefault();
+        onClose();
+      }}
+      onClose={() => {
+        if (!dialogRef.current?.open) onClose();
+      }}
     >
       <button
         type="button"
         className={styles.backdrop}
-        aria-label="Close navigation menu"
-        tabIndex={isOpen ? 0 : -1}
+        aria-label={t("accessibility.closeMenu")}
+        tabIndex={-1}
         onClick={onClose}
       />
 
-      <aside
-        id="mobile-navigation"
-        className={styles.menu}
-        aria-label="Mobile navigation"
-      >
+      <aside className={styles.menu}>
         <div className={styles.header}>
           <span className={styles.brand}>BMV</span>
 
@@ -63,7 +105,7 @@ function MobileMenu({ isOpen, onClose }) {
             ref={closeButtonRef}
             type="button"
             className={styles.closeButton}
-            aria-label="Close navigation menu"
+            aria-label={t("accessibility.closeMenu")}
             onClick={onClose}
           >
             <FiX aria-hidden="true" />
@@ -118,7 +160,7 @@ function MobileMenu({ isOpen, onClose }) {
           <LanguageSwitcher variant="mobile" />
         </div>
       </aside>
-    </div>
+    </dialog>
   );
 }
 

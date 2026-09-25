@@ -1,50 +1,53 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./WeddingsProcess.module.css";
 
 const steps = [
   {
     number: "01",
-    title: "The Vision",
+    title: "weddings.process.steps.vision.title",
     image: "/assets/images/weddings/vision.webp",
-    text: "Referências, estilo, cerimônia e a forma como você quer se sentir. Antes de decidir a maquiagem, entendemos a mulher e o momento.",
+    text: "weddings.process.steps.vision.description",
   },
   {
     number: "02",
-    title: "The Trial",
+    title: "weddings.process.steps.trial.title",
     image: "/assets/images/weddings/trial.webp",
-    text: "Um espaço para experimentar, ajustar e construir o look com calma até que cada escolha faça sentido para você.",
+    text: "weddings.process.steps.trial.description",
   },
   {
     number: "03",
-    title: "The Wedding Day",
+    title: "weddings.process.steps.weddingDay.title",
     image: "/assets/images/weddings/wedding-day.webp",
-    text: "No grande dia, tudo o que foi pensado anteriormente ganha forma com atenção ao tempo, aos detalhes e à durabilidade.",
+    text: "weddings.process.steps.weddingDay.description",
   },
   {
     number: "04",
-    title: "The Celebration",
+    title: "weddings.process.steps.celebration.title",
     image: "/assets/images/weddings/celebration.webp",
-    text: "A maquiagem acompanha você entre abraços, fotografias, lágrimas, dança e tudo o que vier depois.",
+    text: "weddings.process.steps.celebration.description",
   },
 ];
 
 function WeddingsProcess() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.header}>
         <div className={styles.label}>
           <span>02</span>
-          <span>A experiência</span>
+          <span>{t("weddings.process.eyebrow")}</span>
         </div>
 
         <h2>
-          From Vision
+          {t("weddings.process.title")}
           <br />
-          <em>to Celebration.</em>
+          <em>{t("weddings.process.titleAccent")}</em>
         </h2>
 
         <p>
-          A construção do look acontece em etapas para que, quando o dia chegar,
-          você não precise pensar na maquiagem. Só viver.
+          {t("weddings.process.description")}
         </p>
       </div>
 
@@ -52,14 +55,14 @@ function WeddingsProcess() {
         {steps.map((step) => (
           <article className={styles.card} key={step.number}>
             <div className={styles.imageWrapper}>
-              <img src={step.image} alt={step.title} />
+              <img src={step.image} alt={t(step.title)} />
 
               <span className={styles.number}>{step.number}</span>
             </div>
 
             <div className={styles.cardContent}>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
+              <h3>{t(step.title)}</h3>
+              <p>{t(step.text)}</p>
             </div>
           </article>
         ))}

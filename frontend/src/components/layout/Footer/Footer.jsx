@@ -11,7 +11,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.main}>
         <div className={styles.brand}>
-          <a href="/" className={styles.logo} aria-label="BMV Makeup - Home">
+          <a href="/" className={styles.logo} aria-label={t("accessibility.home")}>
             BMV
             <span>Makeup</span>
           </a>
@@ -19,7 +19,7 @@ function Footer() {
           <p>{t("footer.tagline")}</p>
         </div>
 
-        <nav className={styles.navigation} aria-label="Footer navigation">
+        <nav className={styles.navigation} aria-label={t("accessibility.footerNavigation")}>
           <a href="/about">{t("footer.artist")}</a>
           <a href="/services">{t("footer.services")}</a>
           <a href="/portfolio">{t("footer.portfolio")}</a>

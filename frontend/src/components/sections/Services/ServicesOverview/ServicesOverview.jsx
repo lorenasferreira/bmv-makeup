@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import styles from "./ServicesOverview.module.css";
@@ -5,62 +6,57 @@ import styles from "./ServicesOverview.module.css";
 const services = [
   {
     number: "01",
-    title: "Weddings",
-    description:
-      "Beleza pensada para acompanhar um dos dias mais importantes da sua história, da preparação ao último detalhe.",
+    title: "services.overview.items.weddings.title",
+    description: "services.overview.items.weddings.description",
     image: "/assets/images/services/weddings.webp",
     link: "/services/weddings",
     featured: true,
   },
   {
     number: "02",
-    title: "Beauty & Social",
-    description:
-      "Maquiagem para eventos, celebrações e momentos em que você quer se sentir especialmente você.",
+    title: "services.overview.items.social.title",
+    description: "services.overview.items.social.description",
     image: "/assets/images/services/beauty-social.webp",
   },
   {
     number: "03",
-    title: "Campaigns",
-    description:
-      "Beleza construída em diálogo com marcas, conceitos, equipes criativas e narrativas visuais.",
+    title: "services.overview.items.campaigns.title",
+    description: "services.overview.items.campaigns.description",
     image: "/assets/images/services/campaigns.webp",
   },
   {
     number: "04",
-    title: "Photoshoots",
-    description:
-      "Maquiagem pensada para a câmera, respeitando luz, direção, linguagem e intenção de cada produção.",
+    title: "services.overview.items.photoshoots.title",
+    description: "services.overview.items.photoshoots.description",
     image: "/assets/images/services/photoshoots.webp",
   },
   {
     number: "05",
-    title: "Artistic",
-    description:
-      "Espaço para experimentar cor, textura, forma e possibilidades além da beleza convencional.",
+    title: "services.overview.items.artistic.title",
+    description: "services.overview.items.artistic.description",
     image: "/assets/images/services/artistic.webp",
   },
   {
     number: "06",
-    title: "Audiovisual",
-    description:
-      "Beleza e caracterização adaptadas às necessidades de produções audiovisuais e diferentes formatos de imagem.",
+    title: "services.overview.items.audiovisual.title",
+    description: "services.overview.items.audiovisual.description",
     image: "/assets/images/services/audiovisual.webp",
   },
 ];
 
 function ServicesOverview() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.sectionHeader}>
         <div className={styles.sectionLabel}>
           <span>01</span>
-          <span>O trabalho</span>
+          <span>{t("services.overview.eyebrow")}</span>
         </div>
 
         <p>
-          Diferentes contextos, diferentes linguagens. A técnica se adapta à
-          pessoa, ao projeto e ao resultado que queremos construir.
+          {t("services.overview.description")}
         </p>
       </div>
 
@@ -72,7 +68,7 @@ function ServicesOverview() {
                 <span className={styles.number}>{service.number}</span>
 
                 {service.featured && (
-                  <span className={styles.featured}>Em destaque</span>
+                  <span className={styles.featured}>{t("services.overview.featured")}</span>
                 )}
               </div>
 
@@ -81,12 +77,12 @@ function ServicesOverview() {
               </div>
 
               <div className={styles.serviceContent}>
-                <h2>{service.title}</h2>
-                <p>{service.description}</p>
+                <h2>{t(service.title)}</h2>
+                <p>{t(service.description)}</p>
 
                 {service.link && (
                   <span className={styles.explore}>
-                    Explorar Weddings <span aria-hidden="true">→</span>
+                    {t("services.overview.weddingsLink")}<span aria-hidden="true">→</span>
                   </span>
                 )}
               </div>

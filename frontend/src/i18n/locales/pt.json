@@ -7,15 +7,21 @@
     "education": "Educação",
     "book": "Agendar agora"
   },
-
   "home": {
     "hero": {
       "eyebrow": "BMV Makeup",
       "title": "A arte",
       "titleAccent": "da beleza.",
-      "cta": "Conheça o trabalho"
+      "cta": "Conheça o trabalho",
+      "slides": {
+        "working": "Bruno trabalhando",
+        "portrait": "Retrato de beleza",
+        "bridal": "Noivas",
+        "editorial": "Campanha / Editorial",
+        "artistic": "Maquiagem artística",
+        "audiovisual": "Audiovisual / Social"
+      }
     },
-
     "artist": {
       "eyebrow": "Conheça o artista",
       "title": "Beleza é",
@@ -24,59 +30,70 @@
       "titleSecondHighlight": "arte.",
       "paragraph1": "Maquiador brasileiro baseado em Barcelona, Bruno cria experiências de beleza pensadas para cada rosto, personalidade e momento.",
       "paragraph2": "Da beleza atemporal às criações mais ousadas, cada trabalho parte da mesma ideia: valorizar a identidade, nunca escondê-la.",
-      "cta": "Conheça Bruno"
+      "cta": "Conheça Bruno",
+      "imageLabel": "Retrato de Bruno"
     },
-
     "work": {
       "eyebrow": "Explore o trabalho",
       "title": "Um artista.",
       "titleAccent": "Muitas expressões.",
       "cta": "Conheça todos os serviços",
-
       "items": {
         "weddings": {
           "title": "Casamentos",
-          "description": "Para momentos que ficam para sempre."
+          "description": "Para momentos que ficam para sempre.",
+          "imageAlt": "Maquiagem de noiva"
         },
         "campaigns": {
           "title": "Campanhas",
-          "description": "Beleza criada para marcas e histórias."
+          "description": "Beleza criada para marcas e histórias.",
+          "imageAlt": "Maquiagem para campanha"
         },
         "social": {
           "title": "Social",
-          "description": "Beleza elevada para os seus momentos."
+          "description": "Beleza elevada para os seus momentos.",
+          "imageAlt": "Maquiagem para evento social"
         },
         "photoshoots": {
           "title": "Ensaios",
-          "description": "Maquiagem pensada para as lentes."
+          "description": "Maquiagem pensada para as lentes.",
+          "imageAlt": "Maquiagem para ensaio fotográfico"
         },
         "artistic": {
           "title": "Artístico",
-          "description": "Sem regras. Apenas criação."
+          "description": "Sem regras. Apenas criação.",
+          "imageAlt": "Maquiagem artística"
         },
         "audiovisual": {
           "title": "Audiovisual",
-          "description": "Beleza pensada para as câmeras."
+          "description": "Beleza pensada para as câmeras.",
+          "imageAlt": "Maquiagem para produção audiovisual"
         }
       }
     },
-
     "selectedWork": {
       "eyebrow": "Trabalhos selecionados",
       "title": "Rostos se tornam",
       "titleAccent": "telas.",
       "description": "Uma seleção de trabalhos de beleza, editorial e criação artística.",
-      "cta": "Ver portfólio"
+      "cta": "Ver portfólio",
+      "items": {
+        "portrait": "Retrato de beleza",
+        "editorial": "Editorial",
+        "detail": "Detalhe de beleza",
+        "campaign": "Campanha",
+        "artistic": "Artístico"
+      }
     },
-
     "weddings": {
       "eyebrow": "Casamentos",
       "title": "Da Visão ",
       "titleAccent": "à celebração.",
       "description": "Cada detalhe importa muito antes do resultado final. Uma experiência bridal criada em torno da pessoa, do momento e de tudo o que faz parte dele.",
-      "cta": "Descubra a experiência bridal"
+      "cta": "Descubra a experiência bridal",
+      "mainImageLabel": "Retrato de noiva",
+      "secondaryImageLabel": "Bruno trabalhando"
     },
-
     "behindTheBrush": {
       "eyebrow": "Por trás dos pincéis",
       "title": "Muito além",
@@ -85,9 +102,13 @@
       "paragraph2": "Por trás de cada resultado existe um processo construído em torno de quem está na cadeira.",
       "statement1": "Arte.",
       "statement2": "Conexão.",
-      "statement3": "Experiência."
+      "statement3": "Experiência.",
+      "moments": {
+        "preparation": "Preparação da pele",
+        "backstage": "Bastidores",
+        "client": "Momento com a cliente"
+      }
     },
-
     "reviews": {
       "eyebrow": "Palavras de quem viveu",
       "title": "A beleza se vê.",
@@ -95,9 +116,20 @@
       "footerLine1": "Experiências reais.",
       "footerLine2": "Pessoas reais.",
       "google": "Avaliações no Google",
-      "bodas": "Bodas.net"
+      "bodas": "Bodas.net",
+      "items": {
+        "natalia": "Bruno busca entender você e aconselhar a melhor opção, sempre se adaptando ao seu estilo e à sua personalidade. É próximo, alegre e um verdadeiro artista. Não me canso de recomendá-lo.",
+        "lorena": "Como mulher negra, uma das minhas maiores preocupações era encontrar um profissional que realmente soubesse trabalhar com o meu tom de pele. Bruno acertou perfeitamente o tom, valorizou minha pele sem alterar sua cor e criou uma maquiagem linda, pensada para mim. Além de extremamente atencioso, é um profissional que sabe trabalhar com diferentes tons e tipos de pele.",
+        "gabriela": "Para me casar na Sagrada Família, escolhi Bruno para a minha maquiagem. Ele conseguiu entender meu sonho com muito profissionalismo e carinho, fazendo tudo com qualidade e utilizando sempre os melhores produtos.",
+        "maria": "Mesmo sendo muito indecisa, Bruno e eu nos entendemos muito bem e encontramos a maquiagem com a qual me senti confortável e linda para o meu casamento. Durante todo o processo ele foi muito gentil. Sem dúvida, recomendo.",
+        "aline": "Bruno foi educado, gentil e me fez confiar tranquilamente em seu trabalho. Foi um sonho realizado e ele fez parte disso. Sempre vou me lembrar daquele dia e, claro, da sensibilidade que teve comigo.",
+        "lolys": "Não poderia ter escolhido um maquiador melhor para o dia do meu casamento. Ele captou exatamente o que eu queria e me fez sentir linda e super confortável durante todo o dia. Um grande profissional, próximo e atencioso."
+      },
+      "previous": "Avaliação anterior",
+      "next": "Próxima avaliação",
+      "rating": "{{rating}} de 5 estrelas",
+      "goTo": "Ver avaliação {{number}}"
     },
-
     "education": {
       "eyebrow": "Educação",
       "title": "Beleza,",
@@ -106,18 +138,18 @@
       "selfMakeup": "Automaquiagem",
       "professional": "Formação Profissional",
       "workshops": "Workshops",
-      "cta": "Conheça os cursos"
+      "cta": "Conheça os cursos",
+      "imageLabel": "Educação em beleza"
     },
-
     "instagram": {
       "eyebrow": "Instagram",
-      "handle": "@bmvmakeup",
       "title": "Um pouco mais",
       "titleAccent": "dos bastidores.",
       "description": "Trabalhos recentes, detalhes e momentos do universo criativo de Bruno.",
-      "cta": "Seguir no Instagram"
+      "cta": "Seguir no Instagram",
+      "viewPost": "Ver no Instagram",
+      "postLabel": "Publicação do Instagram"
     },
-
     "cta": {
       "eyebrow": "Vamos criar",
       "title": "Tem algo",
@@ -127,20 +159,386 @@
       "secondary": "Conheça os serviços"
     }
   },
-
   "footer": {
     "tagline": "Maquiagem artística em Barcelona.",
-    "navigation": "Navegação",
-    "contact": "Contato",
-    "social": "Social",
     "artist": "O Artista",
     "services": "Serviços",
     "portfolio": "Portfólio",
     "education": "Educação",
-    "reviews": "Avaliações",
-    "book": "Entre em contato",
-    "instagram": "Instagram",
     "copyright": "BMV Makeup. Todos os direitos reservados.",
     "credit": "Design e desenvolvimento por Lorena Ferreira"
+  },
+  "accessibility": {
+    "languageSelector": "Seletor de idioma",
+    "home": "BMV Makeup - Início",
+    "footerNavigation": "Navegação do rodapé",
+    "mainNavigation": "Navegação principal",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "mobileNavigation": "Navegação móvel"
+  },
+  "about": {
+    "closing": {
+      "eyebrow": "Além do artista",
+      "title": "Técnica importa.",
+      "titleAccent": "Conexão também.",
+      "description": "O trabalho acontece nos detalhes: na preparação, na conversa, na confiança e na forma como cada pessoa se sente durante o processo.",
+      "backstageAlt": "Bruno Menezes nos bastidores",
+      "workingAlt": "Bruno Menezes trabalhando",
+      "ctaEyebrow": "Conheça o trabalho",
+      "ctaTitle": "Cada rosto conta",
+      "ctaTitleAccent": "uma história diferente.",
+      "cta": "Explorar portfólio →"
+    },
+    "hero": {
+      "eyebrow": "O artista",
+      "imageAlt": "Bruno Menezes trabalhando como maquiador",
+      "origin": "Brasileiro.",
+      "location": "Em Barcelona.",
+      "description": "Maquiagem como expressão, identidade e encontro — criada para valorizar quem está diante dele."
+    },
+    "range": {
+      "items": {
+        "weddings": "Casamentos",
+        "beauty": "Beleza",
+        "social": "Social",
+        "campaigns": "Campanhas",
+        "photoshoots": "Ensaios",
+        "artistic": "Artístico",
+        "audiovisual": "Audiovisual",
+        "editorial": "Editorial"
+      },
+      "eyebrow": "Versatilidade",
+      "title": "Um artista.",
+      "titleAccent": "Diferentes histórias.",
+      "description": "Da beleza natural ao trabalho criativo, diferentes contextos pedem diferentes linguagens."
+    },
+    "story": {
+      "manifesto": {
+        "eyebrow": "Beleza com identidade",
+        "title": "Mais do que",
+        "titleSecond": "transformar,",
+        "titleAccent": "revelar.",
+        "paragraph1": "Para Bruno, maquiagem não é sobre esconder ou transformar alguém em outra pessoa. É sobre entender quem está diante dele e criar a partir daí.",
+        "paragraph2": "Cada rosto, cada ocasião e cada projeto pedem uma abordagem diferente — sempre respeitando a personalidade, o estilo e a individualidade de cada pessoa."
+      },
+      "journey": {
+        "imageAlt": "Retrato de Bruno Menezes",
+        "eyebrow": "Do Brasil a Barcelona",
+        "title": "Uma trajetória",
+        "titleSecond": "construída através",
+        "titleAccent": "da beleza.",
+        "paragraph1": "Com mais de oito anos de experiência no universo da beleza, Bruno Menezes construiu uma trajetória marcada pela versatilidade e pela atenção aos detalhes.",
+        "paragraph2": "Hoje, em Barcelona, seu trabalho atravessa diferentes contextos — de momentos pessoais e celebrações a produções criativas, editoriais e profissionais."
+      },
+      "approach": {
+        "imageAlt": "Bruno Menezes maquiando uma cliente",
+        "eyebrow": "A abordagem",
+        "title": "Cada trabalho",
+        "titleAccent": "começa pela pessoa.",
+        "description": "Escuta, técnica e sensibilidade para criar um resultado que funcione diante do espelho, da câmera ou de uma sala cheia de pessoas — sem apagar quem está por trás da maquiagem."
+      }
+    }
+  },
+  "contact": {
+    "cta": {
+      "eyebrow": "Vamos conversar",
+      "title": "Seu próximo",
+      "titleAccent": "projeto começa aqui."
+    },
+    "hero": {
+      "eyebrow": "Contato",
+      "availability": "Disponível para projetos",
+      "title": "Vamos criar",
+      "titleAccent": "algo juntos.",
+      "description": "Casamentos, eventos, produções, projetos criativos ou educação. Conte um pouco sobre o que você está procurando e fale diretamente com Bruno."
+    },
+    "options": {
+      "eyebrow": "Fale com Bruno",
+      "title": "Direto,",
+      "titleSecond": "simples,",
+      "titleAccent": "pessoal.",
+      "description": "Sem intermediários. Você fala diretamente com Bruno para explicar o que precisa, consultar disponibilidade e alinhar os próximos passos.",
+      "primary": "Principal",
+      "social": "Social"
+    },
+    "whatsapp": {
+      "project": "Olá, Bruno! Vi seu trabalho no site da BMV Makeup e gostaria de conversar sobre um projeto.",
+      "availability": "Olá, Bruno! Vi seu trabalho no site da BMV Makeup e gostaria de saber mais sobre disponibilidade e valores."
+    }
+  },
+  "education": {
+    "cta": {
+      "eyebrow": "Próxima aula",
+      "title": "Pronta para",
+      "titleAccent": "aprender?",
+      "description": "Fale diretamente com Bruno para tirar dúvidas, consultar disponibilidade e escolher o módulo ideal para você.",
+      "link": "Falar com Bruno"
+    },
+    "courses": {
+      "items": {
+        "vip": {
+          "name": "Módulo VIP",
+          "title": "Maquiagem Essencial",
+          "description": "Uma aula personalizada para construir uma base sólida de automaquiagem e entender quais escolhas funcionam melhor para o seu rosto.",
+          "topics": {
+            "skin": "Preparação da pele",
+            "foundation": "Escolha do tom correto de base",
+            "eyeliner": "Delineado",
+            "blush": "Blush e contorno",
+            "faceShape": "Técnicas de acordo com o formato do rosto",
+            "smokyEye": "Olho esfumado com duas cores"
+          }
+        },
+        "night": {
+          "name": "Módulo Night",
+          "title": "Maquiagem Radiante",
+          "description": "Para quem quer construir uma maquiagem de maior impacto e resistência, pensada especialmente para eventos noturnos.",
+          "topics": {
+            "preparation": "Preparação para longa duração",
+            "skin": "Pele de alta resistência",
+            "cutCrease": "Técnica de cut crease",
+            "evening": "Construção de um look noturno",
+            "reference": "Reprodução de uma referência escolhida pela aluna"
+          }
+        }
+      },
+      "selfMakeup": "Automaquiagem",
+      "durationValue": "Até 4 horas",
+      "eyebrow": "Para você",
+      "title": "Automaquiagem,",
+      "titleSecond": "do essencial ao",
+      "titleAccent": "impacto.",
+      "topicsLabel": "Você vai aprender",
+      "investmentLabel": "Investimento",
+      "individualLabel": "Individual",
+      "duoLabel": "Dupla",
+      "durationLabel": "Duração",
+      "note": "As aulas incluem uma pausa de 15 minutos para café."
+    },
+    "hero": {
+      "eyebrow": "Educação",
+      "metaTechnique": "Técnica",
+      "metaPractice": "prática",
+      "metaExperience": "experiência",
+      "title": "Aprenda a",
+      "titleAccent": "entender a beleza.",
+      "imageAlt": "Bruno Menezes ensinando técnicas de maquiagem",
+      "description": "Cursos presenciais para quem quer compreender melhor a própria maquiagem ou aprofundar a técnica profissional."
+    },
+    "intro": {
+      "eyebrow": "Aprender fazendo",
+      "title": "Conhecimento que",
+      "titleSecond": "sai da bancada",
+      "titleAccent": "para as suas mãos.",
+      "paragraph1": "A proposta é prática: entender produtos, técnicas e escolhas para que você consiga reproduzir o que aprendeu depois da aula.",
+      "paragraph2": "Existem opções voltadas para automaquiagem e também uma formação específica para profissionais que querem aprofundar o trabalho com noivas."
+    },
+    "professional": {
+      "eyebrow": "Para profissionais",
+      "module": "Módulo Noivas",
+      "title": "Maquiagem",
+      "titleAccent": "Nupcial.",
+      "description": "Uma formação voltada a profissionais que querem aprofundar a técnica e a experiência de atendimento no universo bridal.",
+      "mainImageAlt": "Maquiagem de noiva por Bruno Menezes",
+      "detailImageAlt": "Detalhe de maquiagem nupcial",
+      "contentLabel": "Conteúdo",
+      "topics": {
+        "colour": "Otimização de cores",
+        "clientCare": "Abordagem e atendimento da noiva",
+        "skin": "Pele de alta resistência",
+        "touchUps": "Técnicas de retoque",
+        "completeLook": "Construção de um look completo"
+      },
+      "informationLabel": "Informações",
+      "investmentLabel": "Investimento",
+      "durationLabel": "Duração",
+      "durationValue": "Até 4 horas",
+      "modelLabel": "Modelo adicional",
+      "conditionLabel": "Importante",
+      "condition": "A aluna deve levar sua própria modelo. Caso seja necessário providenciar uma modelo para a aula, será acrescentado o valor de €60.",
+      "note": "A aula inclui uma pausa de 15 minutos para café."
+    },
+    "whatsapp": {
+      "message": "Olá, Bruno! Vi os cursos no site da BMV Makeup e gostaria de saber mais sobre as aulas."
+    }
+  },
+  "portfolio": {
+    "cta": {
+      "face": "Seu rosto.",
+      "story": "Sua história.",
+      "title": "E a próxima",
+      "titleAccent": "pode ser a sua.",
+      "description": "Para eventos, casamentos, produções ou projetos criativos, conte um pouco sobre o que você tem em mente.",
+      "link": "Falar com Bruno"
+    },
+    "gallery": {
+      "categories": {
+        "all": "Todos",
+        "weddings": "Weddings",
+        "beauty": "Beleza",
+        "campaigns": "Campanhas",
+        "photoshoots": "Ensaios",
+        "artistic": "Artístico",
+        "audiovisual": "Audiovisual"
+      },
+      "count_one": " trabalho",
+      "count_other": " trabalhos",
+      "imageAlt": "Trabalho de maquiagem — {{category}}",
+      "count_zero": " trabalhos"
+    },
+    "hero": {
+      "eyebrow": "Portfólio",
+      "profession": "Maquiador",
+      "title": "Um artista.",
+      "titleAccent": "Muitas expressões.",
+      "description": "Pessoas, histórias, câmeras, celebrações e ideias transformadas através da maquiagem.",
+      "scroll": "Explore ↓"
+    }
+  },
+  "services": {
+    "cta": {
+      "eyebrow": "Seu momento",
+      "title": "Tem algo",
+      "titleAccent": "em mente?",
+      "description": "Conte um pouco sobre a ocasião, o projeto ou a ideia. A partir daí, encontramos juntos o formato que faz mais sentido.",
+      "link": "Falar com Bruno"
+    },
+    "experience": {
+      "imageAlt": "Bruno Menezes durante uma sessão de maquiagem",
+      "eyebrow": "A experiência",
+      "title": "Antes da maquiagem,",
+      "titleAccent": "vem a escuta.",
+      "paragraph1": "Não existe uma fórmula única. Cada atendimento começa entendendo a pessoa, a ocasião e como ela quer se sentir.",
+      "paragraph2": "A partir daí, técnica e sensibilidade se encontram para construir uma maquiagem que faça sentido no espelho, diante da câmera e no momento que ela foi criada para acompanhar."
+    },
+    "hero": {
+      "eyebrow": "Serviços",
+      "title": "Beleza para",
+      "titleAccent": "cada história.",
+      "imageAlt": "Trabalho de maquiagem por Bruno Menezes",
+      "location": "Barcelona · Mundo todo",
+      "description": "Da beleza natural à criação artística, cada trabalho começa pela mesma pergunta: o que faz sentido para você?"
+    },
+    "overview": {
+      "items": {
+        "weddings": {
+          "title": "Weddings",
+          "description": "Beleza pensada para acompanhar um dos dias mais importantes da sua história, da preparação ao último detalhe."
+        },
+        "social": {
+          "title": "Beauty & Social",
+          "description": "Maquiagem para eventos, celebrações e momentos em que você quer se sentir especialmente você."
+        },
+        "campaigns": {
+          "title": "Campanhas",
+          "description": "Beleza construída em diálogo com marcas, conceitos, equipes criativas e narrativas visuais."
+        },
+        "photoshoots": {
+          "title": "Ensaios",
+          "description": "Maquiagem pensada para a câmera, respeitando luz, direção, linguagem e intenção de cada produção."
+        },
+        "artistic": {
+          "title": "Artístico",
+          "description": "Espaço para experimentar cor, textura, forma e possibilidades além da beleza convencional."
+        },
+        "audiovisual": {
+          "title": "Audiovisual",
+          "description": "Beleza e caracterização adaptadas às necessidades de produções audiovisuais e diferentes formatos de imagem."
+        }
+      },
+      "eyebrow": "O trabalho",
+      "description": "Diferentes contextos, diferentes linguagens. A técnica se adapta à pessoa, ao projeto e ao resultado que queremos construir.",
+      "featured": "Em destaque",
+      "weddingsLink": "Explorar Weddings "
+    }
+  },
+  "weddings": {
+    "cta": {
+      "eyebrow": "Seu casamento · BMV Makeup",
+      "title": "Agora falta",
+      "titleAccent": "a sua história.",
+      "description": "Conte a Bruno quando e onde será o casamento e o que você está imaginando para o seu look.",
+      "link": "Falar com Bruno"
+    },
+    "hero": {
+      "imageAlt": "Maquiagem de noiva por Bruno Menezes",
+      "location": "Barcelona · Destination Weddings",
+      "eyebrow": "Weddings",
+      "title": "Seu dia.",
+      "titleAccent": "Sua beleza.",
+      "description": "Uma maquiagem pensada para continuar parecendo você — só que na versão que você escolheu viver nesse dia.",
+      "cta": "Consultar disponibilidade"
+    },
+    "intro": {
+      "eyebrow": "Beleza nupcial",
+      "title": "Não existe uma",
+      "titleSecond": "única forma de",
+      "titleAccent": "ser noiva.",
+      "imageAlt": "Noiva maquiada por Bruno Menezes",
+      "paragraph1": "Algumas querem pele leve. Outras querem olhos marcantes. Algumas já chegam sabendo exatamente o que desejam e outras preferem descobrir durante o processo.",
+      "paragraph2": "O trabalho começa entendendo você, seu estilo, sua celebração e como quer se sentir quando se olhar no espelho."
+    },
+    "partners": {
+      "categories": {
+        "photography": "Fotografia",
+        "hair": "Cabelo",
+        "nails": "Unhas",
+        "massage": "Massagem",
+        "beauty": "Beleza",
+        "weddingServices": "Serviços para casamentos"
+      },
+      "eyebrow": "Rede de confiança",
+      "status": "Em breve",
+      "title": "Um casamento",
+      "titleSecond": "é feito por",
+      "titleAccent": "muitas mãos.",
+      "paragraph1": "Ao longo dos anos, Bruno cruza caminhos com profissionais que compartilham o mesmo cuidado com experiência, detalhe e atendimento.",
+      "paragraph2": "Esta área reunirá uma seleção de profissionais e serviços recomendados para complementar a experiência do casamento."
+    },
+    "process": {
+      "steps": {
+        "vision": {
+          "title": "A visão",
+          "description": "Referências, estilo, cerimônia e a forma como você quer se sentir. Antes de decidir a maquiagem, entendemos a mulher e o momento."
+        },
+        "trial": {
+          "title": "A prova",
+          "description": "Um espaço para experimentar, ajustar e construir o look com calma até que cada escolha faça sentido para você."
+        },
+        "weddingDay": {
+          "title": "O dia do casamento",
+          "description": "No grande dia, tudo o que foi pensado anteriormente ganha forma com atenção ao tempo, aos detalhes e à durabilidade."
+        },
+        "celebration": {
+          "title": "A celebração",
+          "description": "A maquiagem acompanha você entre abraços, fotografias, lágrimas, dança e tudo o que vier depois."
+        }
+      },
+      "eyebrow": "A experiência",
+      "title": "Da visão",
+      "titleAccent": "à celebração.",
+      "description": "A construção do look acontece em etapas para que, quando o dia chegar, você não precise pensar na maquiagem. Só viver."
+    },
+    "reviews": {
+      "items": {
+        "clare": {
+          "title": "Confiança desde a prova até o casamento.",
+          "description": "Clare destacou todo o acompanhamento durante o processo, da preparação do look à execução no dia do casamento, além da segurança de se sentir compreendida em cada escolha."
+        },
+        "marina": {
+          "title": "Uma experiência construída com calma.",
+          "description": "Marina ressaltou o cuidado durante todo o processo bridal, a atenção aos detalhes e a tranquilidade de chegar ao casamento sabendo que o resultado já havia sido construído em conjunto."
+        }
+      },
+      "eyebrow": "Palavras de quem viveu",
+      "title": "Quando confiança",
+      "titleSecond": "também faz parte",
+      "titleAccent": "da beleza.",
+      "cta": "Ver avaliações no Bodas.net"
+    },
+    "whatsapp": {
+      "message": "Olá, Bruno! Vi a página de Weddings no site da BMV Makeup e gostaria de saber mais sobre disponibilidade para o meu casamento."
+    }
   }
 }

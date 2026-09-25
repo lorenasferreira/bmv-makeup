@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./AboutHero.module.css";
 
 function AboutHero() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.hero}>
       <div className={styles.heroHeading}>
-        <span className={styles.eyebrow}>O artista</span>
+        <span className={styles.eyebrow}>{t("about.hero.eyebrow")}</span>
 
         <h1 className={styles.title}>
           Bruno
@@ -15,21 +19,20 @@ function AboutHero() {
       <div className={styles.imageWrapper}>
         <img
           src="/assets/images/about/bruno-about.jpeg"
-          alt="Bruno Menezes trabalhando como maquiador"
+          alt={t("about.hero.imageAlt")}
           className={styles.heroImage}
         />
       </div>
 
       <div className={styles.heroIntro}>
         <p className={styles.location}>
-          Brasileiro.
+          {t("about.hero.origin")}
           <br />
-          Em Barcelona.
+          {t("about.hero.location")}
         </p>
 
         <p className={styles.description}>
-          Maquiagem como expressão, identidade e encontro — criada para
-          valorizar quem está diante dele.
+          {t("about.hero.description")}
         </p>
       </div>
     </section>

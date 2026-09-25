@@ -175,10 +175,6 @@
     transform: none;
   }
 
-  .item:nth-child(even) .imagePlaceholder {
-    aspect-ratio: 4 / 5;
-  }
-
   .meta {
     padding-top: 1rem;
   }

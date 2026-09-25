@@ -63,7 +63,8 @@
 
 @media (max-width: 900px) {
   .section {
-    gap: 4rem;
+    grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1fr);
+    gap: 3rem;
   }
 
   .imageWrapper {

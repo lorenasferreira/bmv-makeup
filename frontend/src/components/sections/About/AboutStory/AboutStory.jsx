@@ -1,34 +1,34 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./AboutStory.module.css";
 
 function AboutStory() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className={styles.manifesto}>
         <div className={styles.sectionLabel}>
           <span>01</span>
-          <span>Beleza com identidade</span>
+          <span>{t("about.story.manifesto.eyebrow")}</span>
         </div>
 
         <div className={styles.manifestoContent}>
           <p className={styles.manifestoLead}>
-            Mais do que
+            {t("about.story.manifesto.title")}
             <br />
-            transformar,
+            {t("about.story.manifesto.titleSecond")}
             <br />
-            revelar.
+            {t("about.story.manifesto.titleAccent")}
           </p>
 
           <div className={styles.manifestoCopy}>
             <p>
-              Para Bruno, maquiagem não é sobre esconder ou transformar alguém
-              em outra pessoa. É sobre entender quem está diante dele e criar a
-              partir daí.
+              {t("about.story.manifesto.paragraph1")}
             </p>
 
             <p>
-              Cada rosto, cada ocasião e cada projeto pedem uma abordagem
-              diferente — sempre respeitando a personalidade, o estilo e a
-              individualidade de cada pessoa.
+              {t("about.story.manifesto.paragraph2")}
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ function AboutStory() {
         <div className={styles.storyImageWrapper}>
           <img
             src="/assets/images/about/bruno-portrait.jpeg"
-            alt="Retrato de Bruno Menezes"
+            alt={t("about.story.journey.imageAlt")}
             className={styles.storyImage}
           />
         </div>
@@ -46,28 +46,24 @@ function AboutStory() {
         <div className={styles.storyContent}>
           <div className={styles.sectionLabel}>
             <span>02</span>
-            <span>Do Brasil a Barcelona</span>
+            <span>{t("about.story.journey.eyebrow")}</span>
           </div>
 
           <h2 className={styles.sectionTitle}>
-            Uma trajetória
+            {t("about.story.journey.title")}
             <br />
-            construída através
+            {t("about.story.journey.titleSecond")}
             <br />
-            da beleza.
+            {t("about.story.journey.titleAccent")}
           </h2>
 
           <div className={styles.storyCopy}>
             <p>
-              Com mais de oito anos de experiência no universo da beleza, Bruno
-              Menezes construiu uma trajetória marcada pela versatilidade e pela
-              atenção aos detalhes.
+              {t("about.story.journey.paragraph1")}
             </p>
 
             <p>
-              Hoje, em Barcelona, seu trabalho atravessa diferentes contextos —
-              de momentos pessoais e celebrações a produções criativas,
-              editoriais e profissionais.
+              {t("about.story.journey.paragraph2")}
             </p>
           </div>
         </div>
@@ -77,7 +73,7 @@ function AboutStory() {
         <div className={styles.approachImageWrapper}>
           <img
             src="/assets/images/about/bruno-client.jpeg"
-            alt="Bruno Menezes maquiando uma cliente"
+            alt={t("about.story.approach.imageAlt")}
             className={styles.approachImage}
           />
         </div>
@@ -85,19 +81,17 @@ function AboutStory() {
         <div className={styles.approachContent}>
           <div className={styles.sectionLabel}>
             <span>03</span>
-            <span>A abordagem</span>
+            <span>{t("about.story.approach.eyebrow")}</span>
           </div>
 
           <h2 className={styles.sectionTitle}>
-            Cada trabalho
+            {t("about.story.approach.title")}
             <br />
-            começa pela pessoa.
+            {t("about.story.approach.titleAccent")}
           </h2>
 
           <p className={styles.approachText}>
-            Escuta, técnica e sensibilidade para criar um resultado que funcione
-            diante do espelho, da câmera ou de uma sala cheia de pessoas — sem
-            apagar quem está por trás da maquiagem.
+            {t("about.story.approach.description")}
           </p>
         </div>
       </section>

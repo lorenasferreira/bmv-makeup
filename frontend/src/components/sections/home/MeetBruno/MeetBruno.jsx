@@ -9,7 +9,7 @@ function MeetBruno() {
     <section className={styles.section} id="about">
       <div className={styles.imageColumn}>
         <div className={styles.imagePlaceholder}>
-          <span>Bruno Portrait</span>
+          <span>{t("home.artist.imageLabel")}</span>
         </div>
       </div>
 

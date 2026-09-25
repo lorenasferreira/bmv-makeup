@@ -1,25 +1,27 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import styles from "./ServicesCTA.module.css";
 
 function ServicesCTA() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
-      <span className={styles.eyebrow}>Seu momento</span>
+      <span className={styles.eyebrow}>{t("services.cta.eyebrow")}</span>
 
       <h2>
-        Tem algo
+        {t("services.cta.title")}
         <br />
-        <em>em mente?</em>
+        <em>{t("services.cta.titleAccent")}</em>
       </h2>
 
       <p>
-        Conte um pouco sobre a ocasião, o projeto ou a ideia. A partir daí,
-        encontramos juntos o formato que faz mais sentido.
+        {t("services.cta.description")}
       </p>
 
       <Link to="/contact" className={styles.link}>
-        Falar com Bruno
+        {t("services.cta.link")}
         <span aria-hidden="true">→</span>
       </Link>
     </section>

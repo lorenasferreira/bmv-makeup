@@ -206,7 +206,7 @@
 
 @media (max-width: 640px) {
   .header h2 {
-    font-size: clamp(1.8rem, 14vw, 3.5rem);
+    font-size: clamp(1.8rem, 11.5vw, 3.5rem);
   }
 
   .courseContent h3 {

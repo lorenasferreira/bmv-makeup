@@ -25,11 +25,11 @@ function WeddingsPreview() {
 
       <div className={styles.visual}>
         <div className={styles.mainImage}>
-          <span>Bride Portrait</span>
+          <span>{t("home.weddings.mainImageLabel")}</span>
         </div>
 
         <div className={styles.secondaryImage}>
-          <span>Bruno Working</span>
+          <span>{t("home.weddings.secondaryImageLabel")}</span>
         </div>
       </div>
     </section>

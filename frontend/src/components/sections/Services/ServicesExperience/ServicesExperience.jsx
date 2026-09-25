@@ -1,37 +1,38 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./ServicesExperience.module.css";
 
 function ServicesExperience() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.imageWrapper}>
         <img
           src="/assets/images/services/services-experience.webp"
-          alt="Bruno Menezes durante uma sessão de maquiagem"
+          alt={t("services.experience.imageAlt")}
         />
       </div>
 
       <div className={styles.content}>
         <div className={styles.sectionLabel}>
           <span>02</span>
-          <span>A experiência</span>
+          <span>{t("services.experience.eyebrow")}</span>
         </div>
 
         <h2>
-          Antes da maquiagem,
+          {t("services.experience.title")}
           <br />
-          vem a escuta.
+          {t("services.experience.titleAccent")}
         </h2>
 
         <div className={styles.copy}>
           <p>
-            Não existe uma fórmula única. Cada atendimento começa entendendo a
-            pessoa, a ocasião e como ela quer se sentir.
+            {t("services.experience.paragraph1")}
           </p>
 
           <p>
-            A partir daí, técnica e sensibilidade se encontram para construir
-            uma maquiagem que faça sentido no espelho, diante da câmera e no
-            momento que ela foi criada para acompanhar.
+            {t("services.experience.paragraph2")}
           </p>
         </div>
       </div>

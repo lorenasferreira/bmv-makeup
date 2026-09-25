@@ -3,18 +3,10 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 import styles from "./ContactOptions.module.css";
 
-const messages = {
-  pt: "Olá, Bruno! Vi seu trabalho no site da BMV Makeup e gostaria de saber mais sobre disponibilidade e valores.",
-  en: "Hi Bruno! I saw your work on the BMV Makeup website and I'd like to know more about availability and pricing.",
-  es: "¡Hola, Bruno! Vi tu trabajo en la web de BMV Makeup y me gustaría saber más sobre disponibilidad y precios.",
-  ca: "Hola, Bruno! He vist el teu treball al web de BMV Makeup i m'agradaria saber més sobre disponibilitat i preus.",
-};
-
 function ContactOptions() {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const language = i18n.resolvedLanguage?.split("-")[0] || "pt";
-  const message = messages[language] || messages.pt;
+  const message = t("contact.whatsapp.availability");
 
   const whatsappUrl = `https://wa.me/34613095171?text=${encodeURIComponent(
     message,
@@ -24,22 +16,21 @@ function ContactOptions() {
     <section className={styles.section}>
       <div className={styles.sectionLabel}>
         <span>01</span>
-        <span>Fale com Bruno</span>
+        <span>{t("contact.options.eyebrow")}</span>
       </div>
 
       <div className={styles.content}>
         <div className={styles.intro}>
           <h2>
-            Direto,
+            {t("contact.options.title")}
             <br />
-            simples,
+            {t("contact.options.titleSecond")}
             <br />
-            <em>pessoal.</em>
+            <em>{t("contact.options.titleAccent")}</em>
           </h2>
 
           <p>
-            Sem intermediários. Você fala diretamente com Bruno para explicar o
-            que precisa, consultar disponibilidade e alinhar os próximos passos.
+            {t("contact.options.description")}
           </p>
         </div>
 
@@ -51,7 +42,7 @@ function ContactOptions() {
             className={styles.option}
           >
             <div>
-              <span className={styles.optionLabel}>Principal</span>
+              <span className={styles.optionLabel}>{t("contact.options.primary")}</span>
               <h3>WhatsApp</h3>
             </div>
 
@@ -68,7 +59,7 @@ function ContactOptions() {
             className={styles.option}
           >
             <div>
-              <span className={styles.optionLabel}>Social</span>
+              <span className={styles.optionLabel}>{t("contact.options.social")}</span>
               <h3>Instagram</h3>
             </div>
 

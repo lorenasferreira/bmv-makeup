@@ -2,18 +2,10 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./ContactCTA.module.css";
 
-const messages = {
-  pt: "Olá, Bruno! Vi seu trabalho no site da BMV Makeup e gostaria de conversar sobre um projeto.",
-  en: "Hi Bruno! I saw your work on the BMV Makeup website and I'd like to talk about a project.",
-  es: "¡Hola, Bruno! Vi tu trabajo en la web de BMV Makeup y me gustaría hablar sobre un proyecto.",
-  ca: "Hola, Bruno! He vist el teu treball al web de BMV Makeup i m'agradaria parlar sobre un projecte.",
-};
-
 function ContactCTA() {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const language = i18n.resolvedLanguage?.split("-")[0] || "pt";
-  const message = messages[language] || messages.pt;
+  const message = t("contact.whatsapp.project");
 
   const whatsappUrl = `https://wa.me/34613095171?text=${encodeURIComponent(
     message,
@@ -21,12 +13,12 @@ function ContactCTA() {
 
   return (
     <section className={styles.section}>
-      <span className={styles.eyebrow}>Vamos conversar</span>
+      <span className={styles.eyebrow}>{t("contact.cta.eyebrow")}</span>
 
       <h2>
-        Seu próximo
+        {t("contact.cta.title")}
         <br />
-        <em>projeto começa aqui.</em>
+        <em>{t("contact.cta.titleAccent")}</em>
       </h2>
 
       <a

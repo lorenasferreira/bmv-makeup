@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./InstagramPreview.module.css";
 
 function InstagramPreview() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [instagramPosts, setInstagramPosts] = useState([]);
   const [username, setUsername] = useState("");
@@ -35,7 +35,9 @@ function InstagramPreview() {
   }, []);
 
   function formatDate(timestamp) {
-    return new Intl.DateTimeFormat("pt-BR", {
+    const locale = i18n.resolvedLanguage === "pt" ? "pt-BR" : i18n.resolvedLanguage;
+
+    return new Intl.DateTimeFormat(locale, {
       day: "2-digit",
       month: "short",
       year: "numeric",
@@ -86,7 +88,7 @@ function InstagramPreview() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.media}
-                  aria-label={post.caption || "Instagram post"}
+                  aria-label={post.caption || t("home.instagram.postLabel")}
                 >
                   {imageUrl && (
                     <img
@@ -109,7 +111,7 @@ function InstagramPreview() {
                       rel="noopener noreferrer"
                       className={styles.postLink}
                     >
-                      Ver no Instagram
+                      {t("home.instagram.viewPost")}
                       <span aria-hidden="true">↗</span>
                     </a>
                   </div>

@@ -14,11 +14,20 @@ i18n.use(initReactI18next).init({
     ca: { translation: ca },
   },
   lng: localStorage.getItem("bmv-language") || "en",
-  fallbackLng: "en",
+  supportedLngs: ["pt", "en", "es", "ca"],
+  load: "languageOnly",
+  fallbackLng: "pt",
 
   interpolation: {
     escapeValue: false,
   },
 });
+
+const updateDocumentLanguage = () => {
+  document.documentElement.lang = i18n.resolvedLanguage || "pt";
+};
+
+i18n.on("languageChanged", updateDocumentLanguage);
+updateDocumentLanguage();
 
 export default i18n;

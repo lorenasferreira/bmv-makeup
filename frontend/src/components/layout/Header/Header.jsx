@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -13,6 +13,9 @@ function Header() {
   const location = useLocation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
+  const brandRef = useRef(null);
+  const closeMenu = useCallback(() => setIsMenuOpen(false), []);
 
   const isHome = location.pathname === "/";
 
@@ -20,12 +23,12 @@ function Header() {
     <header
       className={`${styles.header} ${!isHome ? styles.headerInternal : ""}`}
     >
-      <Link to="/" className={styles.brand} aria-label="BMV Makeup - Home">
+      <Link ref={brandRef} to="/" className={styles.brand} aria-label={t("accessibility.home")}>
         BMV
         <span>Makeup</span>
       </Link>
 
-      <nav className={styles.navigation} aria-label="Main navigation">
+      <nav className={styles.navigation} aria-label={t("accessibility.mainNavigation")}>
         <Link to="/">{t("navigation.home")}</Link>
         <Link to="/about">{t("navigation.about")}</Link>
         <Link to="/services">{t("navigation.services")}</Link>
@@ -38,10 +41,12 @@ function Header() {
         <LanguageSwitcher variant="header" />
 
         <button
+          ref={menuButtonRef}
           type="button"
           className={styles.menuButton}
-          aria-label="Open navigation menu"
+          aria-label={t("accessibility.openMenu")}
           aria-expanded={isMenuOpen}
+          aria-haspopup="dialog"
           aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen(true)}
         >
@@ -49,7 +54,12 @@ function Header() {
         </button>
       </div>
 
-      <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={closeMenu}
+        triggerRef={menuButtonRef}
+        desktopFocusRef={brandRef}
+      />
     </header>
   );
 }

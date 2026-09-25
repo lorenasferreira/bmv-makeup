@@ -11,7 +11,7 @@ import FinalCTA from "../../components/sections/home/FinalCTA/FinalCTA";
 
 function Home() {
   return (
-    <>
+    <main>
         <Hero />
         <MeetBruno />
         <ExploreTheWork />
@@ -22,7 +22,7 @@ function Home() {
         <EducationPreview />
         <InstagramPreview />
         <FinalCTA />
-    </>
+    </main>
   );
 }
 

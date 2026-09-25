@@ -9,7 +9,7 @@ function EducationPreview() {
     <section className={styles.section} id="education">
       <div className={styles.visual}>
         <div className={styles.imagePlaceholder}>
-          <span>Beauty Education</span>
+          <span>{t("home.education.imageLabel")}</span>
         </div>
       </div>
 

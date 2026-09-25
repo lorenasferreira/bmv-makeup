@@ -11,7 +11,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/natalia.webp",
-    text: "Bruno busca entender você e aconselhar a melhor opção, sempre se adaptando ao seu estilo e à sua personalidade. É próximo, alegre e um verdadeiro artista. Não me canso de recomendá-lo.",
+    text: "home.reviews.items.natalia",
   },
   {
     id: "lorena",
@@ -19,7 +19,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/lorena.webp",
-    text: "Como mulher negra, uma das minhas maiores preocupações era encontrar um profissional que realmente soubesse trabalhar com o meu tom de pele. Bruno acertou perfeitamente o tom, valorizou minha pele sem alterar sua cor e criou uma maquiagem linda, pensada para mim. Além de extremamente atencioso, é um profissional que sabe trabalhar com diferentes tons e tipos de pele.",
+    text: "home.reviews.items.lorena",
   },
   {
     id: "gabriela",
@@ -27,7 +27,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/gabriela.webp",
-    text: "Para me casar na Sagrada Família, escolhi Bruno para a minha maquiagem. Ele conseguiu entender meu sonho com muito profissionalismo e carinho, fazendo tudo com qualidade e utilizando sempre os melhores produtos.",
+    text: "home.reviews.items.gabriela",
   },
   {
     id: "maria",
@@ -35,7 +35,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/maria.webp",
-    text: "Mesmo sendo muito indecisa, Bruno e eu nos entendemos muito bem e encontramos a maquiagem com a qual me senti confortável e linda para o meu casamento. Durante todo o processo ele foi muito gentil. Sem dúvida, recomendo.",
+    text: "home.reviews.items.maria",
   },
   {
     id: "aline",
@@ -43,7 +43,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/aline.webp",
-    text: "Bruno foi educado, gentil e me fez confiar tranquilamente em seu trabalho. Foi um sonho realizado e ele fez parte disso. Sempre vou me lembrar daquele dia e, claro, da sensibilidade que teve comigo.",
+    text: "home.reviews.items.aline",
   },
   {
     id: "lolys",
@@ -51,7 +51,7 @@ const reviews = [
     rating: 5,
     source: "Bodas.net",
     image: "/assets/images/reviews/lolys.webp",
-    text: "Não poderia ter escolhido um maquiador melhor para o dia do meu casamento. Ele captou exatamente o que eu queria e me fez sentir linda e super confortável durante todo o dia. Um grande profissional, próximo e atencioso.",
+    text: "home.reviews.items.lolys",
   },
 ];
 
@@ -60,6 +60,7 @@ function KindWords() {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasFocus, setHasFocus] = useState(false);
 
   const activeReview = reviews[activeIndex];
 
@@ -80,18 +81,29 @@ function KindWords() {
   };
 
   useEffect(() => {
-    if (isPaused || reviews.length <= 1) {
+    if (isPaused || hasFocus || reviews.length <= 1) {
       return undefined;
     }
 
-    const interval = window.setInterval(() => {
-      setActiveIndex((current) =>
-        current === reviews.length - 1 ? 0 : current + 1,
-      );
-    }, 6500);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let interval;
+    const updateAutoplay = () => {
+      window.clearInterval(interval);
+      if (!reducedMotion.matches) {
+        interval = window.setInterval(() => {
+          setActiveIndex((current) => (current + 1) % reviews.length);
+        }, 6500);
+      }
+    };
 
-    return () => window.clearInterval(interval);
-  }, [isPaused]);
+    updateAutoplay();
+    reducedMotion.addEventListener("change", updateAutoplay);
+
+    return () => {
+      window.clearInterval(interval);
+      reducedMotion.removeEventListener("change", updateAutoplay);
+    };
+  }, [isPaused, hasFocus]);
 
   return (
     <section className={styles.section}>
@@ -109,13 +121,17 @@ function KindWords() {
         className={styles.reviewArea}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        onFocus={() => setHasFocus(true)}
+        onBlur={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false);
+        }}
       >
         <article className={styles.review} key={activeReview.id}>
           <span className={styles.quoteMark} aria-hidden="true">
             “
           </span>
 
-          <blockquote>{activeReview.text}</blockquote>
+          <blockquote>{t(activeReview.text)}</blockquote>
 
           <footer>
             <img
@@ -129,7 +145,7 @@ function KindWords() {
 
               <span
                 className={styles.stars}
-                aria-label={`${activeReview.rating} de 5 estrelas`}
+                aria-label={t("home.reviews.rating", { rating: activeReview.rating })}
               >
                 {"★".repeat(activeReview.rating)}
               </span>
@@ -148,7 +164,7 @@ function KindWords() {
                 className={`${styles.indicator} ${
                   index === activeIndex ? styles.indicatorActive : ""
                 }`}
-                aria-label={`Ver avaliação ${index + 1}`}
+                aria-label={t("home.reviews.goTo", { number: index + 1 })}
                 aria-current={index === activeIndex ? "true" : undefined}
                 onClick={() => goToReview(index)}
               />
@@ -165,7 +181,7 @@ function KindWords() {
             <button
               type="button"
               onClick={showPrevious}
-              aria-label="Avaliação anterior"
+              aria-label={t("home.reviews.previous")}
             >
               <FiArrowLeft aria-hidden="true" />
             </button>
@@ -173,7 +189,7 @@ function KindWords() {
             <button
               type="button"
               onClick={showNext}
-              aria-label="Próxima avaliação"
+              aria-label={t("home.reviews.next")}
             >
               <FiArrowRight aria-hidden="true" />
             </button>

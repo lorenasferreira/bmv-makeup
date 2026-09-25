@@ -1,29 +1,31 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import styles from "./PortfolioCTA.module.css";
 
 function PortfolioCTA() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.top}>
-        <span>Seu rosto.</span>
-        <span>Sua história.</span>
+        <span>{t("portfolio.cta.face")}</span>
+        <span>{t("portfolio.cta.story")}</span>
       </div>
 
       <h2>
-        E a próxima
+        {t("portfolio.cta.title")}
         <br />
-        <em>pode ser a sua.</em>
+        <em>{t("portfolio.cta.titleAccent")}</em>
       </h2>
 
       <div className={styles.bottom}>
         <p>
-          Para eventos, casamentos, produções ou projetos criativos, conte um
-          pouco sobre o que você tem em mente.
+          {t("portfolio.cta.description")}
         </p>
 
         <Link to="/contact" className={styles.link}>
-          Falar com Bruno
+          {t("portfolio.cta.link")}
           <span aria-hidden="true">→</span>
         </Link>
       </div>

@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import styles from "./BehindTheBrush.module.css";
 
 const moments = [
-  { id: 1, label: "Skin Preparation", className: "large" },
-  { id: 2, label: "Behind the Scenes", className: "smallTop" },
-  { id: 3, label: "Client Moment", className: "smallBottom" },
+  { id: 1, label: "home.behindTheBrush.moments.preparation", className: "large" },
+  { id: 2, label: "home.behindTheBrush.moments.backstage", className: "smallTop" },
+  { id: 3, label: "home.behindTheBrush.moments.client", className: "smallBottom" },
 ];
 
 function BehindTheBrush() {
@@ -35,7 +35,7 @@ function BehindTheBrush() {
               key={moment.id}
               className={`${styles.image} ${styles[moment.className]}`}
             >
-              <span>{moment.label}</span>
+              <span>{t(moment.label)}</span>
             </div>
           ))}
         </div>

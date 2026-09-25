@@ -1,23 +1,27 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./EducationHero.module.css";
 
 function EducationHero() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.hero}>
       <div className={styles.header}>
-        <span className={styles.eyebrow}>Education</span>
+        <span className={styles.eyebrow}>{t("education.hero.eyebrow")}</span>
 
         <span className={styles.meta}>
-          Técnica
+          {t("education.hero.metaTechnique")}
           <br />
-          prática
+          {t("education.hero.metaPractice")}
           <br />
-          experiência
+          {t("education.hero.metaExperience")}
         </span>
       </div>
 
       <div className={styles.title}>
         <h1>
-          Aprenda a<span>entender a beleza.</span>
+          {t("education.hero.title")}<span>{t("education.hero.titleAccent")}</span>
         </h1>
       </div>
 
@@ -25,13 +29,12 @@ function EducationHero() {
         <div className={styles.imageWrapper}>
           <img
             src="/assets/images/education/education-hero.webp"
-            alt="Bruno Menezes ensinando técnicas de maquiagem"
+            alt={t("education.hero.imageAlt")}
           />
         </div>
 
         <p>
-          Cursos presenciais para quem quer compreender melhor a própria
-          maquiagem ou aprofundar a técnica profissional.
+          {t("education.hero.description")}
         </p>
       </div>
     </section>

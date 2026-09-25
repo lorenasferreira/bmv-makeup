@@ -1,32 +1,33 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./EducationIntro.module.css";
 
 function EducationIntro() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.sectionLabel}>
         <span>01</span>
-        <span>Aprender fazendo</span>
+        <span>{t("education.intro.eyebrow")}</span>
       </div>
 
       <div className={styles.content}>
         <h2>
-          Conhecimento que
+          {t("education.intro.title")}
           <br />
-          sai da bancada
+          {t("education.intro.titleSecond")}
           <br />
-          <em>para as suas mãos.</em>
+          <em>{t("education.intro.titleAccent")}</em>
         </h2>
 
         <div className={styles.copy}>
           <p>
-            A proposta é prática: entender produtos, técnicas e escolhas para
-            que você consiga reproduzir o que aprendeu depois da aula.
+            {t("education.intro.paragraph1")}
           </p>
 
           <p>
-            Existem opções voltadas para automaquiagem e também uma formação
-            específica para profissionais que querem aprofundar o trabalho com
-            noivas.
+            {t("education.intro.paragraph2")}
           </p>
         </div>
       </div>

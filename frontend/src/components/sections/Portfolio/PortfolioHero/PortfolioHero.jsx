@@ -1,13 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./PortfolioHero.module.css";
 
 function PortfolioHero() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.hero}>
       <div className={styles.top}>
-        <span className={styles.eyebrow}>Portfólio</span>
+        <span className={styles.eyebrow}>{t("portfolio.hero.eyebrow")}</span>
 
         <span className={styles.meta}>
-          Makeup Artist
+          {t("portfolio.hero.profession")}
           <br />
           Barcelona
         </span>
@@ -15,18 +19,17 @@ function PortfolioHero() {
 
       <div className={styles.heading}>
         <h1>
-          One artist.
-          <span>Many expressions.</span>
+          {t("portfolio.hero.title")}
+          <span>{t("portfolio.hero.titleAccent")}</span>
         </h1>
       </div>
 
       <div className={styles.bottom}>
         <p>
-          Pessoas, histórias, câmeras, celebrações e ideias transformadas
-          através da maquiagem.
+          {t("portfolio.hero.description")}
         </p>
 
-        <span className={styles.scroll}>Explore ↓</span>
+        <span className={styles.scroll}>{t("portfolio.hero.scroll")}</span>
       </div>
     </section>
   );

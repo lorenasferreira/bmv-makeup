@@ -1,62 +1,64 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./EducationCourses.module.css";
 
 const courses = [
   {
     number: "01",
-    name: "Módulo VIP",
-    title: "Maquiagem Essencial",
-    type: "Automaquiagem",
+    name: "education.courses.items.vip.name",
+    title: "education.courses.items.vip.title",
+    type: "education.courses.selfMakeup",
     image: "/assets/images/education/vip.webp",
-    description:
-      "Uma aula personalizada para construir uma base sólida de automaquiagem e entender quais escolhas funcionam melhor para o seu rosto.",
+    description: "education.courses.items.vip.description",
     topics: [
-      "Preparação da pele",
-      "Escolha do tom correto de base",
-      "Delineado",
-      "Blush e contorno",
-      "Técnicas de acordo com o formato do rosto",
-      "Olho esfumado com duas cores",
+      "education.courses.items.vip.topics.skin",
+      "education.courses.items.vip.topics.foundation",
+      "education.courses.items.vip.topics.eyeliner",
+      "education.courses.items.vip.topics.blush",
+      "education.courses.items.vip.topics.faceShape",
+      "education.courses.items.vip.topics.smokyEye",
     ],
     individualPrice: "€170",
     duoPrice: "€300",
-    duration: "Até 4 horas",
+    duration: "education.courses.durationValue",
   },
   {
     number: "02",
-    name: "Módulo Night",
-    title: "Maquiagem Radiante",
-    type: "Automaquiagem",
+    name: "education.courses.items.night.name",
+    title: "education.courses.items.night.title",
+    type: "education.courses.selfMakeup",
     image: "/assets/images/education/night.webp",
-    description:
-      "Para quem quer construir uma maquiagem de maior impacto e resistência, pensada especialmente para eventos noturnos.",
+    description: "education.courses.items.night.description",
     topics: [
-      "Preparação para longa duração",
-      "Pele de alta resistência",
-      "Técnica de cut crease",
-      "Construção de um look noturno",
-      "Reprodução de uma referência escolhida pela aluna",
+      "education.courses.items.night.topics.preparation",
+      "education.courses.items.night.topics.skin",
+      "education.courses.items.night.topics.cutCrease",
+      "education.courses.items.night.topics.evening",
+      "education.courses.items.night.topics.reference",
     ],
     individualPrice: "€170",
     duoPrice: "€300",
-    duration: "Até 4 horas",
+    duration: "education.courses.durationValue",
   },
 ];
 
 function EducationCourses() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.header}>
         <div className={styles.sectionLabel}>
           <span>02</span>
-          <span>Para você</span>
+          <span>{t("education.courses.eyebrow")}</span>
         </div>
 
         <h2>
-          Automaquiagem,
+          {t("education.courses.title")}
           <br />
-          do essencial ao
+          {t("education.courses.titleSecond")}
           <br />
-          <em>impacto.</em>
+          <em>{t("education.courses.titleAccent")}</em>
         </h2>
       </div>
 
@@ -65,49 +67,49 @@ function EducationCourses() {
           <article className={styles.course} key={course.number}>
             <div className={styles.courseMeta}>
               <span>{course.number}</span>
-              <span>{course.type}</span>
+              <span>{t(course.type)}</span>
             </div>
 
             <div className={styles.imageWrapper}>
-              <img src={course.image} alt={course.title} />
+              <img src={course.image} alt={t(course.title)} />
             </div>
 
             <div className={styles.courseContent}>
               <div>
-                <span className={styles.courseName}>{course.name}</span>
+                <span className={styles.courseName}>{t(course.name)}</span>
 
-                <h3>{course.title}</h3>
+                <h3>{t(course.title)}</h3>
 
-                <p className={styles.description}>{course.description}</p>
+                <p className={styles.description}>{t(course.description)}</p>
               </div>
 
               <div className={styles.details}>
                 <div className={styles.topics}>
-                  <span className={styles.detailLabel}>Você vai aprender</span>
+                  <span className={styles.detailLabel}>{t("education.courses.topicsLabel")}</span>
 
                   <ul>
                     {course.topics.map((topic) => (
-                      <li key={topic}>{topic}</li>
+                      <li key={topic}>{t(topic)}</li>
                     ))}
                   </ul>
                 </div>
 
                 <div className={styles.investment}>
-                  <span className={styles.detailLabel}>Investimento</span>
+                  <span className={styles.detailLabel}>{t("education.courses.investmentLabel")}</span>
 
                   <div>
-                    <span>Individual</span>
+                    <span>{t("education.courses.individualLabel")}</span>
                     <strong>{course.individualPrice}</strong>
                   </div>
 
                   <div>
-                    <span>Dupla</span>
+                    <span>{t("education.courses.duoLabel")}</span>
                     <strong>{course.duoPrice}</strong>
                   </div>
 
                   <div>
-                    <span>Duração</span>
-                    <strong>{course.duration}</strong>
+                    <span>{t("education.courses.durationLabel")}</span>
+                    <strong>{t(course.duration)}</strong>
                   </div>
                 </div>
               </div>
@@ -117,7 +119,7 @@ function EducationCourses() {
       </div>
 
       <p className={styles.note}>
-        As aulas incluem uma pausa de 15 minutos para café.
+        {t("education.courses.note")}
       </p>
     </section>
   );

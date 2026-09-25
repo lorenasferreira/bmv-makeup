@@ -4,48 +4,12 @@ import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.css";
 
 const slides = [
-  {
-    id: 1,
-    label: "Bruno Working",
-    image: "/assets/images/home/hero/bruno-working.JPG",
-    tone: "warm",
-    position: "center 25%",
-  },
-  {
-    id: 2,
-    label: "Beauty Portrait",
-    image: "/assets/images/home/hero/beauty-portrait.jpg",
-    tone: "rose",
-    position: "center 22%",
-  },
-  {
-    id: 3,
-    label: "Bridal",
-    image: "/assets/images/home/hero/bridal.jpg",
-    tone: "sand",
-    position: "center center",
-  },
-  {
-    id: 4,
-    label: "Campaign / Editorial",
-    image: "/assets/images/home/hero/campaign-editorial.JPG",
-    tone: "olive",
-    position: "center 20%",
-  },
-  {
-    id: 5,
-    label: "Artistic Makeup",
-    image: "/assets/images/home/hero/artistic-makeup.HEIC",
-    tone: "terracotta",
-    position: "center 18%",
-  },
-  {
-    id: 6,
-    label: "Audiovisual / Social",
-    image: "/assets/images/home/hero/audiovisual-social.heic",
-    tone: "deep",
-    position: "center 22%",
-  },
+  { id: 1, label: "home.hero.slides.working" },
+  { id: 2, label: "home.hero.slides.portrait" },
+  { id: 3, label: "home.hero.slides.bridal" },
+  { id: 4, label: "home.hero.slides.editorial" },
+  { id: 5, label: "home.hero.slides.artistic" },
+  { id: 6, label: "home.hero.slides.audiovisual" },
 ];
 
 function Hero() {
@@ -68,9 +32,9 @@ function Hero() {
             key={slide.id}
             className={`${styles.slide} ${
               index === activeSlide ? styles.active : ""
-            } ${styles[slide.tone]}`}
+            }`}
           >
-            <img src={slide.image} alt="" />
+            <span>{t(slide.label)}</span>
           </div>
         ))}
       </div>

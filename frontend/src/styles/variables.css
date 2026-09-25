@@ -20,7 +20,7 @@
 
   --color-border: #e2ded0;
 
-  --color-accent: #ad6048;
+  --color-accent: var(--color-bmv-green);
   --color-accent-soft: #d59a84;
   --color-accent-dark: #7f3f30;
 

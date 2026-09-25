@@ -1,49 +1,51 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./WeddingsPartners.module.css";
 
 const categories = [
-  "Photography",
-  "Hair",
-  "Nails",
-  "Massage",
-  "Beauty",
-  "Wedding Services",
+  "weddings.partners.categories.photography",
+  "weddings.partners.categories.hair",
+  "weddings.partners.categories.nails",
+  "weddings.partners.categories.massage",
+  "weddings.partners.categories.beauty",
+  "weddings.partners.categories.weddingServices",
 ];
 
 function WeddingsPartners() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.top}>
         <div className={styles.label}>
           <span>04</span>
-          <span>Trusted Network</span>
+          <span>{t("weddings.partners.eyebrow")}</span>
         </div>
 
-        <span className={styles.status}>Coming soon</span>
+        <span className={styles.status}>{t("weddings.partners.status")}</span>
       </div>
 
       <div className={styles.content}>
         <h2>
-          Um casamento
+          {t("weddings.partners.title")}
           <br />
-          é feito por
+          {t("weddings.partners.titleSecond")}
           <br />
-          <em>muitas mãos.</em>
+          <em>{t("weddings.partners.titleAccent")}</em>
         </h2>
 
         <div className={styles.right}>
           <p>
-            Ao longo dos anos, Bruno cruza caminhos com profissionais que
-            compartilham o mesmo cuidado com experiência, detalhe e atendimento.
+            {t("weddings.partners.paragraph1")}
           </p>
 
           <p>
-            Esta área reunirá uma seleção de profissionais e serviços
-            recomendados para complementar a experiência do casamento.
+            {t("weddings.partners.paragraph2")}
           </p>
 
           <div className={styles.categories}>
             {categories.map((category) => (
-              <span key={category}>{category}</span>
+              <span key={t(category)}>{t(category)}</span>
             ))}
           </div>
         </div>

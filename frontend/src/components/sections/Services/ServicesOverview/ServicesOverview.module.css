@@ -182,7 +182,7 @@
   }
 
   .serviceContent h2 {
-    font-size: clamp(3.5rem, 16vw, 5.5rem);
+    font-size: clamp(3rem, 16vw, 5.5rem);
   }
 
   .featuredService .serviceContent h2 {

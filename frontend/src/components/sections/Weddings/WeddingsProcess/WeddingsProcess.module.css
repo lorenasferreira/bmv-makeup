@@ -179,7 +179,7 @@
 
 @media (max-width: 640px) {
   .header h2 {
-    font-size: clamp(3.9rem, 16vw, 5.7rem);
+    font-size: clamp(3rem, 16vw, 5.7rem);
   }
 
   .cards {

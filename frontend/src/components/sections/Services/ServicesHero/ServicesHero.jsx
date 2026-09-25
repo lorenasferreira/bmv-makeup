@@ -1,14 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./ServicesHero.module.css";
 
 function ServicesHero() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.hero}>
       <div className={styles.heading}>
-        <span className={styles.eyebrow}>Serviços</span>
+        <span className={styles.eyebrow}>{t("services.hero.eyebrow")}</span>
 
         <h1>
-          Beleza para
-          <span>cada história.</span>
+          {t("services.hero.title")}
+          <span>{t("services.hero.titleAccent")}</span>
         </h1>
       </div>
 
@@ -16,19 +20,18 @@ function ServicesHero() {
         <div className={styles.imageWrapper}>
           <img
             src="/assets/images/services/services-hero.webp"
-            alt="Trabalho de maquiagem por Bruno Menezes"
+            alt={t("services.hero.imageAlt")}
           />
         </div>
 
-        <span className={styles.imageLabel}>Barcelona · Worldwide</span>
+        <span className={styles.imageLabel}>{t("services.hero.location")}</span>
       </div>
 
       <div className={styles.intro}>
         <span>01 — 06</span>
 
         <p>
-          Da beleza natural à criação artística, cada trabalho começa pela mesma
-          pergunta: o que faz sentido para você?
+          {t("services.hero.description")}
         </p>
       </div>
     </section>

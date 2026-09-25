@@ -10,7 +10,7 @@ const languages = [
 ];
 
 function LanguageSwitcher({ variant = "default" }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -20,7 +20,7 @@ function LanguageSwitcher({ variant = "default" }) {
   return (
     <div
       className={`${styles.switcher} ${styles[variant]}`}
-      aria-label="Language selector"
+      aria-label={t("accessibility.languageSelector")}
     >
       {languages.map((language) => {
         const isActive = i18n.language === language.code;
