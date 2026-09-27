@@ -12,11 +12,14 @@ import Contact from "./pages/Contact/Contact";
 import Weddings from "./pages/Weddings/Weddings";
 import NotFound from "./pages/NotFound/NotFound";
 import RouteScroll from "./components/common/RouteScroll/RouteScroll";
+import ScrollReveal from "./components/common/ScrollReveal/ScrollReveal";
+import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <RouteScroll />
+      <ScrollReveal />
       <Header />
 
       <Routes>
@@ -31,6 +34,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <ScrollToTop />
     </BrowserRouter>
   );
 }

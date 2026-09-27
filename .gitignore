@@ -22,4 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-CLIENT_FEEDBACK.md 
+CLIENT_FEEDBACK.md
+
+# Browser test artifacts
+frontend/test-results/
+frontend/playwright-report/

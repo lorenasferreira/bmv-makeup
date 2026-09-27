@@ -540,5 +540,12 @@
     "whatsapp": {
       "message": "Hi Bruno! I saw the Weddings page on the BMV Makeup website and I'd like to know more about availability for my wedding."
     }
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "text": "It looks like this page has left the spotlight. Return home to continue exploring the BMV Makeup universe."
+  },
+  "common": {
+    "scrollToTop": "Scroll to top"
   }
 }

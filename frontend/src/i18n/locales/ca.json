@@ -540,5 +540,12 @@
     "education": "Formació",
     "copyright": "BMV Makeup. Tots els drets reservats.",
     "credit": "Disseny i desenvolupament de Lorena Ferreira"
+  },
+  "notFound": {
+    "title": "Pàgina no trobada.",
+    "text": "Sembla que aquesta pàgina ha sortit d'escena. Torna a l'inici per continuar explorant l'univers BMV Makeup."
+  },
+  "common": {
+    "scrollToTop": "Torna a dalt"
   }
 }

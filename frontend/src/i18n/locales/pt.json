@@ -540,5 +540,12 @@
     "whatsapp": {
       "message": "Olá, Bruno! Vi a página de Weddings no site da BMV Makeup e gostaria de saber mais sobre disponibilidade para o meu casamento."
     }
+  },
+  "notFound": {
+    "title": "Página não encontrada.",
+    "text": "Parece que esta página saiu de cena. Volte ao início para continuar explorando o universo BMV Makeup."
+  },
+  "common": {
+    "scrollToTop": "Voltar ao topo"
   }
 }
