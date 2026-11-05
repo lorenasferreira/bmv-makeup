@@ -72,7 +72,7 @@ function EducationProfessional() {
 
           <div>
             <span>{t("education.professional.modelLabel")}</span>
-            <strong>€60</strong>
+            <strong>100 €</strong>
           </div>
         </div>
 

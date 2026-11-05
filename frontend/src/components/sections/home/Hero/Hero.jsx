@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.css";
 
 const slides = [
-  { id: 1, label: "home.hero.slides.working" },
+  { id: 1, image: "/assets/images/home/hero/bruno-working.webp", label: "home.hero.slides.working" },
   { id: 2, label: "home.hero.slides.portrait" },
-  { id: 3, label: "home.hero.slides.bridal" },
+  { id: 3, image: "/assets/images/home/hero/bridal.webp", label: "home.hero.slides.bridal" },
   { id: 4, label: "home.hero.slides.editorial" },
-  { id: 5, label: "home.hero.slides.artistic" },
+  { id: 5, image: "/assets/images/home/hero/artistic.webp", label: "home.hero.slides.artistic" },
   { id: 6, label: "home.hero.slides.audiovisual" },
 ];
 
@@ -34,7 +34,7 @@ function Hero() {
               index === activeSlide ? styles.active : ""
             }`}
           >
-            <span>{t(slide.label)}</span>
+            {slide.image ? <img src={slide.image} alt="" /> : <span>{t(slide.label)}</span>}
           </div>
         ))}
       </div>

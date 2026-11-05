@@ -17,11 +17,16 @@ for (const width of [320, 390, 768, 1440]) {
         const hero = copy[key].hero;
         const heading = page.getByRole("heading", { level: 1 });
         await expect(heading).toBeVisible();
-        await expect(heading).toContainText(key === "about" ? "Bruno" : hero.title);
+        await expect(heading).toContainText(key === "about" ? "Mënezess" : hero.title);
         await expect(page.locator("html")).toHaveAttribute("lang", language);
         // Verify page-specific localized body content too (About's name is invariant).
         if (hero.description) await expect(page.getByText(hero.description, { exact: true })).toBeVisible();
         await page.evaluate(() => document.fonts.ready);
+        if (key === "about" && width <= 390) {
+          const bounds = await heading.boundingBox();
+          expect(bounds.x).toBeGreaterThanOrEqual(0);
+          expect(bounds.x + bounds.width).toBeLessThanOrEqual(width);
+        }
         await expect.poll(() => page.evaluate(() =>
           document.documentElement.scrollWidth <= window.innerWidth,
         )).toBe(true);

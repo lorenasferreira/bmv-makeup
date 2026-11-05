@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import styles from "./SelectedWork.module.css";
 
 const works = [
-  { id: 1, className: "heroWork", label: "home.selectedWork.items.portrait" },
+  { id: 1, className: "heroWork", image: "/assets/images/home/selected-work/beauty-portrait.webp", label: "home.selectedWork.items.portrait" },
   { id: 2, className: "portraitWork", label: "home.selectedWork.items.editorial" },
   { id: 3, className: "detailWork", label: "home.selectedWork.items.detail" },
   { id: 4, className: "wideWork", label: "home.selectedWork.items.campaign" },
-  { id: 5, className: "finalWork", label: "home.selectedWork.items.artistic" },
+  { id: 5, className: "finalWork", image: "/assets/images/home/selected-work/artistic.webp", label: "home.selectedWork.items.artistic" },
 ];
 
 function SelectedWork() {
@@ -32,7 +32,7 @@ function SelectedWork() {
             className={`${styles.work} ${styles[work.className]}`}
           >
             <div className={styles.placeholder}>
-              <span>{t(work.label)}</span>
+              {work.image ? <img src={work.image} alt={t(work.label)} loading="lazy" /> : <span>{t(work.label)}</span>}
             </div>
           </div>
         ))}

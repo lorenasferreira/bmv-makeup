@@ -7,7 +7,7 @@ function ScrollReveal() {
   const { pathname } = useLocation();
 
   useLayoutEffect(() => {
-    const sections = Array.from(document.querySelectorAll("main section"));
+    const sections = Array.from(document.querySelectorAll("main > section"));
 
     if (!sections.length) {
       return;
@@ -15,7 +15,7 @@ function ScrollReveal() {
 
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    if (motion.matches || !("IntersectionObserver" in window)) {
+    if (motion.matches || typeof window.IntersectionObserver !== "function") {
       return;
     }
 
@@ -39,7 +39,7 @@ function ScrollReveal() {
         });
       },
       {
-        threshold: 0.08,
+        threshold: 0,
         rootMargin: "0px 0px -30px 0px",
       },
     );

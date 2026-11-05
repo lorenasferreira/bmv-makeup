@@ -1,0 +1,245 @@
+{
+  "grupo": "Lorena — Beauty & Social",
+  "adicionadas": [
+    "LBS-01",
+    "LBS-02",
+    "LBS-03",
+    "LBS-04",
+    "LBS-05",
+    "LBS-06",
+    "LBS-07",
+    "LBS-08",
+    "LBS-09",
+    "LBS-10",
+    "LBS-11",
+    "LBS-12",
+    "LBS-13",
+    "LBS-14",
+    "LBS-15",
+    "LBS-16",
+    "LBS-17",
+    "LBS-18",
+    "LBS-19",
+    "LBS-20",
+    "LBS-21",
+    "LBS-22",
+    "LBS-23",
+    "LBS-24",
+    "LBS-25",
+    "LBS-26",
+    "LBS-27",
+    "LBS-28",
+    "LBS-29",
+    "LBS-30",
+    "LBS-31",
+    "LBS-32",
+    "LBS-33",
+    "LBS-34",
+    "LBS-35",
+    "LBS-36",
+    "LBS-37",
+    "LBS-38",
+    "LBS-39",
+    "LBS-40",
+    "LBS-41",
+    "LBS-42",
+    "LBS-43",
+    "LBS-44"
+  ],
+  "duplicatas": [
+    {
+      "arquivo": "/Users/lorenaferreira/Downloads/lorena-beauty/ff4b5fa5-eecb-42f5-ac28-82f10e330d5a.JPG",
+      "id_existente": "LBS-44"
+    },
+    {
+      "arquivo": "/Users/lorenaferreira/Downloads/lorena-beauty/profile.JPG",
+      "id_existente": "LBS-04"
+    }
+  ],
+  "arquivos_verificados": [
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/257fdbdc-d571-41d7-8173-08f18ed194a3.JPG",
+      "sha256": "7c9dffa63ab2c902975a9a8c4aae257f894571ebaa5bd0e7622489c38a3aa1af"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/29458968-58a2-400c-8846-1199c02437ea.JPG",
+      "sha256": "aaae0e98597f91f98ff139aac31ee959ac537c1d84a1561277f68b6629793691"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/30662b00-637b-4ce7-9b01-e495735aff28.JPG",
+      "sha256": "3e41db443e705e078b4a186c1fb4c12196c6f6be9636033b7595a8ea9028eda9"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/3804ad99-2071-48d1-82a9-6a8faac987e4.JPG",
+      "sha256": "91fa4c4bc6e0b51c73a9a595263f5d2a4ad3eb5325d9df487ce627c44ab0b75d"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/3b88ec25-5b2d-4349-b087-ecc063729728.JPG",
+      "sha256": "41d53a9d0bbb692b4c74877e3756c9371ef7b3781ec832797e19ce8dd20edf56"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/4455dd85-0113-418a-83f1-b1b390b388a6.JPG",
+      "sha256": "9e0054326d72100f146aae2a74ded2b10da08ffd4e4e5c5b7f3e6dfc7638ce4e"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/60a90bbd-ed58-4971-95f2-2ad005287212.JPG",
+      "sha256": "839210856a9e149faaa65ad56dfe6f96564fedbe5bd372738361242e03258b79"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/61c1efae-63d7-4e6b-aef8-c28ac4c2a6bf.JPG",
+      "sha256": "623b820c50b41a4f27e1f2edbb3715b62c0587e1d5183ec46a39fb2ad899d693"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/64927659-7c20-43e2-90f1-299d9496f970.JPG",
+      "sha256": "3fb5b8f4a255992714e0a172ca319555ac166d2d1aae2afbb6a553e47c4c2bff"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1061.JPG",
+      "sha256": "77fe5ee4db525c414239ecc10b5fd1c7aa5f925a2e6fd5753aef99bf6d6f7217"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1062.JPG",
+      "sha256": "15a0038cdbc94237a1167db19c57467f25001c50de5eba903744b02246037930"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1063.JPG",
+      "sha256": "c7a3f533baf21a812aebbdcc43fede61ad3376000da328ab44b8b17ab0a1797b"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1064.JPG",
+      "sha256": "d557ba7a47411eb2a63445fa682dff97c31fca55723bfe4ec4f5052c4ada31cc"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1065.JPG",
+      "sha256": "200ddf409f0098f9a60c8e6570e87950295a412596dfdeb249f7e724c6635c04"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1066.JPG",
+      "sha256": "c4be39b4df0b86d883f729827af232cc4e75d571083f34f4d7d365bb8b63bed0"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1067.JPG",
+      "sha256": "1c11b63625e74ef3ef872314b3b58a08f2b3be5807918dab713eea3e1f210d68"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1068.JPG",
+      "sha256": "13ab4187e14b2547212644db26640edc70b3def340797bb8ecd3b719b4137800"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1069.JPG",
+      "sha256": "1d60b1f25f9759c8ddcab7fead94d807f08f63bab46d1509a8515edc8c2f318c"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1070.JPG",
+      "sha256": "f33cf0b632963048ee235a721e0b43cf89bcad6cd0adc2267efe6f176d60e643"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1071.JPG",
+      "sha256": "959fafbb35043b7b3df5f75ecbf9b60f0e52df6c493e8b3cf6d050e49168f475"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1072.JPG",
+      "sha256": "fe87db78be201a3a82dd1b67a134eea79e1f56e9d29b6162613ca495d9227346"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1073.JPG",
+      "sha256": "b482c8a6febd23c6fbc1217963b74c505760f889f87a659c49079b1fb5410157"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1074.JPG",
+      "sha256": "4a99a8a239b97ffb4996b5099aa6b73da4c1ebeaa3976381d9fe3cbe76978292"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1075.JPG",
+      "sha256": "adbecb4c39ee117dfdf5b841205894a37ac24160e6ca35f512c2d1d2723d1338"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1079.JPG",
+      "sha256": "2d0caec4e579ca9af3fa1350650ac4e3a122bacd81d8a2946734d86bc9a38a8c"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1080.JPG",
+      "sha256": "a8843238f1b6146e08b7449304334bd6a2b4681b5f693a51fc7e4fd0bab5c2bf"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1081.JPG",
+      "sha256": "4911d8724c047d09b660f3d9350151a18538f06dff1decf1adf91abe3a04f98f"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1082.JPG",
+      "sha256": "d3dcc2d835f303a2e434d28ae9622a1b7f33dbb279233adfa305ef34cb623404"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1083.JPG",
+      "sha256": "56c0306d548aef6339576b0f07bda62a0c761e6edc7d6fe61c6d368caf91751a"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1084.JPG",
+      "sha256": "b592d3f47df6d71800d43d764505f869d7d6e9ef9250aed081f032dc8f8c3215"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1085.JPG",
+      "sha256": "771b191d311cfd7993d1510a98f7fc607b8ae67e27ffae23eb25de75d9973453"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1086.JPG",
+      "sha256": "f6a90f9b96d287c1facef275cab69deb91e5465780c484ca659e07f1d27942e6"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1087.JPG",
+      "sha256": "8e9ad052c7d779dc5a8b2991984ee81ee532ee1cb9bc373d0ae9caf082115c59"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1088.JPG",
+      "sha256": "b9f5b992cc14c9006b81ad9b254b88ad7aa224b74d21722f16c31e9b43a873dc"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1165.JPG",
+      "sha256": "f953c94ac6d8ac0dd8008da08ecba8a1db69b97d649c162f4130601a4b515e9c"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1166.JPG",
+      "sha256": "d7ea3964df9b6f44efac65ba8eb02dab6b2a5b5b9e7fe8e4be8c7227ad382521"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1167.JPG",
+      "sha256": "3a7ac4dbbc50a7ce040082e1b9abadebf06e8debc976ad9182737be5de276cc8"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1168.JPG",
+      "sha256": "7cfe4f247a03b1e04ac6cae51957d988bf70e453e34f48f2f9bb61997fae6a14"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1169.JPG",
+      "sha256": "f39865c19ef186f48bcc3e39371e692d52e7759314dd43bfa6a5473e19c6e9ca"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1341.HEIC",
+      "sha256": "7555bb16d63fd1fdb4ebf30ac6b0dea65482f32e7177fb3781a5756c6800b483"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/IMG_1342.HEIC",
+      "sha256": "d1a7a6868390f355a18331e8aec1e9228c7eaf389515bc95bfa0ebb8b1468121"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/b24456a1-162c-4d4e-81c7-0007da4a1b81.JPG",
+      "sha256": "01412ddd5641685094de0687c4a233ebb2dfaa23bd749e0679c860295c898d73"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/e2acdacf-9807-4176-95f3-efdb2c4dea04.JPG",
+      "sha256": "c3e3c06365c66a4cb7bfdd2c648b439d5b79f3da0323fa0554e258100c7ccd40"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/ff4b5fa5-eecb-42f5-ac28-82f10e330d5a 2.JPG",
+      "sha256": "f3ee269da5cfa84d0f925ff6e658ee153b9c84e477793f915b89a49ddf827f47"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/ff4b5fa5-eecb-42f5-ac28-82f10e330d5a.JPG",
+      "sha256": "f3ee269da5cfa84d0f925ff6e658ee153b9c84e477793f915b89a49ddf827f47"
+    },
+    {
+      "path": "/Users/lorenaferreira/Downloads/lorena-beauty/profile.JPG",
+      "sha256": "91fa4c4bc6e0b51c73a9a595263f5d2a4ad3eb5325d9df487ce627c44ab0b75d"
+    }
+  ]
+}

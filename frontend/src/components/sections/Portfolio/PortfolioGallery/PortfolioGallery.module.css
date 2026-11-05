@@ -104,6 +104,16 @@
   transform: scale(1.025);
 }
 
+.imageWrapper img[src$="/beauty-02.webp"],
+.imageWrapper img[src$="/beauty-03.webp"],
+.imageWrapper img[src$="/artistic-03.webp"] {
+  object-position: center top;
+}
+
+.imageWrapper img[src$="/wedding-01.webp"] {
+  object-position: 30% center;
+}
+
 .item figcaption {
   display: flex;
   align-items: center;

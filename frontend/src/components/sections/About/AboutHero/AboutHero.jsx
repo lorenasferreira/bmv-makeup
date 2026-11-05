@@ -12,7 +12,7 @@ function AboutHero() {
 
         <h1 className={styles.title}>
           Bruno
-          <span>Menezes</span>
+          <span>Mënezess</span>
         </h1>
       </div>
 

@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -13,6 +13,31 @@ function Header() {
   const location = useLocation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const headerRef = useRef(null);
+  useEffect(() => {
+    let previous = Math.max(0, window.scrollY);
+    let distance = 0;
+    const onScroll = () => {
+      const current = Math.max(0, window.scrollY);
+      const delta = current - previous;
+      previous = current;
+      setIsScrolled(current > 80);
+      if (current <= 80 || isMenuOpen || headerRef.current?.contains(document.activeElement)) {
+        distance = 0;
+        setIsHidden(false);
+        return;
+      }
+      distance = Math.sign(delta) === Math.sign(distance) ? distance + delta : delta;
+      if (Math.abs(distance) >= 12) {
+        setIsHidden(distance > 0);
+        distance = 0;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isMenuOpen, location.pathname]);
   const menuButtonRef = useRef(null);
   const brandRef = useRef(null);
   const closeMenu = useCallback(() => setIsMenuOpen(false), []);
@@ -21,7 +46,9 @@ function Header() {
 
   return (
     <header
-      className={`${styles.header} ${!isHome ? styles.headerInternal : ""}`}
+      ref={headerRef}
+      onFocusCapture={() => setIsHidden(false)}
+      className={`${styles.header} ${!isHome ? styles.headerInternal : ""} ${isHome && isScrolled ? styles.scrolled : ""} ${isHidden && !isMenuOpen ? styles.hidden : ""}`}
     >
       <Link ref={brandRef} to="/" className={styles.brand} aria-label={t("accessibility.home")}>
         BMV

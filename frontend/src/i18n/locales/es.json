@@ -14,8 +14,8 @@
       "title": "La técnica importa.",
       "titleAccent": "La conexión también.",
       "description": "El trabajo está en los detalles: en la preparación, la conversación, la confianza y la forma en que cada persona se siente durante el proceso.",
-      "backstageAlt": "Bruno Menezes entre bastidores",
-      "workingAlt": "Bruno Menezes trabajando",
+      "backstageAlt": "Bruno Mënezess entre bastidores",
+      "workingAlt": "Bruno Mënezess trabajando",
       "ctaEyebrow": "Conoce el trabajo",
       "ctaTitle": "Cada rostro cuenta",
       "ctaTitleAccent": "una historia diferente.",
@@ -23,7 +23,7 @@
     },
     "hero": {
       "eyebrow": "El artista",
-      "imageAlt": "Bruno Menezes trabajando como maquillador",
+      "imageAlt": "Bruno Mënezess trabajando como maquillador",
       "origin": "Brasileño.",
       "location": "En Barcelona.",
       "description": "Maquillaje como expresión, identidad y encuentro, creado para realzar a quien tiene delante."
@@ -54,16 +54,16 @@
         "paragraph2": "Cada rostro, cada ocasión y cada proyecto requieren un enfoque diferente, siempre respetando la personalidad, el estilo y la individualidad de cada persona."
       },
       "journey": {
-        "imageAlt": "Retrato de Bruno Menezes",
+        "imageAlt": "Retrato de Bruno Mënezess",
         "eyebrow": "De Brasil a Barcelona",
         "title": "Una trayectoria",
         "titleSecond": "construida a través",
         "titleAccent": "de la belleza.",
-        "paragraph1": "Con más de ocho años de experiencia en el mundo de la belleza, Bruno Menezes ha construido una trayectoria marcada por la versatilidad y la atención al detalle.",
+        "paragraph1": "Con más de ocho años de experiencia en el mundo de la belleza, Bruno Mënezess ha construido una trayectoria marcada por la versatilidad y la atención al detalle.",
         "paragraph2": "Hoy, en Barcelona, su trabajo abarca distintos contextos: desde momentos personales y celebraciones hasta producciones creativas, editoriales y profesionales."
       },
       "approach": {
-        "imageAlt": "Bruno Menezes maquillando a una clienta",
+        "imageAlt": "Bruno Mënezess maquillando a una clienta",
         "eyebrow": "El enfoque",
         "title": "Cada trabajo",
         "titleAccent": "empieza por la persona.",
@@ -154,7 +154,7 @@
       "metaExperience": "experiencia",
       "title": "Aprende a",
       "titleAccent": "entender la belleza.",
-      "imageAlt": "Bruno Menezes enseñando técnicas de maquillaje",
+      "imageAlt": "Bruno Mënezess enseñando técnicas de maquillaje",
       "description": "Cursos presenciales para quienes quieren comprender mejor su propio maquillaje o profundizar en la técnica profesional."
     },
     "intro": {
@@ -171,7 +171,7 @@
       "title": "Maquillaje",
       "titleAccent": "Nupcial.",
       "description": "Una formación dirigida a profesionales que quieren profundizar en la técnica y la experiencia de atención en el universo nupcial.",
-      "mainImageAlt": "Maquillaje de novia por Bruno Menezes",
+      "mainImageAlt": "Maquillaje de novia por Bruno Mënezess",
       "detailImageAlt": "Detalle de maquillaje nupcial",
       "contentLabel": "Contenido",
       "topics": {
@@ -187,7 +187,7 @@
       "durationValue": "Hasta 4 horas",
       "modelLabel": "Modelo adicional",
       "conditionLabel": "Importante",
-      "condition": "La alumna debe traer a su propia modelo. Si es necesario proporcionar una modelo para la clase, se añadirá un importe de €60.",
+      "condition": "La alumna debe traer a su propia modelo. Si es necesario proporcionar una modelo para la clase, se añadirá un importe de 100 €.",
       "note": "La clase incluye una pausa de 15 minutos para café."
     },
     "whatsapp": {
@@ -236,7 +236,7 @@
       "link": "Hablar con Bruno"
     },
     "experience": {
-      "imageAlt": "Bruno Menezes durante una sesión de maquillaje",
+      "imageAlt": "Bruno Mënezess durante una sesión de maquillaje",
       "eyebrow": "La experiencia",
       "title": "Antes del maquillaje,",
       "titleAccent": "viene la escucha.",
@@ -247,7 +247,7 @@
       "eyebrow": "Servicios",
       "title": "Belleza para",
       "titleAccent": "cada historia.",
-      "imageAlt": "Trabajo de maquillaje de Bruno Menezes",
+      "imageAlt": "Trabajo de maquillaje de Bruno Mënezess",
       "location": "Barcelona · Todo el mundo",
       "description": "De la belleza natural a la creación artística, cada trabajo empieza con la misma pregunta: ¿qué tiene sentido para ti?"
     },
@@ -293,7 +293,7 @@
       "link": "Hablar con Bruno"
     },
     "hero": {
-      "imageAlt": "Maquillaje de novia por Bruno Menezes",
+      "imageAlt": "Maquillaje de novia por Bruno Mënezess",
       "location": "Barcelona · Destination Weddings",
       "eyebrow": "Weddings",
       "title": "Tu día.",
@@ -306,7 +306,7 @@
       "title": "No existe una",
       "titleSecond": "única forma de",
       "titleAccent": "ser novia.",
-      "imageAlt": "Novia maquillada por Bruno Menezes",
+      "imageAlt": "Novia maquillada por Bruno Mënezess",
       "paragraph1": "Algunas quieren una piel ligera. Otras quieren ojos marcados. Algunas llegan sabiendo exactamente lo que desean y otras prefieren descubrirlo durante el proceso.",
       "paragraph2": "El trabajo empieza por entenderte a ti, tu estilo, tu celebración y cómo quieres sentirte al mirarte al espejo."
     },
@@ -533,7 +533,7 @@
     "book": "Reservar ahora"
   },
   "footer": {
-    "tagline": "Maquillaje artístico en Barcelona.",
+    "tagline": "Maquillaje profesional en Barcelona.",
     "artist": "El Artista",
     "services": "Servicios",
     "portfolio": "Portafolio",

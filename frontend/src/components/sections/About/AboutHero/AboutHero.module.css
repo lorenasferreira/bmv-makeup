@@ -120,7 +120,7 @@
   }
 
   .title {
-    font-size: clamp(4.2rem, 22vw, 6.5rem);
+    font-size: clamp(3.4rem, 19vw, 6.5rem);
   }
 
   .title span {

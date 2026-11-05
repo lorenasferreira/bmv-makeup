@@ -25,11 +25,11 @@ function WeddingsPreview() {
 
       <div className={styles.visual}>
         <div className={styles.mainImage}>
-          <span>{t("home.weddings.mainImageLabel")}</span>
+          <img src="/assets/images/home/weddings/bride-portrait.webp" alt={t("home.weddings.mainImageLabel")} loading="lazy" />
         </div>
 
         <div className={styles.secondaryImage}>
-          <span>{t("home.weddings.secondaryImageLabel")}</span>
+          <img src="/assets/images/home/weddings/bruno-working.webp" alt={t("home.weddings.secondaryImageLabel")} loading="lazy" />
         </div>
       </div>
     </section>

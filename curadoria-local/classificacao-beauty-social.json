@@ -1,0 +1,336 @@
+{
+  "data": "2026-11-05",
+  "criterio": "Correção solicitada: Beauty and Social é uma única categoria. As descrições visuais individuais anteriores são preservadas apenas como histórico, sem subdivisão de categoria.",
+  "fotografias": [
+    {
+      "id": "SOC-01",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-02",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-03",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-04",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-05",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-06",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-07",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Duas pessoas com produção pessoal em contexto compartilhado."
+    },
+    {
+      "id": "SOC-08",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Produção pessoal ao ar livre com roupa, acessórios e contexto urbano."
+    },
+    {
+      "id": "SOC-09",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Produção pessoal ao ar livre com roupa, acessórios e contexto urbano."
+    },
+    {
+      "id": "SOC-10",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "SOC-11",
+      "category": "Beauty and Social",
+      "categoria_original": "Social and Beauty ",
+      "criterio_visual": "Rosto e acabamento da maquiagem dominam a composição: pele, olhos e lábios."
+    },
+    {
+      "id": "LBS-01",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-02",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-03",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-04",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-05",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-06",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-07",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-08",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-09",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-10",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-11",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-12",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-13",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-14",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-15",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-16",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-17",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-18",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-19",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-20",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-21",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-22",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Olhos fechados destacam aplicação de sombra, delineado, textura da pele e acabamento dos lábios."
+    },
+    {
+      "id": "LBS-23",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Olhos fechados destacam aplicação de sombra, delineado, textura da pele e acabamento dos lábios."
+    },
+    {
+      "id": "LBS-24",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Olhos fechados destacam aplicação de sombra, delineado, textura da pele e acabamento dos lábios."
+    },
+    {
+      "id": "LBS-25",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-26",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-27",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Olhos fechados destacam aplicação de sombra, delineado, textura da pele e acabamento dos lábios."
+    },
+    {
+      "id": "LBS-28",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-29",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-30",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-31",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-32",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-33",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-34",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-35",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-36",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-37",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato com vestido e composição de corpo/gesto, enfatizando a produção pessoal completa."
+    },
+    {
+      "id": "LBS-38",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato com vestido e composição de corpo/gesto, enfatizando a produção pessoal completa."
+    },
+    {
+      "id": "LBS-39",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato com vestido e composição de corpo/gesto, enfatizando a produção pessoal completa."
+    },
+    {
+      "id": "LBS-40",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    },
+    {
+      "id": "LBS-41",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Olhos fechados destacam aplicação de sombra, delineado, textura da pele e acabamento dos lábios."
+    },
+    {
+      "id": "LBS-42",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-43",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato pessoal com blazer branco, expressão espontânea e apresentação do visual completo; maquiagem integrada à produção."
+    },
+    {
+      "id": "LBS-44",
+      "category": "Beauty and Social",
+      "categoria_original": "Lorena — Beauty & Social",
+      "criterio_visual": "Retrato dirigido ao rosto e acabamento da maquiagem: olhos delineados, pele e lábios em destaque, com fundo neutro."
+    }
+  ]
+}

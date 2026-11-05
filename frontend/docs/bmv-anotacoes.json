@@ -1,0 +1,1124 @@
+{
+  "data": "2026-11-05T10:29:16.210Z",
+  "anotacoes": {
+    "CAS-11": "",
+    "BRU-08": "essa como segunda foto do about em http://localhost:5173/assets/images/about/bruno-portrait.jpeg",
+    "BRU-02": "essa como terceira do about do bruno como http://localhost:5173/assets/images/about/bruno-client.jpeg",
+    "BRU-20": "from vision to celebration bruno working na home",
+    "BRU-17": "essa em http://localhost:5173/assets/images/about/bruno-backstage-1.jpeg",
+    "BRU-18": "essa em http://localhost:5173/assets/images/about/bruno-backstage-2.jpeg e tb no carrossel da home onde vai bruno working ",
+    "CAS-05": "essa em http://localhost:5173/assets/images/services/weddings.webp",
+    "CAS-08": "http://localhost:5173/assets/images/weddings/weddings-hero.webp",
+    "CAS-10": "essa em http://localhost:5173/assets/images/weddings/weddings-intro.webp",
+    "SOC-09": "essa p pagina de portfoli/social beauty onde couber melhor ",
+    "LBS-40": "essa como uma das fotos de portfolio/beauty",
+    "CAS-09": "essa em http://localhost:5173/assets/images/portfolio/wedding-01.webp",
+    "CAS-19": "",
+    "CAS-12": "http://localhost:5173/assets/images/portfolio/wedding-02.webp",
+    "CAS-20": "em http://localhost:5173/assets/images/portfolio/wedding-03.webp",
+    "CAS-06": "essa em http://localhost:5173/assets/images/portfolio/wedding-04.webp",
+    "ART-11": "essa em http://localhost:5173/assets/images/portfolio/artistic-01.webp",
+    "ART-09": "essa em http://localhost:5173/assets/images/portfolio/artistic-02.webp",
+    "ART-07": "essa em http://localhost:5173/assets/images/portfolio/artistic-04.webp",
+    "ART-05": "essa em http://localhost:5173/assets/images/portfolio/artistic-03.webp",
+    "ART-03": "essa em http://localhost:5173/assets/images/services/artistic.webp",
+    "CAS-13": "essa na parte de bridal do carrossel da home ",
+    "ART-08": "essa no carrossel da home ",
+    "SOC-11": "essa na home em selected work beauty portrait ",
+    "ART-04": "essa na home em selected work onde fala artistic",
+    "CAS-03": "from vistion to celebration Bride Portrait "
+  },
+  "comparacao": [],
+  "fotografias": [
+    {
+      "id": "ART-01",
+      "name": "31DCF18F-8E4B-4199-92F2-C46817E05D65.jpg",
+      "category": "Artística",
+      "width": 1320,
+      "height": 2346,
+      "orientation": "vertical",
+      "ratio": "220:391",
+      "format": "jpeg"
+    },
+    {
+      "id": "ART-02",
+      "name": "3975ef5b-a4f1-417d-8e34-db192930ffe8.jpg",
+      "category": "Artística",
+      "width": 1366,
+      "height": 2048,
+      "orientation": "vertical",
+      "ratio": "683:1024",
+      "format": "jpeg"
+    },
+    {
+      "id": "ART-03",
+      "name": "643D3B69-9224-448B-8038-8943AA88A3CD.jpg",
+      "category": "Artística",
+      "width": 1320,
+      "height": 2346,
+      "orientation": "vertical",
+      "ratio": "220:391",
+      "format": "jpeg"
+    },
+    {
+      "id": "ART-04",
+      "name": "D404F4D7-77A5-44D3-A409-98FD6D571E23.jpg",
+      "category": "Artística",
+      "width": 1320,
+      "height": 2346,
+      "orientation": "vertical",
+      "ratio": "220:391",
+      "format": "jpeg"
+    },
+    {
+      "id": "ART-05",
+      "name": "Facetune_27-10-2026-23-14-32.heic",
+      "category": "Artística",
+      "width": 3024,
+      "height": 4032,
+      "orientation": "vertical",
+      "ratio": "3:4",
+      "format": "heic"
+    },
+    {
+      "id": "ART-06",
+      "name": "Facetune_29-10-2026-10-58-30.heic",
+      "category": "Artística",
+      "width": 2721,
+      "height": 1530,
+      "orientation": "horizontal",
+      "ratio": "907:510",
+      "format": "heic"
+    },
+    {
+      "id": "ART-07",
+      "name": "Facetune_29-10-2026-10-59-21.heic",
+      "category": "Artística",
+      "width": 1366,
+      "height": 768,
+      "orientation": "horizontal",
+      "ratio": "683:384",
+      "format": "heic"
+    },
+    {
+      "id": "ART-08",
+      "name": "Facetune_29-10-2026-11-00-59.heic",
+      "category": "Artística",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "ART-09",
+      "name": "Facetune_29-10-2026-11-32-14.heic",
+      "category": "Artística",
+      "width": 3023,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "3023:1701",
+      "format": "heic"
+    },
+    {
+      "id": "ART-10",
+      "name": "IMG_1345.HEIC",
+      "category": "Artística",
+      "width": 3213,
+      "height": 5712,
+      "orientation": "vertical",
+      "ratio": "9:16",
+      "format": "heic"
+    },
+    {
+      "id": "ART-11",
+      "name": "IMG_3495.PNG",
+      "category": "Artística",
+      "width": 1317,
+      "height": 1646,
+      "orientation": "vertical",
+      "ratio": "1317:1646",
+      "format": "png"
+    },
+    {
+      "id": "ART-12",
+      "name": "a4161cad-ba66-4310-9f80-6540f81a1b86.jpg",
+      "category": "Artística",
+      "width": 1366,
+      "height": 2048,
+      "orientation": "vertical",
+      "ratio": "683:1024",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-01",
+      "name": "1ef61c42-3c14-46f9-a1d0-1cffbc0ec80d.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1600,
+      "height": 1064,
+      "orientation": "horizontal",
+      "ratio": "200:133",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-02",
+      "name": "2fa30cee-c3cb-4511-b33f-a76ad1609d65.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1067,
+      "height": 1600,
+      "orientation": "vertical",
+      "ratio": "1067:1600",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-03",
+      "name": "484375aa-a1ae-441e-a883-ca64179c0799.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1600,
+      "height": 1064,
+      "orientation": "horizontal",
+      "ratio": "200:133",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-04",
+      "name": "6D7269AB-C7E1-49C5-A816-FF12A2507025.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1320,
+      "height": 2346,
+      "orientation": "vertical",
+      "ratio": "220:391",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-05",
+      "name": "A2B2F7EE-EDE9-41B2-B785-D63B8A3D2CCA.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1081,
+      "height": 720,
+      "orientation": "horizontal",
+      "ratio": "1081:720",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-06",
+      "name": "C4FFEB8E-B181-4019-AEB8-E1B18A5E81C4.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1000,
+      "height": 1500,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-07",
+      "name": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1044,
+      "height": 1500,
+      "orientation": "vertical",
+      "ratio": "87:125",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-08",
+      "name": "IMG_1338.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 4000,
+      "height": 6000,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-09",
+      "name": "IMG_1339.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-10",
+      "name": "IMG_2179.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-11",
+      "name": "IMG_2180.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-12",
+      "name": "IMG_2421.PNG",
+      "category": "Bruno trabalhando ",
+      "width": 1320,
+      "height": 2868,
+      "orientation": "vertical",
+      "ratio": "110:239",
+      "format": "png"
+    },
+    {
+      "id": "BRU-13",
+      "name": "IMG_3321.HEIC",
+      "category": "Bruno trabalhando ",
+      "width": 3024,
+      "height": 4032,
+      "orientation": "vertical",
+      "ratio": "3:4",
+      "format": "heic"
+    },
+    {
+      "id": "BRU-14",
+      "name": "IMG_3330.HEIC",
+      "category": "Bruno trabalhando ",
+      "width": 4032,
+      "height": 3024,
+      "orientation": "horizontal",
+      "ratio": "4:3",
+      "format": "heic"
+    },
+    {
+      "id": "BRU-15",
+      "name": "IMG_3908.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-16",
+      "name": "IMG_3909.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-17",
+      "name": "IMG_7048.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 7008,
+      "height": 4672,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-18",
+      "name": "IMG_7050.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 6813,
+      "height": 4542,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-19",
+      "name": "IMG_7349.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 7728,
+      "height": 5152,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-20",
+      "name": "IMG_7404.JPG",
+      "category": "Bruno trabalhando ",
+      "width": 5152,
+      "height": 7728,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "BRU-21",
+      "name": "c67957b2-385b-49b6-9848-7eb65e7fba1b.jpg",
+      "category": "Bruno trabalhando ",
+      "width": 1067,
+      "height": 1600,
+      "orientation": "vertical",
+      "ratio": "1067:1600",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-01",
+      "name": "0080DE54-1C13-493E-BD95-5C2391927861.jpg",
+      "category": "Casamentos ",
+      "width": 1206,
+      "height": 804,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-02",
+      "name": "0DE81F8E-701B-4742-A1C7-5590699500F8.jpg",
+      "category": "Casamentos ",
+      "width": 1284,
+      "height": 1926,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-03",
+      "name": "2F891C6E-5B9B-4D58-B083-730561E72795.jpg",
+      "category": "Casamentos ",
+      "width": 1206,
+      "height": 1809,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-04",
+      "name": "4BD6D5B3-9772-431B-856E-31731F1AB0D9.jpg",
+      "category": "Casamentos ",
+      "width": 1406,
+      "height": 936,
+      "orientation": "horizontal",
+      "ratio": "703:468",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-05",
+      "name": "779451A9-8D04-4506-9380-EB748AA673C5.jpg",
+      "category": "Casamentos ",
+      "width": 1284,
+      "height": 1930,
+      "orientation": "vertical",
+      "ratio": "642:965",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-06",
+      "name": "9B1A70A6-E16A-42A6-85A5-E3805397DDA9.jpg",
+      "category": "Casamentos ",
+      "width": 1206,
+      "height": 804,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-07",
+      "name": "A08BD252-C8F5-4C96-8117-436B1113A6BF.jpg",
+      "category": "Casamentos ",
+      "width": 1284,
+      "height": 1930,
+      "orientation": "vertical",
+      "ratio": "642:965",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-08",
+      "name": "B3FAAE0B-9750-4F19-86BE-0D774A8B8D1F.jpg",
+      "category": "Casamentos ",
+      "width": 1206,
+      "height": 804,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-09",
+      "name": "E4CEEA43-F6E1-4EAF-87CC-4FCB2DBBAB76.jpg",
+      "category": "Casamentos ",
+      "width": 1284,
+      "height": 854,
+      "orientation": "horizontal",
+      "ratio": "642:427",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-10",
+      "name": "Facetune_03-06-2025-20-37-53.heic",
+      "category": "Casamentos ",
+      "width": 3024,
+      "height": 4032,
+      "orientation": "vertical",
+      "ratio": "3:4",
+      "format": "heic"
+    },
+    {
+      "id": "CAS-11",
+      "name": "Facetune_29-10-2026-11-19-30.heic",
+      "category": "Casamentos ",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "CAS-12",
+      "name": "IMG_3548.PNG",
+      "category": "Casamentos ",
+      "width": 1320,
+      "height": 1650,
+      "orientation": "vertical",
+      "ratio": "4:5",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-13",
+      "name": "IMG_5960.JPG",
+      "category": "Casamentos ",
+      "width": 2048,
+      "height": 1365,
+      "orientation": "horizontal",
+      "ratio": "2048:1365",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-14",
+      "name": "IMG_5968.JPG",
+      "category": "Casamentos ",
+      "width": 2048,
+      "height": 1365,
+      "orientation": "horizontal",
+      "ratio": "2048:1365",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-15",
+      "name": "IMG_5972.JPG",
+      "category": "Casamentos ",
+      "width": 1365,
+      "height": 2048,
+      "orientation": "vertical",
+      "ratio": "1365:2048",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-16",
+      "name": "IMG_5974.JPG",
+      "category": "Casamentos ",
+      "width": 2048,
+      "height": 1365,
+      "orientation": "horizontal",
+      "ratio": "2048:1365",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-17",
+      "name": "IMG_5975.JPG",
+      "category": "Casamentos ",
+      "width": 2048,
+      "height": 1365,
+      "orientation": "horizontal",
+      "ratio": "2048:1365",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-18",
+      "name": "IMG_9860.JPG",
+      "category": "Casamentos ",
+      "width": 3063,
+      "height": 4595,
+      "orientation": "vertical",
+      "ratio": "3063:4595",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-19",
+      "name": "IMG_9862.JPG",
+      "category": "Casamentos ",
+      "width": 4000,
+      "height": 6000,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-20",
+      "name": "IMG_9864.JPG",
+      "category": "Casamentos ",
+      "width": 3289,
+      "height": 4934,
+      "orientation": "vertical",
+      "ratio": "3289:4934",
+      "format": "jpeg"
+    },
+    {
+      "id": "CAS-21",
+      "name": "IMG_9865.JPG",
+      "category": "Casamentos ",
+      "width": 3703,
+      "height": 5554,
+      "orientation": "vertical",
+      "ratio": "3703:5554",
+      "format": "jpeg"
+    },
+    {
+      "id": "SOC-01",
+      "name": "Facetune_29-10-2026-10-57-40.heic",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-02",
+      "name": "Facetune_29-10-2026-11-04-20.heic",
+      "category": "Beauty and Social",
+      "width": 4069,
+      "height": 2289,
+      "orientation": "horizontal",
+      "ratio": "4069:2289",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-03",
+      "name": "Facetune_29-10-2026-11-05-54.heic",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-04",
+      "name": "Facetune_29-10-2026-11-06-49.heic",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-05",
+      "name": "Facetune_29-10-2026-11-07-26.heic",
+      "category": "Beauty and Social",
+      "width": 3018,
+      "height": 1697,
+      "orientation": "horizontal",
+      "ratio": "3018:1697",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-06",
+      "name": "Facetune_29-10-2026-11-10-40.heic",
+      "category": "Beauty and Social",
+      "width": 4000,
+      "height": 2249,
+      "orientation": "horizontal",
+      "ratio": "4000:2249",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-07",
+      "name": "Facetune_29-10-2026-11-14-24.heic",
+      "category": "Beauty and Social",
+      "width": 4284,
+      "height": 2409,
+      "orientation": "horizontal",
+      "ratio": "1428:803",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-08",
+      "name": "Facetune_29-10-2026-11-23-04.heic",
+      "category": "Beauty and Social",
+      "width": 1320,
+      "height": 742,
+      "orientation": "horizontal",
+      "ratio": "660:371",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-09",
+      "name": "Facetune_29-10-2026-11-23-17.heic",
+      "category": "Beauty and Social",
+      "width": 1320,
+      "height": 2132,
+      "orientation": "vertical",
+      "ratio": "330:533",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-10",
+      "name": "Facetune_29-10-2026-11-40-42.heic",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 1701,
+      "orientation": "horizontal",
+      "ratio": "16:9",
+      "format": "heic"
+    },
+    {
+      "id": "SOC-11",
+      "name": "IMG_3910.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-01",
+      "name": "257fdbdc-d571-41d7-8173-08f18ed194a3.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-02",
+      "name": "29458968-58a2-400c-8846-1199c02437ea.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-03",
+      "name": "30662b00-637b-4ce7-9b01-e495735aff28.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-04",
+      "name": "3804ad99-2071-48d1-82a9-6a8faac987e4.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-05",
+      "name": "3b88ec25-5b2d-4349-b087-ecc063729728.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-06",
+      "name": "4455dd85-0113-418a-83f1-b1b390b388a6.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-07",
+      "name": "60a90bbd-ed58-4971-95f2-2ad005287212.JPG",
+      "category": "Beauty and Social",
+      "width": 2730,
+      "height": 4096,
+      "orientation": "vertical",
+      "ratio": "1365:2048",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-08",
+      "name": "61c1efae-63d7-4e6b-aef8-c28ac4c2a6bf.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-09",
+      "name": "64927659-7c20-43e2-90f1-299d9496f970.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-10",
+      "name": "IMG_1061.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-11",
+      "name": "IMG_1062.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-12",
+      "name": "IMG_1063.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-13",
+      "name": "IMG_1064.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-14",
+      "name": "IMG_1065.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-15",
+      "name": "IMG_1066.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-16",
+      "name": "IMG_1067.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-17",
+      "name": "IMG_1068.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-18",
+      "name": "IMG_1069.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-19",
+      "name": "IMG_1070.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-20",
+      "name": "IMG_1071.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-21",
+      "name": "IMG_1072.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-22",
+      "name": "IMG_1073.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-23",
+      "name": "IMG_1074.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-24",
+      "name": "IMG_1075.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-25",
+      "name": "IMG_1079.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-26",
+      "name": "IMG_1080.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-27",
+      "name": "IMG_1081.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-28",
+      "name": "IMG_1082.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-29",
+      "name": "IMG_1083.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-30",
+      "name": "IMG_1084.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-31",
+      "name": "IMG_1085.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-32",
+      "name": "IMG_1086.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-33",
+      "name": "IMG_1087.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-34",
+      "name": "IMG_1088.JPG",
+      "category": "Beauty and Social",
+      "width": 6000,
+      "height": 4000,
+      "orientation": "horizontal",
+      "ratio": "3:2",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-35",
+      "name": "IMG_1165.JPG",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 4027,
+      "orientation": "vertical",
+      "ratio": "3024:4027",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-36",
+      "name": "IMG_1166.JPG",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 4027,
+      "orientation": "vertical",
+      "ratio": "3024:4027",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-37",
+      "name": "IMG_1167.JPG",
+      "category": "Beauty and Social",
+      "width": 3750,
+      "height": 4994,
+      "orientation": "vertical",
+      "ratio": "1875:2497",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-38",
+      "name": "IMG_1168.JPG",
+      "category": "Beauty and Social",
+      "width": 3750,
+      "height": 4994,
+      "orientation": "vertical",
+      "ratio": "1875:2497",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-39",
+      "name": "IMG_1169.JPG",
+      "category": "Beauty and Social",
+      "width": 3024,
+      "height": 4027,
+      "orientation": "vertical",
+      "ratio": "3024:4027",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-40",
+      "name": "IMG_1341.HEIC",
+      "category": "Beauty and Social",
+      "width": 4000,
+      "height": 6000,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "heic"
+    },
+    {
+      "id": "LBS-41",
+      "name": "IMG_1342.HEIC",
+      "category": "Beauty and Social",
+      "width": 4000,
+      "height": 6000,
+      "orientation": "vertical",
+      "ratio": "2:3",
+      "format": "heic"
+    },
+    {
+      "id": "LBS-42",
+      "name": "b24456a1-162c-4d4e-81c7-0007da4a1b81.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-43",
+      "name": "e2acdacf-9807-4176-95f3-efdb2c4dea04.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    },
+    {
+      "id": "LBS-44",
+      "name": "ff4b5fa5-eecb-42f5-ac28-82f10e330d5a 2.JPG",
+      "category": "Beauty and Social",
+      "width": 3413,
+      "height": 5120,
+      "orientation": "vertical",
+      "ratio": "3413:5120",
+      "format": "jpeg"
+    }
+  ]
+}
