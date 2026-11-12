@@ -37,6 +37,25 @@ export default async function handler(req, res) {
     const media = await mediaResponse.json();
 
     if (!profileResponse.ok || !mediaResponse.ok) {
+      console.error("Instagram API error", {
+        profileStatus: profileResponse.status,
+        mediaStatus: mediaResponse.status,
+        profileError: !profileResponse.ok
+          ? {
+              code: profile.error?.code,
+              type: profile.error?.type,
+              subcode: profile.error?.error_subcode,
+            }
+          : null,
+        mediaError: !mediaResponse.ok
+          ? {
+              code: media.error?.code,
+              type: media.error?.type,
+              subcode: media.error?.error_subcode,
+            }
+          : null,
+      });
+
       return res.status(500).json({
         error: "Instagram API request failed",
       });
