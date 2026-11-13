@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FiArrowUpRight, FiX } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 
@@ -113,36 +113,36 @@ function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
         </div>
 
         <nav className={styles.navigation}>
-          <Link to="/" onClick={onClose}>
+          <NavLink to="/" end onClick={onClose}>
             <span>01</span>
             {t("navigation.home")}
-          </Link>
+          </NavLink>
 
-          <Link to="/about" onClick={onClose}>
+          <NavLink to="/about" onClick={onClose}>
             <span>02</span>
             {t("navigation.about")}
-          </Link>
+          </NavLink>
 
-          <Link to="/services" onClick={onClose}>
+          <NavLink to="/services" onClick={onClose}>
             <span>03</span>
             {t("navigation.services")}
-          </Link>
+          </NavLink>
 
-          <Link to="/portfolio" onClick={onClose}>
+          <NavLink to="/portfolio" onClick={onClose}>
             <span>04</span>
             {t("navigation.portfolio")}
-          </Link>
+          </NavLink>
 
-          <Link to="/education" onClick={onClose}>
+          <NavLink to="/education" onClick={onClose}>
             <span>05</span>
             {t("navigation.education")}
-          </Link>
+          </NavLink>
 
-          <Link to="/contact" onClick={onClose}>
+          <NavLink to="/contact" onClick={onClose}>
             <span>06</span>
             {t("navigation.book")}
             <span aria-hidden="true">→</span>
-          </Link>
+          </NavLink>
         </nav>
 
         <div className={styles.footer}>

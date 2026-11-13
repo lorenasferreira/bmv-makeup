@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./EducationProfessional.module.css";
@@ -30,15 +31,15 @@ function EducationProfessional() {
 
       <div className={styles.visual}>
         <div className={styles.imageMain}>
-          <img
-            src="/assets/images/education/bridal-main.webp"
+          <OptimizedImage sizes="(max-width: 640px) 100vw, 70vw"
+            src="/assets/images/curated/bru-20.webp"
             alt={t("education.professional.mainImageAlt")}
           />
         </div>
 
         <div className={styles.imageDetail}>
-          <img
-            src="/assets/images/education/bridal-detail.webp"
+          <OptimizedImage sizes="(max-width: 640px) 55vw, 25vw"
+            src="/assets/images/curated/nov-4e21615332f3066f.webp"
             alt={t("education.professional.detailImageAlt")}
           />
         </div>

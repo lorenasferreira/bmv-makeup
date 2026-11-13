@@ -6,25 +6,21 @@ const steps = [
   {
     number: "01",
     title: "weddings.process.steps.vision.title",
-    image: "/assets/images/weddings/vision.webp",
     text: "weddings.process.steps.vision.description",
   },
   {
     number: "02",
     title: "weddings.process.steps.trial.title",
-    image: "/assets/images/weddings/trial.webp",
     text: "weddings.process.steps.trial.description",
   },
   {
     number: "03",
     title: "weddings.process.steps.weddingDay.title",
-    image: "/assets/images/weddings/wedding-day.webp",
     text: "weddings.process.steps.weddingDay.description",
   },
   {
     number: "04",
     title: "weddings.process.steps.celebration.title",
-    image: "/assets/images/weddings/celebration.webp",
     text: "weddings.process.steps.celebration.description",
   },
 ];
@@ -51,22 +47,18 @@ function WeddingsProcess() {
         </p>
       </div>
 
-      <div className={styles.cards}>
+      <ol className={styles.cards}>
         {steps.map((step) => (
-          <article className={styles.card} key={step.number}>
-            <div className={styles.imageWrapper}>
-              <img src={step.image} alt={t(step.title)} />
-
-              <span className={styles.number}>{step.number}</span>
-            </div>
+          <li className={styles.card} key={step.number}>
+            <span className={styles.number}>{step.number}</span>
 
             <div className={styles.cardContent}>
               <h3>{t(step.title)}</h3>
               <p>{t(step.text)}</p>
             </div>
-          </article>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 }

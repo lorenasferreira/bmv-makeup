@@ -12,15 +12,7 @@
       "eyebrow": "BMV Makeup",
       "title": "The art",
       "titleAccent": "of beauty.",
-      "cta": "Discover the work",
-      "slides": {
-        "working": "Bruno Working",
-        "portrait": "Beauty Portrait",
-        "bridal": "Bridal",
-        "editorial": "Campaign / Editorial",
-        "artistic": "Artistic Makeup",
-        "audiovisual": "Audiovisual / Social"
-      }
+      "cta": "Discover the work"
     },
     "artist": {
       "eyebrow": "Meet the artist",
@@ -44,30 +36,15 @@
           "description": "For moments that stay with you forever.",
           "imageAlt": "Bridal makeup"
         },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Beauty created for brands and stories.",
-          "imageAlt": "Makeup for a campaign"
-        },
         "social": {
           "title": "Social",
           "description": "Elevated beauty for your moments.",
           "imageAlt": "Makeup for a social event"
         },
-        "photoshoots": {
-          "title": "Photoshoots",
-          "description": "Makeup designed for the lens.",
-          "imageAlt": "Makeup for a photoshoot"
-        },
         "artistic": {
           "title": "Artistic",
           "description": "No rules. Just creation.",
           "imageAlt": "Artistic makeup"
-        },
-        "audiovisual": {
-          "title": "Audiovisual",
-          "description": "Beauty designed for the camera.",
-          "imageAlt": "Makeup for an audiovisual production"
         }
       }
     },
@@ -81,7 +58,6 @@
         "portrait": "Beauty Portrait",
         "editorial": "Editorial",
         "detail": "Beauty Detail",
-        "campaign": "Campaign",
         "artistic": "Artistic"
       }
     },
@@ -138,8 +114,7 @@
       "selfMakeup": "Self-Makeup",
       "professional": "Professional Training",
       "workshops": "Workshops",
-      "cta": "Discover the courses",
-      "imageLabel": "Beauty Education"
+      "cta": "Discover the courses"
     },
     "instagram": {
       "eyebrow": "Instagram",
@@ -154,7 +129,7 @@
       "eyebrow": "Let's create",
       "title": "Have something",
       "titleAccent": "in mind?",
-      "description": "Whether it is a wedding, campaign, photoshoot, event or creative project, let's talk about your idea.",
+      "description": "Whether it is a wedding, event or creative project, let's talk about your idea.",
       "primary": "Get in touch",
       "secondary": "Discover the services"
     }
@@ -179,10 +154,10 @@
   },
   "about": {
     "closing": {
-      "eyebrow": "Beyond the artist",
-      "title": "Technique matters.",
-      "titleAccent": "Connection does too.",
-      "description": "The work happens in the details: in the preparation, the conversation, the trust and the way each person feels throughout the process.",
+      "eyebrow": "Lasting experiences",
+      "title": "From Barcelona",
+      "titleAccent": "to New York.",
+      "description": "A memorable experience was accompanying a celebrity from Barcelona to New York for 21 days as a personal beauty artist. It is part of a career in which personal connection and attentive care play a central role.",
       "backstageAlt": "Bruno Mënezess behind the scenes",
       "workingAlt": "Bruno Mënezess at work",
       "ctaEyebrow": "Discover the work",
@@ -195,17 +170,14 @@
       "imageAlt": "Bruno Mënezess working as a makeup artist",
       "origin": "Brazilian.",
       "location": "In Barcelona.",
-      "description": "Makeup as expression, identity and connection — created to bring out the person in front of him."
+      "description": "A Brazilian makeup artist based in Barcelona, with approximately eight years of experience. Glamour, elegance and natural beauty inform his work."
     },
     "range": {
       "items": {
         "weddings": "Weddings",
         "beauty": "Beauty",
         "social": "Social",
-        "campaigns": "Campaigns",
-        "photoshoots": "Photoshoots",
         "artistic": "Artistic",
-        "audiovisual": "Audiovisual",
         "editorial": "Editorial"
       },
       "eyebrow": "Versatility",
@@ -215,28 +187,28 @@
     },
     "story": {
       "manifesto": {
-        "eyebrow": "Beauty with identity",
-        "title": "More than",
-        "titleSecond": "transforming,",
-        "titleAccent": "revealing.",
-        "paragraph1": "For Bruno, makeup is not about hiding someone or turning them into someone else. It is about understanding who is in front of him and creating from there.",
-        "paragraph2": "Every face, occasion and project calls for a different approach — always respecting each person's personality, style and individuality."
+        "eyebrow": "The beginning",
+        "title": "Colour,",
+        "titleSecond": "painting,",
+        "titleAccent": "creation.",
+        "paragraph1": "Bruno was drawn to art, painting and colour from childhood. He graduated in Gastronomy, but discovered makeup while working at a cosmetics shop in a shopping centre to pay the bills.",
+        "paragraph2": "In Goiânia, he began doing makeup for customers at the shop. Some started booking him outside it, and makeup for social occasions became the starting point of his professional career."
       },
       "journey": {
         "imageAlt": "Portrait of Bruno Mënezess",
         "eyebrow": "From Brazil to Barcelona",
         "title": "A journey",
-        "titleSecond": "built through",
-        "titleAccent": "beauty.",
-        "paragraph1": "With more than eight years of experience in the world of beauty, Bruno Mënezess has built a career defined by versatility and attention to detail.",
-        "paragraph2": "Today, in Barcelona, his work spans different contexts — from personal moments and celebrations to creative, editorial and professional productions."
+        "titleSecond": "shaped by",
+        "titleAccent": "new cultures.",
+        "paragraph1": "A desire to discover new cultures and opportunities brought Bruno to Europe, where he settled in Barcelona. He now has approximately eight years of professional makeup experience.",
+        "paragraph2": "He studied at a respected makeup school in São Paulo and attended workshops and masterclasses in Madrid, Alicante and Paris. He continues to invest in professional development, drawing inspiration from glamour, elegance and sophisticated makeup."
       },
       "approach": {
         "imageAlt": "Bruno Mënezess applying makeup to a client",
-        "eyebrow": "The approach",
-        "title": "Every work",
-        "titleAccent": "starts with the person.",
-        "description": "Listening, technique and sensitivity to create a result that works in the mirror, on camera or in a room full of people — without hiding the person behind the makeup."
+        "eyebrow": "Listening",
+        "title": "Every beauty,",
+        "titleAccent": "a connection.",
+        "description": "Connection and listening guide Bruno’s work. Each client’s individuality is the starting point for sophisticated makeup that enhances natural beauty. His work with brides holds a special emotional significance: he wants them to feel confident, cared for and valued."
       }
     }
   },
@@ -323,7 +295,6 @@
       "metaExperience": "experience",
       "title": "Learn to",
       "titleAccent": "understand beauty.",
-      "imageAlt": "Bruno Mënezess teaching makeup techniques",
       "description": "In-person courses for those who want to better understand their own makeup or develop their professional technique."
     },
     "intro": {
@@ -377,10 +348,7 @@
         "all": "All",
         "weddings": "Weddings",
         "beauty": "Beauty",
-        "campaigns": "Campaigns",
-        "photoshoots": "Photoshoots",
-        "artistic": "Artistic",
-        "audiovisual": "Audiovisual"
+        "artistic": "Artistic"
       },
       "count_one": " work",
       "count_other": " works",
@@ -430,21 +398,9 @@
           "title": "Beauty & Social",
           "description": "Makeup for events, celebrations and moments when you want to feel especially yourself."
         },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Beauty developed in dialogue with brands, concepts, creative teams and visual narratives."
-        },
-        "photoshoots": {
-          "title": "Photoshoots",
-          "description": "Makeup designed for the camera, respecting the light, direction, language and intention of each production."
-        },
         "artistic": {
           "title": "Artistic",
           "description": "Space to experiment with colour, texture, shape and possibilities beyond conventional beauty."
-        },
-        "audiovisual": {
-          "title": "Audiovisual",
-          "description": "Makeup and characterisation adapted to the needs of audiovisual productions and different visual formats."
         }
       },
       "eyebrow": "The work",
@@ -481,20 +437,17 @@
     },
     "partners": {
       "categories": {
-        "photography": "Photography",
-        "hair": "Hair",
-        "nails": "Nails",
+        "hair": "Hair stylist",
         "massage": "Massage",
-        "beauty": "Beauty",
-        "weddingServices": "Wedding Services"
+        "photography": "Photography"
       },
       "eyebrow": "Trusted Network",
-      "status": "Coming soon",
+      "status": "Recommended",
       "title": "A wedding",
       "titleSecond": "is made by",
       "titleAccent": "many hands.",
-      "paragraph1": "Over the years, Bruno crosses paths with professionals who share the same care for experience, detail and service.",
-      "paragraph2": "This area will bring together a selection of recommended professionals and services to complement the wedding experience."
+      "paragraph1": "Recommended professionals to complement your wedding preparations and the day itself.",
+      "paragraph2": "Explore their work and contact them directly through their Instagram profiles."
     },
     "process": {
       "steps": {
@@ -547,5 +500,19 @@
   },
   "common": {
     "scrollToTop": "Scroll to top"
+  },
+  "seo": {
+    "title": "BMV Makeup | Bruno Mënezess — Makeup Artist in Barcelona",
+    "description": "Bridal, social and artistic makeup by Bruno Mënezess in Barcelona. Sophisticated beauty, natural individuality and a personal approach.",
+    "pages": {
+      "home": "Home",
+      "about": "The Artist",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "education": "Education",
+      "contact": "Contact",
+      "weddings": "Weddings"
+    },
+    "imageAlt": "Bruno Mënezess — BMV Makeup"
   }
 }

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
@@ -51,17 +51,17 @@ function Header() {
       className={`${styles.header} ${!isHome ? styles.headerInternal : ""} ${isHome && isScrolled ? styles.scrolled : ""} ${isHidden && !isMenuOpen ? styles.hidden : ""}`}
     >
       <Link ref={brandRef} to="/" className={styles.brand} aria-label={t("accessibility.home")}>
-        BMV
+        BMV{" "}
         <span>Makeup</span>
       </Link>
 
       <nav className={styles.navigation} aria-label={t("accessibility.mainNavigation")}>
-        <Link to="/">{t("navigation.home")}</Link>
-        <Link to="/about">{t("navigation.about")}</Link>
-        <Link to="/services">{t("navigation.services")}</Link>
-        <Link to="/portfolio">{t("navigation.portfolio")}</Link>
-        <Link to="/education">{t("navigation.education")}</Link>
-        <Link to="/contact">{t("navigation.book")}</Link>
+        <NavLink to="/" end>{t("navigation.home")}</NavLink>
+        <NavLink to="/about">{t("navigation.about")}</NavLink>
+        <NavLink to="/services">{t("navigation.services")}</NavLink>
+        <NavLink to="/portfolio">{t("navigation.portfolio")}</NavLink>
+        <NavLink to="/education">{t("navigation.education")}</NavLink>
+        <NavLink to="/contact">{t("navigation.book")}</NavLink>
       </nav>
 
       <div className={styles.actions}>

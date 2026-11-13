@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./ServicesExperience.module.css";
@@ -8,8 +9,8 @@ function ServicesExperience() {
   return (
     <section className={styles.section}>
       <div className={styles.imageWrapper}>
-        <img
-          src="/assets/images/services/services-experience.webp"
+        <OptimizedImage sizes="(max-width: 700px) 100vw, 40vw"
+          src="/assets/images/curated/bru-06.webp"
           alt={t("services.experience.imageAlt")}
         />
       </div>

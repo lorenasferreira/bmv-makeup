@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./ServicesHero.module.css";
@@ -18,8 +19,8 @@ function ServicesHero() {
 
       <div className={styles.visual}>
         <div className={styles.imageWrapper}>
-          <img
-            src="/assets/images/services/services-hero.webp"
+          <OptimizedImage sizes="(max-width: 700px) 100vw, 40vw" loading="eager" fetchPriority="high"
+            src="/assets/images/curated/nov-a5b3fc62a58cd428.webp"
             alt={t("services.hero.imageAlt")}
           />
         </div>

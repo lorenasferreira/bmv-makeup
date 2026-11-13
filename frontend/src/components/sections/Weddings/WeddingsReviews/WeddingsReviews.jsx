@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./WeddingsReviews.module.css";
@@ -45,7 +46,7 @@ function WeddingsReviews() {
             <span className={styles.reviewNumber}>0{index + 1}</span>
 
             <div className={styles.person}>
-              <img src={review.image} alt={review.name} />
+              <OptimizedImage sizes="64px" src={review.image} alt={review.name} />
 
               <div>
                 <strong>{review.name}</strong>

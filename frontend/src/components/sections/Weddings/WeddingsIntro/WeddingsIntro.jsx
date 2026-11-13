@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./WeddingsIntro.module.css";
@@ -25,8 +26,8 @@ function WeddingsIntro() {
 
         <div className={styles.copy}>
           <div className={styles.imageWrapper}>
-            <img
-              src="/assets/images/weddings/weddings-intro.webp"
+            <OptimizedImage sizes="(max-width: 640px) 85vw, 35vw"
+              src="/assets/images/curated/cas-10.webp"
               alt={t("weddings.intro.imageAlt")}
             />
           </div>

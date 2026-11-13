@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./MeetBruno.module.css";
@@ -8,8 +9,8 @@ function MeetBruno() {
   return (
     <section className={styles.section} id="about">
       <div className={styles.imageColumn}>
-        <div className={styles.imagePlaceholder}>
-          <span>{t("home.artist.imageLabel")}</span>
+        <div className={styles.imageWrapper}>
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/nov-62ec9c2eb7cf2abd.webp" alt={t("home.artist.imageLabel")} loading="lazy" />
         </div>
       </div>
 

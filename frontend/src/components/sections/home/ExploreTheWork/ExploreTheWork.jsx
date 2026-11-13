@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -7,32 +8,17 @@ const categories = [
   {
     id: "weddings",
     number: "01",
-    image: "/assets/images/home/explore-work/weddings.jpg",
-  },
-  {
-    id: "campaigns",
-    number: "02",
-    image: "/assets/images/home/explore-work/campaigns.jpg",
+    image: "/assets/images/optimized/explore-weddings.webp",
   },
   {
     id: "social",
-    number: "03",
-    image: "/assets/images/home/explore-work/social.jpg",
-  },
-  {
-    id: "photoshoots",
-    number: "04",
-    image: "/assets/images/home/explore-work/photoshoots.jpg",
+    number: "02",
+    image: "/assets/images/optimized/explore-social.webp",
   },
   {
     id: "artistic",
-    number: "05",
-    image: "/assets/images/home/explore-work/artistic.jpg",
-  },
-  {
-    id: "audiovisual",
-    number: "06",
-    image: "/assets/images/home/explore-work/audiovisual.jpg",
+    number: "03",
+    image: "/assets/images/curated/art-11.webp",
   },
 ];
 
@@ -55,7 +41,7 @@ function ExploreTheWork() {
         {categories.map((category) => (
           <article className={styles.item} key={category.id}>
             <div className={styles.imageWrapper}>
-              <img
+              <OptimizedImage sizes="(max-width: 640px) 100vw, 33vw"
                 src={category.image}
                 alt={t(`home.work.items.${category.id}.imageAlt`)}
                 loading="lazy"

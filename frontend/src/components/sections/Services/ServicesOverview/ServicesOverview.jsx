@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,7 @@ const services = [
     number: "01",
     title: "services.overview.items.weddings.title",
     description: "services.overview.items.weddings.description",
-    image: "/assets/images/services/weddings.webp",
+    image: "/assets/images/curated/cas-05.webp",
     link: "/services/weddings",
     featured: true,
   },
@@ -16,31 +17,13 @@ const services = [
     number: "02",
     title: "services.overview.items.social.title",
     description: "services.overview.items.social.description",
-    image: "/assets/images/services/beauty-social.webp",
+    image: "/assets/images/curated/nov-d3e8a181458484e3.webp",
   },
   {
     number: "03",
-    title: "services.overview.items.campaigns.title",
-    description: "services.overview.items.campaigns.description",
-    image: "/assets/images/services/campaigns.webp",
-  },
-  {
-    number: "04",
-    title: "services.overview.items.photoshoots.title",
-    description: "services.overview.items.photoshoots.description",
-    image: "/assets/images/services/photoshoots.webp",
-  },
-  {
-    number: "05",
     title: "services.overview.items.artistic.title",
     description: "services.overview.items.artistic.description",
-    image: "/assets/images/services/artistic.webp",
-  },
-  {
-    number: "06",
-    title: "services.overview.items.audiovisual.title",
-    description: "services.overview.items.audiovisual.description",
-    image: "/assets/images/services/audiovisual.webp",
+    image: "/assets/images/curated/art-03.webp",
   },
 ];
 
@@ -73,7 +56,7 @@ function ServicesOverview() {
               </div>
 
               <div className={styles.serviceImage}>
-                <img src={service.image} alt="" />
+                <OptimizedImage sizes="(max-width: 700px) 80vw, 24vw" src={service.image} alt="" />
               </div>
 
               <div className={styles.serviceContent}>

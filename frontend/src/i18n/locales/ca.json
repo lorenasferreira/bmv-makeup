@@ -10,10 +10,10 @@
   },
   "about": {
     "closing": {
-      "eyebrow": "Més enllà de l'artista",
-      "title": "La tècnica importa.",
-      "titleAccent": "La connexió també.",
-      "description": "La feina es troba en els detalls: en la preparació, la conversa, la confiança i la manera com cada persona se sent durant el procés.",
+      "eyebrow": "Experiències que perduren",
+      "title": "De Barcelona",
+      "titleAccent": "a Nova York.",
+      "description": "Una experiència memorable va ser acompanyar una celebritat de Barcelona a Nova York durant 21 dies com a personal beauty. Aquest treball forma part d’una trajectòria en què la proximitat i l’atenció a la persona ocupen un lloc central.",
       "backstageAlt": "Bruno Mënezess entre bastidors",
       "workingAlt": "Bruno Mënezess treballant",
       "ctaEyebrow": "Coneix la feina",
@@ -26,17 +26,14 @@
       "imageAlt": "Bruno Mënezess treballant com a maquillador",
       "origin": "Brasiler.",
       "location": "A Barcelona.",
-      "description": "Maquillatge com a expressió, identitat i trobada, creat per realçar qui té al davant."
+      "description": "Maquillador brasiler establert a Barcelona, amb aproximadament vuit anys d’experiència. El glamur, l’elegància i la bellesa natural guien la seva mirada."
     },
     "range": {
       "items": {
         "weddings": "Casaments",
         "beauty": "Bellesa",
         "social": "Social",
-        "campaigns": "Campanyes",
-        "photoshoots": "Sessions de fotos",
         "artistic": "Artístic",
-        "audiovisual": "Audiovisual",
         "editorial": "Editorial"
       },
       "eyebrow": "Versatilitat",
@@ -46,28 +43,28 @@
     },
     "story": {
       "manifesto": {
-        "eyebrow": "Bellesa amb identitat",
-        "title": "Més que",
-        "titleSecond": "transformar,",
-        "titleAccent": "revelar.",
-        "paragraph1": "Per a Bruno, el maquillatge no consisteix a amagar algú ni a transformar-lo en una altra persona. Consisteix a entendre qui té al davant i crear a partir d'aquí.",
-        "paragraph2": "Cada rostre, cada ocasió i cada projecte demanen un enfocament diferent, sempre respectant la personalitat, l'estil i la individualitat de cada persona."
+        "eyebrow": "Els inicis",
+        "title": "El color,",
+        "titleSecond": "la pintura,",
+        "titleAccent": "la creació.",
+        "paragraph1": "Des de petit, a Bruno li interessaven l’art, la pintura i els colors. Es va graduar en Gastronomia, però va descobrir el maquillatge en una botiga de cosmètics d’un centre comercial, on va començar a treballar per pagar les factures.",
+        "paragraph2": "A Goiânia, va començar maquillant clientes de la botiga. Algunes van començar a buscar-lo fora d’allà, i el maquillatge social es va convertir en l’inici de la seva carrera professional."
       },
       "journey": {
         "imageAlt": "Retrat de Bruno Mënezess",
         "eyebrow": "Del Brasil a Barcelona",
         "title": "Una trajectòria",
-        "titleSecond": "construïda a través",
-        "titleAccent": "de la bellesa.",
-        "paragraph1": "Amb més de vuit anys d'experiència en el món de la bellesa, Bruno Mënezess ha construït una trajectòria marcada per la versatilitat i l'atenció als detalls.",
-        "paragraph2": "Avui, a Barcelona, la seva feina abasta contextos diferents: des de moments personals i celebracions fins a produccions creatives, editorials i professionals."
+        "titleSecond": "oberta a",
+        "titleAccent": "noves cultures.",
+        "paragraph1": "El desig de conèixer noves cultures i oportunitats va portar Bruno a Europa, on es va establir a Barcelona. Avui té aproximadament vuit anys d’experiència professional en maquillatge.",
+        "paragraph2": "Va estudiar en una escola de maquillatge de prestigi a São Paulo i va participar en tallers i classes magistrals a Madrid, Alacant i París. Continua invertint en formació contínua, amb referències que inclouen el glamur, l’elegància i el maquillatge sofisticat."
       },
       "approach": {
         "imageAlt": "Bruno Mënezess maquillant una clienta",
-        "eyebrow": "L'enfocament",
-        "title": "Cada treball",
-        "titleAccent": "comença per la persona.",
-        "description": "Escolta, tècnica i sensibilitat per crear un resultat que funcioni davant del mirall, de la càmera o en una sala plena de gent, sense esborrar qui hi ha darrere del maquillatge."
+        "eyebrow": "L’escolta",
+        "title": "Cada bellesa,",
+        "titleAccent": "una trobada.",
+        "description": "La connexió i l’escolta guien el treball de Bruno. La individualitat de cada clienta és el punt de partida per a un maquillatge sofisticat que realci la bellesa natural. El treball amb núvies té un significat emocional especial: vol que se sentin segures, acollides i valorades."
       }
     }
   },
@@ -154,7 +151,6 @@
       "metaExperience": "experiència",
       "title": "Aprèn a",
       "titleAccent": "entendre la bellesa.",
-      "imageAlt": "Bruno Mënezess ensenyant tècniques de maquillatge",
       "description": "Cursos presencials per a qui vol comprendre millor el seu propi maquillatge o aprofundir en la tècnica professional."
     },
     "intro": {
@@ -208,10 +204,7 @@
         "all": "Tots",
         "weddings": "Weddings",
         "beauty": "Bellesa",
-        "campaigns": "Campanyes",
-        "photoshoots": "Sessions de fotos",
-        "artistic": "Artístic",
-        "audiovisual": "Audiovisual"
+        "artistic": "Artístic"
       },
       "count_one": " treball",
       "count_other": " treballs",
@@ -261,21 +254,9 @@
           "title": "Beauty & Social",
           "description": "Maquillatge per a esdeveniments, celebracions i moments en què et vols sentir especialment tu."
         },
-        "campaigns": {
-          "title": "Campanyes",
-          "description": "Bellesa construïda en diàleg amb marques, conceptes, equips creatius i narratives visuals."
-        },
-        "photoshoots": {
-          "title": "Sessions de fotos",
-          "description": "Maquillatge pensat per a la càmera, respectant la llum, la direcció, el llenguatge i la intenció de cada producció."
-        },
         "artistic": {
           "title": "Artístic",
           "description": "Un espai per experimentar amb el color, la textura, la forma i les possibilitats més enllà de la bellesa convencional."
-        },
-        "audiovisual": {
-          "title": "Audiovisual",
-          "description": "Maquillatge i caracterització adaptats a les necessitats de produccions audiovisuals i diferents formats d'imatge."
         }
       },
       "eyebrow": "La feina",
@@ -312,20 +293,17 @@
     },
     "partners": {
       "categories": {
-        "photography": "Fotografia",
-        "hair": "Perruqueria",
-        "nails": "Ungles",
+        "hair": "Perruquer",
         "massage": "Massatge",
-        "beauty": "Bellesa",
-        "weddingServices": "Serveis per a casaments"
+        "photography": "Fotografia"
       },
       "eyebrow": "Xarxa de confiança",
-      "status": "Pròximament",
+      "status": "Recomanats",
       "title": "Un casament",
       "titleSecond": "es fa entre",
       "titleAccent": "moltes mans.",
-      "paragraph1": "Al llarg dels anys, Bruno es troba amb professionals que comparteixen la mateixa cura per l'experiència, els detalls i l'atenció.",
-      "paragraph2": "Aquesta àrea reunirà una selecció de professionals i serveis recomanats per complementar l'experiència del casament."
+      "paragraph1": "Professionals recomanats per acompanyar els preparatius i el dia del casament.",
+      "paragraph2": "Coneix la seva feina i contacta-hi directament a través dels seus perfils d’Instagram."
     },
     "process": {
       "steps": {
@@ -389,7 +367,6 @@
       "statement3": "Experiència."
     },
     "education": {
-      "imageLabel": "Formació en bellesa",
       "eyebrow": "Formació",
       "title": "Bellesa,",
       "titleAccent": "compartida.",
@@ -400,14 +377,6 @@
       "cta": "Coneix els cursos"
     },
     "hero": {
-      "slides": {
-        "working": "Bruno treballant",
-        "portrait": "Retrat de bellesa",
-        "bridal": "Núvies",
-        "editorial": "Campanya / Editorial",
-        "artistic": "Maquillatge artístic",
-        "audiovisual": "Audiovisual / Social"
-      },
       "eyebrow": "BMV Makeup",
       "title": "L'art",
       "titleAccent": "de la bellesa.",
@@ -459,7 +428,6 @@
         "portrait": "Retrat de bellesa",
         "editorial": "Editorial",
         "detail": "Detall de bellesa",
-        "campaign": "Campanya",
         "artistic": "Artístic"
       },
       "eyebrow": "Treballs seleccionats",
@@ -488,30 +456,15 @@
           "description": "Per a moments que queden per sempre.",
           "imageAlt": "Maquillatge de núvia"
         },
-        "campaigns": {
-          "title": "Campanyes",
-          "description": "Bellesa creada per a marques i històries.",
-          "imageAlt": "Maquillatge per a una campanya"
-        },
         "social": {
           "title": "Social",
           "description": "Bellesa realçada per als teus moments.",
           "imageAlt": "Maquillatge per a un esdeveniment social"
         },
-        "photoshoots": {
-          "title": "Sessions de fotos",
-          "description": "Maquillatge pensat per a les lents.",
-          "imageAlt": "Maquillatge per a una sessió de fotos"
-        },
         "artistic": {
           "title": "Artístic",
           "description": "Sense regles. Només creació.",
           "imageAlt": "Maquillatge artístic"
-        },
-        "audiovisual": {
-          "title": "Audiovisual",
-          "description": "Bellesa pensada per a les càmeres.",
-          "imageAlt": "Maquillatge per a una producció audiovisual"
         }
       }
     },
@@ -519,7 +472,7 @@
       "eyebrow": "Creem",
       "title": "Tens alguna cosa",
       "titleAccent": "al cap?",
-      "description": "Sigui un casament, una campanya, una sessió de fotos, un esdeveniment o un projecte creatiu, parlem de la teva idea.",
+      "description": "Sigui un casament, un esdeveniment o un projecte creatiu, parlem de la teva idea.",
       "primary": "Contacta",
       "secondary": "Coneix els serveis"
     }
@@ -547,5 +500,19 @@
   },
   "common": {
     "scrollToTop": "Torna a dalt"
+  },
+  "seo": {
+    "title": "BMV Makeup | Bruno Mënezess — Maquillador a Barcelona",
+    "description": "Maquillatge de núvia, social i artístic amb Bruno Mënezess a Barcelona. Bellesa sofisticada, individualitat i un tracte proper.",
+    "pages": {
+      "home": "Inici",
+      "about": "L’Artista",
+      "services": "Serveis",
+      "portfolio": "Portafolis",
+      "education": "Formació",
+      "contact": "Contacte",
+      "weddings": "Casaments"
+    },
+    "imageAlt": "Bruno Mënezess — BMV Makeup"
   }
 }

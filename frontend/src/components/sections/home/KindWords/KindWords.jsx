@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
@@ -134,7 +135,7 @@ function KindWords() {
           <blockquote>{t(activeReview.text)}</blockquote>
 
           <footer>
-            <img
+            <OptimizedImage sizes="64px"
               src={activeReview.image}
               alt={activeReview.author}
               className={styles.authorImage}

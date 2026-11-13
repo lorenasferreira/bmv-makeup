@@ -8,7 +8,6 @@ const courses = [
     name: "education.courses.items.vip.name",
     title: "education.courses.items.vip.title",
     type: "education.courses.selfMakeup",
-    image: "/assets/images/education/vip.webp",
     description: "education.courses.items.vip.description",
     topics: [
       "education.courses.items.vip.topics.skin",
@@ -27,7 +26,6 @@ const courses = [
     name: "education.courses.items.night.name",
     title: "education.courses.items.night.title",
     type: "education.courses.selfMakeup",
-    image: "/assets/images/education/night.webp",
     description: "education.courses.items.night.description",
     topics: [
       "education.courses.items.night.topics.preparation",
@@ -68,10 +66,6 @@ function EducationCourses() {
             <div className={styles.courseMeta}>
               <span>{course.number}</span>
               <span>{t(course.type)}</span>
-            </div>
-
-            <div className={styles.imageWrapper}>
-              <img src={course.image} alt={t(course.title)} />
             </div>
 
             <div className={styles.courseContent}>

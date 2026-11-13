@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import SeoMetadata from "./components/common/SeoMetadata/SeoMetadata";
+
 import Header from "./components/layout/Header/Header";
 import Footer from "./components/layout/Footer/Footer";
 
@@ -18,6 +20,7 @@ import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <SeoMetadata />
       <RouteScroll />
       <ScrollReveal />
       <Header />

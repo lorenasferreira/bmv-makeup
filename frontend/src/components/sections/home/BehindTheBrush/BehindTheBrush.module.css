@@ -72,6 +72,7 @@
 }
 
 .image {
+  position: relative;
   display: grid;
   place-items: center;
 
@@ -80,12 +81,12 @@
   background: var(--color-tertiary);
 }
 
-.image span {
-  color: var(--color-secondary);
-
-  font-family: var(--font-editorial);
-  font-size: clamp(1.2rem, 2vw, 2.2rem);
-  font-style: italic;
+.image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .large {

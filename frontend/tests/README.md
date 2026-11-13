@@ -30,8 +30,11 @@ BMV_BROWSER=webkit npm run test:behavior
 
 ## Coverage
 
+- `navigation-seo.spec.js`: active desktop/mobile navigation for all seven routes in PT/EN/ES/CA, localized document metadata and canonical, four text-only Weddings steps, device-specific Hero network requests, and Open Graph delivered without JavaScript.
+- `photo-curation.spec.js`: approved photo IDs/destinations, five-image Hero order for desktop/mobile, resize and wraparound, decoding and nonblank pixel checks for all 44 selected IDs, plus review captures.
+- `final-layout.spec.js`: desktop/mobile review captures of the changed sections, retained course prices/durations and WhatsApp CTA, the reduced services list and Portfolio, and bridal-only Education imagery. Captures are saved in ignored `test-results/`.
 - `routes.spec.js`: seven routes in PT/EN/ES/CA at 320, 390, 768 and 1440px (112 route/language/width combinations); page-specific text, document language, overflow, language selection/persistence, SPA scroll reset, anchor navigation and the localized 404/Home link.
-- `navigation.spec.js`: mobile menu opening/closing, Escape, focus wrap/return, background scroll lock, navigation and resize cleanup, mobile language switching, all six Portfolio filters and accessible selection, pointer/keyboard scroll-to-top on mobile and desktop.
+- `navigation.spec.js`: mobile menu opening/closing, Escape, focus wrap/return, background scroll lock, navigation and resize cleanup, mobile language switching, all three Portfolio category filters and accessible selection, pointer/keyboard scroll-to-top on mobile and desktop.
 - `reveal.spec.js`: real scroll-triggered reveals on all seven routes, Heroes excluded, once-only behavior, stable flow geometry, offscreen content remaining unrevealed after ten seconds until scrolled into view, reduced-motion startup/live changes, missing-observer fallback, Hero rotation and review controls.
 - `instagram.spec.js`: mocked successful photo/video data, empty/missing data, HTTP/network errors and invalid JSON. Post UI and the usable Instagram fallback are checked without changing the API implementation.
 - `header.spec.js`: scroll direction, small-scroll tolerance, focus protection and tall Portfolio visibility after every filter on desktop/mobile.

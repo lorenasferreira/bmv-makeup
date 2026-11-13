@@ -1,4 +1,5 @@
 .footer {
+  --color-text-light: #706960;
   padding:
     clamp(3.5rem, 6vw, 5rem)
     var(--page-padding)
@@ -153,6 +154,7 @@
 
 @media (max-width: 640px) {
   .footer {
+  --color-text-light: #706960;
     padding:
       4rem
       var(--page-padding)

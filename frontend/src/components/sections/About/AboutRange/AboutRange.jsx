@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./AboutRange.module.css";
 
-const firstRow = ["about.range.items.weddings", "about.range.items.beauty", "about.range.items.social", "about.range.items.campaigns"];
+const firstRow = ["about.range.items.weddings", "about.range.items.beauty", "about.range.items.social"];
 
-const secondRow = ["about.range.items.photoshoots", "about.range.items.artistic", "about.range.items.audiovisual", "about.range.items.editorial"];
+const secondRow = ["about.range.items.artistic", "about.range.items.editorial"];
 
 function AboutRange() {
   const { t } = useTranslation();

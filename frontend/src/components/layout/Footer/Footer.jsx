@@ -12,7 +12,7 @@ function Footer() {
       <div className={styles.main}>
         <div className={styles.brand}>
           <a href="/" className={styles.logo} aria-label={t("accessibility.home")}>
-            BMV
+            BMV{" "}
             <span>Makeup</span>
           </a>
 

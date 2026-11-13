@@ -48,8 +48,7 @@
   grid-column: span 4;
 }
 
-.item:nth-child(2),
-.item:nth-child(5) {
+.item:nth-child(2) {
   transform: translateY(4rem);
 }
 
@@ -143,11 +142,10 @@
   }
 
   .item {
-    grid-column: span 6;
+    grid-column: span 4;
   }
 
-  .item:nth-child(2),
-  .item:nth-child(5) {
+  .item:nth-child(2) {
     transform: translateY(2.5rem);
   }
 }
@@ -170,8 +168,7 @@
     grid-column: auto;
   }
 
-  .item:nth-child(2),
-  .item:nth-child(5) {
+  .item:nth-child(2) {
     transform: none;
   }
 

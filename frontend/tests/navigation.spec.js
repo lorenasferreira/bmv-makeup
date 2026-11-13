@@ -66,12 +66,15 @@ test.describe("mobile navigation", () => {
 test("Portfolio categories filter the works and expose selected state", async ({ page }) => {
   await page.goto("/portfolio");
   const main = page.getByRole("main");
-  await expect(main.locator("figure")).toHaveCount(24);
+  await expect(main.locator("figure")).toHaveCount(12);
+  for (const name of ["Audiovisual", "Campaigns", "Photoshoots"]) {
+    await expect(main.getByRole("button", { name, exact: true })).toHaveCount(0);
+  }
   const gallery = main.locator("section").filter({ has: page.getByRole("button", { name: "All", exact: true }) });
   await gallery.evaluate(element => element.scrollIntoView({ block: "start", behavior: "instant" }));
   // Playwright's visibility check ignores opacity; wait for the reveal before clicking.
   await expect(gallery).toHaveCSS("opacity", "1");
-  for (const category of ["Weddings", "Beauty", "Campaigns", "Photoshoots", "Artistic", "Audiovisual"]) {
+  for (const category of ["Weddings", "Beauty", "Artistic"]) {
     const button = main.getByRole("button", { name: category, exact: true });
     await button.click();
     await expect(button).toHaveAttribute("aria-pressed", "true");
@@ -80,7 +83,7 @@ test("Portfolio categories filter the works and expose selected state", async ({
     for (const caption of await main.locator("figcaption").allTextContents()) expect(caption).toContain(category);
   }
   await main.getByRole("button", { name: "All", exact: true }).click();
-  await expect(main.locator("figure")).toHaveCount(24);
+  await expect(main.locator("figure")).toHaveCount(12);
 });
 
 for (const width of [390, 1440]) {

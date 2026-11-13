@@ -1,15 +1,15 @@
+import imageMetadata from "../../../../data/image-metadata.json";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import styles from "./Hero.module.css";
 
 const slides = [
-  { id: 1, image: "/assets/images/home/hero/bruno-working.webp", label: "home.hero.slides.working" },
-  { id: 2, label: "home.hero.slides.portrait" },
-  { id: 3, image: "/assets/images/home/hero/bridal.webp", label: "home.hero.slides.bridal" },
-  { id: 4, label: "home.hero.slides.editorial" },
-  { id: 5, image: "/assets/images/home/hero/artistic.webp", label: "home.hero.slides.artistic" },
-  { id: 6, label: "home.hero.slides.audiovisual" },
+  { id: 1, desktop: "/assets/images/curated/cas-09.webp", mobile: "/assets/images/curated/nov-c0a362f3c9338b3b.webp" },
+  { id: 2, desktop: "/assets/images/curated/cas-13.webp", mobile: "/assets/images/curated/nov-1ee9718a69d99658.webp" },
+  { id: 3, desktop: "/assets/images/curated/nov-b94ca63befe18347.webp", mobile: "/assets/images/curated/nov-ee9b3959e5e231e9.webp" },
+  { id: 4, desktop: "/assets/images/curated/soc-10.webp", mobile: "/assets/images/curated/nov-8578c4c71970766e.webp" },
+  { id: 5, desktop: "/assets/images/curated/soc-08.webp", mobile: "/assets/images/curated/nov-e517b557a712e6f1.webp" },
 ];
 
 function Hero() {
@@ -34,7 +34,10 @@ function Hero() {
               index === activeSlide ? styles.active : ""
             }`}
           >
-            {slide.image ? <img src={slide.image} alt="" /> : <span>{t(slide.label)}</span>}
+            <picture>
+              <source media="(max-width: 768px)" srcSet={slide.mobile} />
+              <img src={slide.desktop} alt="" width={imageMetadata[slide.desktop].width} height={imageMetadata[slide.desktop].height} decoding="async" fetchPriority={index === 0 ? "high" : "low"} />
+            </picture>
           </div>
         ))}
       </div>

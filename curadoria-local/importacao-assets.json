@@ -1,0 +1,2411 @@
+{
+  "source": "/Users/lorenaferreira/Desktop/FREELANCE — WEB DEVELOPMENT/01 — CLIENTES ATIVOS/Bruno Menezes — BMV Makeup/03 — Assets",
+  "files": [
+    {
+      "source_relative": "0DE81F8E-701B-4742-A1C7-5590699500F8.jpg",
+      "source_folder": ".",
+      "name": "0DE81F8E-701B-4742-A1C7-5590699500F8.jpg",
+      "sha256": "9bfdb4e6670f0abdf005002dc7978b2bdfb5d8b1aed02dc03d8adb2c55586229",
+      "id": "CAS-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "1ef61c42-3c14-46f9-a1d0-1cffbc0ec80d.jpg",
+      "source_folder": ".",
+      "name": "1ef61c42-3c14-46f9-a1d0-1cffbc0ec80d.jpg",
+      "sha256": "192d7ba42648b9b5424bf2e725dda0b5cc9f5f20bd9953b0798ce604a9d05606",
+      "id": "BRU-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "27784FEF-3CA1-42CE-87FC-3F7619A60973.jpg",
+      "source_folder": ".",
+      "name": "27784FEF-3CA1-42CE-87FC-3F7619A60973.jpg",
+      "sha256": "e517b557a712e6f162ae991ac9f64819de8b7c6360799ce9e680497d2245ced8",
+      "id": "NOV-E517B557A712E6F1",
+      "status": "added"
+    },
+    {
+      "source_relative": "2fa30cee-c3cb-4511-b33f-a76ad1609d65(1).jpg",
+      "source_folder": ".",
+      "name": "2fa30cee-c3cb-4511-b33f-a76ad1609d65(1).jpg",
+      "sha256": "b38f536cab2b6b94837f0d0d2e422a4d72474dd54d1daa3c7ba8d4ee447f2691",
+      "id": "BRU-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "2fa30cee-c3cb-4511-b33f-a76ad1609d65.jpg",
+      "source_folder": ".",
+      "name": "2fa30cee-c3cb-4511-b33f-a76ad1609d65.jpg",
+      "sha256": "b38f536cab2b6b94837f0d0d2e422a4d72474dd54d1daa3c7ba8d4ee447f2691",
+      "id": "BRU-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "4BD6D5B3-9772-431B-856E-31731F1AB0D9(1).jpg",
+      "source_folder": ".",
+      "name": "4BD6D5B3-9772-431B-856E-31731F1AB0D9(1).jpg",
+      "sha256": "229a4a87c3d22acad694975a7039723333bfa6260df0c47a7f61e4d50fc30eaa",
+      "id": "CAS-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "4BD6D5B3-9772-431B-856E-31731F1AB0D9.jpg",
+      "source_folder": ".",
+      "name": "4BD6D5B3-9772-431B-856E-31731F1AB0D9.jpg",
+      "sha256": "229a4a87c3d22acad694975a7039723333bfa6260df0c47a7f61e4d50fc30eaa",
+      "id": "CAS-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "6D7269AB-C7E1-49C5-A816-FF12A2507025.jpg",
+      "source_folder": ".",
+      "name": "6D7269AB-C7E1-49C5-A816-FF12A2507025.jpg",
+      "sha256": "3a1d649e9d32279ba184843c5127878dcfb792e41198a3e69c35f6097c163915",
+      "id": "BRU-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "779451A9-8D04-4506-9380-EB748AA673C5.jpg",
+      "source_folder": ".",
+      "name": "779451A9-8D04-4506-9380-EB748AA673C5.jpg",
+      "sha256": "2b96c3414416e0ccfa913d968aad4c3369a16e9cc037978d1341614582e2cfc6",
+      "id": "CAS-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/31DCF18F-8E4B-4199-92F2-C46817E05D65.jpg",
+      "source_folder": "Artística",
+      "name": "31DCF18F-8E4B-4199-92F2-C46817E05D65.jpg",
+      "sha256": "efc78c14b41c76af5bc166cf6e6e2497b65cc81691ba49f8d75384ceab2a3f2e",
+      "id": "ART-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/3975ef5b-a4f1-417d-8e34-db192930ffe8.jpg",
+      "source_folder": "Artística",
+      "name": "3975ef5b-a4f1-417d-8e34-db192930ffe8.jpg",
+      "sha256": "e42ac20809998fb1907add1ad856b32d49a78a5fef617b796ce78ee96ada9d68",
+      "id": "ART-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/643D3B69-9224-448B-8038-8943AA88A3CD.jpg",
+      "source_folder": "Artística",
+      "name": "643D3B69-9224-448B-8038-8943AA88A3CD.jpg",
+      "sha256": "e64282bb3c1f6a494f68e3205396dd906c77655217a649c2e9056a255c222278",
+      "id": "ART-03",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/D404F4D7-77A5-44D3-A409-98FD6D571E23.jpg",
+      "source_folder": "Artística",
+      "name": "D404F4D7-77A5-44D3-A409-98FD6D571E23.jpg",
+      "sha256": "8f112eebf775f4471df0c0a970b3b1364b4b0106fd9ecd86b7cb15589e666858",
+      "id": "ART-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/Facetune_27-10-2026-23-14-32.heic",
+      "source_folder": "Artística",
+      "name": "Facetune_27-10-2026-23-14-32.heic",
+      "sha256": "0c43f16a85c16476ae0c395daa80ea7e02732f07204b6067923708e4f724e5d3",
+      "id": "ART-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/Facetune_29-10-2026-10-58-30.heic",
+      "source_folder": "Artística",
+      "name": "Facetune_29-10-2026-10-58-30.heic",
+      "sha256": "76dadadf77ecc1da1c8eeff18c4f0d502a6000469204d27f60300bd9da3bc109",
+      "id": "ART-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/Facetune_29-10-2026-10-59-21.heic",
+      "source_folder": "Artística",
+      "name": "Facetune_29-10-2026-10-59-21.heic",
+      "sha256": "cb71891e0973b7adf65dcf61a2527906de32e2aa60beb65ed43be4a3dd1dec92",
+      "id": "ART-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/Facetune_29-10-2026-11-00-59.heic",
+      "source_folder": "Artística",
+      "name": "Facetune_29-10-2026-11-00-59.heic",
+      "sha256": "7cd3788f4b583d05b81192b40d900019f721a788331720d661a8afed138c95a2",
+      "id": "ART-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/Facetune_29-10-2026-11-32-14.heic",
+      "source_folder": "Artística",
+      "name": "Facetune_29-10-2026-11-32-14.heic",
+      "sha256": "6d80904081d4368885bb55d398d0e2a4982dd5ba9d918dc9ea8116a0046e79e7",
+      "id": "ART-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/IMG_1345.HEIC",
+      "source_folder": "Artística",
+      "name": "IMG_1345.HEIC",
+      "sha256": "e4e50903b12d65ec45026684d7494180fc87d3b785df6dfa8e47c1e127b03799",
+      "id": "ART-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/IMG_3495.PNG",
+      "source_folder": "Artística",
+      "name": "IMG_3495.PNG",
+      "sha256": "ab63387c2e0ae96fe6b6dd9a2cbbc0f412333546b44cab3e0db481420a21e279",
+      "id": "ART-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Artística/a4161cad-ba66-4310-9f80-6540f81a1b86.jpg",
+      "source_folder": "Artística",
+      "name": "a4161cad-ba66-4310-9f80-6540f81a1b86.jpg",
+      "sha256": "af5335e3eae812412e1c691f2dc627a2f7a90f8ab83f00d4af9de1578d881f19",
+      "id": "ART-12",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_58.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_58.jpg",
+      "sha256": "7b5e6b83cccd60f076234ab4cb602c1f9638dba31c972b66237bb223cd474297",
+      "id": "NOV-7B5E6B83CCCD60F0",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_59.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_59.jpg",
+      "sha256": "8578c4c71970766e201eac1ce58ae2fdfd606e9e108c85883d5485258698f6e3",
+      "id": "NOV-8578C4C71970766E",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_61.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_61.jpg",
+      "sha256": "bf652498596a2d90031b1949ff37e0aadfbfca28a1dafe7962dff1b9afe9ceb1",
+      "id": "NOV-BF652498596A2D90",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_68.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_68.jpg",
+      "sha256": "dea3769a88775bddc7bccd09246f22132d1ebcf81dbae26f87dfe5f05b22f378",
+      "id": "NOV-DEA3769A88775BDD",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_85.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_85.jpg",
+      "sha256": "0ef8be1c37ae6ad1ce2dadf508c1d43e67efa18e0570a2b446ee2c5c40d46664",
+      "id": "NOV-0EF8BE1C37AE6AD1",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_86.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_86.jpg",
+      "sha256": "f4b7ae85bb336cf24d9e32ebc5fc4f4b859107b30576adb4f6f423b00b697c98",
+      "id": "NOV-F4B7AE85BB336CF2",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_87.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_87.jpg",
+      "sha256": "95d5fadb6b2fe738ffbbb7d1ac4f2b797db653912453e08767d742583fb0c103",
+      "id": "NOV-95D5FADB6B2FE738",
+      "status": "added"
+    },
+    {
+      "source_relative": "BTS_RAPHINHA_90.jpg",
+      "source_folder": ".",
+      "name": "BTS_RAPHINHA_90.jpg",
+      "sha256": "c93081a4e3cc402a0205161c27d4224ce4386800fcc1fec387c8a7ada554db7b",
+      "id": "NOV-C93081A4E3CC402A",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /1ef61c42-3c14-46f9-a1d0-1cffbc0ec80d.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "1ef61c42-3c14-46f9-a1d0-1cffbc0ec80d.jpg",
+      "sha256": "192d7ba42648b9b5424bf2e725dda0b5cc9f5f20bd9953b0798ce604a9d05606",
+      "id": "BRU-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /2fa30cee-c3cb-4511-b33f-a76ad1609d65.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "2fa30cee-c3cb-4511-b33f-a76ad1609d65.jpg",
+      "sha256": "b38f536cab2b6b94837f0d0d2e422a4d72474dd54d1daa3c7ba8d4ee447f2691",
+      "id": "BRU-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /484375aa-a1ae-441e-a883-ca64179c0799.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "484375aa-a1ae-441e-a883-ca64179c0799.jpg",
+      "sha256": "fe874792fb945e0d7ac26f35e55a56ca7a6962e3e733ecfe05818947eb84cd7c",
+      "id": "BRU-03",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /6D7269AB-C7E1-49C5-A816-FF12A2507025.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "6D7269AB-C7E1-49C5-A816-FF12A2507025.jpg",
+      "sha256": "3a1d649e9d32279ba184843c5127878dcfb792e41198a3e69c35f6097c163915",
+      "id": "BRU-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /A2B2F7EE-EDE9-41B2-B785-D63B8A3D2CCA.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "A2B2F7EE-EDE9-41B2-B785-D63B8A3D2CCA.jpg",
+      "sha256": "5005c0979ce8ec64ca00bcd01c8d5705bf608a885842a7df232e4a49cc9f7815",
+      "id": "BRU-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /Bruno-e-Bruno-9.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "Bruno-e-Bruno-9.jpg",
+      "sha256": "ea31ec69176caf5cb4ce90139ec75dc4c7c18c7dd9b39a3e0d126b1adb513dfd",
+      "id": "NOV-EA31EC69176CAF5C",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /C4FFEB8E-B181-4019-AEB8-E1B18A5E81C4.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "C4FFEB8E-B181-4019-AEB8-E1B18A5E81C4.jpg",
+      "sha256": "8a68410005b349ffd4d087db1e82030cb2eb5730d9da3e04470740adf0c3c2fd",
+      "id": "BRU-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /Cópia de bruno menezes (59).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "Cópia de bruno menezes (59).jpg",
+      "sha256": "d47f8cbab2dae915fb4b9a547bcf2b7e2103814ceb0f08755f9b2526b5a4ca8c",
+      "id": "NOV-D47F8CBAB2DAE915",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /Cópia de bruno menezes (60).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "Cópia de bruno menezes (60).jpg",
+      "sha256": "5b06aa3a02d1c247069770372dc150547cfd5cb9e0d77b65fac7c8d809b6d30f",
+      "id": "NOV-5B06AA3A02D1C247",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C.jpg",
+      "sha256": "c16c5451f03ad17c38cc49c75ec0131421c0f9029cc54aeb8b0d75689d0f7232",
+      "id": "BRU-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_1338.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_1338.JPG",
+      "sha256": "704f3500ceb4cd9bbc65fd925044b1d3f7c1e1e9af947796d89f01b3e82267bb",
+      "id": "BRU-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_1339.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_1339.JPG",
+      "sha256": "3e5c48aa370b55d5e99f230f9c01c0da60acaeee0453ecd3ef1217cf84bc1a76",
+      "id": "BRU-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_2179.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_2179.JPG",
+      "sha256": "8eb4b988f673184157481ac65faf205ade8da59f11ffcad2096923aae088e581",
+      "id": "BRU-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_2180.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_2180.JPG",
+      "sha256": "7f2ad9d89f14c42cb788424e4436994788e4b542ad7437b1f77e708ba7d71466",
+      "id": "BRU-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_2421.PNG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_2421.PNG",
+      "sha256": "e8795d212fc58fc07744f1da5954d6f38b7bc1f28c7418cfdb66171b00d41a82",
+      "id": "BRU-12",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_3321.HEIC",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_3321.HEIC",
+      "sha256": "b3dee42999de083a5fd66f347af519b9eecf2479ee3de376224eb44b8dadc3c4",
+      "id": "BRU-13",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_3330.HEIC",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_3330.HEIC",
+      "sha256": "a482a599b0d281ec9d6b4ba8810fe8ed362d9edc82abae1da260492e1ba1ae04",
+      "id": "BRU-14",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_3908.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_3908.JPG",
+      "sha256": "d3064308a66331564b6b6e17f0197a1b027236c7e7b488816526410201425ad5",
+      "id": "BRU-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_3909.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_3909.JPG",
+      "sha256": "12b6417880fa1bb5a93739cac15c6f1ab1409830dcbecc3ce4b11541bcdf4981",
+      "id": "BRU-16",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_7048.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_7048.JPG",
+      "sha256": "d7ca4f9bb2e13d479000da6680de29621c9bfb4ac74b5caaf3df90b5683e72b5",
+      "id": "BRU-17",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_7050.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_7050.JPG",
+      "sha256": "58e56c3b370aaa9ffeef194c4f532b933013d5ee85e384c854e6a2ad0188b3ef",
+      "id": "BRU-18",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_7349.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_7349.JPG",
+      "sha256": "08391cc790281587bb055349d988c9cb6dc752373b0f251579acc35a380f4615",
+      "id": "BRU-19",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_7404.JPG",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_7404.JPG",
+      "sha256": "6f5b1eb554bb9445babfe901dee1a5549bfe46d3779b54fb6af94ba9e1e65748",
+      "id": "BRU-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Bruno trabalhando /IMG_9824.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "IMG_9824.jpg",
+      "sha256": "bd6ad7d418c0be6fdf0516516ea122dad251bf7170150cb1f521d9a604bfcc5a",
+      "id": "NOV-BD6AD7D418C0BE6F",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (14).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (14).jpg",
+      "sha256": "ea8ad795b22f51bdc2600fd2bab61d3116b4fde5a8f621e4c47ebfbc31c59f67",
+      "id": "NOV-EA8AD795B22F51BD",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (17).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (17).jpg",
+      "sha256": "990f798f30c40281d757073d7d5b0e0d6c39b0700fb3f5222ce65bbd73d0d1ee",
+      "id": "NOV-990F798F30C40281",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (18).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (18).jpg",
+      "sha256": "d44eaf787f2ffd3affc6ea812145aab7dcab9ea43587437efcf03bc0d977f206",
+      "id": "NOV-D44EAF787F2FFD3A",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (2).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (2).jpg",
+      "sha256": "c89cc8b7640630c88d8a1bbf3768de64143bfa021be74c34e7ccc8154df73b9e",
+      "id": "NOV-C89CC8B7640630C8",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (22).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (22).jpg",
+      "sha256": "fcaa2a0bb9eb4a930b6577f87432efdbd159410f01d5b6ccecd4c068079a66c3",
+      "id": "NOV-FCAA2A0BB9EB4A93",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (25).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (25).jpg",
+      "sha256": "f3570eb845ce8ec1b01c59af4be1cd3f366c5ba6664b7e93d4010d440960e53b",
+      "id": "NOV-F3570EB845CE8EC1",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (3).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (3).jpg",
+      "sha256": "18ff1e4e9d80477396b9839346cbf3dd6b2f4f44eb139ba4ca2a37b5ba0cc48e",
+      "id": "NOV-18FF1E4E9D804773",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (31).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (31).jpg",
+      "sha256": "52fa0197c1ff51a19f9d9c25d7194958cb553953e5d54afeaac0aeb81ff3b1c4",
+      "id": "NOV-52FA0197C1FF51A1",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (33).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (33).jpg",
+      "sha256": "f5e6668c0652933596a1aef275083876eef4df0ef962d3c9108b48cd7733b10c",
+      "id": "NOV-F5E6668C06529335",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (34).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (34).jpg",
+      "sha256": "3e6717b0925eff60847e75a7f60211ff1c5ab0988f1cf7f1b72a4df476c08a8d",
+      "id": "NOV-3E6717B0925EFF60",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (37).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (37).jpg",
+      "sha256": "50b1ccea2949c3e75489e244162183ba937603f8b8fa672cd0edda5cef1fc760",
+      "id": "NOV-50B1CCEA2949C3E7",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (39).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (39).jpg",
+      "sha256": "a6ac82a26b43c556d01ff7c93628ee5badd26aa2faeae9561c5e8ad57cc09d9c",
+      "id": "NOV-A6AC82A26B43C556",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (40).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (40).jpg",
+      "sha256": "04f7bcfd44937464078f0a7e96168e5274ca51610a8c7e38a80e1355e9f6ccf2",
+      "id": "NOV-04F7BCFD44937464",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (43).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (43).jpg",
+      "sha256": "62ec9c2eb7cf2abd9d1a159cfd483ce1d0428da865b08c4326f76b6d3af32da1",
+      "id": "NOV-62EC9C2EB7CF2ABD",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (45).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (45).jpg",
+      "sha256": "f836054e3dc8d95987274d613fef15498080b0dfb2ae1ed71c0b80db344eb6e1",
+      "id": "NOV-F836054E3DC8D959",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (48).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (48).jpg",
+      "sha256": "2c4c789f28f2fd2e1e3509f064a35a823827cf7173f4c22fe8f0f7d67fa2f2f3",
+      "id": "NOV-2C4C789F28F2FD2E",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (5).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (5).jpg",
+      "sha256": "16fa8f4da1235c70debd768531de87a5de22a228beec941dffb41ea3b54809fd",
+      "id": "NOV-16FA8F4DA1235C70",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (50).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (50).jpg",
+      "sha256": "f4e1f4c2627c67778aa37736cdaabc1781bf304b735b256105c1bf937abda60b",
+      "id": "NOV-F4E1F4C2627C6777",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (51).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (51).jpg",
+      "sha256": "7224c9d69d4be5b6fcb5a9c3338b9230c26b1491be865f90e1d205b4dc309420",
+      "id": "NOV-7224C9D69D4BE5B6",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (52).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (52).jpg",
+      "sha256": "22b94af240c5d730c83f68c97e2aeb0d2d41d99db3a547df6db8258a98d65260",
+      "id": "NOV-22B94AF240C5D730",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (53).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (53).jpg",
+      "sha256": "9cf5a2219829763a5692316e9399b442364fbcf76c2f1ceb0fcf3727a0256bc1",
+      "id": "NOV-9CF5A2219829763A",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (55).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (55).jpg",
+      "sha256": "77d425e42569f974832b84d716290efe4a64746d4ba5d4d7ed03f976551965f4",
+      "id": "NOV-77D425E42569F974",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (6).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (6).jpg",
+      "sha256": "3eaf9f7a3eea3939bc18064901542c5bb433db89f5d47dab1c2052a0abad0d0c",
+      "id": "NOV-3EAF9F7A3EEA3939",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (60).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (60).jpg",
+      "sha256": "5b06aa3a02d1c247069770372dc150547cfd5cb9e0d77b65fac7c8d809b6d30f",
+      "id": "NOV-5B06AA3A02D1C247",
+      "status": "exact_duplicate_new"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (64).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (64).jpg",
+      "sha256": "fbcc968f02635526cc7ba066e84db603ae5e067cc86b049311e0d909929f5c99",
+      "id": "NOV-FBCC968F02635526",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (65).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (65).jpg",
+      "sha256": "c1f2b19dc1e863edd929d03a759104908fc2bf59896eb95bc1e2b9f63941b957",
+      "id": "NOV-C1F2B19DC1E863ED",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (67).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (67).jpg",
+      "sha256": "4285f020f1f79a860a2e3aaa3fd36989a647c5a71bddf049d914c5846926e313",
+      "id": "NOV-4285F020F1F79A86",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (68).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (68).jpg",
+      "sha256": "450496ceec4f9f3beaca5dfe6a9e26c6d255f658698f662d39c360664d08b791",
+      "id": "NOV-450496CEEC4F9F3B",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (69).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (69).jpg",
+      "sha256": "832af3efa0c0d3b142d649e4dc11c9c26f87b79a5c79abc3ecdc2988b114ee31",
+      "id": "NOV-832AF3EFA0C0D3B1",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (70).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (70).jpg",
+      "sha256": "d1d3b9ff71faaff65f773d0963bf7b883d75584e1260f0df924749aa9a7ec72f",
+      "id": "NOV-D1D3B9FF71FAAFF6",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /bruno menezes (8).jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "bruno menezes (8).jpg",
+      "sha256": "6668f48124d0a7216a5f6442f298105a7e834b66f5075189258667b92728b441",
+      "id": "NOV-6668F48124D0A721",
+      "status": "added"
+    },
+    {
+      "source_relative": "Bruno trabalhando /c67957b2-385b-49b6-9848-7eb65e7fba1b.jpg",
+      "source_folder": "Bruno trabalhando ",
+      "name": "c67957b2-385b-49b6-9848-7eb65e7fba1b.jpg",
+      "sha256": "d1cf0303fa72b052e77d58755df99029ff1f212470a17578d0230b7f6b445b22",
+      "id": "BRU-21",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "C4FFEB8E-B181-4019-AEB8-E1B18A5E81C4.jpg",
+      "source_folder": ".",
+      "name": "C4FFEB8E-B181-4019-AEB8-E1B18A5E81C4.jpg",
+      "sha256": "8a68410005b349ffd4d087db1e82030cb2eb5730d9da3e04470740adf0c3c2fd",
+      "id": "BRU-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /0080DE54-1C13-493E-BD95-5C2391927861.jpg",
+      "source_folder": "Casamentos ",
+      "name": "0080DE54-1C13-493E-BD95-5C2391927861.jpg",
+      "sha256": "fc25fdb9f58eb0d72037e85a59f90dfa1f52da22443afd491af2eaa860e7897a",
+      "id": "CAS-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /0DE81F8E-701B-4742-A1C7-5590699500F8.jpg",
+      "source_folder": "Casamentos ",
+      "name": "0DE81F8E-701B-4742-A1C7-5590699500F8.jpg",
+      "sha256": "9bfdb4e6670f0abdf005002dc7978b2bdfb5d8b1aed02dc03d8adb2c55586229",
+      "id": "CAS-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /2F891C6E-5B9B-4D58-B083-730561E72795.jpg",
+      "source_folder": "Casamentos ",
+      "name": "2F891C6E-5B9B-4D58-B083-730561E72795.jpg",
+      "sha256": "6e408a2e07f0894c5212fe6c359703f8ac81a4b7b07219f60d2bfe701d678063",
+      "id": "CAS-03",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /4BD6D5B3-9772-431B-856E-31731F1AB0D9.jpg",
+      "source_folder": "Casamentos ",
+      "name": "4BD6D5B3-9772-431B-856E-31731F1AB0D9.jpg",
+      "sha256": "229a4a87c3d22acad694975a7039723333bfa6260df0c47a7f61e4d50fc30eaa",
+      "id": "CAS-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /779451A9-8D04-4506-9380-EB748AA673C5.jpg",
+      "source_folder": "Casamentos ",
+      "name": "779451A9-8D04-4506-9380-EB748AA673C5.jpg",
+      "sha256": "2b96c3414416e0ccfa913d968aad4c3369a16e9cc037978d1341614582e2cfc6",
+      "id": "CAS-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /9B1A70A6-E16A-42A6-85A5-E3805397DDA9.jpg",
+      "source_folder": "Casamentos ",
+      "name": "9B1A70A6-E16A-42A6-85A5-E3805397DDA9.jpg",
+      "sha256": "f01580d90bf8965b62bf3178ca745a7cda4bdfccb53c9c7899d7cb9c17c3df66",
+      "id": "CAS-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /A08BD252-C8F5-4C96-8117-436B1113A6BF.jpg",
+      "source_folder": "Casamentos ",
+      "name": "A08BD252-C8F5-4C96-8117-436B1113A6BF.jpg",
+      "sha256": "dfa969518d0d7ee093585d5b43f2d00f02177c1ac2dd3e0da3e422bfc6f2c786",
+      "id": "CAS-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /B3FAAE0B-9750-4F19-86BE-0D774A8B8D1F.jpg",
+      "source_folder": "Casamentos ",
+      "name": "B3FAAE0B-9750-4F19-86BE-0D774A8B8D1F.jpg",
+      "sha256": "10ff71634733e22a584666310f6301a923e9776953db4066f14282f6bc390226",
+      "id": "CAS-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /E4CEEA43-F6E1-4EAF-87CC-4FCB2DBBAB76.jpg",
+      "source_folder": "Casamentos ",
+      "name": "E4CEEA43-F6E1-4EAF-87CC-4FCB2DBBAB76.jpg",
+      "sha256": "01003e75e4e2bec98edf13e21bc082d81f38f24ccfd1dac2579441d5be0ca524",
+      "id": "CAS-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /Facetune_03-06-2025-20-37-53.heic",
+      "source_folder": "Casamentos ",
+      "name": "Facetune_03-06-2025-20-37-53.heic",
+      "sha256": "0c62417f52be8ccf0df518e511146a555f011bf31f1f51dd6f370298e5d65581",
+      "id": "CAS-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /Facetune_29-10-2026-11-19-30.heic",
+      "source_folder": "Casamentos ",
+      "name": "Facetune_29-10-2026-11-19-30.heic",
+      "sha256": "aa2cf4c0642504510a5650037f0cfacf6be66670098a8951e94b8c8b21d89f7f",
+      "id": "CAS-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_3548.PNG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_3548.PNG",
+      "sha256": "d4ee6c2165869adbfd7dff1e626748396d4d8618261f45dfc68e1a573f04dbea",
+      "id": "CAS-12",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_5960.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_5960.JPG",
+      "sha256": "130cce070a8c5e7df18e6649215d7c92760082570a5f4217e2bbe880a5f48498",
+      "id": "CAS-13",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_5968.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_5968.JPG",
+      "sha256": "14445377c6693fec45d5344b1d81c0fcf9f025c5dd6a3eb3da313fc5db990b52",
+      "id": "CAS-14",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_5972.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_5972.JPG",
+      "sha256": "29f0a298ea8e5b8ac3360b95e66ea327b26971f31e9b94a42703807b56b03077",
+      "id": "CAS-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_5974.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_5974.JPG",
+      "sha256": "39e6d4c28d53a5bf1765d7d2f1f7a59121f70f5d647da95f9f8bd1213293932f",
+      "id": "CAS-16",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_5975.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_5975.JPG",
+      "sha256": "a2a7713a44dea00ecdccbac48b207246e7fd43b50ebd978a1e599a09ac607d04",
+      "id": "CAS-17",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_9860.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_9860.JPG",
+      "sha256": "3e253a375ef04a24267ed34aa357c1318156b8b3cf7d930fe02cbabb652292fd",
+      "id": "CAS-18",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_9862.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_9862.JPG",
+      "sha256": "63829c22bd98e842941010325671b4b598ca4d17c30de4d987d8b87a69f5a126",
+      "id": "CAS-19",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_9864.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_9864.JPG",
+      "sha256": "407355997f4c39c44215a8de9536cba0fbbc82a94670eb2c62a36c43a9f45315",
+      "id": "CAS-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Casamentos /IMG_9865.JPG",
+      "source_folder": "Casamentos ",
+      "name": "IMG_9865.JPG",
+      "sha256": "4a71fc15a4e64e1d798b52da25ff488399b4e453ce00a880eaff41119d39c80a",
+      "id": "CAS-21",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Cópia de bruno menezes (60).jpg",
+      "source_folder": ".",
+      "name": "Cópia de bruno menezes (60).jpg",
+      "sha256": "5b06aa3a02d1c247069770372dc150547cfd5cb9e0d77b65fac7c8d809b6d30f",
+      "id": "NOV-5B06AA3A02D1C247",
+      "status": "exact_duplicate_new"
+    },
+    {
+      "source_relative": "Cópia de DC1F15E3-3360-40C7-8933-B1C7E5C5004B.jpg",
+      "source_folder": ".",
+      "name": "Cópia de DC1F15E3-3360-40C7-8933-B1C7E5C5004B.jpg",
+      "sha256": "ee9b3959e5e231e9fc39f24c4daabc5ea5badb3ca4138f4bce578f25eaa3ecad",
+      "id": "NOV-EE9B3959E5E231E9",
+      "status": "added"
+    },
+    {
+      "source_relative": "Cópia de IMG_0667.JPG",
+      "source_folder": ".",
+      "name": "Cópia de IMG_0667.JPG",
+      "sha256": "0adccd6882843dc148806c541f2e78b34c2f5d86f75f59f8f69e981654cd5fea",
+      "id": "NOV-0ADCCD6882843DC1",
+      "status": "added"
+    },
+    {
+      "source_relative": "D2F0B5DA-4FBB-40E5-B6AF-F2A926A20591.jpeg",
+      "source_folder": ".",
+      "name": "D2F0B5DA-4FBB-40E5-B6AF-F2A926A20591.jpeg",
+      "sha256": "8027dc0fb2f3385067666d3e8b4643b00a1014b27074368055969408ac8fa546",
+      "id": "NOV-8027DC0FB2F33850",
+      "status": "added"
+    },
+    {
+      "source_relative": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C(1).jpg",
+      "source_folder": ".",
+      "name": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C(1).jpg",
+      "sha256": "c16c5451f03ad17c38cc49c75ec0131421c0f9029cc54aeb8b0d75689d0f7232",
+      "id": "BRU-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C.jpg",
+      "source_folder": ".",
+      "name": "D9A7FDE6-1B70-4750-9D9E-E3E59F4A589C.jpg",
+      "sha256": "c16c5451f03ad17c38cc49c75ec0131421c0f9029cc54aeb8b0d75689d0f7232",
+      "id": "BRU-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "DC1F15E3-3360-40C7-8933-B1C7E5C5004B.jpg",
+      "source_folder": ".",
+      "name": "DC1F15E3-3360-40C7-8933-B1C7E5C5004B.jpg",
+      "sha256": "ee9b3959e5e231e9fc39f24c4daabc5ea5badb3ca4138f4bce578f25eaa3ecad",
+      "id": "NOV-EE9B3959E5E231E9",
+      "status": "exact_duplicate_new"
+    },
+    {
+      "source_relative": "DSC08728.JPG",
+      "source_folder": ".",
+      "name": "DSC08728.JPG",
+      "sha256": "dd49e309c020083d9fc0437f0003e8c29e0624a7ced63c56ed3600ebe616fc61",
+      "id": "NOV-DD49E309C020083D",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSC08733.JPG",
+      "source_folder": ".",
+      "name": "DSC08733.JPG",
+      "sha256": "9382e78d9574031a2824491266d7868998aba8fe46f8333524306fd057d2262e",
+      "id": "NOV-9382E78D9574031A",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSC08740.JPG",
+      "source_folder": ".",
+      "name": "DSC08740.JPG",
+      "sha256": "231e97ae20347140bb166fbb3f4b2a4788fd323f03c0c952d58dde50ca2a3b51",
+      "id": "NOV-231E97AE20347140",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF7954.jpg",
+      "source_folder": ".",
+      "name": "DSCF7954.jpg",
+      "sha256": "eba741dcc38dbacd3a38ff5655dd242ea0e28a71fc9d879ce83ea707361ffe8f",
+      "id": "NOV-EBA741DCC38DBACD",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8043-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8043-2.jpg",
+      "sha256": "86a8b28e3a0b8709ca7303510737408a3c30c9bcf3d0a63495982bdd3b5c2b27",
+      "id": "NOV-86A8B28E3A0B8709",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8085.jpg",
+      "source_folder": ".",
+      "name": "DSCF8085.jpg",
+      "sha256": "f0341b343b9935be3c0e5771857e84bd329fb7fa6594fe9e5622d03c86591537",
+      "id": "NOV-F0341B343B9935BE",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8097.jpg",
+      "source_folder": ".",
+      "name": "DSCF8097.jpg",
+      "sha256": "14e09123f5b48a5d286edb95eddf3c5733fd66681bf32af85b8bab98afd2fb0a",
+      "id": "NOV-14E09123F5B48A5D",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8203.jpg",
+      "source_folder": ".",
+      "name": "DSCF8203.jpg",
+      "sha256": "64bcd6f8bdbff48e4ba3c9d7f6a0617caced80fa681f12c7696c6fa56c5202b3",
+      "id": "NOV-64BCD6F8BDBFF48E",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8205.jpg",
+      "source_folder": ".",
+      "name": "DSCF8205.jpg",
+      "sha256": "be93a3348c9beea50e1e8ca87bd9766146628d5892cc300d389375c747991fac",
+      "id": "NOV-BE93A3348C9BEEA5",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8207-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8207-2.jpg",
+      "sha256": "f3b0ca5aa406bb58dcae27c4dabd1790ae5f209638342bf6c4d1d3a4acbbd8be",
+      "id": "NOV-F3B0CA5AA406BB58",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8217-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8217-2.jpg",
+      "sha256": "498a2ecec2f99a448c0a067c27bdc231161284b3b02ce9ffe6ba3695e9414cf9",
+      "id": "NOV-498A2ECEC2F99A44",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8217.jpg",
+      "source_folder": ".",
+      "name": "DSCF8217.jpg",
+      "sha256": "ce4b231526cf1143ead201b310a8fe21676af86c54de612dc860e65622953b07",
+      "id": "NOV-CE4B231526CF1143",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8267-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8267-2.jpg",
+      "sha256": "90a906ee16309c28629ab0af75ae1cdf4b47ff3a548141eefac258cf7bf6656a",
+      "id": "NOV-90A906EE16309C28",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8281-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8281-2.jpg",
+      "sha256": "d8ce2b2a5be7d9e57060508e632ed7173e1f2026224888b334e337c06d276f82",
+      "id": "NOV-D8CE2B2A5BE7D9E5",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8411-3.jpg",
+      "source_folder": ".",
+      "name": "DSCF8411-3.jpg",
+      "sha256": "d4d7b006c6361c18b7e2d152f7bcd9c768903f3415d154c0efa83e0150e148de",
+      "id": "NOV-D4D7B006C6361C18",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8589.jpg",
+      "source_folder": ".",
+      "name": "DSCF8589.jpg",
+      "sha256": "19a07303c2016486220a691d017ccb9861d5c91f9f02412a5c3624083a87330f",
+      "id": "NOV-19A07303C2016486",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8665-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8665-2.jpg",
+      "sha256": "4abfb174b3e3fc9485843e651faab3f8573c20274fa44315db8ded0bb72d77ae",
+      "id": "NOV-4ABFB174B3E3FC94",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8684.jpg",
+      "source_folder": ".",
+      "name": "DSCF8684.jpg",
+      "sha256": "2a26db00444a4ff4d1f19c0bb57d34a55dbd272779e150f345e269fd46fa79ab",
+      "id": "NOV-2A26DB00444A4FF4",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8722.jpg",
+      "source_folder": ".",
+      "name": "DSCF8722.jpg",
+      "sha256": "3f30be6c966c36f636d8226f100454067f8af023a3b9e0b7cccca551ee99f579",
+      "id": "NOV-3F30BE6C966C36F6",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8874.jpg",
+      "source_folder": ".",
+      "name": "DSCF8874.jpg",
+      "sha256": "b02bd28eba73702b770d92f4d93157d2677d1704f03d22f64aec2c6eab542b72",
+      "id": "NOV-B02BD28EBA73702B",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8879-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8879-2.jpg",
+      "sha256": "1570791c6cb2dabaa49cba6ac20b962c32994e6673cf7dbce8dcb1e4ef88cafc",
+      "id": "NOV-1570791C6CB2DABA",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8879.jpg",
+      "source_folder": ".",
+      "name": "DSCF8879.jpg",
+      "sha256": "a13630f50f8318489a8e082a9e91d412f70d88006480e332d2b3145ca2ee569d",
+      "id": "NOV-A13630F50F831848",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8884-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8884-2.jpg",
+      "sha256": "9a5e730f3eee93638c8a132e1e13c7cb6a0926a52e4989daa9710849d43928d6",
+      "id": "NOV-9A5E730F3EEE9363",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8884-3.jpg",
+      "source_folder": ".",
+      "name": "DSCF8884-3.jpg",
+      "sha256": "f5c75f8fd1a83af009267f2be6586dc2f474f4e6762ff7dfa15e5275ebbe4eab",
+      "id": "NOV-F5C75F8FD1A83AF0",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8884.jpg",
+      "source_folder": ".",
+      "name": "DSCF8884.jpg",
+      "sha256": "543bd7e88a022050fe72e20c07db554cf7d436f660d3792f041daa500fe5c91b",
+      "id": "NOV-543BD7E88A022050",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8917.jpg",
+      "source_folder": ".",
+      "name": "DSCF8917.jpg",
+      "sha256": "7fc6d5fa640e7a4104cca2e7581305fd6be621e164d78acf1f438203b018d894",
+      "id": "NOV-7FC6D5FA640E7A41",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8931-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8931-2.jpg",
+      "sha256": "ab2abea609b382fb834f10e638b686099dc196f992f326f1577af61b8d7edf5a",
+      "id": "NOV-AB2ABEA609B382FB",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8931.jpg",
+      "source_folder": ".",
+      "name": "DSCF8931.jpg",
+      "sha256": "60e9701b62a27f82224c43271478b662e7b778ccb8fcdac7a798d21f48e306ca",
+      "id": "NOV-60E9701B62A27F82",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8936.jpg",
+      "source_folder": ".",
+      "name": "DSCF8936.jpg",
+      "sha256": "f69029fbd326a528c96b14a7c83a1220997d4ca455155ed0fb3dacad9b1a7184",
+      "id": "NOV-F69029FBD326A528",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8944 copy.jpg",
+      "source_folder": ".",
+      "name": "DSCF8944 copy.jpg",
+      "sha256": "ef18ab8c029bd51a5bf9c33e2431ce6c9553fc3ddf317feb635597c317a0cabf",
+      "id": "NOV-EF18AB8C029BD51A",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8944-2.jpg",
+      "source_folder": ".",
+      "name": "DSCF8944-2.jpg",
+      "sha256": "3cf6ae9b476e9c1c77f592e6b7e078ec87eb781c3ae781e209c5540e9fee54bc",
+      "id": "NOV-3CF6AE9B476E9C1C",
+      "status": "added"
+    },
+    {
+      "source_relative": "DSCF8944.jpg",
+      "source_folder": ".",
+      "name": "DSCF8944.jpg",
+      "sha256": "ef18ab8c029bd51a5bf9c33e2431ce6c9553fc3ddf317feb635597c317a0cabf",
+      "id": "NOV-EF18AB8C029BD51A",
+      "status": "exact_duplicate_new"
+    },
+    {
+      "source_relative": "E4CEEA43-F6E1-4EAF-87CC-4FCB2DBBAB76.jpg",
+      "source_folder": ".",
+      "name": "E4CEEA43-F6E1-4EAF-87CC-4FCB2DBBAB76.jpg",
+      "sha256": "01003e75e4e2bec98edf13e21bc082d81f38f24ccfd1dac2579441d5be0ca524",
+      "id": "CAS-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "F7BF9388-0A3F-4272-91E2-08EE38BC5A62.jpg",
+      "source_folder": ".",
+      "name": "F7BF9388-0A3F-4272-91E2-08EE38BC5A62.jpg",
+      "sha256": "204b19614aa27393bccc4628ce8d9a6b3131439427f9b0393efdbe6103a4d2ec",
+      "id": "NOV-204B19614AA27393",
+      "status": "added"
+    },
+    {
+      "source_relative": "F9E18B61-6EAA-4975-87C4-3001777D9F3D.jpg",
+      "source_folder": ".",
+      "name": "F9E18B61-6EAA-4975-87C4-3001777D9F3D.jpg",
+      "sha256": "b94ca63befe18347cca8b38bb0fee930f6d239b7265de2b627624279623eeaa6",
+      "id": "NOV-B94CA63BEFE18347",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_01-02-2025-01-08-03.heic",
+      "source_folder": ".",
+      "name": "Facetune_01-02-2025-01-08-03.heic",
+      "sha256": "1fb76ea8af2886f6704082dcd85fbb45369684782060ad262462733425d3124d",
+      "id": "NOV-1FB76EA8AF2886F6",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_01-11-2025-14-00-27.heic",
+      "source_folder": ".",
+      "name": "Facetune_01-11-2025-14-00-27.heic",
+      "sha256": "86eab50ddd2f79b3f31da34f635ca69cfd3522b567b61a745ef256c622bc7f7b",
+      "id": "NOV-86EAB50DDD2F79B3",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_01-11-2025-15-32-45.heic",
+      "source_folder": ".",
+      "name": "Facetune_01-11-2025-15-32-45.heic",
+      "sha256": "6578ed4febe17b432b6b837f6ab5b89865137e47d85d16bedd2b0fc58a268d04",
+      "id": "NOV-6578ED4FEBE17B43",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_03-06-2025-20-37-53.heic",
+      "source_folder": ".",
+      "name": "Facetune_03-06-2025-20-37-53.heic",
+      "sha256": "0c62417f52be8ccf0df518e511146a555f011bf31f1f51dd6f370298e5d65581",
+      "id": "CAS-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Facetune_06-08-2026-16-43-37.heic",
+      "source_folder": ".",
+      "name": "Facetune_06-08-2026-16-43-37.heic",
+      "sha256": "2c9b9e1e8eb2ff681279f72ec2472158877e27c015d15a2bdc6b07fd9e8b949c",
+      "id": "NOV-2C9B9E1E8EB2FF68",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_06-09-2025-22-26-40.heic",
+      "source_folder": ".",
+      "name": "Facetune_06-09-2025-22-26-40.heic",
+      "sha256": "46c8b74f5ca10fe22566a45bf40770f500031328ae6e254862aeb0717f516d6c",
+      "id": "NOV-46C8B74F5CA10FE2",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_08-05-2026-03-18-09.heic",
+      "source_folder": ".",
+      "name": "Facetune_08-05-2026-03-18-09.heic",
+      "sha256": "f4067f97009151d65546f2bc316cee014c4d636f1f2c7c95db9df2fee503fb91",
+      "id": "NOV-F4067F97009151D6",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_08-11-2024-17-15-05.heic",
+      "source_folder": ".",
+      "name": "Facetune_08-11-2024-17-15-05.heic",
+      "sha256": "d3e8a181458484e364b03b3131daef134efe79004a85d1cad376f2b62b2f08a2",
+      "id": "NOV-D3E8A181458484E3",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_10-06-2025-21-43-23.heic",
+      "source_folder": ".",
+      "name": "Facetune_10-06-2025-21-43-23.heic",
+      "sha256": "a1edf194ed012606976d3f0623a787649c4859cc7114731ab5ed16b1c550c714",
+      "id": "NOV-A1EDF194ED012606",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_10-10-2023-19-56-09.HEIC",
+      "source_folder": ".",
+      "name": "Facetune_10-10-2023-19-56-09.HEIC",
+      "sha256": "c304be9c6bf02f9fed2159e5b06003a81248d63db8387658908cd5354658bf5f",
+      "id": "NOV-C304BE9C6BF02F9F",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_11-06-2026-19-36-16.heic",
+      "source_folder": ".",
+      "name": "Facetune_11-06-2026-19-36-16.heic",
+      "sha256": "88733f0cf158c07eaa36d70dfaad7803b82eed6a80fd84762883d36e8e0ca150",
+      "id": "NOV-88733F0CF158C07E",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_12-12-2025-10-10-25.heic",
+      "source_folder": ".",
+      "name": "Facetune_12-12-2025-10-10-25.heic",
+      "sha256": "5beed9fcf3af352ff32b7b44ab4fd55460a8903bf34ab8cae6059becc249f4b9",
+      "id": "NOV-5BEED9FCF3AF352F",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_13-12-2025-22-34-39.heic",
+      "source_folder": ".",
+      "name": "Facetune_13-12-2025-22-34-39.heic",
+      "sha256": "a5b3fc62a58cd4282d1170ca807ef20d3795b82bdf6268e6d11f6ad3e5ec1a50",
+      "id": "NOV-A5B3FC62A58CD428",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_15-12-2025-12-27-57.heic",
+      "source_folder": ".",
+      "name": "Facetune_15-12-2025-12-27-57.heic",
+      "sha256": "1078316fee14b61405ba987402f35e6ca25e8aed6bdff5647f0f1e69dabb16d2",
+      "id": "NOV-1078316FEE14B614",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_16-05-2026-19-34-20.heic",
+      "source_folder": ".",
+      "name": "Facetune_16-05-2026-19-34-20.heic",
+      "sha256": "764f2454ac289bd093f6d7135aaaaa074e1e22e59a16c91f5a4ebb121d9dc1d1",
+      "id": "NOV-764F2454AC289BD0",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_16-12-2025-11-19-36.heic",
+      "source_folder": ".",
+      "name": "Facetune_16-12-2025-11-19-36.heic",
+      "sha256": "b894618ab06fd9a8ba22666ebc76147d4aad381c117738125d410de5f524530f",
+      "id": "NOV-B894618AB06FD9A8",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_18-07-2026-19-11-46.heic",
+      "source_folder": ".",
+      "name": "Facetune_18-07-2026-19-11-46.heic",
+      "sha256": "dfd7f5590c106fd1575dd28aeb7d26cff080a70654f09ef788dd8fc8a371f604",
+      "id": "NOV-DFD7F5590C106FD1",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_18-09-2025-01-01-25.heic",
+      "source_folder": ".",
+      "name": "Facetune_18-09-2025-01-01-25.heic",
+      "sha256": "d5569406258e7b7a26ead38f74cadbb700879907d5bf5854d3d9e7c68739d8bb",
+      "id": "NOV-D5569406258E7B7A",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_18-09-2025-02-15-16.heic",
+      "source_folder": ".",
+      "name": "Facetune_18-09-2025-02-15-16.heic",
+      "sha256": "31d8f0835b43fe515e2c100e9cd9899f1a5c52a46487d1f49d9df2d3e1f3ed1c",
+      "id": "NOV-31D8F0835B43FE51",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_22-02-2026-18-24-16.heic",
+      "source_folder": ".",
+      "name": "Facetune_22-02-2026-18-24-16.heic",
+      "sha256": "65e25ff2b3e658bd5ee167aba9116dce7a27ea092996273193703749ed7746f5",
+      "id": "NOV-65E25FF2B3E658BD",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_22-08-2026-02-42-19.heic",
+      "source_folder": ".",
+      "name": "Facetune_22-08-2026-02-42-19.heic",
+      "sha256": "badf8928de3bf3ef87c5b818ed4566f9a8c4991ff3de4979e842f92efb1c636e",
+      "id": "NOV-BADF8928DE3BF3EF",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_24-07-2025-10-04-20.heic",
+      "source_folder": ".",
+      "name": "Facetune_24-07-2025-10-04-20.heic",
+      "sha256": "cb471eae15e0a96e2fd2f42889f7d3b4ba543060e36fcb6eaff63536185ebfd9",
+      "id": "NOV-CB471EAE15E0A96E",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_27-02-2025-14-54-32.heic",
+      "source_folder": ".",
+      "name": "Facetune_27-02-2025-14-54-32.heic",
+      "sha256": "1ee9718a69d996588dd0fe576273d29ff2e39abbefc673c1fe42abcefcfa0734",
+      "id": "NOV-1EE9718A69D99658",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_27-02-2025-15-21-02.heic",
+      "source_folder": ".",
+      "name": "Facetune_27-02-2025-15-21-02.heic",
+      "sha256": "fc79e3c04dd04dd6aae0105bd4378aec8d5acde2c9791567dc8b66e7e8575ae3",
+      "id": "NOV-FC79E3C04DD04DD6",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_29-06-2026-03-01-10.heic",
+      "source_folder": ".",
+      "name": "Facetune_29-06-2026-03-01-10.heic",
+      "sha256": "f688345cbb7436a72a709239f57ae6ac34f50d8f63dde0b3b58996dd5e57856f",
+      "id": "NOV-F688345CBB7436A7",
+      "status": "added"
+    },
+    {
+      "source_relative": "Facetune_30-10-2024-02-51-09.heic",
+      "source_folder": ".",
+      "name": "Facetune_30-10-2024-02-51-09.heic",
+      "sha256": "fd49b1581fe229da0bd89095034dfd97189d25218c5bf26a5dd4abc651d11685",
+      "id": "NOV-FD49B1581FE229DA",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_0051.jpg",
+      "source_folder": ".",
+      "name": "IMG_0051.jpg",
+      "sha256": "96beeff3d5347fa107dc587b90fefe252331ecc00f872a167b74c01723287d79",
+      "id": "NOV-96BEEFF3D5347FA1",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_0335.JPG",
+      "source_folder": ".",
+      "name": "IMG_0335.JPG",
+      "sha256": "cad3fd29cbf4546e6077da7e16c88cf5b2a60733fb9e52717d65234adaeb658b",
+      "id": "NOV-CAD3FD29CBF4546E",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_0338.JPG",
+      "source_folder": ".",
+      "name": "IMG_0338.JPG",
+      "sha256": "6bb70da79549c9507f1c6861c8a66edf67feeef87ae40d8477d6efca3326354f",
+      "id": "NOV-6BB70DA79549C950",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_0667.JPG",
+      "source_folder": ".",
+      "name": "IMG_0667.JPG",
+      "sha256": "0adccd6882843dc148806c541f2e78b34c2f5d86f75f59f8f69e981654cd5fea",
+      "id": "NOV-0ADCCD6882843DC1",
+      "status": "exact_duplicate_new"
+    },
+    {
+      "source_relative": "IMG_0668.JPG",
+      "source_folder": ".",
+      "name": "IMG_0668.JPG",
+      "sha256": "dcea4d30222bbefc9d895510a4b8915a3ddbaa89f15c4ec8384c23339da62d72",
+      "id": "NOV-DCEA4D30222BBEFC",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_0669.JPG",
+      "source_folder": ".",
+      "name": "IMG_0669.JPG",
+      "sha256": "03c00a311679460690406fde9a2227d16dbc22f3b8ee48dec8de86cfbf01a722",
+      "id": "NOV-03C00A3116794606",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_1338.JPG",
+      "source_folder": ".",
+      "name": "IMG_1338.JPG",
+      "sha256": "704f3500ceb4cd9bbc65fd925044b1d3f7c1e1e9af947796d89f01b3e82267bb",
+      "id": "BRU-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_1339.JPG",
+      "source_folder": ".",
+      "name": "IMG_1339.JPG",
+      "sha256": "3e5c48aa370b55d5e99f230f9c01c0da60acaeee0453ecd3ef1217cf84bc1a76",
+      "id": "BRU-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_2179.JPG",
+      "source_folder": ".",
+      "name": "IMG_2179.JPG",
+      "sha256": "8eb4b988f673184157481ac65faf205ade8da59f11ffcad2096923aae088e581",
+      "id": "BRU-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_2180.JPG",
+      "source_folder": ".",
+      "name": "IMG_2180.JPG",
+      "sha256": "7f2ad9d89f14c42cb788424e4436994788e4b542ad7437b1f77e708ba7d71466",
+      "id": "BRU-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_2305.JPG",
+      "source_folder": ".",
+      "name": "IMG_2305.JPG",
+      "sha256": "2240ec03ae0f7873ae9668a07e30d2c890b94834594f30b954e1e15d9607fd76",
+      "id": "NOV-2240EC03AE0F7873",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_2306.JPG",
+      "source_folder": ".",
+      "name": "IMG_2306.JPG",
+      "sha256": "aa8c503346e21315e45a11cb7b700054a2cb80ee80ebcc9453917eb3a5d311d7",
+      "id": "NOV-AA8C503346E21315",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_3199.JPG",
+      "source_folder": ".",
+      "name": "IMG_3199.JPG",
+      "sha256": "db071e238c270f5a722b167b490cfe31f6cbac1d3ff7af5973904c253ccd9365",
+      "id": "NOV-DB071E238C270F5A",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_3221.JPG",
+      "source_folder": ".",
+      "name": "IMG_3221.JPG",
+      "sha256": "f97edbc8627b7fd797024fec4acecfbdebc0bea7a3c807f99a0eaf627a510923",
+      "id": "NOV-F97EDBC8627B7FD7",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_3908.JPG",
+      "source_folder": ".",
+      "name": "IMG_3908.JPG",
+      "sha256": "d3064308a66331564b6b6e17f0197a1b027236c7e7b488816526410201425ad5",
+      "id": "BRU-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_3909.JPG",
+      "source_folder": ".",
+      "name": "IMG_3909.JPG",
+      "sha256": "12b6417880fa1bb5a93739cac15c6f1ab1409830dcbecc3ce4b11541bcdf4981",
+      "id": "BRU-16",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_5131.JPG",
+      "source_folder": ".",
+      "name": "IMG_5131.JPG",
+      "sha256": "c0a362f3c9338b3bd7e4749986f1ef2f8df59ce2333aad8da0901daffc16f0fe",
+      "id": "NOV-C0A362F3C9338B3B",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_5960.JPG",
+      "source_folder": ".",
+      "name": "IMG_5960.JPG",
+      "sha256": "130cce070a8c5e7df18e6649215d7c92760082570a5f4217e2bbe880a5f48498",
+      "id": "CAS-13",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_5972(1).JPG",
+      "source_folder": ".",
+      "name": "IMG_5972(1).JPG",
+      "sha256": "29f0a298ea8e5b8ac3360b95e66ea327b26971f31e9b94a42703807b56b03077",
+      "id": "CAS-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_5972.JPG",
+      "source_folder": ".",
+      "name": "IMG_5972.JPG",
+      "sha256": "29f0a298ea8e5b8ac3360b95e66ea327b26971f31e9b94a42703807b56b03077",
+      "id": "CAS-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_6102.JPG",
+      "source_folder": ".",
+      "name": "IMG_6102.JPG",
+      "sha256": "83c3dfb6406f7a3c9b84eac1f93c40d0de6a4f74b6838a8f5b17fa231a2eba0d",
+      "id": "NOV-83C3DFB6406F7A3C",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_6895.heic",
+      "source_folder": ".",
+      "name": "IMG_6895.heic",
+      "sha256": "b7a8ee4fded719712116cfb9c4ab74e47843d796c73bcef6911e83bd56c3151f",
+      "id": "NOV-B7A8EE4FDED71971",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_7048.JPG",
+      "source_folder": ".",
+      "name": "IMG_7048.JPG",
+      "sha256": "d7ca4f9bb2e13d479000da6680de29621c9bfb4ac74b5caaf3df90b5683e72b5",
+      "id": "BRU-17",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_7050.JPG",
+      "source_folder": ".",
+      "name": "IMG_7050.JPG",
+      "sha256": "58e56c3b370aaa9ffeef194c4f532b933013d5ee85e384c854e6a2ad0188b3ef",
+      "id": "BRU-18",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_7308.HEIC",
+      "source_folder": ".",
+      "name": "IMG_7308.HEIC",
+      "sha256": "7ca837ca3950550f7727b3f4052ee2c65e4bde6c4c435731f6532a827edb96d2",
+      "id": "NOV-7CA837CA3950550F",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_7314.HEIC",
+      "source_folder": ".",
+      "name": "IMG_7314.HEIC",
+      "sha256": "052c5ed281864dab7407a78dc481fd6b07afea7ce4973967fe36afb924371bb2",
+      "id": "NOV-052C5ED281864DAB",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_7349.JPG",
+      "source_folder": ".",
+      "name": "IMG_7349.JPG",
+      "sha256": "08391cc790281587bb055349d988c9cb6dc752373b0f251579acc35a380f4615",
+      "id": "BRU-19",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_7404(1).JPG",
+      "source_folder": ".",
+      "name": "IMG_7404(1).JPG",
+      "sha256": "6f5b1eb554bb9445babfe901dee1a5549bfe46d3779b54fb6af94ba9e1e65748",
+      "id": "BRU-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_7404.JPG",
+      "source_folder": ".",
+      "name": "IMG_7404.JPG",
+      "sha256": "6f5b1eb554bb9445babfe901dee1a5549bfe46d3779b54fb6af94ba9e1e65748",
+      "id": "BRU-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_7896.HEIC",
+      "source_folder": ".",
+      "name": "IMG_7896.HEIC",
+      "sha256": "7b7cbfce3abaad92b85eb77cb03c541e794498426518b4e05ec523d13ffae6c9",
+      "id": "NOV-7B7CBFCE3ABAAD92",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_7897.JPG",
+      "source_folder": ".",
+      "name": "IMG_7897.JPG",
+      "sha256": "4cda9cdf21aa626df72e245e5aa8b94b35572683c4ec9cb893ce6f54fd116882",
+      "id": "NOV-4CDA9CDF21AA626D",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_8265.HEIC",
+      "source_folder": ".",
+      "name": "IMG_8265.HEIC",
+      "sha256": "a4b6f4cf43d0499154f494d15f1fecf3bc07c312e5f03053a60958d0d00196c5",
+      "id": "NOV-A4B6F4CF43D04991",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9001.JPG",
+      "source_folder": ".",
+      "name": "IMG_9001.JPG",
+      "sha256": "404b0f5fcd5bab6d4a1b352962fbdfe3ae88fe18f0e9f52e9082a52207ad3724",
+      "id": "NOV-404B0F5FCD5BAB6D",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9627.JPG",
+      "source_folder": ".",
+      "name": "IMG_9627.JPG",
+      "sha256": "8f57f7a960fc76758995a4acaba3b3be55208efa7f36cd5c4053e5cd4e693313",
+      "id": "NOV-8F57F7A960FC7675",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9675.JPG",
+      "source_folder": ".",
+      "name": "IMG_9675.JPG",
+      "sha256": "c86b6d19fef82efad0d119676d08ff91117ea4922fdf0432a976b1bb27ac73b4",
+      "id": "NOV-C86B6D19FEF82EFA",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9692.JPG",
+      "source_folder": ".",
+      "name": "IMG_9692.JPG",
+      "sha256": "6d4f7f4101ffd86694fda7c760352b95b2f59ec01d1c14438a83653801b14ac8",
+      "id": "NOV-6D4F7F4101FFD866",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9847.JPG",
+      "source_folder": ".",
+      "name": "IMG_9847.JPG",
+      "sha256": "4bcc06250447fcda9fb17efc1437d7216f48f7c553370b32f26c6febed3f6244",
+      "id": "NOV-4BCC06250447FCDA",
+      "status": "added"
+    },
+    {
+      "source_relative": "IMG_9860.JPG",
+      "source_folder": ".",
+      "name": "IMG_9860.JPG",
+      "sha256": "3e253a375ef04a24267ed34aa357c1318156b8b3cf7d930fe02cbabb652292fd",
+      "id": "CAS-18",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_9862.JPG",
+      "source_folder": ".",
+      "name": "IMG_9862.JPG",
+      "sha256": "63829c22bd98e842941010325671b4b598ca4d17c30de4d987d8b87a69f5a126",
+      "id": "CAS-19",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "IMG_9864.JPG",
+      "source_folder": ".",
+      "name": "IMG_9864.JPG",
+      "sha256": "407355997f4c39c44215a8de9536cba0fbbc82a94670eb2c62a36c43a9f45315",
+      "id": "CAS-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "ROD05600.jpg",
+      "source_folder": ".",
+      "name": "ROD05600.jpg",
+      "sha256": "753a115768c95abe451ad03737421a8132ad513a38b15ec059374ae5939a5a9c",
+      "id": "NOV-753A115768C95ABE",
+      "status": "added"
+    },
+    {
+      "source_relative": "ROD05710.jpg",
+      "source_folder": ".",
+      "name": "ROD05710.jpg",
+      "sha256": "8ba437e3e8f5c73fc90b35d2e623a3aa5e784617221d6faf38bafa05e45f0832",
+      "id": "NOV-8BA437E3E8F5C73F",
+      "status": "added"
+    },
+    {
+      "source_relative": "ROD08846.jpg",
+      "source_folder": ".",
+      "name": "ROD08846.jpg",
+      "sha256": "8630fb478a4af315feca303b7ded931eba2c9539c6f7d0a339f51254742741ac",
+      "id": "NOV-8630FB478A4AF315",
+      "status": "added"
+    },
+    {
+      "source_relative": "ROD09475.jpg",
+      "source_folder": ".",
+      "name": "ROD09475.jpg",
+      "sha256": "39fab5cb32e4604c45eac2297bdc364f348033e50788db9af443c1156bccf4d5",
+      "id": "NOV-39FAB5CB32E4604C",
+      "status": "added"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-10-57-40.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-10-57-40.heic",
+      "sha256": "772a8f296d7fc42d7e2d9db949ebeda5555e5ef8ca9007e7227012f82d3b06cc",
+      "id": "SOC-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-04-20.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-04-20.heic",
+      "sha256": "204eb94c0937202a44cdc706c4144afb2212d9308a097b1ec1c82bd92c23bc61",
+      "id": "SOC-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-05-54.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-05-54.heic",
+      "sha256": "dc6f1c7d5a85192b20b3cd8974b426d4f2ad692417f5f3c9043d4783fd33e578",
+      "id": "SOC-03",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-06-49.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-06-49.heic",
+      "sha256": "dfb357f532512d2dc697982468ff23beaea29e2e8a91c2dc8d9c1efe7900ccfe",
+      "id": "SOC-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-07-26.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-07-26.heic",
+      "sha256": "f5c2557a9bbacc777cc6d0f8b6d88352d0c49fe9675beb9b3094346475d9ec52",
+      "id": "SOC-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-10-40.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-10-40.heic",
+      "sha256": "6eb3327f06466eeb4bf36290239ac6e900204e7cdbee1ad9ad2e1c72fc836e9a",
+      "id": "SOC-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-14-24.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-14-24.heic",
+      "sha256": "b2bcbcd32d89a016174fa772ca6bab064f1384ebe2d610852e3578fb0fd04393",
+      "id": "SOC-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-23-04.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-23-04.heic",
+      "sha256": "0fafe6e404bb6e6308882114e3c7bfee348bf54105959af5854fabe2588c2d62",
+      "id": "SOC-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-23-17.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-23-17.heic",
+      "sha256": "5d073cecfbb243e6f7df4339e5a944e20aeb7ddcc214ebd49d39e587ad216f5b",
+      "id": "SOC-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /Facetune_29-10-2026-11-40-42.heic",
+      "source_folder": "Social and Beauty ",
+      "name": "Facetune_29-10-2026-11-40-42.heic",
+      "sha256": "baa34924378116374fa250b44a70fa25f08251e91f25945a8dcd4f38b64cadea",
+      "id": "SOC-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "Social and Beauty /IMG_3910.JPG",
+      "source_folder": "Social and Beauty ",
+      "name": "IMG_3910.JPG",
+      "sha256": "307a166b58bc2afc65672be4a9937e4c8275859147470245f2b717696f12d1cd",
+      "id": "SOC-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "c67957b2-385b-49b6-9848-7eb65e7fba1b(1).jpg",
+      "source_folder": ".",
+      "name": "c67957b2-385b-49b6-9848-7eb65e7fba1b(1).jpg",
+      "sha256": "d1cf0303fa72b052e77d58755df99029ff1f212470a17578d0230b7f6b445b22",
+      "id": "BRU-21",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "c67957b2-385b-49b6-9848-7eb65e7fba1b.jpg",
+      "source_folder": ".",
+      "name": "c67957b2-385b-49b6-9848-7eb65e7fba1b.jpg",
+      "sha256": "d1cf0303fa72b052e77d58755df99029ff1f212470a17578d0230b7f6b445b22",
+      "id": "BRU-21",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "cfc31052-61d7-478b-a7c9-b7cacd3e62a9.jpg",
+      "source_folder": ".",
+      "name": "cfc31052-61d7-478b-a7c9-b7cacd3e62a9.jpg",
+      "sha256": "4e21615332f3066f9ef63b08eef1f54c7d000bd91b182f322a476500834168e6",
+      "id": "NOV-4E21615332F3066F",
+      "status": "added"
+    },
+    {
+      "source_relative": "lorena-beauty/257fdbdc-d571-41d7-8173-08f18ed194a3.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "257fdbdc-d571-41d7-8173-08f18ed194a3.JPG",
+      "sha256": "7c9dffa63ab2c902975a9a8c4aae257f894571ebaa5bd0e7622489c38a3aa1af",
+      "id": "LBS-01",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/29458968-58a2-400c-8846-1199c02437ea.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "29458968-58a2-400c-8846-1199c02437ea.JPG",
+      "sha256": "aaae0e98597f91f98ff139aac31ee959ac537c1d84a1561277f68b6629793691",
+      "id": "LBS-02",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/30662b00-637b-4ce7-9b01-e495735aff28.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "30662b00-637b-4ce7-9b01-e495735aff28.JPG",
+      "sha256": "3e41db443e705e078b4a186c1fb4c12196c6f6be9636033b7595a8ea9028eda9",
+      "id": "LBS-03",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/3804ad99-2071-48d1-82a9-6a8faac987e4.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "3804ad99-2071-48d1-82a9-6a8faac987e4.JPG",
+      "sha256": "91fa4c4bc6e0b51c73a9a595263f5d2a4ad3eb5325d9df487ce627c44ab0b75d",
+      "id": "LBS-04",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/3b88ec25-5b2d-4349-b087-ecc063729728.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "3b88ec25-5b2d-4349-b087-ecc063729728.JPG",
+      "sha256": "41d53a9d0bbb692b4c74877e3756c9371ef7b3781ec832797e19ce8dd20edf56",
+      "id": "LBS-05",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/4455dd85-0113-418a-83f1-b1b390b388a6.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "4455dd85-0113-418a-83f1-b1b390b388a6.JPG",
+      "sha256": "9e0054326d72100f146aae2a74ded2b10da08ffd4e4e5c5b7f3e6dfc7638ce4e",
+      "id": "LBS-06",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/60a90bbd-ed58-4971-95f2-2ad005287212.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "60a90bbd-ed58-4971-95f2-2ad005287212.JPG",
+      "sha256": "839210856a9e149faaa65ad56dfe6f96564fedbe5bd372738361242e03258b79",
+      "id": "LBS-07",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/61c1efae-63d7-4e6b-aef8-c28ac4c2a6bf.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "61c1efae-63d7-4e6b-aef8-c28ac4c2a6bf.JPG",
+      "sha256": "623b820c50b41a4f27e1f2edbb3715b62c0587e1d5183ec46a39fb2ad899d693",
+      "id": "LBS-08",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/64927659-7c20-43e2-90f1-299d9496f970.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "64927659-7c20-43e2-90f1-299d9496f970.JPG",
+      "sha256": "3fb5b8f4a255992714e0a172ca319555ac166d2d1aae2afbb6a553e47c4c2bff",
+      "id": "LBS-09",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1061.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1061.JPG",
+      "sha256": "77fe5ee4db525c414239ecc10b5fd1c7aa5f925a2e6fd5753aef99bf6d6f7217",
+      "id": "LBS-10",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1062.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1062.JPG",
+      "sha256": "15a0038cdbc94237a1167db19c57467f25001c50de5eba903744b02246037930",
+      "id": "LBS-11",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1063.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1063.JPG",
+      "sha256": "c7a3f533baf21a812aebbdcc43fede61ad3376000da328ab44b8b17ab0a1797b",
+      "id": "LBS-12",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1064.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1064.JPG",
+      "sha256": "d557ba7a47411eb2a63445fa682dff97c31fca55723bfe4ec4f5052c4ada31cc",
+      "id": "LBS-13",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1065.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1065.JPG",
+      "sha256": "200ddf409f0098f9a60c8e6570e87950295a412596dfdeb249f7e724c6635c04",
+      "id": "LBS-14",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1066.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1066.JPG",
+      "sha256": "c4be39b4df0b86d883f729827af232cc4e75d571083f34f4d7d365bb8b63bed0",
+      "id": "LBS-15",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1067.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1067.JPG",
+      "sha256": "1c11b63625e74ef3ef872314b3b58a08f2b3be5807918dab713eea3e1f210d68",
+      "id": "LBS-16",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1068.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1068.JPG",
+      "sha256": "13ab4187e14b2547212644db26640edc70b3def340797bb8ecd3b719b4137800",
+      "id": "LBS-17",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1069.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1069.JPG",
+      "sha256": "1d60b1f25f9759c8ddcab7fead94d807f08f63bab46d1509a8515edc8c2f318c",
+      "id": "LBS-18",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1070.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1070.JPG",
+      "sha256": "f33cf0b632963048ee235a721e0b43cf89bcad6cd0adc2267efe6f176d60e643",
+      "id": "LBS-19",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1071.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1071.JPG",
+      "sha256": "959fafbb35043b7b3df5f75ecbf9b60f0e52df6c493e8b3cf6d050e49168f475",
+      "id": "LBS-20",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1072.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1072.JPG",
+      "sha256": "fe87db78be201a3a82dd1b67a134eea79e1f56e9d29b6162613ca495d9227346",
+      "id": "LBS-21",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1073.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1073.JPG",
+      "sha256": "b482c8a6febd23c6fbc1217963b74c505760f889f87a659c49079b1fb5410157",
+      "id": "LBS-22",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1074.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1074.JPG",
+      "sha256": "4a99a8a239b97ffb4996b5099aa6b73da4c1ebeaa3976381d9fe3cbe76978292",
+      "id": "LBS-23",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1075.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1075.JPG",
+      "sha256": "adbecb4c39ee117dfdf5b841205894a37ac24160e6ca35f512c2d1d2723d1338",
+      "id": "LBS-24",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1079.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1079.JPG",
+      "sha256": "2d0caec4e579ca9af3fa1350650ac4e3a122bacd81d8a2946734d86bc9a38a8c",
+      "id": "LBS-25",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1080.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1080.JPG",
+      "sha256": "a8843238f1b6146e08b7449304334bd6a2b4681b5f693a51fc7e4fd0bab5c2bf",
+      "id": "LBS-26",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1081.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1081.JPG",
+      "sha256": "4911d8724c047d09b660f3d9350151a18538f06dff1decf1adf91abe3a04f98f",
+      "id": "LBS-27",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1082.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1082.JPG",
+      "sha256": "d3dcc2d835f303a2e434d28ae9622a1b7f33dbb279233adfa305ef34cb623404",
+      "id": "LBS-28",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1083.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1083.JPG",
+      "sha256": "56c0306d548aef6339576b0f07bda62a0c761e6edc7d6fe61c6d368caf91751a",
+      "id": "LBS-29",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1084.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1084.JPG",
+      "sha256": "b592d3f47df6d71800d43d764505f869d7d6e9ef9250aed081f032dc8f8c3215",
+      "id": "LBS-30",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1085.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1085.JPG",
+      "sha256": "771b191d311cfd7993d1510a98f7fc607b8ae67e27ffae23eb25de75d9973453",
+      "id": "LBS-31",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1086.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1086.JPG",
+      "sha256": "f6a90f9b96d287c1facef275cab69deb91e5465780c484ca659e07f1d27942e6",
+      "id": "LBS-32",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1087.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1087.JPG",
+      "sha256": "8e9ad052c7d779dc5a8b2991984ee81ee532ee1cb9bc373d0ae9caf082115c59",
+      "id": "LBS-33",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1088.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1088.JPG",
+      "sha256": "b9f5b992cc14c9006b81ad9b254b88ad7aa224b74d21722f16c31e9b43a873dc",
+      "id": "LBS-34",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1165.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1165.JPG",
+      "sha256": "f953c94ac6d8ac0dd8008da08ecba8a1db69b97d649c162f4130601a4b515e9c",
+      "id": "LBS-35",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1166.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1166.JPG",
+      "sha256": "d7ea3964df9b6f44efac65ba8eb02dab6b2a5b5b9e7fe8e4be8c7227ad382521",
+      "id": "LBS-36",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1167.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1167.JPG",
+      "sha256": "3a7ac4dbbc50a7ce040082e1b9abadebf06e8debc976ad9182737be5de276cc8",
+      "id": "LBS-37",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1168.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1168.JPG",
+      "sha256": "7cfe4f247a03b1e04ac6cae51957d988bf70e453e34f48f2f9bb61997fae6a14",
+      "id": "LBS-38",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1169.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1169.JPG",
+      "sha256": "f39865c19ef186f48bcc3e39371e692d52e7759314dd43bfa6a5473e19c6e9ca",
+      "id": "LBS-39",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1341.HEIC",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1341.HEIC",
+      "sha256": "7555bb16d63fd1fdb4ebf30ac6b0dea65482f32e7177fb3781a5756c6800b483",
+      "id": "LBS-40",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/IMG_1342.HEIC",
+      "source_folder": "lorena-beauty",
+      "name": "IMG_1342.HEIC",
+      "sha256": "d1a7a6868390f355a18331e8aec1e9228c7eaf389515bc95bfa0ebb8b1468121",
+      "id": "LBS-41",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/b24456a1-162c-4d4e-81c7-0007da4a1b81.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "b24456a1-162c-4d4e-81c7-0007da4a1b81.JPG",
+      "sha256": "01412ddd5641685094de0687c4a233ebb2dfaa23bd749e0679c860295c898d73",
+      "id": "LBS-42",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/e2acdacf-9807-4176-95f3-efdb2c4dea04.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "e2acdacf-9807-4176-95f3-efdb2c4dea04.JPG",
+      "sha256": "c3e3c06365c66a4cb7bfdd2c648b439d5b79f3da0323fa0554e258100c7ccd40",
+      "id": "LBS-43",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/ff4b5fa5-eecb-42f5-ac28-82f10e330d5a 2.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "ff4b5fa5-eecb-42f5-ac28-82f10e330d5a 2.JPG",
+      "sha256": "f3ee269da5cfa84d0f925ff6e658ee153b9c84e477793f915b89a49ddf827f47",
+      "id": "LBS-44",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/ff4b5fa5-eecb-42f5-ac28-82f10e330d5a.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "ff4b5fa5-eecb-42f5-ac28-82f10e330d5a.JPG",
+      "sha256": "f3ee269da5cfa84d0f925ff6e658ee153b9c84e477793f915b89a49ddf827f47",
+      "id": "LBS-44",
+      "status": "already_catalogued"
+    },
+    {
+      "source_relative": "lorena-beauty/profile.JPG",
+      "source_folder": "lorena-beauty",
+      "name": "profile.JPG",
+      "sha256": "91fa4c4bc6e0b51c73a9a595263f5d2a4ad3eb5325d9df487ce627c44ab0b75d",
+      "id": "LBS-04",
+      "status": "already_catalogued"
+    }
+  ],
+  "ignored": [
+    ".DS_Store",
+    "IMG_1474.MOV",
+    "copy_35E575D6-35C7-4572-9B88-363E0F888186.mov"
+  ],
+  "problems": [],
+  "possible_versions": [
+    {
+      "ids": [
+        "BRU-19",
+        "NOV-19A07303C2016486"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "BRU-20",
+        "NOV-2A26DB00444A4FF4"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "CAS-19",
+        "NOV-8630FB478A4AF315"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-02",
+        "LBS-04"
+      ],
+      "distance": 5,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-04",
+        "LBS-05"
+      ],
+      "distance": 6,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-07",
+        "NOV-8027DC0FB2F33850"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-14",
+        "LBS-20"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-25",
+        "LBS-26"
+      ],
+      "distance": 6,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "LBS-40",
+        "NOV-2C9B9E1E8EB2FF68"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-7B5E6B83CCCD60F0",
+        "NOV-8578C4C71970766E"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-498A2ECEC2F99A44",
+        "NOV-CE4B231526CF1143"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-1570791C6CB2DABA",
+        "NOV-A13630F50F831848"
+      ],
+      "distance": 2,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-9A5E730F3EEE9363",
+        "NOV-F5C75F8FD1A83AF0"
+      ],
+      "distance": 0,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-9A5E730F3EEE9363",
+        "NOV-543BD7E88A022050"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-F5C75F8FD1A83AF0",
+        "NOV-543BD7E88A022050"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-AB2ABEA609B382FB",
+        "NOV-60E9701B62A27F82"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-EF18AB8C029BD51A",
+        "NOV-3CF6AE9B476E9C1C"
+      ],
+      "distance": 3,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    },
+    {
+      "ids": [
+        "NOV-CB471EAE15E0A96E",
+        "NOV-C0A362F3C9338B3B"
+      ],
+      "distance": 5,
+      "status": "possível versão ou imagem semelhante; confirmar visualmente"
+    }
+  ],
+  "summary": {
+    "images_found": 279,
+    "already_catalogued_files": 143,
+    "already_catalogued_unique": 109,
+    "added": 131,
+    "exact_duplicate_extra_files": 39,
+    "possible_version_pairs": 18,
+    "total_catalogue": 240,
+    "source_orientations": {
+      "vertical": 192,
+      "horizontal": 87
+    },
+    "catalogue_orientations": {
+      "vertical": 166,
+      "horizontal": 74
+    },
+    "formats": {
+      "jpeg": 186,
+      "heic": 52,
+      "png": 2
+    }
+  }
+}

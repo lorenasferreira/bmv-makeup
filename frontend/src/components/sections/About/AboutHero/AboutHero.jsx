@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./AboutHero.module.css";
@@ -17,8 +18,8 @@ function AboutHero() {
       </div>
 
       <div className={styles.imageWrapper}>
-        <img
-          src="/assets/images/about/bruno-about.jpeg"
+        <OptimizedImage sizes="(max-width: 640px) 100vw, 40vw" loading="eager" fetchPriority="high"
+          src="/assets/images/optimized/bruno-about.webp"
           alt={t("about.hero.imageAlt")}
           className={styles.heroImage}
         />

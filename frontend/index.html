@@ -2,9 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      if (location.pathname === "/") {
+        const image = document.createElement("link");
+        image.rel = "preload";
+        image.as = "image";
+        image.href = matchMedia("(max-width: 768px)").matches
+          ? "/assets/images/curated/nov-c0a362f3c9338b3b.webp"
+          : "/assets/images/curated/cas-09.webp";
+        image.fetchPriority = "high";
+        document.head.append(image);
+      }
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMV Make Up</title>
+    <title>BMV Makeup | Bruno Mënezess — Makeup Artist in Barcelona</title>
+    <meta name="description" content="Bridal, social and artistic makeup by Bruno Mënezess in Barcelona. Sophisticated beauty, natural individuality and a personal approach." />
+    <link rel="canonical" href="https://www.bmvmakeup.com/" />
+    <meta property="og:title" content="BMV Makeup | Bruno Mënezess — Makeup Artist in Barcelona" />
+    <meta property="og:description" content="Bridal, social and artistic makeup by Bruno Mënezess in Barcelona. Sophisticated beauty, natural individuality and a personal approach." />
+    <meta property="og:image" content="https://www.bmvmakeup.com/assets/images/social/bmv-makeup-bruno.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Bruno Mënezess — BMV Makeup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.bmvmakeup.com/" />
+    <meta property="og:site_name" content="BMV Makeup" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BMV Makeup | Bruno Mënezess — Makeup Artist in Barcelona" />
+    <meta name="twitter:description" content="Bridal, social and artistic makeup by Bruno Mënezess in Barcelona. Sophisticated beauty, natural individuality and a personal approach." />
+    <meta name="twitter:image" content="https://www.bmvmakeup.com/assets/images/social/bmv-makeup-bruno.jpg" />
+    <meta name="twitter:image:alt" content="Bruno Mënezess — BMV Makeup" />
   </head>
   <body>
     <div id="root"></div>

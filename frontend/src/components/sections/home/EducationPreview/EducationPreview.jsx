@@ -7,12 +7,6 @@ function EducationPreview() {
 
   return (
     <section className={styles.section} id="education">
-      <div className={styles.visual}>
-        <div className={styles.imagePlaceholder}>
-          <span>{t("home.education.imageLabel")}</span>
-        </div>
-      </div>
-
       <div className={styles.content}>
         <p className={styles.eyebrow}>{t("home.education.eyebrow")}</p>
 

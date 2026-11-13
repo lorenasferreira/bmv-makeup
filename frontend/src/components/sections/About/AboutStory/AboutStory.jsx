@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./AboutStory.module.css";
@@ -36,8 +37,8 @@ function AboutStory() {
 
       <section className={styles.story}>
         <div className={styles.storyImageWrapper}>
-          <img
-            src="/assets/images/about/bruno-portrait.jpeg"
+          <OptimizedImage sizes="(max-width: 640px) 100vw, 50vw"
+            src="/assets/images/curated/bru-08.webp"
             alt={t("about.story.journey.imageAlt")}
             className={styles.storyImage}
           />
@@ -71,8 +72,8 @@ function AboutStory() {
 
       <section className={styles.approach}>
         <div className={styles.approachImageWrapper}>
-          <img
-            src="/assets/images/about/bruno-client.jpeg"
+          <OptimizedImage sizes="(max-width: 640px) 100vw, 50vw"
+            src="/assets/images/curated/bru-02.webp"
             alt={t("about.story.approach.imageAlt")}
             className={styles.approachImage}
           />

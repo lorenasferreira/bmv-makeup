@@ -26,13 +26,6 @@ function EducationHero() {
       </div>
 
       <div className={styles.bottom}>
-        <div className={styles.imageWrapper}>
-          <img
-            src="/assets/images/education/education-hero.webp"
-            alt={t("education.hero.imageAlt")}
-          />
-        </div>
-
         <p>
           {t("education.hero.description")}
         </p>

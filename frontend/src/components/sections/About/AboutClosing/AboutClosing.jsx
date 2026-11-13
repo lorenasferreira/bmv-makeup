@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -27,13 +28,13 @@ function AboutClosing() {
         </div>
 
         <div className={styles.humanImages}>
-          <img
-            src="/assets/images/about/bruno-backstage-1.jpeg"
+          <OptimizedImage sizes="(max-width: 640px) 70vw, 30vw"
+            src="/assets/images/curated/bru-17.webp"
             alt={t("about.closing.backstageAlt")}
           />
 
-          <img
-            src="/assets/images/about/bruno-backstage-2.jpeg"
+          <OptimizedImage sizes="(max-width: 640px) 70vw, 30vw"
+            src="/assets/images/curated/bru-18.webp"
             alt={t("about.closing.workingAlt")}
           />
         </div>

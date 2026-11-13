@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./WeddingsHero.module.css";
@@ -14,8 +15,8 @@ function WeddingsHero() {
   return (
     <section className={styles.hero}>
       <div className={styles.visual}>
-        <img
-          src="/assets/images/weddings/weddings-hero.webp"
+        <OptimizedImage sizes="(max-width: 640px) 100vw, 55vw" loading="eager" fetchPriority="high"
+          src="/assets/images/curated/cas-08.webp"
           alt={t("weddings.hero.imageAlt")}
         />
 

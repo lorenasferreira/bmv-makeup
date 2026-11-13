@@ -44,3 +44,23 @@ Filtros, comparação e exportações leem a categoria atual do inventário. Atu
 ## Correção definitiva de categoria
 
 **Beauty and Social é uma única categoria.** Todas as 44 LBS e as 11 SOC do Bruno estão reunidas nesse filtro (55 fotos). As subdivisões Beauty/Social descritas acima foram revogadas; o histórico foi mantido. O catálogo continua com 109 fotos, sem mudança de IDs, escolhas ou anotações.
+
+## Ampliação Assets — 12 novembro 2026
+
+A atualização incremental mantém todos os registros anteriores e acrescenta apenas conteúdos SHA-256 inéditos ao grupo **Novas fotos — a classificar**. IDs NOV são derivados do conteúdo e permanecem estáveis. Não execute `preparar.py` para atualizar o catálogo.
+
+`importacao-assets.json` relaciona cada arquivo encontrado à sua foto e ID, incluindo todas as pastas de origem e cópias idênticas. Cópias binárias compartilham o ID, sem apagar originais. Pares com distância dHash de até 6/64 são apenas possíveis versões por semelhança visual: confirme manualmente, pois esse critério pode produzir falsos positivos e não detectar todos os recortes. Nenhuma categoria definitiva foi inferida para as novas fotos.
+
+As prévias JPEG de até 1200 px ficam em `previews/`, separadas dos originais, e são usadas também na comparação e simulação. “Original” abre o arquivo completo. O servidor oferece somente IDs catalogados e arquivos explicitamente autorizados, escutando em 127.0.0.1. Não coloque esta pasta em `frontend/public` nem publique seus relatórios.
+
+Para abrir no Safari, execute na pasta do projeto BMV:
+
+```sh
+python3 curadoria-local/servidor.py
+```
+
+Abra **http://127.0.0.1:8765** no mesmo Safari usado anteriormente. Mantenha esse endereço e navegador para conservar as notas em `bmv-curadoria-v1`. A chave de armazenamento e os campos dos JSONs exportados foram preservados; os metadados de origem foram acrescentados. Notas privadas do navegador não são lidas nem alteradas pelo importador. Exporte suas anotações para guardar uma cópia. As decisões de `escolhas.csv`, as aprovações e os grupos BRU/CAS/SOC/ART/LBS são preservados.
+
+Para repetir a busca: `python3 curadoria-local/ampliar-assets.py`. O relatório descreve a execução mais recente; o backup anterior à ampliação fica em `backup-antes-assets-20261112/`.
+
+Resultado: 279 arquivos de imagem, 109 fotos anteriores em 143 ocorrências, 131 novas; 240 fotos únicas. 39 cópias binárias excedentes e 18 pares de possíveis versões. Em Assets: 192 verticais e 87 horizontais; catálogo único: 166 verticais e 74 horizontais, nenhuma quadrada. Sem falhas finais de leitura ou prévia. CAS-12 mantém a ressalva histórica: nome PNG, conteúdo JPEG. Dois vídeos e um .DS_Store ignorados.

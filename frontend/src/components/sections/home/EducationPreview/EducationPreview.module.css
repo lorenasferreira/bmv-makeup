@@ -1,9 +1,4 @@
 .section {
-  display: grid;
-  grid-template-columns: minmax(420px, 1.1fr) minmax(360px, 0.9fr);
-  gap: clamp(4rem, 8vw, 10rem);
-
-  min-height: 95vh;
   padding: clamp(7rem, 11vw, 12rem) var(--page-padding);
 
   overflow: hidden;
@@ -12,40 +7,14 @@
   color: var(--color-text-inverted);
 }
 
-.visual {
-  position: relative;
-
-  align-self: center;
-}
-
-.imagePlaceholder {
-  display: grid;
-  width: 82%;
-  aspect-ratio: 4 / 5;
-  place-items: center;
-
-  margin-left: auto;
-
-  overflow: hidden;
-
-  background: var(--color-bmv-green-soft);
-}
-
-.imagePlaceholder span {
-  color: rgb(255 255 255 / 28%);
-
-  font-family: var(--font-editorial);
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  font-style: italic;
-}
-
 .content {
-  align-self: center;
-
-  max-width: 620px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  column-gap: clamp(3rem, 8vw, 10rem);
 }
 
 .eyebrow {
+  grid-column: 1 / -1;
   margin-bottom: clamp(2rem, 4vw, 4rem);
 
   color: var(--color-tertiary);
@@ -57,6 +26,7 @@
 }
 
 .content h2 {
+  grid-row: 2 / 5;
   font-family: var(--font-section);
   font-size: clamp(3rem, 6vw, 6.5rem);
   font-weight: 400;
@@ -70,9 +40,10 @@
 }
 
 .description {
+  grid-column: 2;
   max-width: 500px;
 
-  margin-top: clamp(2.5rem, 5vw, 4rem);
+  margin-top: 0;
 
   color: rgb(255 255 255 / 72%);
 
@@ -81,6 +52,7 @@
 }
 
 .offers {
+  grid-column: 2;
   display: flex;
   flex-direction: column;
 
@@ -101,6 +73,8 @@
 }
 
 .link {
+  grid-column: 2;
+  justify-self: start;
   display: inline-flex;
   align-items: center;
   gap: 1rem;
@@ -125,50 +99,15 @@
   border-color: currentColor;
 }
 
-@media (max-width: 900px) {
-  .section {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-
-    min-height: auto;
-  }
-
-  .imagePlaceholder {
-    width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  .section {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .visual {
-    order: 2;
-  }
-
+@media (max-width: 700px) {
   .content {
-    order: 1;
-  }
-
-  .imagePlaceholder {
-    width: 82%;
-    margin-left: auto;
+    display: block;
   }
 
   .content h2 {
-    font-size: clamp(2.8rem, 12vw, 4.2rem);
+    font-size: clamp(2.8rem, 12vw, 4.8rem);
     line-height: 0.95;
     letter-spacing: -0.03em;
-  }
-
-  .content h2 em {
-    display: inline-block;
-    max-width: 100%;
   }
 
   .description {

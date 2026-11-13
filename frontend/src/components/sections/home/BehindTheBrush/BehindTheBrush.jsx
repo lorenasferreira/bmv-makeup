@@ -1,11 +1,12 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./BehindTheBrush.module.css";
 
 const moments = [
-  { id: 1, label: "home.behindTheBrush.moments.preparation", className: "large" },
-  { id: 2, label: "home.behindTheBrush.moments.backstage", className: "smallTop" },
-  { id: 3, label: "home.behindTheBrush.moments.client", className: "smallBottom" },
+  { id: 1, image: "/assets/images/curated/nov-764f2454ac289bd0.webp", label: "home.behindTheBrush.moments.preparation", className: "large" },
+  { id: 2, image: "/assets/images/curated/nov-204b19614aa27393.webp", label: "home.behindTheBrush.moments.backstage", className: "smallTop" },
+  { id: 3, image: "/assets/images/curated/nov-a13630f50f831848.webp", label: "home.behindTheBrush.moments.client", className: "smallBottom" },
 ];
 
 function BehindTheBrush() {
@@ -35,7 +36,7 @@ function BehindTheBrush() {
               key={moment.id}
               className={`${styles.image} ${styles[moment.className]}`}
             >
-              <span>{t(moment.label)}</span>
+              <OptimizedImage sizes="(max-width: 640px) 100vw, 40vw" src={moment.image} alt={t(moment.label)} loading="lazy" />
             </div>
           ))}
         </div>

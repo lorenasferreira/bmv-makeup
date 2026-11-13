@@ -104,13 +104,13 @@
   transform: scale(1.025);
 }
 
-.imageWrapper img[src$="/beauty-02.webp"],
-.imageWrapper img[src$="/beauty-03.webp"],
-.imageWrapper img[src$="/artistic-03.webp"] {
+.imageWrapper img[src$="/lbs-40.webp"],
+.imageWrapper img[src$="/nov-4bcc06250447fcda.webp"],
+.imageWrapper img[src$="/art-05.webp"] {
   object-position: center top;
 }
 
-.imageWrapper img[src$="/wedding-01.webp"] {
+.imageWrapper img[src$="/cas-09.webp"] {
   object-position: 30% center;
 }
 
@@ -171,12 +171,28 @@
   aspect-ratio: 4 / 5;
 }
 
-.item:nth-child(6n + 2) {
-  justify-self: end;
+@media (min-width: 901px) {
+  .item:nth-child(odd) {
+    grid-column: span 7;
+    margin: 0;
+  }
+
+  .item:nth-child(even) {
+    grid-column: span 5;
+    margin: clamp(2rem, 5vw, 5rem) 0 0;
+  }
 }
 
-.item:nth-child(7n + 4) {
-  transform: translateX(clamp(0rem, 3vw, 3rem));
+@media (min-width: 641px) and (max-width: 900px) {
+  .item:nth-child(odd) {
+    grid-column: span 5;
+    margin: 0;
+  }
+
+  .item:nth-child(even) {
+    grid-column: span 3;
+    margin: 2rem 0 0;
+  }
 }
 
 @keyframes reveal {
@@ -303,9 +319,6 @@
     margin-left: auto;
   }
 
-  .item:nth-child(7n + 4) {
-    transform: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -134,3 +134,13 @@
     transition: none;
   }
 }
+
+.navigation a[aria-current="page"]::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}

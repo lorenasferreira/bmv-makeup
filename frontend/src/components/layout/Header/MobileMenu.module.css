@@ -199,3 +199,17 @@
     transition: none;
   }
 }
+
+.navigation a {
+  position: relative;
+}
+
+.navigation a[aria-current="page"]::after {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 2.5rem;
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}

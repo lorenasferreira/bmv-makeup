@@ -1,3 +1,4 @@
+import OptimizedImage from "../../../common/OptimizedImage/OptimizedImage";
 import { useTranslation } from "react-i18next";
 
 import styles from "./WeddingsPreview.module.css";
@@ -25,11 +26,11 @@ function WeddingsPreview() {
 
       <div className={styles.visual}>
         <div className={styles.mainImage}>
-          <img src="/assets/images/home/weddings/bride-portrait.webp" alt={t("home.weddings.mainImageLabel")} loading="lazy" />
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/cas-03.webp" alt={t("home.weddings.mainImageLabel")} loading="lazy" />
         </div>
 
         <div className={styles.secondaryImage}>
-          <img src="/assets/images/home/weddings/bruno-working.webp" alt={t("home.weddings.secondaryImageLabel")} loading="lazy" />
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/bru-20.webp" alt={t("home.weddings.secondaryImageLabel")} loading="lazy" />
         </div>
       </div>
     </section>
