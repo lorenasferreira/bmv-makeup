@@ -82,3 +82,17 @@ A parser-based scan verified zero comments in all 120 authored JavaScript, JSX, 
 Follow-up checks passed: lint, production build, eight translation tests, three image integrity tests and 24 browser scenarios covering image decoding/placements, Hero sequences, all seven routes in the four languages, responsive widths and scroll restoration. Existing image bytes, responsive metadata, initial HTML, manual sharing descriptions, Instagram logic, translations and Vercel settings were checked against the start of this follow-up and remain unchanged.
 
 The image migration and authorized deletions are already applied on disk; no cleanup proposal or legacy-directory dependency remains outstanding. The social image keeps its existing semantic filename and public URL.
+
+## Local Instagram maintenance implementation
+
+Implemented server-only encrypted private Blob state, a daily authenticated production-only endpoint, conditional-write leases, recovery of pending credentials, separate token/data-access expiries and an optional Healthchecks adapter. Defaults preserve the existing environment-backed feed and disable checks/refresh. No live credential, external resource, production setting, authenticated Meta request or real renewal was used. See `instagram.md` for the exact staged setup and remaining authorizations.
+
+Validation: 40 network-isolated server tests, six existing Instagram browser tests, eight translation tests and three image integrity tests passed; lint and production build passed. Server-only code is absent from the generated client bundle. The image integrity test now ignores `.DS_Store` metadata recreated by Finder while retaining strict checks for all photo assets. No photographs, initial HTML metadata or public navigation were changed.
+
+The official Blob SDK was added. Its older OIDC configuration-parser chain was replaced through a narrowly scoped override; the production dependency audit reports zero vulnerabilities. Development-tool audit findings remain separate maintenance work. External storage/OIDC permissions, actual Vercel routing, monitor delivery and Meta renewal still require future validation after authorization and deployment.
+
+## Instagram observation and metadata revision — 13 November 2026
+
+The revised maintenance flow accepts unknown issuance without estimating it. Successful simulated Meta verification records a credential-bound first observation; renewal waits at least 24 hours, including for migrated records without observation proof. Candidate receipt is distinguished from issuance. Passed data-access metadata generates a review warning while healthy authenticated feed reads and eligible renewal continue. Authentication, authorization, temporary upstream failures and metadata warnings have separate categories.
+
+Validation: 61 isolated server tests, eight translation tests, three image integrity tests, lint and production build passed. All service boundaries use simulated responses; no authenticated Meta request, real renewal, credential change or external configuration was performed. Defaults and production/authentication/storage/concurrency guards remain enabled as before. All six existing browser feed regression tests also passed in installed Chrome, covering success, empty feed, missing data, HTTP failure, network failure and invalid JSON with intercepted responses.

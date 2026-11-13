@@ -34,7 +34,9 @@ The shared structured-bodice portrait has one high-resolution master for the mob
 
 ## Server integration
 
-The only application endpoint is `frontend/api/instagram.js`, a Vercel server function using native fetch. See [Instagram](instagram.md). Neither local Vite development nor `vite preview` executes that function. Browser tests intercept only the endpoint boundary, leaving production UI code unchanged.
+`frontend/api/instagram.js` remains the public feed endpoint. A separate `frontend/api/instagram-maintenance.js` authenticates a daily production-only maintenance request. The default feed still reads its existing environment token. Opt-in storage uses an AES-GCM encrypted private Blob record, ETag writes and an expiring single-worker lease. Automatic checks and actual refresh have separate flags, disabled by default. Recorded data-access expiry is retained independently as monitoring metadata: passing that date does not block authenticated feed reads or renewal. Unknown issuance uses a credential-bound first verified observation and a minimum 24-hour wait before refresh. Server helpers live in `frontend/server/instagram/`; they are not additional API routes or browser modules.
+
+See [Instagram](instagram.md) for exact setup, safety gates, monitoring and staged activation. Neither local Vite development nor `vite preview` executes Vercel functions. Browser tests intercept the feed boundary; Node tests inject simulated Meta, Blob and monitor services without real credentials.
 
 ## Styling and fonts
 

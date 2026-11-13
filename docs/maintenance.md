@@ -60,7 +60,7 @@ Run checks from `frontend/`. `npm test` runs translation, asset integrity and br
 
 ## Outstanding external checks
 
-A local build cannot confirm Meta token validity, Vercel’s dashboard settings, public CDN availability, social-platform cache refresh or final production performance. Language-specific initial HTML/hreflang and safe token renewal remain separate future work; see [architecture](architecture.md) and [Instagram](instagram.md).
+A local build cannot confirm Meta token validity, Vercel’s dashboard settings, public CDN availability, social-platform cache refresh or final production performance. Language-specific initial HTML/hreflang and production activation of the prepared token renewal remain separate future work; see [architecture](architecture.md) and [Instagram](instagram.md).
 
 ## Source comment policy
 

@@ -79,7 +79,7 @@ Real captures from the local production build, in English. Optimized WebP files 
 | Styling | CSS Modules, global design tokens, responsive CSS |
 | Localization | i18next and react-i18next |
 | Icons | React Icons |
-| Instagram | Native Fetch API and a Vercel Node.js function |
+| Instagram | Native Fetch API, Vercel Node.js functions and optional encrypted private Blob storage |
 | Quality | ESLint, Node.js test runner, Playwright |
 | Hosting | Vercel |
 
@@ -97,13 +97,14 @@ bmv-makeup/
 │   ├── maintenance.md
 │   └── validation.md
 ├── frontend/
-│   ├── api/instagram.js         # Server-only Instagram endpoint
+│   ├── api/                     # Public feed and authenticated maintenance endpoint
 │   ├── image-sources/           # Retained sources; excluded from public assets
 │   ├── public/
 │   │   ├── assets/images/       # Semantic folders; variants beside each master
 │   │   ├── fonts/
 │   │   └── favicon.svg
-│   ├── scripts/                 # Translation and image integrity tests
+│   ├── scripts/                 # Translation, image integrity and server integration tests
+│   ├── server/instagram/        # Private storage, encryption and token maintenance
 │   ├── src/
 │   │   ├── components/          # Common controls, layout and page sections
 │   │   ├── data/               # Responsive image metadata
@@ -125,9 +126,9 @@ bmv-makeup/
 
 React Router composes pages from reusable sections. Shared controls own navigation, image delivery, document metadata, scroll restoration and reveal behavior. Content comes from translation dictionaries and local assets.
 
-The Home requests `/api/instagram`. The server function reads its token from the server environment and requests profile/media data from Meta. It returns a normalized feed and cache headers; the token is never sent to the browser. Ordinary Vite development and preview servers do not execute Vercel functions, so the existing feed fallback is expected there. Use a Vercel preview for end-to-end integration checks.
+The Home requests `/api/instagram`. The server function defaults to the existing server environment token and requests profile/media data from Meta. An opt-in private Blob provider and a separate authenticated daily maintenance job are prepared for automatic renewal; both remain inactive until explicitly configured. It returns a normalized feed and cache headers; the token is never sent to the browser. Ordinary Vite development and preview servers do not execute Vercel functions, so the existing feed fallback is expected there. Use Vercel for function integration checks; the maintenance job explicitly rejects Preview and local execution.
 
-See [architecture](docs/architecture.md) and [Instagram maintenance](docs/instagram.md) for the request flow, cache policy and outstanding token work.
+See [architecture](docs/architecture.md) and [Instagram maintenance](docs/instagram.md) for the request flow, cache policy, configuration and activation steps.
 
 ## Internationalization
 
@@ -168,12 +169,16 @@ Only variable names are documented; credentials must stay outside version contro
 
 | Name | Scope | Purpose |
 | --- | --- | --- |
-| `INSTAGRAM_ACCESS_TOKEN` | Server only | Authenticate the existing Instagram API function |
+| `INSTAGRAM_ACCESS_TOKEN` | Server only | Existing feed credential; preserved during migration |
+| `INSTAGRAM_TOKEN_SOURCE` | Server only | Select the existing environment credential or the opt-in encrypted Blob record |
+| `CRON_SECRET` | Server only | Authenticate the prepared daily maintenance endpoint |
+| `INSTAGRAM_TOKEN_ENCRYPTION_KEY` | Server only | Encrypt the private token record |
+| `INSTAGRAM_TOKEN_AUTOMATION_ENABLED`, `INSTAGRAM_TOKEN_REFRESH_ENABLED` | Server only | Separate activation of checks and real renewal; disabled by default |
 | `BMV_BROWSER_PATH` | Tests, optional | Use an installed browser executable |
 | `BMV_BROWSER` | Tests, optional | Select a Playwright browser engine |
 | `CI` | Test runner, optional | Reject accidentally focused tests in CI |
 
-There are no required `VITE_` environment variables. Never expose the Instagram token through a browser-prefixed variable.
+The full list of Blob authentication, bootstrap metadata, expiry timestamps and optional monitor variables is documented in [Instagram configuration](docs/instagram.md#configuration-to-perform-later-in-vercel). There are no required `VITE_` environment variables. Never expose the Instagram token through a browser-prefixed variable.
 
 ## Tests and quality checks
 
@@ -184,17 +189,18 @@ npm run lint
 npm run build
 npm run test:i18n
 npm run test:images
+npm run test:instagram
 npx playwright install chromium
 npm run test:behavior
 ```
 
-`npm test` runs translation, image integrity and browser tests. Playwright starts an isolated Vite server on port 4273 and mocks the Instagram network boundary; no live account or credentials are required. For an existing browser installation, set `BMV_BROWSER_PATH` when invoking the tests. Failure screenshots and traces are ignored by Git.
+`npm test` runs translation, image integrity, simulated Instagram server tests and browser tests. Playwright starts an isolated Vite server on port 4273 and mocks the Instagram network boundary; no live account or credentials are required. For an existing browser installation, set `BMV_BROWSER_PATH` when invoking the tests. Failure screenshots and traces are ignored by Git.
 
 Coverage includes routes in all languages, responsive layouts, navigation and focus, image decoding and approved Hero order, social metadata before JavaScript, Instagram success/failure states and equivalent marquee movement. See [test documentation](frontend/tests/README.md) and the [validation record](docs/validation.md).
 
 ## Deployment
 
-The Vercel project should use `frontend/` as its root, the Vite build (`npm run build`) and `dist/` as its output directory. `frontend/api/instagram.js` provides the server function; `frontend/vercel.json` contains the existing SPA rewrite for direct navigation to public routes.
+The Vercel project should use `frontend/` as its root, the Vite build (`npm run build`) and `dist/` as its output directory. `frontend/api/instagram.js` provides the public feed. `frontend/vercel.json` retains the SPA rewrite and prepares a daily authenticated maintenance schedule; token automation and refresh remain disabled until explicitly configured.
 
 Configure the server token in the appropriate Vercel environment using the project settings. Validate deep links, the live feed, social image access and sharing previews after publication. Build output and local previews do not verify production credentials or Meta authorization.
 
@@ -206,7 +212,7 @@ Configure the server token in the appropriate Vercel environment using the proje
 - Use descriptive kebab-case filenames and colocated `-480w.webp` / `-960w.webp` variants. Shared images belong under `shared/`.
 - Keep image metadata and the approved test fixture synchronized when an approved photograph changes.
 - Review desktop/mobile layouts, translations, keyboard navigation and reduced motion after UI updates.
-- Token renewal, persistent secure storage, scheduling and monitoring remain future Instagram work requiring authorization.
+- Token renewal, encrypted private storage, daily scheduling and optional monitoring are implemented locally with simulated tests. External services, production activation and a real refresh still require authorization.
 
 Detailed procedures: [maintenance](docs/maintenance.md). Visual reference: [design system](docs/design-system.md).
 

@@ -10,7 +10,7 @@ const publicDirectory = join(frontend, "public");
 const metadata = JSON.parse(readFileSync(join(frontend, "src/data/image-metadata.json")));
 const approved = JSON.parse(readFileSync(join(frontend, "tests/fixtures/approved-images.json")));
 function files(directory) {
-  return readdirSync(directory, { withFileTypes: true }).flatMap(entry =>
+  return readdirSync(directory, { withFileTypes: true }).filter(entry => entry.name !== ".DS_Store").flatMap(entry =>
     entry.isDirectory() ? files(join(directory, entry.name)) : [join(directory, entry.name)],
   );
 }

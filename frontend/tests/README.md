@@ -7,12 +7,13 @@ npm ci
 npx playwright install chromium
 npm run test:i18n
 npm run test:images
+npm run test:instagram
 npm run test:behavior
 npm run lint
 npm run build
 ```
 
-`npm test` runs translation tests, image integrity tests and the browser suite. Playwright starts and stops an isolated Vite server on port 4273; that port must be free. No deployment, credentials or live Instagram account is required.
+`npm test` runs translation tests, image integrity tests, simulated Instagram server tests and the browser suite. Playwright starts and stops an isolated Vite server on port 4273; that port must be free. No deployment, credentials or live Instagram account is required.
 
 To use an installed Chrome/Chromium instead of downloading Playwright's browser:
 
@@ -30,6 +31,8 @@ BMV_BROWSER=webkit npm run test:behavior
 ```
 
 ## Coverage
+
+- `../scripts/instagram.test.js`: encrypted private state, SDK error/OIDC compatibility, conditional writes, leases/takeover, refresh eligibility/recovery, independent data-access expiry, safe operational logging, optional monitor failures, disabled/runtime safety gates and the existing public API contract/cache. All network boundaries are simulated; no real credentials are used.
 
 - `visual-navigation.spec.js`: Services/Weddings/recommended-professionals hierarchy in four languages; hover/focus, separate navigation and expansion, Escape, anchor/header clearance, Hero arrows/keyboard/wrap/autoplay, text-only About, continuous marquee geometry and reduced motion, thin review indicators, real mobile viewport preload isolation, and equal pixel speeds of the About rows in four languages and both viewport sizes.
 - `navigation-seo.spec.js`: active desktop/mobile navigation for all seven routes in PT/EN/ES/CA, localized document metadata and canonical, four text-only Weddings steps, device-specific Hero network requests, and Open Graph delivered without JavaScript.
