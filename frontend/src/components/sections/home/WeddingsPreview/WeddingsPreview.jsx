@@ -26,11 +26,11 @@ function WeddingsPreview() {
 
       <div className={styles.visual}>
         <div className={styles.mainImage}>
-          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/cas-03.webp" alt={t("home.weddings.mainImageLabel")} loading="lazy" />
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/home/weddings/bride-with-bouquet-by-curtains.webp" alt={t("home.weddings.mainImageLabel")} loading="lazy" />
         </div>
 
         <div className={styles.secondaryImage}>
-          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/bru-20.webp" alt={t("home.weddings.secondaryImageLabel")} loading="lazy" />
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/shared/weddings/bruno-applying-bridal-eye-makeup.webp" alt={t("home.weddings.secondaryImageLabel")} loading="lazy" />
         </div>
       </div>
     </section>

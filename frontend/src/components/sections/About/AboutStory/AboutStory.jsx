@@ -38,7 +38,7 @@ function AboutStory() {
       <section className={styles.story}>
         <div className={styles.storyImageWrapper}>
           <OptimizedImage sizes="(max-width: 640px) 100vw, 50vw"
-            src="/assets/images/curated/bru-08.webp"
+            src="/assets/images/about/bruno-working-with-client.webp"
             alt={t("about.story.journey.imageAlt")}
             className={styles.storyImage}
           />
@@ -73,7 +73,7 @@ function AboutStory() {
       <section className={styles.approach}>
         <div className={styles.approachImageWrapper}>
           <OptimizedImage sizes="(max-width: 640px) 100vw, 50vw"
-            src="/assets/images/curated/bru-02.webp"
+            src="/assets/images/about/bridal-makeup-closeup.webp"
             alt={t("about.story.approach.imageAlt")}
             className={styles.approachImage}
           />

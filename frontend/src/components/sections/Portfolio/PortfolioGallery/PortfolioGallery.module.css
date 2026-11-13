@@ -104,13 +104,13 @@
   transform: scale(1.025);
 }
 
-.imageWrapper img[src$="/lbs-40.webp"],
-.imageWrapper img[src$="/nov-4bcc06250447fcda.webp"],
-.imageWrapper img[src$="/art-05.webp"] {
+.imageWrapper img[src$="/braided-hair-satin-portrait.webp"],
+.imageWrapper img[src$="/evening-glamour-black-dress.webp"],
+.imageWrapper img[src$="/red-devil-couple-makeup.webp"] {
   object-position: center top;
 }
 
-.imageWrapper img[src$="/cas-09.webp"] {
+.imageWrapper img[src$="/bride-behind-white-bouquet.webp"] {
   object-position: 30% center;
 }
 

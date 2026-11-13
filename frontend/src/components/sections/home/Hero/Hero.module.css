@@ -239,3 +239,35 @@
     transition: none;
   }
 }
+
+.arrow {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 50%;
+  background: rgb(0 0 0 / 12%);
+  color: var(--color-text-inverted);
+  transform: translateY(-50%);
+  transition: background var(--transition-fast);
+}
+
+.arrow svg {
+  width: 19px;
+  height: 19px;
+}
+
+.previous { left: clamp(0.25rem, 0.8vw, 1rem); }
+.next { right: clamp(0.25rem, 0.8vw, 1rem); }
+
+.arrow:hover { background: rgb(0 0 0 / 35%); }
+.arrow:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow { transition: none; }
+}

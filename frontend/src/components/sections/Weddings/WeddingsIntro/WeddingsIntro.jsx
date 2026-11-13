@@ -27,7 +27,7 @@ function WeddingsIntro() {
         <div className={styles.copy}>
           <div className={styles.imageWrapper}>
             <OptimizedImage sizes="(max-width: 640px) 85vw, 35vw"
-              src="/assets/images/curated/cas-10.webp"
+              src="/assets/images/weddings/bride-with-white-bouquet-outdoors.webp"
               alt={t("weddings.intro.imageAlt")}
             />
           </div>

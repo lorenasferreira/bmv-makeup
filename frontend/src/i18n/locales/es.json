@@ -34,7 +34,10 @@
         "beauty": "Belleza",
         "social": "Social",
         "artistic": "Artístico",
-        "editorial": "Editorial"
+        "editorial": "Editorial",
+        "audiovisual": "Audiovisual",
+        "campaigns": "Campañas",
+        "photoshoots": "Sesiones de fotos"
       },
       "eyebrow": "Versatilidad",
       "title": "Un artista.",
@@ -380,7 +383,10 @@
       "eyebrow": "BMV Makeup",
       "title": "El arte",
       "titleAccent": "de la belleza.",
-      "cta": "Conoce el trabajo"
+      "cta": "Conoce el trabajo",
+      "carousel": "Fotografías destacadas",
+      "previous": "Fotografía anterior",
+      "next": "Siguiente fotografía"
     },
     "instagram": {
       "viewPost": "Ver en Instagram",
@@ -483,7 +489,11 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "education": "Formación",
-    "book": "Reservar ahora"
+    "book": "Reservar ahora",
+    "weddings": "Bodas",
+    "professionals": "Profesionales recomendados",
+    "expand": "Expandir {{section}}",
+    "collapse": "Contraer {{section}}"
   },
   "footer": {
     "tagline": "Maquillaje profesional en Barcelona.",

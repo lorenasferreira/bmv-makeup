@@ -8,17 +8,17 @@ const categories = [
   {
     id: "weddings",
     number: "01",
-    image: "/assets/images/optimized/explore-weddings.webp",
+    image: "/assets/images/home/explore-work/seaside-bridal-portrait.webp",
   },
   {
     id: "social",
     number: "02",
-    image: "/assets/images/optimized/explore-social.webp",
+    image: "/assets/images/home/explore-work/braided-hair-beauty-portrait.webp",
   },
   {
     id: "artistic",
     number: "03",
-    image: "/assets/images/curated/art-11.webp",
+    image: "/assets/images/shared/artistic/frankenstein-character-portrait.webp",
   },
 ];
 

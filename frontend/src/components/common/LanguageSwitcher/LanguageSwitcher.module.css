@@ -39,12 +39,12 @@
   opacity: 1;
 }
 
-/* Header desktop */
+
 .header {
   color: inherit;
 }
 
-/* Drawer mobile */
+
 .mobile {
   color: var(--color-text-inverted);
 }

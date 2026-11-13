@@ -10,7 +10,7 @@ function MeetBruno() {
     <section className={styles.section} id="about">
       <div className={styles.imageColumn}>
         <div className={styles.imageWrapper}>
-          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/curated/nov-62ec9c2eb7cf2abd.webp" alt={t("home.artist.imageLabel")} loading="lazy" />
+          <OptimizedImage sizes="(max-width: 640px) 85vw, 40vw" src="/assets/images/home/artist/bruno-studio-portrait.webp" alt={t("home.artist.imageLabel")} loading="lazy" />
         </div>
       </div>
 

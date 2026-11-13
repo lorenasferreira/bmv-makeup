@@ -32,14 +32,14 @@ function EducationProfessional() {
       <div className={styles.visual}>
         <div className={styles.imageMain}>
           <OptimizedImage sizes="(max-width: 640px) 100vw, 70vw"
-            src="/assets/images/curated/bru-20.webp"
+            src="/assets/images/shared/weddings/bruno-applying-bridal-eye-makeup.webp"
             alt={t("education.professional.mainImageAlt")}
           />
         </div>
 
         <div className={styles.imageDetail}>
           <OptimizedImage sizes="(max-width: 640px) 55vw, 25vw"
-            src="/assets/images/curated/nov-4e21615332f3066f.webp"
+            src="/assets/images/education/bridal/bridal-blush-demonstration.webp"
             alt={t("education.professional.detailImageAlt")}
           />
         </div>

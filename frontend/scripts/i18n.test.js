@@ -50,6 +50,7 @@ for (const language of languages) {
     for (const key of Object.keys(source)) {
       const result = i18n.t(key, {
         rating: 5,
+        section: i18n.t("navigation.services"),
         number: 2,
         category: i18n.t("portfolio.gallery.categories.beauty"),
         returnDetails: true,

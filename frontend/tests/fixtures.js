@@ -7,7 +7,7 @@ export const translations = Object.fromEntries(["pt", "en", "es", "ca"].map(lang
 ]));
 
 export const test = base.extend({
-  // Only the network boundary is mocked; production components run unchanged.
+
   page: async ({ page }, runTest) => {
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));

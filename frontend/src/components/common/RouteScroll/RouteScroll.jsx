@@ -10,7 +10,7 @@ function RouteScroll() {
       try {
         id = decodeURIComponent(id);
       } catch {
-        // A malformed fragment must not prevent the page from rendering.
+        id = hash.slice(1);
       }
       const target = document.getElementById(id);
       if (target) {

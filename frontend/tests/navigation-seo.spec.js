@@ -1,4 +1,7 @@
 import { test, expect, translations } from "./fixtures";
+import { readFileSync } from "node:fs";
+
+const { hero: { desktop, mobile } } = JSON.parse(readFileSync(new URL("./fixtures/approved-images.json", import.meta.url), "utf8"));
 
 const routes = ["/", "/about", "/services", "/portfolio", "/education", "/contact", "/services/weddings"];
 const keys = ["home", "about", "services", "portfolio", "education", "contact", "weddings"];
@@ -22,8 +25,9 @@ for (const width of [390, 1440]) {
         }
         const current = navigation.locator('a[aria-current="page"]');
         await expect(current).toHaveCount(1);
-        await expect(current).toHaveAttribute("href", route === "/services/weddings" ? "/services" : route);
-        expect(await current.evaluate(link => parseFloat(getComputedStyle(link, "::after").height))).toBeGreaterThan(0);
+        await expect(current).toHaveAttribute("href", route);
+        const marker = await current.isVisible() ? current : navigation.locator('a[data-active="true"]');
+        expect(await marker.evaluate(link => parseFloat(getComputedStyle(link, "::after").height))).toBeGreaterThan(0);
         if (width < 1001) await page.keyboard.press("Escape");
       }
     });
@@ -54,9 +58,7 @@ for (const width of [390, 1440]) {
     await page.goto("/");
     const hero = page.locator("main > section").first();
     await expect.poll(() => hero.locator("img").evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
-    const desktop = ["cas-09", "cas-13", "nov-b94ca63befe18347", "soc-10", "soc-08"];
-    const mobile = ["nov-c0a362f3c9338b3b", "nov-1ee9718a69d99658", "nov-ee9b3959e5e231e9", "nov-8578c4c71970766e", "nov-e517b557a712e6f1"];
-    for (const id of width < 769 ? desktop : mobile) expect(images).not.toContain(`/assets/images/curated/${id}.webp`);
+    for (const url of width < 769 ? desktop : mobile) expect(images).not.toContain(url);
     await expect(hero.locator('img[fetchpriority="high"]')).toHaveCount(1);
     await expect(page.locator('main > section').nth(1).locator("img")).toHaveAttribute("loading", "lazy");
   });

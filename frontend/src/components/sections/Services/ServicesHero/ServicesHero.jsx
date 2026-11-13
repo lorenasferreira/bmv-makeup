@@ -20,7 +20,7 @@ function ServicesHero() {
       <div className={styles.visual}>
         <div className={styles.imageWrapper}>
           <OptimizedImage sizes="(max-width: 700px) 100vw, 40vw" loading="eager" fetchPriority="high"
-            src="/assets/images/curated/nov-a5b3fc62a58cd428.webp"
+            src="/assets/images/services/beauty/glowing-skin-portrait.webp"
             alt={t("services.hero.imageAlt")}
           />
         </div>

@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import styles from "./BehindTheBrush.module.css";
 
 const moments = [
-  { id: 1, image: "/assets/images/curated/nov-764f2454ac289bd0.webp", label: "home.behindTheBrush.moments.preparation", className: "large" },
-  { id: 2, image: "/assets/images/curated/nov-204b19614aa27393.webp", label: "home.behindTheBrush.moments.backstage", className: "smallTop" },
-  { id: 3, image: "/assets/images/curated/nov-a13630f50f831848.webp", label: "home.behindTheBrush.moments.client", className: "smallBottom" },
+  { id: 1, image: "/assets/images/home/behind-the-brush/bridal-lipstick-preparation.webp", label: "home.behindTheBrush.moments.preparation", className: "large" },
+  { id: 2, image: "/assets/images/home/behind-the-brush/bride-on-grand-staircase.webp", label: "home.behindTheBrush.moments.backstage", className: "smallTop" },
+  { id: 3, image: "/assets/images/home/behind-the-brush/finished-bridal-makeup.webp", label: "home.behindTheBrush.moments.client", className: "smallBottom" },
 ];
 
 function BehindTheBrush() {

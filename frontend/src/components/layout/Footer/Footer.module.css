@@ -9,7 +9,7 @@
   color: var(--color-text);
 }
 
-/* Main content */
+
 
 .main {
   display: grid;
@@ -55,7 +55,7 @@
   line-height: 1.6;
 }
 
-/* Navigation */
+
 
 .navigation {
   display: flex;
@@ -79,7 +79,7 @@
   color: var(--color-accent);
 }
 
-/* Bottom */
+
 
 .bottom {
   display: grid;
@@ -109,7 +109,7 @@
   text-align: right;
 }
 
-/* Socials */
+
 
 .socials {
   display: flex;
@@ -150,7 +150,7 @@
   opacity: 0.6;
 }
 
-/* Mobile */
+
 
 @media (max-width: 640px) {
   .footer {

@@ -10,7 +10,8 @@
     "test:i18n": "node --test scripts/i18n.test.js",
     "preview": "vite preview",
     "test:behavior": "playwright test",
-    "test": "npm run test:i18n && npm run test:behavior"
+    "test": "npm run test:i18n && npm run test:images && npm run test:behavior",
+    "test:images": "node --test scripts/images.test.js"
   },
   "dependencies": {
     "i18next": "^26.3.6",

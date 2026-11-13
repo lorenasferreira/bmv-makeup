@@ -10,7 +10,7 @@ function ServicesExperience() {
     <section className={styles.section}>
       <div className={styles.imageWrapper}>
         <OptimizedImage sizes="(max-width: 700px) 100vw, 40vw"
-          src="/assets/images/curated/bru-06.webp"
+          src="/assets/images/services/weddings/bridal-makeup-preparation.webp"
           alt={t("services.experience.imageAlt")}
         />
       </div>

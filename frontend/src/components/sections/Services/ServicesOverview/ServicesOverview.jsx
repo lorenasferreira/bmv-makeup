@@ -9,7 +9,7 @@ const services = [
     number: "01",
     title: "services.overview.items.weddings.title",
     description: "services.overview.items.weddings.description",
-    image: "/assets/images/curated/cas-05.webp",
+    image: "/assets/images/services/weddings/bride-with-bouquet-by-mirror.webp",
     link: "/services/weddings",
     featured: true,
   },
@@ -17,13 +17,13 @@ const services = [
     number: "02",
     title: "services.overview.items.social.title",
     description: "services.overview.items.social.description",
-    image: "/assets/images/curated/nov-d3e8a181458484e3.webp",
+    image: "/assets/images/services/beauty/golden-eyeshadow-curly-hair-portrait.webp",
   },
   {
     number: "03",
     title: "services.overview.items.artistic.title",
     description: "services.overview.items.artistic.description",
-    image: "/assets/images/curated/art-03.webp",
+    image: "/assets/images/services/artistic/clown-makeup-portrait.webp",
   },
 ];
 

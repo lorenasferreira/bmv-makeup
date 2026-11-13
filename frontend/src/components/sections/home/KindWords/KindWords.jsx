@@ -11,7 +11,7 @@ const reviews = [
     author: "Natalia",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/natalia.webp",
+    image: "/assets/images/home/testimonials/natalia-portrait.webp",
     text: "home.reviews.items.natalia",
   },
   {
@@ -19,7 +19,7 @@ const reviews = [
     author: "Lorena",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/lorena.webp",
+    image: "/assets/images/home/testimonials/lorena-portrait.webp",
     text: "home.reviews.items.lorena",
   },
   {
@@ -27,7 +27,7 @@ const reviews = [
     author: "Gabriela",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/gabriela.webp",
+    image: "/assets/images/home/testimonials/gabriela-portrait.webp",
     text: "home.reviews.items.gabriela",
   },
   {
@@ -35,7 +35,7 @@ const reviews = [
     author: "María",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/maria.webp",
+    image: "/assets/images/home/testimonials/maria-portrait.webp",
     text: "home.reviews.items.maria",
   },
   {
@@ -43,7 +43,7 @@ const reviews = [
     author: "Aline",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/aline.webp",
+    image: "/assets/images/home/testimonials/aline-portrait.webp",
     text: "home.reviews.items.aline",
   },
   {
@@ -51,7 +51,7 @@ const reviews = [
     author: "Lolys",
     rating: 5,
     source: "Bodas.net",
-    image: "/assets/images/reviews/lolys.webp",
+    image: "/assets/images/home/testimonials/lolys-portrait.webp",
     text: "home.reviews.items.lolys",
   },
 ];

@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 
 import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 
+import ServicesNavigation from "./ServicesNavigation";
+
 import styles from "./MobileMenu.module.css";
 
 function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
@@ -18,7 +20,7 @@ function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
       return;
     }
 
-    // Keep this breakpoint aligned with Header and LanguageSwitcher CSS.
+
     const mobileLayout = window.matchMedia("(max-width: 1000px)");
     if (!mobileLayout.matches) {
       onClose();
@@ -71,8 +73,9 @@ function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
         const controls = event.currentTarget.querySelectorAll(
           'aside a[href], aside button:not([disabled])',
         );
-        const first = controls[0];
-        const last = controls[controls.length - 1];
+        const visible = [...controls].filter(control => control.getClientRects().length);
+        const first = visible[0];
+        const last = visible[visible.length - 1];
         if (event.shiftKey && document.activeElement === first) {
           event.preventDefault();
           last?.focus({ preventScroll: true });
@@ -123,10 +126,7 @@ function MobileMenu({ isOpen, onClose, triggerRef, desktopFocusRef }) {
             {t("navigation.about")}
           </NavLink>
 
-          <NavLink to="/services" onClick={onClose}>
-            <span>03</span>
-            {t("navigation.services")}
-          </NavLink>
+          <ServicesNavigation mobile onNavigate={onClose} />
 
           <NavLink to="/portfolio" onClick={onClose}>
             <span>04</span>

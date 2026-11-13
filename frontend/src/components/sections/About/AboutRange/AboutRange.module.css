@@ -48,6 +48,7 @@
 }
 
 .marquees {
+  --marquee-base-duration: 28s;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -67,7 +68,7 @@
 .track {
   display: flex;
   width: max-content;
-  animation: marqueeLeft 28s linear infinite;
+  animation: marqueeLeft var(--marquee-duration, var(--marquee-base-duration)) linear infinite;
   will-change: transform;
 }
 
@@ -118,8 +119,8 @@
     grid-template-columns: 1fr;
   }
 
-  .track {
-    animation-duration: 24s;
+  .marquees {
+    --marquee-base-duration: 24s;
   }
 }
 
@@ -132,8 +133,8 @@
     font-size: clamp(3.6rem, 16vw, 5.5rem);
   }
 
-  .track {
-    animation-duration: 20s;
+  .marquees {
+    --marquee-base-duration: 20s;
   }
 
   .track span {
@@ -143,8 +144,22 @@
   }
 }
 
+
 @media (prefers-reduced-motion: reduce) {
   .track {
     animation: none;
   }
+}
+.marqueeGroup {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  width: max-content;
+  min-width: 100vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track { width: 100%; will-change: auto; }
+  .marqueeGroup { width: 100%; min-width: 0; flex-wrap: wrap; justify-content: flex-start; }
+  .marqueeGroup[aria-hidden="true"] { display: none; }
 }

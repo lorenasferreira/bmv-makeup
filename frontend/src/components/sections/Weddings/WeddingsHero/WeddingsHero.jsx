@@ -16,7 +16,7 @@ function WeddingsHero() {
     <section className={styles.hero}>
       <div className={styles.visual}>
         <OptimizedImage sizes="(max-width: 640px) 100vw, 55vw" loading="eager" fetchPriority="high"
-          src="/assets/images/curated/cas-08.webp"
+          src="/assets/images/weddings/bride-portrait-by-window.webp"
           alt={t("weddings.hero.imageAlt")}
         />
 

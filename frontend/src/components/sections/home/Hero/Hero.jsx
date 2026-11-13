@@ -2,14 +2,16 @@ import imageMetadata from "../../../../data/image-metadata.json";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 import styles from "./Hero.module.css";
 
 const slides = [
-  { id: 1, desktop: "/assets/images/curated/cas-09.webp", mobile: "/assets/images/curated/nov-c0a362f3c9338b3b.webp" },
-  { id: 2, desktop: "/assets/images/curated/cas-13.webp", mobile: "/assets/images/curated/nov-1ee9718a69d99658.webp" },
-  { id: 3, desktop: "/assets/images/curated/nov-b94ca63befe18347.webp", mobile: "/assets/images/curated/nov-ee9b3959e5e231e9.webp" },
-  { id: 4, desktop: "/assets/images/curated/soc-10.webp", mobile: "/assets/images/curated/nov-8578c4c71970766e.webp" },
-  { id: 5, desktop: "/assets/images/curated/soc-08.webp", mobile: "/assets/images/curated/nov-e517b557a712e6f1.webp" },
+  { id: 1, desktop: "/assets/images/shared/weddings/bride-behind-white-bouquet.webp", mobile: "/assets/images/home/hero/mobile/red-dress-glamour-portrait.webp" },
+  { id: 2, desktop: "/assets/images/home/hero/desktop/bride-holding-makeup-mirror.webp", mobile: "/assets/images/home/hero/mobile/brunette-soft-glamour-portrait.webp" },
+  { id: 3, desktop: "/assets/images/home/hero/desktop/newlyweds-closeup.webp", mobile: "/assets/images/shared/beauty/structured-bodice-portrait.webp" },
+  { id: 4, desktop: "/assets/images/home/hero/desktop/blonde-soft-glamour-closeup.webp", mobile: "/assets/images/home/hero/mobile/bruno-preparing-male-client.webp" },
+  { id: 5, desktop: "/assets/images/home/hero/desktop/sunlit-curls-and-sunglasses.webp", mobile: "/assets/images/home/hero/mobile/newlyweds-garden-embrace.webp" },
 ];
 
 function Hero() {
@@ -17,16 +19,16 @@ function Hero() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const interval = window.setInterval(() => {
+    const interval = window.setTimeout(() => {
       setActiveSlide((current) => (current + 1) % slides.length);
     }, 4000);
 
-    return () => window.clearInterval(interval);
-  }, []);
+    return () => window.clearTimeout(interval);
+  }, [activeSlide]);
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.slides} aria-hidden="true">
+    <section className={styles.hero} aria-label={t("home.hero.carousel")}>
+      <div id="home-hero-slides" className={styles.slides} aria-hidden="true">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -58,6 +60,13 @@ function Hero() {
           <span aria-hidden="true">→</span>
         </a>
       </div>
+
+      <button type="button" className={`${styles.arrow} ${styles.previous}`} aria-label={t("home.hero.previous")} aria-controls="home-hero-slides" onClick={() => setActiveSlide(current => (current - 1 + slides.length) % slides.length)}>
+        <FiChevronLeft aria-hidden="true" />
+      </button>
+      <button type="button" className={`${styles.arrow} ${styles.next}`} aria-label={t("home.hero.next")} aria-controls="home-hero-slides" onClick={() => setActiveSlide(current => (current + 1) % slides.length)}>
+        <FiChevronRight aria-hidden="true" />
+      </button>
 
       <div className={styles.counter} aria-hidden="true">
         <span>{String(activeSlide + 1).padStart(2, "0")}</span>

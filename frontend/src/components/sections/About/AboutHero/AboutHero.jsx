@@ -19,7 +19,7 @@ function AboutHero() {
 
       <div className={styles.imageWrapper}>
         <OptimizedImage sizes="(max-width: 640px) 100vw, 40vw" loading="eager" fetchPriority="high"
-          src="/assets/images/optimized/bruno-about.webp"
+          src="/assets/images/about/bruno-menezess-with-brushes.webp"
           alt={t("about.hero.imageAlt")}
           className={styles.heroImage}
         />

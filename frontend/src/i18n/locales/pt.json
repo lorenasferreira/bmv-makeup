@@ -5,14 +5,21 @@
     "services": "Serviços",
     "portfolio": "Portfólio",
     "education": "Educação",
-    "book": "Agendar agora"
+    "book": "Agendar agora",
+    "weddings": "Casamentos",
+    "professionals": "Profissionais recomendados",
+    "expand": "Expandir {{section}}",
+    "collapse": "Recolher {{section}}"
   },
   "home": {
     "hero": {
       "eyebrow": "BMV Makeup",
       "title": "A arte",
       "titleAccent": "da beleza.",
-      "cta": "Conheça o trabalho"
+      "cta": "Conheça o trabalho",
+      "carousel": "Fotografias em destaque",
+      "previous": "Fotografia anterior",
+      "next": "Próxima fotografia"
     },
     "artist": {
       "eyebrow": "Conheça o artista",
@@ -178,7 +185,10 @@
         "beauty": "Beleza",
         "social": "Social",
         "artistic": "Artístico",
-        "editorial": "Editorial"
+        "editorial": "Editorial",
+        "audiovisual": "Audiovisual",
+        "campaigns": "Campanhas",
+        "photoshoots": "Ensaios fotográficos"
       },
       "eyebrow": "Versatilidade",
       "title": "Um artista.",

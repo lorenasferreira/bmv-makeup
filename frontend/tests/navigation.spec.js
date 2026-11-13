@@ -55,7 +55,7 @@ test.describe("mobile navigation", () => {
       await page.getByRole("dialog").getByRole("button", { name: language.toUpperCase(), exact: true }).click();
       await expect(page.locator("html")).toHaveAttribute("lang", language);
       await expect(page.getByRole("dialog").getByRole("button", { name: language.toUpperCase(), exact: true })).toHaveAttribute("aria-pressed", "true");
-      // The background is intentionally inert while the modal is open.
+
       await expect(page.locator("main h1")).toContainText(translations[language].home.hero.title);
     }
     await page.keyboard.press("Escape");
@@ -72,7 +72,7 @@ test("Portfolio categories filter the works and expose selected state", async ({
   }
   const gallery = main.locator("section").filter({ has: page.getByRole("button", { name: "All", exact: true }) });
   await gallery.evaluate(element => element.scrollIntoView({ block: "start", behavior: "instant" }));
-  // Playwright's visibility check ignores opacity; wait for the reveal before clicking.
+
   await expect(gallery).toHaveCSS("opacity", "1");
   for (const category of ["Weddings", "Beauty", "Artistic"]) {
     const button = main.getByRole("button", { name: category, exact: true });

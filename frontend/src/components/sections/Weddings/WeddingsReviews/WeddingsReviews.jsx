@@ -7,14 +7,14 @@ const reviews = [
   {
     name: "Clare",
     source: "Bodas.net",
-    image: "/assets/images/reviews/clare.webp",
+    image: "/assets/images/weddings/testimonials/clare-portrait.webp",
     title: "weddings.reviews.items.clare.title",
     text: "weddings.reviews.items.clare.description",
   },
   {
     name: "Marina",
     source: "Bodas.net",
-    image: "/assets/images/reviews/marina.webp",
+    image: "/assets/images/weddings/testimonials/marina-portrait.webp",
     title: "weddings.reviews.items.marina.title",
     text: "weddings.reviews.items.marina.description",
   },

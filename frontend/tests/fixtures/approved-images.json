@@ -1,0 +1,270 @@
+{
+  "hero": {
+    "desktop": [
+      "/assets/images/shared/weddings/bride-behind-white-bouquet.webp",
+      "/assets/images/home/hero/desktop/bride-holding-makeup-mirror.webp",
+      "/assets/images/home/hero/desktop/newlyweds-closeup.webp",
+      "/assets/images/home/hero/desktop/blonde-soft-glamour-closeup.webp",
+      "/assets/images/home/hero/desktop/sunlit-curls-and-sunglasses.webp"
+    ],
+    "mobile": [
+      "/assets/images/home/hero/mobile/red-dress-glamour-portrait.webp",
+      "/assets/images/home/hero/mobile/brunette-soft-glamour-portrait.webp",
+      "/assets/images/shared/beauty/structured-bodice-portrait.webp",
+      "/assets/images/home/hero/mobile/bruno-preparing-male-client.webp",
+      "/assets/images/home/hero/mobile/newlyweds-garden-embrace.webp"
+    ]
+  },
+  "placements": {
+    "/about": [
+      "/assets/images/about/bruno-menezess-with-brushes.webp",
+      "/assets/images/about/bruno-working-with-client.webp",
+      "/assets/images/about/bridal-makeup-closeup.webp"
+    ],
+    "/services": [
+      "/assets/images/services/beauty/glowing-skin-portrait.webp",
+      "/assets/images/services/weddings/bride-with-bouquet-by-mirror.webp",
+      "/assets/images/services/beauty/golden-eyeshadow-curly-hair-portrait.webp",
+      "/assets/images/services/artistic/clown-makeup-portrait.webp",
+      "/assets/images/services/weddings/bridal-makeup-preparation.webp"
+    ],
+    "/services/weddings": [
+      "/assets/images/weddings/bride-portrait-by-window.webp",
+      "/assets/images/weddings/bride-with-white-bouquet-outdoors.webp"
+    ],
+    "/portfolio": [
+      "/assets/images/shared/weddings/bride-behind-white-bouquet.webp",
+      "/assets/images/shared/artistic/frankenstein-character-portrait.webp",
+      "/assets/images/portfolio/beauty/city-portrait-with-sunglasses.webp",
+      "/assets/images/portfolio/weddings/bride-with-colorful-bouquet.webp",
+      "/assets/images/portfolio/beauty/braided-hair-satin-portrait.webp",
+      "/assets/images/portfolio/artistic/fantasy-character-prosthetic-makeup.webp",
+      "/assets/images/portfolio/weddings/bride-with-blue-bouquet-by-sea.webp",
+      "/assets/images/portfolio/beauty/evening-glamour-black-dress.webp",
+      "/assets/images/portfolio/artistic/red-devil-couple-makeup.webp",
+      "/assets/images/portfolio/weddings/bride-through-ceremony-guests.webp",
+      "/assets/images/portfolio/beauty/blonde-evening-makeup-portrait.webp",
+      "/assets/images/portfolio/artistic/halloween-smudged-clown-closeup.webp"
+    ],
+    "/education": [
+      "/assets/images/shared/weddings/bruno-applying-bridal-eye-makeup.webp",
+      "/assets/images/education/bridal/bridal-blush-demonstration.webp"
+    ]
+  },
+  "images": [
+    {
+      "url": "/assets/images/shared/weddings/bride-behind-white-bouquet.webp",
+      "sha256": "e1092615d1314e7d524673a9e4a1faeb79e61a617ea5e46a60d6b4c25911130c"
+    },
+    {
+      "url": "/assets/images/home/hero/mobile/red-dress-glamour-portrait.webp",
+      "sha256": "5d4cb9ff3f4101d4e7534a8f101b3b05a51309a20b11d56c460f9eb9f71ca893"
+    },
+    {
+      "url": "/assets/images/home/hero/desktop/bride-holding-makeup-mirror.webp",
+      "sha256": "04b9d5f5fc32fc04c9cda456a0bde17b79158371cdca1b35e5b6ed0ef29ce9cb"
+    },
+    {
+      "url": "/assets/images/home/hero/mobile/brunette-soft-glamour-portrait.webp",
+      "sha256": "cb0ce7528d6c0bbce8d61ca9fc72e8fc651c1a807f13dbb847f1e59f88c05ed2"
+    },
+    {
+      "url": "/assets/images/home/hero/desktop/newlyweds-closeup.webp",
+      "sha256": "b133a715f908140a26bdddc41a4fd90ce268b20dd0324e3ea09cbb6921a235e4"
+    },
+    {
+      "url": "/assets/images/shared/beauty/structured-bodice-portrait.webp",
+      "sha256": "061b7314ce4b96bba21c214605377cc5174f186487bd5f3f9c03af1682fc3a35"
+    },
+    {
+      "url": "/assets/images/home/hero/desktop/blonde-soft-glamour-closeup.webp",
+      "sha256": "28b5e1ab143306c261a8c58fbe28fec4a1510cb61bd4e3327574af7bf7004d18"
+    },
+    {
+      "url": "/assets/images/home/hero/mobile/bruno-preparing-male-client.webp",
+      "sha256": "f844b777702e8100ec4f6e146fae352105ddac793161a5ec88b77f2fb05aac46"
+    },
+    {
+      "url": "/assets/images/home/hero/desktop/sunlit-curls-and-sunglasses.webp",
+      "sha256": "bd37f5e5f7e159388f412c6fadbbd8330063eedce9536d7fd62bdedd81fbb507"
+    },
+    {
+      "url": "/assets/images/home/hero/mobile/newlyweds-garden-embrace.webp",
+      "sha256": "18acca16413cc8ebadacda5e5f9057956ffec29d29814db765e739a084591c14"
+    },
+    {
+      "url": "/assets/images/home/artist/bruno-studio-portrait.webp",
+      "sha256": "eeb7b77c969c0e10b8cb08b98d79f0e4bb8c9144868fca73e969e905c65cc36f"
+    },
+    {
+      "url": "/assets/images/home/explore-work/seaside-bridal-portrait.webp",
+      "sha256": "1ea30376c0d3426d83fd59bf16f68ad798d1b92f4ce3448a930d373539467a7e"
+    },
+    {
+      "url": "/assets/images/home/explore-work/braided-hair-beauty-portrait.webp",
+      "sha256": "4c70273555c1ba608baca49f75696c54afdf05dd67811dd785bb0573ee1f9478"
+    },
+    {
+      "url": "/assets/images/shared/artistic/frankenstein-character-portrait.webp",
+      "sha256": "dbb18a36b71fb1a1a5cfb9b180938e6e14dc1fda28f791d7d66e6f9099efd85b"
+    },
+    {
+      "url": "/assets/images/home/selected-work/brunette-makeup-closeup.webp",
+      "sha256": "ee4bc5db2d00bc0a035b04303c948ee2e16f0e6e4dbacf24e2e517b7284de558"
+    },
+    {
+      "url": "/assets/images/home/selected-work/dramatic-editorial-portrait.webp",
+      "sha256": "9c38d5e4e972ce6eef5e4528602b1c37ee871a87370ca572bd472cb538cd712b"
+    },
+    {
+      "url": "/assets/images/home/selected-work/halloween-couple-portrait.webp",
+      "sha256": "5108881bc06d5de609592afb262ec9117f01a22216c0d84268b01a6373af948e"
+    },
+    {
+      "url": "/assets/images/home/weddings/bride-with-bouquet-by-curtains.webp",
+      "sha256": "1818cb6a3f10518c69b4a0dfac9cfe827cf6a74a52d3de8f1dbbaa25e0c880c3"
+    },
+    {
+      "url": "/assets/images/shared/weddings/bruno-applying-bridal-eye-makeup.webp",
+      "sha256": "dc2225d4483f62bdc01d868099f72070bd75985cc5916a4d6fbed670ee80a764"
+    },
+    {
+      "url": "/assets/images/home/behind-the-brush/bridal-lipstick-preparation.webp",
+      "sha256": "df4a9dff05c10be22ca63c609975f82b86d81ad4b8b52a673b39d5b0274769c7"
+    },
+    {
+      "url": "/assets/images/home/behind-the-brush/bride-on-grand-staircase.webp",
+      "sha256": "8e6c57830501e4c7dd53309ea32e1788858b44ebfa591f2a99cadbc684bd9702"
+    },
+    {
+      "url": "/assets/images/home/behind-the-brush/finished-bridal-makeup.webp",
+      "sha256": "6a9d3b412cee3bc10e2d98689de3b09689909acda30e70d73b166820ade0ce0d"
+    },
+    {
+      "url": "/assets/images/about/bruno-menezess-with-brushes.webp",
+      "sha256": "2e77fd18e6a7a7f3b80623dc48f9c77946e254cc8e1728e430159f612fabda17"
+    },
+    {
+      "url": "/assets/images/about/bruno-working-with-client.webp",
+      "sha256": "432dcb386d4eb636f18934aedfa8f7c5014764ea5763c99ded3bdfb84f401dc8"
+    },
+    {
+      "url": "/assets/images/about/bridal-makeup-closeup.webp",
+      "sha256": "6bb1b918b63009e12688d41ca4cfd79730776aef9256d37607dc291011f61fa8"
+    },
+    {
+      "url": "/assets/images/services/beauty/glowing-skin-portrait.webp",
+      "sha256": "18b2afa8d90210b1eb13ebe551bdce4e5f6de08d6ccdf2a796fdc843a0794014"
+    },
+    {
+      "url": "/assets/images/services/weddings/bride-with-bouquet-by-mirror.webp",
+      "sha256": "650ef77e2b533c2e11165d4c84e85ee123be5ed16d9ba59ff9af476b98384c83"
+    },
+    {
+      "url": "/assets/images/services/beauty/golden-eyeshadow-curly-hair-portrait.webp",
+      "sha256": "325027cce9799988a18a6e17a42c759bd29718aca6d1d13bf66870e704203649"
+    },
+    {
+      "url": "/assets/images/services/artistic/clown-makeup-portrait.webp",
+      "sha256": "9221758f8e92c64f7a13aa25f29b6c05d187703241ee167b4babe5aa91968075"
+    },
+    {
+      "url": "/assets/images/services/weddings/bridal-makeup-preparation.webp",
+      "sha256": "859c963baae279bdccb0c36f017c6a1c4b0aeed2fd6f459b8edec55f397cd5c1"
+    },
+    {
+      "url": "/assets/images/weddings/bride-portrait-by-window.webp",
+      "sha256": "342be552173f54266d851f31a3a9c631578c8b96d2b66104a6b6f94094bfe94b"
+    },
+    {
+      "url": "/assets/images/weddings/bride-with-white-bouquet-outdoors.webp",
+      "sha256": "5df9283f8f7b1d36f0113b212401410832c4b377f283d74fdb53af504bb62f2e"
+    },
+    {
+      "url": "/assets/images/portfolio/beauty/city-portrait-with-sunglasses.webp",
+      "sha256": "400947c06b409bc57d02e986fc1f7a566522640c7c5c8ea80acf06a103661fec"
+    },
+    {
+      "url": "/assets/images/portfolio/weddings/bride-with-colorful-bouquet.webp",
+      "sha256": "b3804d3b7bb682043676ac27ea1e05499bf20b3246f55baf83c87ade007a5293"
+    },
+    {
+      "url": "/assets/images/portfolio/beauty/braided-hair-satin-portrait.webp",
+      "sha256": "cb507d9e5d70c6d4f63ddedcd4316d2b2f2a0676df6364d6e0175a7cf014ebb4"
+    },
+    {
+      "url": "/assets/images/portfolio/artistic/fantasy-character-prosthetic-makeup.webp",
+      "sha256": "2cc3d10a9b9e8db8b9284691e2deb2e5143410d95d98a898b099e2cc019e36fc"
+    },
+    {
+      "url": "/assets/images/portfolio/weddings/bride-with-blue-bouquet-by-sea.webp",
+      "sha256": "dfb72e438cbb01f139459deb76ac187889435d45991cd9bad9cfb0dbcda5e13f"
+    },
+    {
+      "url": "/assets/images/portfolio/beauty/evening-glamour-black-dress.webp",
+      "sha256": "e278bb6314490ffe817d8b844a82ee72d951fd23c6ed8bb8f301fb3e740e0fc1"
+    },
+    {
+      "url": "/assets/images/portfolio/artistic/red-devil-couple-makeup.webp",
+      "sha256": "8d461cdf11034663dbb954af5dbe76775bb58305a53650220a5626359f94b9fb"
+    },
+    {
+      "url": "/assets/images/portfolio/weddings/bride-through-ceremony-guests.webp",
+      "sha256": "3553bf83924a393141041278a560a8ac9d36392cfc40a8a389eebad66bb3ec02"
+    },
+    {
+      "url": "/assets/images/portfolio/beauty/blonde-evening-makeup-portrait.webp",
+      "sha256": "038b189350d0355f1ca8d531c0199ccf34770fd58b59b40742c68155041637d4"
+    },
+    {
+      "url": "/assets/images/portfolio/artistic/halloween-smudged-clown-closeup.webp",
+      "sha256": "c132df4936d34d5bec7bc17fd05de19d4e5b6874708a7849c72b72a108aa6972"
+    },
+    {
+      "url": "/assets/images/education/bridal/bridal-blush-demonstration.webp",
+      "sha256": "9ca9bd89787365b1ba2b344e289aebef130965d1b75bfc0f34dd07f22d7eced9"
+    },
+    {
+      "url": "/assets/images/social/bmv-makeup-bruno.jpg",
+      "sha256": "9df89b4bf58214b85bce34f754248b8fcf0f215c75e6e861b876e276101dfdfe"
+    },
+    {
+      "url": "/assets/images/home/testimonials/natalia-portrait.webp",
+      "sha256": "7b42531e1e4874482e7109c0eaf5cde84c3644b2a8cbf900a5f1011e0f9011dc"
+    },
+    {
+      "url": "/assets/images/home/testimonials/lorena-portrait.webp",
+      "sha256": "37f0fcf00a8d189d18f2d05a5089ebf79ca6d144a8bc0c5fec395a2098389086"
+    },
+    {
+      "url": "/assets/images/home/testimonials/gabriela-portrait.webp",
+      "sha256": "89c2b9704c36ef03b96031fbd65367b4f99cdc0470c5221021bcb16eda9b7b11"
+    },
+    {
+      "url": "/assets/images/home/testimonials/maria-portrait.webp",
+      "sha256": "eee379c2f5d660ebdee02b62294a0375892d5c5b264d5c28345e9515ca5f459f"
+    },
+    {
+      "url": "/assets/images/home/testimonials/aline-portrait.webp",
+      "sha256": "10ebbefbca26fac507e3091054dc200a82c6404bb8cced11d486b7f88d3a62a3"
+    },
+    {
+      "url": "/assets/images/home/testimonials/lolys-portrait.webp",
+      "sha256": "93b893ffc671779711ab800be63c73c43798026af55824e85ff62fb169bf1ef7"
+    },
+    {
+      "url": "/assets/images/weddings/testimonials/clare-portrait.webp",
+      "sha256": "b98f4f8c3bdbb1a0e3092face46103ee73c42a1f17721c130fba9ef247942bee"
+    },
+    {
+      "url": "/assets/images/weddings/testimonials/marina-portrait.webp",
+      "sha256": "ceeb7f9a99e8b61d34049d7ba7cc1bedcf9832e5f705dacef78b27f8ac8a4a65"
+    }
+  ],
+  "focalPoints": {
+    "/assets/images/shared/weddings/bride-behind-white-bouquet.webp": "30% 50%",
+    "/assets/images/portfolio/beauty/braided-hair-satin-portrait.webp": "50% 0%",
+    "/assets/images/portfolio/beauty/evening-glamour-black-dress.webp": "50% 0%",
+    "/assets/images/portfolio/artistic/red-devil-couple-makeup.webp": "50% 0%"
+  }
+}

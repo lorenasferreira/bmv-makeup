@@ -5,6 +5,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
+import ServicesNavigation from "./ServicesNavigation";
 
 import styles from "./Header.module.css";
 
@@ -58,7 +59,7 @@ function Header() {
       <nav className={styles.navigation} aria-label={t("accessibility.mainNavigation")}>
         <NavLink to="/" end>{t("navigation.home")}</NavLink>
         <NavLink to="/about">{t("navigation.about")}</NavLink>
-        <NavLink to="/services">{t("navigation.services")}</NavLink>
+        <ServicesNavigation />
         <NavLink to="/portfolio">{t("navigation.portfolio")}</NavLink>
         <NavLink to="/education">{t("navigation.education")}</NavLink>
         <NavLink to="/contact">{t("navigation.book")}</NavLink>

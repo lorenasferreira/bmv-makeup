@@ -125,14 +125,15 @@
 .indicators {
   display: flex;
   width: 100%;
-  max-width: 430px;
+  max-width: 264px;
   gap: 0.5rem;
 }
 
 .indicator {
   position: relative;
   width: 100%;
-  height: 16px;
+  height: 44px;
+  min-width: 32px;
   padding: 0;
   background: transparent;
   border: 0;
@@ -142,16 +143,20 @@
 .indicator::after {
   position: absolute;
   top: 50%;
-  right: 0;
-  left: 0;
+  left: 50%;
+  width: 16px;
   height: 1px;
-  background: var(--color-border);
+  transform: translate(-50%, -50%);
+  background: var(--color-text-light);
+  opacity: 0.35;
   content: "";
-  transition: background var(--transition-default);
+  transition: background var(--transition-default), width var(--transition-default), opacity var(--transition-default);
 }
 
 .indicatorActive::after {
-  height: 2px;
+  width: 24px;
+  opacity: 1;
+  height: 1px;
   background: var(--color-accent);
 }
 
@@ -316,7 +321,7 @@
   }
 
   .indicators {
-    max-width: none;
+    max-width: 264px;
   }
 
   .controls {

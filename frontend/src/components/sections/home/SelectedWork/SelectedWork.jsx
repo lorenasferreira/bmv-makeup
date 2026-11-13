@@ -4,10 +4,10 @@ import { useTranslation } from "react-i18next";
 import styles from "./SelectedWork.module.css";
 
 const works = [
-  { id: 1, className: "heroWork", image: "/assets/images/curated/soc-11.webp", label: "home.selectedWork.items.portrait" },
-  { id: 2, className: "portraitWork", image: "/assets/images/curated/nov-03c00a3116794606.webp", label: "home.selectedWork.items.editorial" },
-  { id: 3, className: "detailWork", image: "/assets/images/curated/nov-f97edbc8627b7fd7.webp", label: "home.selectedWork.items.detail" },
-  { id: 5, className: "finalWork", image: "/assets/images/curated/art-04.webp", label: "home.selectedWork.items.artistic" },
+  { id: 1, className: "heroWork", image: "/assets/images/shared/beauty/structured-bodice-portrait.webp", label: "home.selectedWork.items.portrait" },
+  { id: 2, className: "portraitWork", image: "/assets/images/home/selected-work/brunette-makeup-closeup.webp", label: "home.selectedWork.items.editorial" },
+  { id: 3, className: "detailWork", image: "/assets/images/home/selected-work/dramatic-editorial-portrait.webp", label: "home.selectedWork.items.detail" },
+  { id: 5, className: "finalWork", image: "/assets/images/home/selected-work/halloween-couple-portrait.webp", label: "home.selectedWork.items.artistic" },
 ];
 
 function SelectedWork() {

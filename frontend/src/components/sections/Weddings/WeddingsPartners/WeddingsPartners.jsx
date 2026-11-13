@@ -13,7 +13,7 @@ function WeddingsPartners() {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.section}>
+    <section id="recommended-professionals" className={styles.section}>
       <div className={styles.top}>
         <div className={styles.label}>
           <span>04</span>

@@ -19,7 +19,7 @@ for (const width of [320, 390, 768, 1440]) {
         await expect(heading).toBeVisible();
         await expect(heading).toContainText(key === "about" ? "Mënezess" : hero.title);
         await expect(page.locator("html")).toHaveAttribute("lang", language);
-        // Verify page-specific localized body content too (About's name is invariant).
+
         if (hero.description) await expect(page.getByText(hero.description, { exact: true })).toBeVisible();
         await page.evaluate(() => document.fonts.ready);
         if (key === "about" && width <= 390) {
@@ -54,7 +54,7 @@ test("language selection changes visible copy, selected state and persisted docu
 test("SPA navigation resets scroll and Home's portfolio anchor still works", async ({ page }) => {
   await page.goto("/portfolio");
   await scrollTo(page, 1500);
-  // Use the visible header link without Playwright scrolling it into view first.
+
   await page.getByRole("navigation", { name: "Main navigation", exact: true }).getByRole("link", { name: "The Artist" }).evaluate(link => link.click());
   await expect(page).toHaveURL(/\/about$/);
   await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);

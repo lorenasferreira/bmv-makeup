@@ -23,7 +23,7 @@ for (const width of [390, 1440]) {
     await expect(page).toHaveURL(/\/education$/);
 
     await expect(page.locator("main img")).toHaveCount(2);
-    for (const source of ["bru-20.webp", "nov-4e21615332f3066f.webp"]) {
+    for (const source of ["bruno-applying-bridal-eye-makeup.webp", "bridal-blush-demonstration.webp"]) {
       await expect(page.locator(`main img[src$="${source}"]`)).toHaveCount(1);
     }
     await capture(page.locator("main > section").first(), "education-hero");

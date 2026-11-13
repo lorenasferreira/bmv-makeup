@@ -13,8 +13,8 @@ const pages = {
 };
 const locales = { en: "en_GB", pt: "pt_BR", es: "es_ES", ca: "ca_ES" };
 
-// Social crawlers receive the complete brand metadata from index.html.
-// These updates localize the document during SPA navigation; they do not replace that HTML.
+
+
 function SeoMetadata() {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();

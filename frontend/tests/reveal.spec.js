@@ -21,7 +21,7 @@ for (const route of routes) {
     expect(await sections.first().evaluate(element => element.getAnimations().length)).toBe(0);
     const original = await section.evaluate(element => ({ top: element.offsetTop, height: element.offsetHeight }));
     const target = await section.evaluate(element => element.getBoundingClientRect().top + scrollY - 250);
-    // Capture the transition in the page so a slow test runner cannot miss it.
+
     await section.evaluate((element, top) => new Promise(resolve => {
       const started = (event) => {
         if (event.target !== element || event.propertyName !== "opacity") return;
@@ -37,7 +37,7 @@ for (const route of routes) {
     await scrollTo(page, 0);
     await scrollTo(page, target);
     await page.clock.resume();
-    // Observe across frames to ensure revisiting content does not restart its fade.
+
     const staysVisible = await section.evaluate(element => new Promise(resolve => {
       let frames = 0;
       const check = () => {
@@ -92,7 +92,7 @@ test("without IntersectionObserver the enhancement leaves all content readable",
 test("existing Hero rotation and review controls remain independent", async ({ page }) => {
   await page.goto("/");
   const hero = page.locator("main > section").first();
-  // The Hero counter is intentionally decorative; its displayed numbers still update.
+
   const counter = hero.locator(':scope > div[aria-hidden="true"]').last();
   const initial = await counter.textContent();
   await expect.poll(() => counter.textContent(), { timeout: 6000 }).not.toBe(initial);
