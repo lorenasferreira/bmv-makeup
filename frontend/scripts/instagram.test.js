@@ -657,3 +657,84 @@ test("private Blob bootstrap and subsequent maintenance preserve encrypted state
   assert.equal(saved.lease, null); assert.equal(saved.token, TOKEN);
   assert.equal(reads, 2);
 });
+
+for (const [readEtag, apiEtag] of [['revision', 'revision'], ['"revision"', 'revision'], ['"revision"', '"revision"']]) {
+  test(`Blob preserves canonical ifMatch for read ${readEtag} and API ${apiEtag}`, async () => {
+    let heads = 0;
+    const sdk = {
+      async get() { return { statusCode: 200, stream: new Response(encryptState(state(), encryptionKey(KEY))).body, blob: { etag: readEtag } }; },
+      async head() { heads++; return { etag: apiEtag }; },
+      async put(path, body, options) { assert.equal(options.ifMatch, apiEtag); assert.equal(options.allowOverwrite, true); return { etag: apiEtag }; },
+    };
+    const store = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+    const current = await store.read();
+    assert.equal(current.etag, apiEtag);
+    await store.write(current.state, current.etag);
+    assert.equal(heads, readEtag.startsWith('"') ? 1 : 0);
+  });
+}
+
+test("Blob rejects a GET/head revision race and weak or malformed ETags without writing", async () => {
+  for (const [getEtag, headEtag, code] of [['"old"', 'new', 'STATE_CONFLICT'], ['W/"revision"', 'revision', 'STORAGE_ETAG_INVALID'], ['"revision"', 'W/"revision"', 'STORAGE_ETAG_INVALID'], ['"broken', 'broken', 'STORAGE_ETAG_INVALID']]) {
+    const store = createTokenStore({ env: environment(), loadSdk: async () => ({
+      async get() { return { statusCode: 200, stream: new Response(encryptState(state(), encryptionKey(KEY))).body, blob: { etag: getEtag } }; },
+      async head() { return { etag: headEtag }; },
+      async put() { assert.fail("A mismatched or invalid ETag must not be written"); },
+    }) });
+    await assert.rejects(store.read(), { code });
+  }
+});
+
+test("expired lease and persistent acquisition conflicts are errors rather than busy", async () => {
+  for (const until of [NOW, NOW - 1, NOW - 600_000]) {
+    const store = memoryStore(state({ lease: { owner: "old-worker", until } }));
+    store.write = async () => { throw new InstagramError("STATE_CONFLICT"); };
+    const meta = metaStub();
+    await assert.rejects(run(store, meta), { code: "LEASE_ACQUISITION_CONFLICT" });
+    await assert.rejects(run(store, meta), { code: "LEASE_ACQUISITION_CONFLICT" });
+    assert.equal(meta.calls.length, 0);
+    assert.equal(store.value().token, TOKEN);
+  }
+});
+
+test("a lease is recoverable exactly at its expiration timestamp", async () => {
+  const store = memoryStore(state({ expiresAt: NOW + 40 * DAY, lease: { owner: "old-worker", until: NOW } }));
+  assert.equal((await run(store)).status, "healthy");
+  assert.equal(store.value().lease, null);
+});
+
+test("HTTP acquisition conflict is reported as a concurrency failure without exposing state", async () => {
+  const store = memoryStore();
+  store.write = async () => { throw new InstagramError("STATE_CONFLICT"); };
+  const res = response(); const log = logger();
+  await createMaintenanceHandler({ env: environment(), storeFactory: () => store, now: () => NOW, logger: log })({ method: "GET", headers: { authorization: `Bearer ${CRON}` } }, res);
+  assert.equal(res.statusCode, 503);
+  assert.equal(res.body.code, "LEASE_ACQUISITION_CONFLICT");
+  assert.equal(res.body.category, "concurrency");
+  const output = JSON.stringify([res.body, log.messages]);
+  for (const secret of [TOKEN, KEY, CRON]) assert.ok(!output.includes(secret));
+});
+
+test("expired legacy lease is reclaimed with quoted GET and unquoted API ETags", async () => {
+  const { BlobPreconditionFailedError } = await import("@vercel/blob");
+  let revision = 1;
+  let body = encryptState(state({ expiresAt: NOW + 40 * DAY, lease: { owner: "original-deploy", until: NOW - 600_000 } }), encryptionKey(KEY));
+  const sdk = {
+    BlobPreconditionFailedError,
+    async get() { return { statusCode: 200, stream: new Response(body).body, blob: { etag: `"revision-${revision}"` } }; },
+    async head() { return { etag: `revision-${revision}` }; },
+    async put(path, data, options) {
+      assert.equal(options.allowOverwrite, true);
+      if (options.ifMatch !== `revision-${revision}`) throw new BlobPreconditionFailedError();
+      body = data; revision++;
+      return { etag: `revision-${revision}` };
+    },
+  };
+  const store = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+  assert.equal((await run(store)).status, "healthy");
+  const saved = (await store.read()).state;
+  assert.equal(saved.token, TOKEN);
+  assert.equal(saved.lease, null);
+  assert.equal(saved.lastCheckedAt, NOW);
+  assert.equal(revision, 4);
+});

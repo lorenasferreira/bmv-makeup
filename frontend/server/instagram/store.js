@@ -3,6 +3,13 @@ import { InstagramError } from "./errors.js";
 
 const PATHNAME = "instagram/token-state.enc";
 
+function strongEtagIdentity(value) {
+  if (typeof value !== "string" || !value || value.startsWith("W/")) throw new InstagramError("STORAGE_ETAG_INVALID");
+  if (/^"[\x21\x23-\x7e\x80-\xff]+"$/.test(value)) return value.slice(1, -1);
+  if (/^[\x21\x23-\x7e\x80-\xff]+$/.test(value)) return value;
+  throw new InstagramError("STORAGE_ETAG_INVALID");
+}
+
 export function createTokenStore({ env = process.env, loadSdk = () => import("@vercel/blob") } = {}) {
   const key = encryptionKey(env.INSTAGRAM_TOKEN_ENCRYPTION_KEY);
   const credentials = env.BLOB_READ_WRITE_TOKEN ? { token: env.BLOB_READ_WRITE_TOKEN } : { storeId: env.BLOB_STORE_ID };
@@ -15,6 +22,23 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
         const result = await sdk.get(PATHNAME, { ...credentials, access: "private", useCache: false, abortSignal: AbortSignal.timeout(10_000) });
         if (!result) return null;
         if (result.statusCode !== 200 || !result.stream || !result.blob?.etag) throw new InstagramError("STORAGE_INVALID_RESPONSE");
+        let etag = result.blob.etag;
+        try {
+          strongEtagIdentity(etag);
+        } catch (error) {
+          await result.stream.cancel().catch(() => {});
+          throw error;
+        }
+        if (etag.startsWith('"')) {
+          try {
+            const metadata = await sdk.head(PATHNAME, { ...credentials, abortSignal: AbortSignal.timeout(10_000) });
+            if (strongEtagIdentity(metadata?.etag) !== strongEtagIdentity(etag)) throw new InstagramError("STATE_CONFLICT");
+            etag = metadata.etag;
+          } catch (error) {
+            await result.stream.cancel().catch(() => {});
+            throw error;
+          }
+        }
         const reader = result.stream.getReader();
         let size = 0;
         const chunks = [];
@@ -29,7 +53,7 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
         } finally {
           await reader.cancel().catch(() => {});
         }
-        return { state: decryptState(Buffer.concat(chunks).toString("utf8"), key), etag: result.blob.etag };
+        return { state: decryptState(Buffer.concat(chunks).toString("utf8"), key), etag };
       } catch (error) {
         if (error instanceof InstagramError) throw error;
         throw new InstagramError("STORAGE_UNAVAILABLE");

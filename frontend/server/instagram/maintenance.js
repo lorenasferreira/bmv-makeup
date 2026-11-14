@@ -31,7 +31,14 @@ export async function maintainInstagramToken({ env, store, meta, now = Date.now,
     view = await store.write({ ...state, lease: { owner, until: currentTime + LEASE_DURATION } }, view?.etag ?? null);
     state = view.state;
   } catch (error) {
-    if (failureCode(error) === "STATE_CONFLICT") return { status: "busy" };
+    if (failureCode(error) === "STATE_CONFLICT") {
+      const latest = await store.read();
+      if (latest) {
+        usable(latest.state, now());
+        if (latest.state.lease?.until > now()) return { status: "busy" };
+      }
+      throw new InstagramError("LEASE_ACQUISITION_CONFLICT");
+    }
     throw error;
   }
 
