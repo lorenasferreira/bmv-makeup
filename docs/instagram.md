@@ -68,6 +68,10 @@ After a processing/storage failure, cleanup still rereads the latest encrypted s
 
 If cleanup did not persist, the lease expires five minutes after acquisition. A later authorized maintenance run can reclaim an expired lease without deleting or replacing the token record. Before expiry, another run returns `busy`. The feed resolver does not reject a verified record solely because it contains a lease. Do not delete the production object or rebootstrap to resolve this error. Confirmation of production state remains a separate authorized operation; local tests never access that object.
 
+### Safe ETag diagnostics
+
+Failed ETag validation emits a server-only structured warning with stage `get_etag_validation` or `head_etag_validation`. A failed identity comparison emits `etag_comparison` with `matches: false`. Successful validation/comparison emits no diagnostic log. Fields are limited to presence, type, string length, weak-prefix/outer-quotes/control-character booleans and a fixed rejection reason (`missing`, `not_string`, `empty`, `weak_etag`, `control_characters`, `unsupported_format` or `identity_mismatch`). Comparison failures include structural metadata for each source. Values, fragments, hashes, credentials, Blob content and HTTP headers are never included. Logger failures are ignored to preserve the original storage behavior and API error. These diagnostics do not change validation, conditional writes, lease processing or token renewal.
+
 ## Token expiry and data-access expiry are independent
 
 `expiresAt` changes using the refresh response's `expires_in`. The stored `dataAccessExpiresAt` is retained unchanged, never inferred from token expiry or automatically advanced by this job.

@@ -10,10 +10,41 @@ function strongEtagIdentity(value) {
   throw new InstagramError("STORAGE_ETAG_INVALID");
 }
 
-export function createTokenStore({ env = process.env, loadSdk = () => import("@vercel/blob") } = {}) {
+export function createTokenStore({ env = process.env, loadSdk = () => import("@vercel/blob"), logger = console } = {}) {
   const key = encryptionKey(env.INSTAGRAM_TOKEN_ENCRYPTION_KEY);
   const credentials = env.BLOB_READ_WRITE_TOKEN ? { token: env.BLOB_READ_WRITE_TOKEN } : { storeId: env.BLOB_STORE_ID };
   if (!env.BLOB_READ_WRITE_TOKEN && !env.BLOB_STORE_ID) throw new InstagramError("STORAGE_NOT_CONFIGURED");
+
+  function etagMetadata(value) {
+    const isString = typeof value === "string";
+    return {
+      present: value !== undefined && value !== null,
+      type: value === null ? "null" : typeof value,
+      length: isString ? value.length : null,
+      weakPrefix: isString && value.startsWith("W/"),
+      outerQuotes: isString && value.length >= 2 && value.startsWith('"') && value.endsWith('"'),
+      controlCharacters: isString && Array.from(value).some(character => character.charCodeAt(0) < 32 || character.charCodeAt(0) === 127),
+    };
+  }
+
+  function diagnose(stage, details) {
+    try {
+      logger.warn("Instagram storage ETag diagnostic", { stage, ...details });
+    } catch {
+      return;
+    }
+  }
+
+  function validatedIdentity(value, stage) {
+    try {
+      return strongEtagIdentity(value);
+    } catch (error) {
+      const metadata = etagMetadata(value);
+      const reason = !metadata.present ? "missing" : metadata.type !== "string" ? "not_string" : metadata.length === 0 ? "empty" : metadata.weakPrefix ? "weak_etag" : metadata.controlCharacters ? "control_characters" : "unsupported_format";
+      diagnose(stage, { ...metadata, reason });
+      throw error;
+    }
+  }
 
   const store = {
     async read() {
@@ -24,7 +55,7 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
         if (result.statusCode !== 200 || !result.stream || !result.blob?.etag) throw new InstagramError("STORAGE_INVALID_RESPONSE");
         let etag = result.blob.etag;
         try {
-          strongEtagIdentity(etag);
+          validatedIdentity(etag, "get_etag_validation");
         } catch (error) {
           await result.stream.cancel().catch(() => {});
           throw error;
@@ -32,7 +63,10 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
         if (etag.startsWith('"')) {
           try {
             const metadata = await sdk.head(PATHNAME, { ...credentials, abortSignal: AbortSignal.timeout(10_000) });
-            if (strongEtagIdentity(metadata?.etag) !== strongEtagIdentity(etag)) throw new InstagramError("STATE_CONFLICT");
+            if (validatedIdentity(metadata?.etag, "head_etag_validation") !== validatedIdentity(etag, "get_etag_validation")) {
+              diagnose("etag_comparison", { get: etagMetadata(etag), head: etagMetadata(metadata?.etag), reason: "identity_mismatch", matches: false });
+              throw new InstagramError("STATE_CONFLICT");
+            }
             etag = metadata.etag;
           } catch (error) {
             await result.stream.cancel().catch(() => {});

@@ -738,3 +738,53 @@ test("expired legacy lease is reclaimed with quoted GET and unquoted API ETags",
   assert.equal(saved.lastCheckedAt, NOW);
   assert.equal(revision, 4);
 });
+
+test("ETag diagnostics expose only allow-listed structural metadata on validation and comparison failures", async () => {
+  const secret = "sensitive-etag-value-never-log";
+  const cases = [
+    [`W/"${secret}"`, secret, "get_etag_validation", "weak_etag", "STORAGE_ETAG_INVALID"],
+    [`"${secret}"`, undefined, "head_etag_validation", "missing", "STORAGE_ETAG_INVALID"],
+    [`"${secret}"`, "", "head_etag_validation", "empty", "STORAGE_ETAG_INVALID"],
+    [`"${secret}"`, { credential: TOKEN }, "head_etag_validation", "not_string", "STORAGE_ETAG_INVALID"],
+    [`"${secret}"`, `${secret}\n`, "head_etag_validation", "control_characters", "STORAGE_ETAG_INVALID"],
+    [`"${secret}`, secret, "get_etag_validation", "unsupported_format", "STORAGE_ETAG_INVALID"],
+    [`"${secret}"`, "different-sensitive-etag", "etag_comparison", "identity_mismatch", "STATE_CONFLICT"],
+  ];
+  for (const [getEtag, headEtag, stage, reason, code] of cases) {
+    const messages = [];
+    const encrypted = encryptState(state(), encryptionKey(KEY));
+    const store = createTokenStore({ env: environment(), logger: { warn: (...args) => messages.push(args) }, loadSdk: async () => ({
+      async get() { return { statusCode: 200, stream: new Response(encrypted).body, blob: { etag: getEtag } }; },
+      async head() { return { etag: headEtag }; },
+    }) });
+    await assert.rejects(store.read(), { code });
+    assert.equal(messages.length, 1);
+    assert.equal(messages[0][0], "Instagram storage ETag diagnostic");
+    const diagnostic = messages[0][1];
+    assert.equal(diagnostic.stage, stage); assert.equal(diagnostic.reason, reason);
+    const fields = ["present", "type", "length", "weakPrefix", "outerQuotes", "controlCharacters"];
+    if (stage === "etag_comparison") {
+      assert.equal(diagnostic.matches, false);
+      assert.deepEqual(Object.keys(diagnostic).sort(), ["stage", "get", "head", "reason", "matches"].sort());
+      for (const metadata of [diagnostic.get, diagnostic.head]) assert.deepEqual(Object.keys(metadata).sort(), fields.toSorted());
+    } else assert.deepEqual(Object.keys(diagnostic).sort(), [...fields, "stage", "reason"].sort());
+    const output = JSON.stringify(messages);
+    for (const value of [secret, "sensitive-etag", "different-sensitive-etag", TOKEN, KEY, CRON, encrypted, environment().BLOB_READ_WRITE_TOKEN]) assert.ok(!output.includes(value));
+  }
+});
+
+test("ETag diagnostics are silent on success and cannot change errors when logging fails", async () => {
+  for (const quoted of [false, true]) {
+    let logs = 0;
+    const store = createTokenStore({ env: environment(), logger: { warn() { logs++; } }, loadSdk: async () => ({
+      async get() { return { statusCode: 200, stream: new Response(encryptState(state(), encryptionKey(KEY))).body, blob: { etag: quoted ? '"revision"' : "revision" } }; },
+      async head() { return { etag: "revision" }; },
+    }) });
+    assert.equal((await store.read()).state.token, TOKEN);
+    assert.equal(logs, 0);
+  }
+  const store = createTokenStore({ env: environment(), logger: { warn() { throw new Error(TOKEN); } }, loadSdk: async () => ({
+    async get() { return { statusCode: 200, stream: new Response("unused").body, blob: { etag: 'W/"revision"' } }; },
+  }) });
+  await assert.rejects(store.read(), { code: "STORAGE_ETAG_INVALID" });
+});
