@@ -58,6 +58,16 @@ The function is capped at 180 seconds, shorter than the five-minute lease. Meta 
 
 A lost response after a remote refresh has an unavoidable ambiguity: Meta and Blob do not form one atomic transaction. The persisted attempt timestamp prevents another refresh for 24 hours. A saved pending candidate is verified and resumed on the next run without refreshing it again. A storage error does not report success or intentionally overwrite the prior token. Operators receive a failure signal when monitoring is configured; some failures can still require manual recovery. Do not assume a refresh always returns the same token or that the previous token remains usable forever.
 
+## Lease release diagnosis and recovery
+
+`LEASE_RELEASE_FAILED` means the final cleanup failed after processing; it does not imply token verification or persistence failed. The verified state, or even a refreshed token, may already be durable. A write can also succeed remotely while its acknowledgment is lost, so this error alone cannot establish whether the lease remains present. `monitoring: not_configured` simply means no external monitor is configured.
+
+Successful processing now releases conditionally using the state and ETag from its last acknowledged write, without an unnecessary origin reread. Blob `get` takes its ETag from the HTTP response header, whereas `put` returns the API response ETag. These are opaque concurrency identifiers: the implementation does not strip quotes or otherwise invent ETags. The reported production log does not identify whether its cleanup failed on a read, write, or precondition; a format discrepancy is not established by that log. The change removes the additional read and uses the write-returned identifier directly on the successful path.
+
+After a processing/storage failure, cleanup still rereads the latest encrypted state before attempting a conditional release. That recovery path must preserve a candidate or promoted token whose write may have succeeded without acknowledgment. Every release retains the ETag precondition and checks lease ownership; a competing writer cannot be overwritten blindly. There is no unconditional retry or record reinitialization.
+
+If cleanup did not persist, the lease expires five minutes after acquisition. A later authorized maintenance run can reclaim an expired lease without deleting or replacing the token record. Before expiry, another run returns `busy`. The feed resolver does not reject a verified record solely because it contains a lease. Do not delete the production object or rebootstrap to resolve this error. Confirmation of production state remains a separate authorized operation; local tests never access that object.
+
 ## Token expiry and data-access expiry are independent
 
 `expiresAt` changes using the refresh response's `expires_in`. The stored `dataAccessExpiresAt` is retained unchanged, never inferred from token expiry or automatically advanced by this job.

@@ -94,7 +94,7 @@ export async function maintainInstagramToken({ env, store, meta, now = Date.now,
     }
   }
   try {
-    const latest = await store.read();
+    const latest = failure ? await store.read() : view;
     if (latest?.state.lease?.owner === owner) await store.write({ ...latest.state, lease: null }, latest.etag);
   } catch {
     failure ||= new InstagramError("LEASE_RELEASE_FAILED");

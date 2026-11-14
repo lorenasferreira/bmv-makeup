@@ -555,3 +555,105 @@ test("a temporary outage does not invalidate observation history or prevent a la
   assert.equal(store.value().lastRefreshAttemptAt, null);
   assert.equal((await run(store)).status, "refreshed"); assert.equal(store.value().lastFailure, null);
 });
+
+
+test("successful maintenance releases using the last acknowledged write without a redundant read", async () => {
+  const store = memoryStore(state({ expiresAt: NOW + 40 * DAY }));
+  const read = store.read; let reads = 0;
+  store.read = async () => {
+    reads++;
+    if (reads > 1) throw new InstagramError("STORAGE_UNAVAILABLE");
+    return read();
+  };
+  assert.equal((await run(store)).status, "healthy");
+  assert.equal(reads, 1);
+  assert.equal(store.value().lease, null);
+  assert.equal(store.value().token, TOKEN);
+  assert.equal(store.value().lastCheckedAt, NOW);
+});
+
+test("release failure retains verified state and an expiring lease, then recovers after expiry", async () => {
+  const store = memoryStore(state({ expiresAt: NOW + 40 * DAY }));
+  const write = store.write; let failRelease = true;
+  store.write = async (next, etag) => {
+    if (!next.lease && failRelease) throw new InstagramError("STORAGE_UNAVAILABLE");
+    return write(next, etag);
+  };
+  await assert.rejects(run(store), { code: "LEASE_RELEASE_FAILED" });
+  assert.equal(store.value().lastCheckedAt, NOW);
+  assert.equal(store.value().accountId, "simulated-account");
+  assert.equal(store.value().token, TOKEN);
+  assert.ok(store.value().lease.until > NOW);
+  const blocked = metaStub();
+  assert.equal((await run(store, blocked)).status, "busy");
+  assert.equal(blocked.calls.length, 0);
+  failRelease = false;
+  assert.equal((await run(store, metaStub(), environment(), () => NOW + 6 * 60_000)).status, "healthy");
+  assert.equal(store.value().lease, null);
+  assert.equal(store.value().token, TOKEN);
+});
+
+test("conditional release cannot overwrite a newer worker or its durable token", async () => {
+  const store = memoryStore(state({ expiresAt: NOW + 40 * DAY }));
+  const write = store.write; let replaced = false;
+  store.write = async (next, etag) => {
+    if (!next.lease && !replaced) {
+      replaced = true;
+      const latest = await store.read();
+      await write({ ...latest.state, lease: { owner: "newer-owner", until: NOW + 600_000 } }, latest.etag);
+    }
+    return write(next, etag);
+  };
+  await assert.rejects(run(store), { code: "LEASE_RELEASE_FAILED" });
+  assert.equal(store.value().lease.owner, "newer-owner");
+  assert.equal(store.value().token, TOKEN);
+  assert.equal(store.value().lastCheckedAt, NOW);
+});
+
+test("a lost release acknowledgment leaves the verified credential durable and the lease cleared", async () => {
+  const store = memoryStore(state({ expiresAt: NOW + 40 * DAY }));
+  const write = store.write;
+  store.write = async (next, etag) => {
+    const saved = await write(next, etag);
+    if (!next.lease) throw new InstagramError("STORAGE_UNAVAILABLE");
+    return saved;
+  };
+  await assert.rejects(run(store), { code: "LEASE_RELEASE_FAILED" });
+  assert.equal(store.value().lease, null);
+  assert.equal(store.value().lastCheckedAt, NOW);
+  assert.equal(store.value().token, TOKEN);
+});
+
+
+test("private Blob bootstrap and subsequent maintenance preserve encrypted state and release with write ETags", async () => {
+  const { BlobPreconditionFailedError } = await import("@vercel/blob");
+  let body = null; let revision = 0; let reads = 0;
+  const sdk = {
+    BlobPreconditionFailedError,
+    async get(path, options) {
+      assert.equal(options.useCache, false);
+      reads++;
+      return body === null ? null : { statusCode: 200, stream: new Response(body).body, blob: { etag: String(revision) } };
+    },
+    async put(path, data, options) {
+      if (body !== null && (!options.allowOverwrite || options.ifMatch !== String(revision))) throw new BlobPreconditionFailedError();
+      if (body === null) assert.equal(options.allowOverwrite, false);
+      body = data; revision++;
+      return { etag: String(revision) };
+    },
+  };
+  const env = unknownIssueEnvironment({ INSTAGRAM_TOKEN_REFRESH_ENABLED: "false", INSTAGRAM_TOKEN_SOURCE: "env" });
+  const store = createTokenStore({ env, loadSdk: async () => sdk });
+  const clock = () => NOW;
+  assert.equal((await run(store, metaStub(), env, clock)).status, "refresh_required");
+  assert.equal(reads, 1);
+  let saved = decryptState(body, encryptionKey(KEY));
+  assert.equal(saved.token, TOKEN); assert.equal(saved.issuedAt, null);
+  assert.equal(saved.firstObservedAt, NOW); assert.equal(saved.lease, null);
+  assert.ok(!body.includes(TOKEN));
+  assert.equal((await run(store, metaStub(), env, () => NOW + DAY)).status, "refresh_required");
+  saved = decryptState(body, encryptionKey(KEY));
+  assert.equal(saved.firstObservedAt, NOW); assert.equal(saved.lastCheckedAt, NOW + DAY);
+  assert.equal(saved.lease, null); assert.equal(saved.token, TOKEN);
+  assert.equal(reads, 2);
+});
