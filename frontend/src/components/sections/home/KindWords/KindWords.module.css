@@ -1,5 +1,5 @@
 .section {
-  padding: clamp(7rem, 11vw, 12rem) var(--page-padding);
+  padding: clamp(4rem, 6vw, 6rem) var(--page-padding);
   background: var(--color-background);
 }
 
@@ -20,6 +20,7 @@
 }
 
 .intro h2 {
+  text-wrap: balance;
   max-width: 950px;
   font-family: var(--font-section);
   font-size: clamp(3rem, 6vw, 6.5rem);
@@ -113,10 +114,10 @@
 }
 
 .navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1.5rem 0;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -124,16 +125,16 @@
 
 .indicators {
   display: flex;
-  width: 100%;
-  max-width: 264px;
-  gap: 0.5rem;
+  grid-column: 2;
+  justify-content: center;
+  gap: 2px;
 }
 
 .indicator {
   position: relative;
-  width: 100%;
+  width: 26px;
   height: 44px;
-  min-width: 32px;
+  min-width: 26px;
   padding: 0;
   background: transparent;
   border: 0;
@@ -144,7 +145,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 16px;
+  width: 10px;
   height: 1px;
   transform: translate(-50%, -50%);
   background: var(--color-text-light);
@@ -154,13 +155,15 @@
 }
 
 .indicatorActive::after {
-  width: 24px;
+  width: 16px;
   opacity: 1;
   height: 1px;
   background: var(--color-accent);
 }
 
 .controls {
+  grid-column: 3;
+  justify-self: end;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -279,7 +282,7 @@
 
 @media (max-width: 640px) {
   .section {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 6rem;
   }
 
@@ -288,7 +291,8 @@
   }
 
   .intro h2 {
-    font-size: clamp(3rem, 15vw, 5rem);
+    font-size: clamp(2.5rem, 10.5vw, 4rem);
+    line-height: 1.04;
   }
 
   .review {
@@ -315,16 +319,17 @@
   }
 
   .navigation {
-    align-items: stretch;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .indicators {
-    max-width: 264px;
+    grid-column: 1;
+    justify-self: center;
   }
 
   .controls {
+    grid-column: 1;
     justify-content: flex-end;
   }
 

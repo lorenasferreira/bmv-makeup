@@ -42,6 +42,7 @@
 }
 
 .content h2 {
+  text-wrap: balance;
   margin: 0;
   font-family: var(--font-section);
   font-size: clamp(4.5rem, 8vw, 8.5rem);
@@ -95,7 +96,8 @@
 
 @media (max-width: 640px) {
   .content h2 {
-    font-size: clamp(4rem, 17vw, 6rem);
+    font-size: clamp(2.8rem, 11.5vw, 4.5rem);
+    line-height: 1.04;
   }
 }
 

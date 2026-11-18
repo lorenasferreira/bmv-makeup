@@ -12,7 +12,7 @@ function FinalCTA() {
 
         <h2>
           {t("home.cta.title")}
-          <br />
+          {" "}
           <em>{t("home.cta.titleAccent")}</em>
         </h2>
 

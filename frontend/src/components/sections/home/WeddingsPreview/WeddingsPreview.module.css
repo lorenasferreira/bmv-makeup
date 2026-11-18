@@ -3,8 +3,8 @@
   grid-template-columns: minmax(320px, 0.9fr) minmax(500px, 1.1fr);
   gap: clamp(4rem, 8vw, 10rem);
 
-  min-height: 100vh;
-  padding: clamp(7rem, 11vw, 12rem) var(--page-padding);
+  min-height: auto;
+  padding: clamp(5rem, 8vw, 8rem) var(--page-padding);
 
   overflow: hidden;
 
@@ -28,6 +28,7 @@
 }
 
 .content h2 {
+  text-wrap: balance;
   font-family: var(--font-section);
   font-size: clamp(3rem, 6vw, 6.5rem);
   font-weight: 400;
@@ -146,11 +147,12 @@
     gap: 4rem;
 
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 3.5rem;
   }
 
   .content h2 {
-    font-size: clamp(2.8rem, 16vw, 4.5rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 1.04;
   }
 
   .description {

@@ -174,3 +174,16 @@
     width: 85%;
   }
 }
+
+.storyContent .sectionTitle {
+  font-size: clamp(2.6rem, 4.8vw, 5.4rem);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+@media (max-width: 640px) {
+  :global(html:lang(pt)) .storyContent .sectionTitle,
+  :global(html:lang(ca)) .storyContent .sectionTitle {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+}

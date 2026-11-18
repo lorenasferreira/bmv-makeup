@@ -1,5 +1,5 @@
 .section {
-  padding: clamp(7rem, 11vw, 12rem) var(--page-padding);
+  padding: clamp(4rem, 6vw, 6rem) var(--page-padding);
 
   overflow: hidden;
 
@@ -26,6 +26,7 @@
 }
 
 .heading h2 {
+  text-wrap: balance;
   max-width: 900px;
 
   font-family: var(--font-section);
@@ -152,8 +153,8 @@
 
 @media (max-width: 640px) {
   .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
   }
 
   .heading {
@@ -161,7 +162,8 @@
   }
 
   .heading h2 {
-    font-size: clamp(3.5rem, 16vw, 5.5rem);
+    font-size: clamp(2.6rem, 10.8vw, 4rem);
+    line-height: 1.04;
   }
 
   .gallery {

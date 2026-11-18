@@ -36,9 +36,9 @@ function WeddingsProcess() {
           <span>{t("weddings.process.eyebrow")}</span>
         </div>
 
-        <h2>
+        <h2 id="wedding-process-title">
           {t("weddings.process.title")}
-          <br />
+          {" "}
           <em>{t("weddings.process.titleAccent")}</em>
         </h2>
 
@@ -47,7 +47,7 @@ function WeddingsProcess() {
         </p>
       </div>
 
-      <ol className={styles.cards}>
+      <ol className={styles.cards} tabIndex={0} aria-labelledby="wedding-process-title">
         {steps.map((step) => (
           <li className={styles.card} key={step.number}>
             <span className={styles.number}>{step.number}</span>

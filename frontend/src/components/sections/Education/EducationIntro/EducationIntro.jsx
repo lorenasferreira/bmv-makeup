@@ -15,9 +15,9 @@ function EducationIntro() {
       <div className={styles.content}>
         <h2>
           {t("education.intro.title")}
-          <br />
+          {" "}
           {t("education.intro.titleSecond")}
-          <br />
+          {" "}
           <em>{t("education.intro.titleAccent")}</em>
         </h2>
 

@@ -19,7 +19,7 @@ function BehindTheBrush() {
 
         <h2>
           {t("home.behindTheBrush.title")}
-          <br />
+          {" "}
           <em>{t("home.behindTheBrush.titleAccent")}</em>
         </h2>
       </div>

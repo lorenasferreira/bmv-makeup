@@ -17,9 +17,9 @@ function WeddingsIntro() {
         <div className={styles.statement}>
           <h2>
             {t("weddings.intro.title")}
-            <br />
+            {" "}
             {t("weddings.intro.titleSecond")}
-            <br />
+            {" "}
             <em>{t("weddings.intro.titleAccent")}</em>
           </h2>
         </div>

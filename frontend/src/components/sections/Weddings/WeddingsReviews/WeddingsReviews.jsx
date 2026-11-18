@@ -33,9 +33,9 @@ function WeddingsReviews() {
 
         <h2>
           {t("weddings.reviews.title")}
-          <br />
+          {" "}
           {t("weddings.reviews.titleSecond")}
-          <br />
+          {" "}
           <em>{t("weddings.reviews.titleAccent")}</em>
         </h2>
       </div>

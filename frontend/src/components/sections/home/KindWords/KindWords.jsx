@@ -113,7 +113,7 @@ function KindWords() {
 
         <h2>
           {t("home.reviews.title")}
-          <br />
+          {" "}
           <em>{t("home.reviews.titleAccent")}</em>
         </h2>
       </div>

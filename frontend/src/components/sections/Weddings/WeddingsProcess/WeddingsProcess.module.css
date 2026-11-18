@@ -27,6 +27,7 @@
 }
 
 .header h2 {
+  text-wrap: balance;
   margin: 0;
   font-family: var(--font-section);
   font-size: clamp(4.2rem, 7vw, 7.5rem);
@@ -100,10 +101,39 @@
 
 @media (max-width: 640px) {
   .header h2 {
-    font-size: clamp(3rem, 16vw, 5.7rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 1.04;
   }
 
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 86%;
+    gap: 1.5rem;
+    margin-inline: calc(-1 * var(--page-padding));
+    padding: 0 var(--page-padding) 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--page-padding);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) transparent;
   }
+
+  .card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    scroll-snap-align: start;
+  }
+
+  .cardContent h3 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    text-wrap: balance;
+  }
+}
+
+.cards:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
 }

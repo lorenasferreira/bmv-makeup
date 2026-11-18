@@ -13,6 +13,7 @@ function WeddingsPreview() {
 
         <h2>
           {t("home.weddings.title")}
+          {" "}
           <em>{t("home.weddings.titleAccent")}</em>
         </h2>
 

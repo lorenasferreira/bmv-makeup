@@ -20,7 +20,7 @@ function SelectedWork() {
 
         <h2>
           {t("home.selectedWork.title")}
-          <br />
+          {" "}
           <em>{t("home.selectedWork.titleAccent")}</em>
         </h2>
       </header>

@@ -52,9 +52,9 @@ function AboutStory() {
 
           <h2 className={styles.sectionTitle}>
             {t("about.story.journey.title")}
-            <br />
+            {" "}
             {t("about.story.journey.titleSecond")}
-            <br />
+            {" "}
             {t("about.story.journey.titleAccent")}
           </h2>
 

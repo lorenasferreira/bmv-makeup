@@ -25,6 +25,7 @@
 }
 
 .header h2 {
+  text-wrap: balance;
   margin: 0;
   font-family: var(--font-section);
   font-size: clamp(4rem, 7vw, 7.5rem);
@@ -145,7 +146,8 @@
 
 @media (max-width: 640px) {
   .header h2 {
-    font-size: clamp(3.8rem, 16vw, 5.5rem);
+    font-size: clamp(2.6rem, 10.8vw, 4.2rem);
+    line-height: 1.04;
   }
 
   .review {

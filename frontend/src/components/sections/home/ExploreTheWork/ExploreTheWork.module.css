@@ -160,11 +160,23 @@
   }
 
   .grid {
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 86%;
+    gap: 1rem;
+    margin-inline: calc(-1 * var(--page-padding));
+    padding: 0 var(--page-padding) 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--page-padding);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) transparent;
   }
 
   .item {
+    scroll-snap-align: start;
+    min-width: 0;
     grid-column: auto;
   }
 
@@ -178,5 +190,16 @@
 
   .link {
     margin-top: 4.5rem;
+  }
+}
+
+.grid:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageWrapper img {
+    transition: none;
   }
 }

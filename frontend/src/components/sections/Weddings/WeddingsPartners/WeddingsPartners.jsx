@@ -26,9 +26,9 @@ function WeddingsPartners() {
       <div className={styles.content}>
         <h2>
           {t("weddings.partners.title")}
-          <br />
+          {" "}
           {t("weddings.partners.titleSecond")}
-          <br />
+          {" "}
           <em>{t("weddings.partners.titleAccent")}</em>
         </h2>
 

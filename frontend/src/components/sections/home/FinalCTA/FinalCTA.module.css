@@ -34,6 +34,7 @@
 }
 
 .content h2 {
+  text-wrap: balance;
   font-family: var(--font-section);
   font-size: clamp(4.5rem, 9vw, 9rem);
   font-weight: 400;
@@ -125,7 +126,8 @@
   }
 
   .content h2 {
-    font-size: clamp(4rem, 18vw, 6rem);
+    font-size: clamp(3rem, 13vw, 5rem);
+    line-height: 1.04;
   }
 
   .actions {

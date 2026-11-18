@@ -30,14 +30,14 @@ function ExploreTheWork() {
       <div className={styles.heading}>
         <p className={styles.eyebrow}>{t("home.work.eyebrow")}</p>
 
-        <h2>
+        <h2 id="explore-work-title">
           {t("home.work.title")}
           <br />
           <em>{t("home.work.titleAccent")}</em>
         </h2>
       </div>
 
-      <div className={styles.grid}>
+      <div className={styles.grid} tabIndex={0} role="region" aria-labelledby="explore-work-title">
         {categories.map((category) => (
           <article className={styles.item} key={category.id}>
             <div className={styles.imageWrapper}>
