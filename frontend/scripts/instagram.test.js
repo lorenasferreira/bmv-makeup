@@ -675,7 +675,7 @@ for (const [readEtag, apiEtag] of [['revision', 'revision'], ['"revision"', 'rev
 }
 
 test("Blob rejects a GET/head revision race and weak or malformed ETags without writing", async () => {
-  for (const [getEtag, headEtag, code] of [['"old"', 'new', 'STATE_CONFLICT'], ['W/"revision"', 'revision', 'STORAGE_ETAG_INVALID'], ['"revision"', 'W/"revision"', 'STORAGE_ETAG_INVALID'], ['"broken', 'broken', 'STORAGE_ETAG_INVALID']]) {
+  for (const [getEtag, headEtag, code] of [['"old"', 'new', 'STATE_CONFLICT'], ['W/revision', 'revision', 'STORAGE_ETAG_INVALID'], ['"revision"', 'W/"revision"', 'STORAGE_ETAG_INVALID'], ['"broken', 'broken', 'STORAGE_ETAG_INVALID']]) {
     const store = createTokenStore({ env: environment(), loadSdk: async () => ({
       async get() { return { statusCode: 200, stream: new Response(encryptState(state(), encryptionKey(KEY))).body, blob: { etag: getEtag } }; },
       async head() { return { etag: headEtag }; },
@@ -742,7 +742,7 @@ test("expired legacy lease is reclaimed with quoted GET and unquoted API ETags",
 test("ETag diagnostics expose only allow-listed structural metadata on validation and comparison failures", async () => {
   const secret = "sensitive-etag-value-never-log";
   const cases = [
-    [`W/"${secret}"`, secret, "get_etag_validation", "weak_etag", "STORAGE_ETAG_INVALID"],
+    [`W/${secret}`, secret, "get_etag_validation", "weak_etag", "STORAGE_ETAG_INVALID"],
     [`"${secret}"`, undefined, "head_etag_validation", "missing", "STORAGE_ETAG_INVALID"],
     [`"${secret}"`, "", "head_etag_validation", "empty", "STORAGE_ETAG_INVALID"],
     [`"${secret}"`, { credential: TOKEN }, "head_etag_validation", "not_string", "STORAGE_ETAG_INVALID"],
@@ -784,7 +784,135 @@ test("ETag diagnostics are silent on success and cannot change errors when loggi
     assert.equal(logs, 0);
   }
   const store = createTokenStore({ env: environment(), logger: { warn() { throw new Error(TOKEN); } }, loadSdk: async () => ({
-    async get() { return { statusCode: 200, stream: new Response("unused").body, blob: { etag: 'W/"revision"' } }; },
+    async get() { return { statusCode: 200, stream: new Response("unused").body, blob: { etag: 'W/revision' } }; },
   }) });
   await assert.rejects(store.read(), { code: "STORAGE_ETAG_INVALID" });
 });
+
+
+function weakDownloadSdk(initial = state()) {
+  let saved = structuredClone(initial); let revision = 1;
+  const calls = [];
+  return {
+    calls,
+    value: () => structuredClone(saved),
+    replace(next) { saved = structuredClone(next); revision++; },
+    async get(path, options) {
+      calls.push("get"); assert.equal(options.useCache, false);
+      return { statusCode: 200, stream: new Response(encryptState(saved, encryptionKey(KEY))).body, blob: { etag: 'W/"unrelated-download-validator"' } };
+    },
+    async head() { calls.push("head"); return { etag: `api-revision-${revision}` }; },
+    async put(path, body, options) {
+      calls.push("put");
+      assert.equal(options.allowOverwrite, true);
+      assert.equal(options.ifMatch, `api-revision-${revision}`);
+      saved = decryptState(body, encryptionKey(KEY)); revision++;
+      return { etag: `api-revision-${revision}` };
+    },
+  };
+}
+
+test("Production weak download ETag uses a bracketed origin read and unchanged API ifMatch", async () => {
+  const sdk = weakDownloadSdk(state({ expiresAt: NOW + 40 * DAY, lease: { owner: "first-deploy", until: NOW - 600_000 } }));
+  const logs = [];
+  const store = createTokenStore({ env: environment(), logger: { warn: (...args) => logs.push(args) }, loadSdk: async () => sdk });
+  assert.equal((await run(store)).status, "healthy");
+  assert.deepEqual(sdk.calls.slice(0, 4), ["get", "head", "get", "head"]);
+  assert.equal(sdk.value().token, TOKEN); assert.equal(sdk.value().lease, null);
+  assert.equal(sdk.value().lastCheckedAt, NOW);
+  assert.equal(logs.length, 0);
+});
+
+for (const changeAt of ["before_body", "during_body", "after_body"]) {
+  test(`weak download rejects concurrent change ${changeAt} without returning stale state`, async () => {
+    const sdk = weakDownloadSdk(); const get = sdk.get; const head = sdk.head;
+    let gets = 0; let heads = 0; const logs = [];
+    sdk.get = async (...args) => {
+      gets++;
+      if (gets === 2 && changeAt === "before_body") sdk.replace(state({ lastCheckedAt: NOW }));
+      const result = await get(...args);
+      if (gets === 2 && changeAt === "during_body") {
+        const bytes = await new Response(result.stream).arrayBuffer();
+        result.stream = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(bytes)); sdk.replace(state({ lastCheckedAt: NOW })); controller.close(); } });
+      }
+      return result;
+    };
+    sdk.head = async (...args) => {
+      heads++;
+      if (heads === 2 && changeAt === "after_body") sdk.replace(state({ lastCheckedAt: NOW }));
+      return head(...args);
+    };
+    const store = createTokenStore({ env: environment(), logger: { warn: (...args) => logs.push(args) }, loadSdk: async () => sdk });
+    await assert.rejects(store.read(), { code: "STATE_CONFLICT" });
+    assert.ok(!sdk.calls.includes("put"));
+    assert.equal(logs[0][1].stage, "etag_comparison");
+    assert.equal(logs[0][1].reason, "version_changed");
+    assert.equal(logs[0][1].matches, false);
+    for (const value of [TOKEN, KEY, "api-revision", "unrelated-download-validator"]) assert.ok(!JSON.stringify(logs).includes(value));
+  });
+}
+
+test("weak read does not accept absent, weak or invalid API version metadata", async () => {
+  for (const etag of [undefined, '', 'W/"api-version"', '"invalid']) {
+    const sdk = weakDownloadSdk(); sdk.head = async () => ({ etag });
+    const store = createTokenStore({ env: environment(), logger: { warn() {} }, loadSdk: async () => sdk });
+    await assert.rejects(store.read(), { code: "STORAGE_ETAG_INVALID" });
+    assert.equal(sdk.calls.filter(call => call === "get").length, 1);
+  }
+});
+
+test("weak read rejects deletion between metadata and content", async () => {
+  const sdk = weakDownloadSdk(); const get = sdk.get; let gets = 0;
+  sdk.get = async (...args) => ++gets === 2 ? null : get(...args);
+  const store = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+  await assert.rejects(store.read(), { code: "STATE_CONFLICT" });
+});
+
+test("changes after a consistent weak read still fail the conditional write", async () => {
+  const { BlobPreconditionFailedError } = await import("@vercel/blob");
+  const sdk = weakDownloadSdk(); sdk.BlobPreconditionFailedError = BlobPreconditionFailedError;
+  const put = sdk.put; let changed = false;
+  sdk.put = async (...args) => { if (changed) throw new BlobPreconditionFailedError(); return put(...args); };
+  const store = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+  const current = await store.read();
+  sdk.replace(state({ lease: { owner: "new-worker", until: NOW + 300_000 } })); changed = true;
+  await assert.rejects(store.write({ ...current.state, lease: null }, current.etag), { code: "STATE_CONFLICT" });
+  assert.equal(sdk.value().lease.owner, "new-worker");
+  assert.equal(sdk.value().token, TOKEN);
+});
+
+test("two weak-read workers compete with one atomic conditional write winner", async () => {
+  const { BlobPreconditionFailedError } = await import("@vercel/blob");
+  const sdk = weakDownloadSdk(); sdk.BlobPreconditionFailedError = BlobPreconditionFailedError;
+  const put = sdk.put; let expectedEtag = "api-revision-1";
+  sdk.put = (...args) => {
+    if (args[2].ifMatch !== expectedEtag) return Promise.reject(new BlobPreconditionFailedError());
+    expectedEtag = "api-revision-2";
+    return put(...args);
+  };
+  const first = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+  const second = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+  const [a, b] = await Promise.all([first.read(), second.read()]);
+  const outcomes = await Promise.allSettled([
+    first.write({ ...a.state, lease: { owner: "worker-a", until: NOW + 300_000 } }, a.etag),
+    second.write({ ...b.state, lease: { owner: "worker-b", until: NOW + 300_000 } }, b.etag),
+  ]);
+  assert.equal(outcomes.filter(result => result.status === "fulfilled").length, 1);
+  assert.equal(outcomes.find(result => result.status === "rejected").reason.code, "STATE_CONFLICT");
+  assert.equal(sdk.value().lease.owner, "worker-a");
+  assert.equal(sdk.value().token, TOKEN);
+});
+
+for (const [content, code] of [["invalid-encrypted-state", "STATE_DECRYPTION_FAILED"], ["x".repeat(70_000), "STATE_INVALID"]]) {
+  test(`weak read retains encrypted-state integrity and size guard: ${code}`, async () => {
+    const sdk = weakDownloadSdk(); const get = sdk.get; let gets = 0;
+    sdk.get = async (...args) => {
+      const result = await get(...args);
+      if (++gets === 2) { await result.stream.cancel(); result.stream = new Response(content).body; }
+      return result;
+    };
+    const store = createTokenStore({ env: environment(), loadSdk: async () => sdk });
+    await assert.rejects(store.read(), { code });
+    assert.ok(!sdk.calls.includes("put"));
+  });
+}
