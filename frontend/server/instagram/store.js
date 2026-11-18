@@ -46,6 +46,51 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
     }
   }
 
+  async function readContent(result) {
+    const reader = result.stream.getReader();
+    let size = 0;
+    const chunks = [];
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        size += value.byteLength;
+        if (size > 65_536) throw new InstagramError("STATE_INVALID");
+        chunks.push(Buffer.from(value));
+      }
+    } finally {
+      await reader.cancel().catch(() => {});
+    }
+    return Buffer.concat(chunks).toString("utf8");
+  }
+
+  function validateDownloadEtag(value) {
+    if (typeof value === "string" && /^W\/"[\x21\x23-\x7e\x80-\xff]+"$/.test(value)) return;
+    validatedIdentity(value, "get_etag_validation");
+  }
+
+  async function readWithApiVersion(sdk) {
+    const before = await sdk.head(PATHNAME, { ...credentials, abortSignal: AbortSignal.timeout(10_000) });
+    validatedIdentity(before?.etag, "head_etag_validation");
+    const result = await sdk.get(PATHNAME, { ...credentials, access: "private", useCache: false, abortSignal: AbortSignal.timeout(10_000) });
+    if (!result) throw new InstagramError("STATE_CONFLICT");
+    if (result.statusCode !== 200 || !result.stream || !result.blob?.etag) throw new InstagramError("STORAGE_INVALID_RESPONSE");
+    try {
+      validateDownloadEtag(result.blob.etag);
+    } catch (error) {
+      await result.stream.cancel().catch(() => {});
+      throw error;
+    }
+    const content = await readContent(result);
+    const after = await sdk.head(PATHNAME, { ...credentials, abortSignal: AbortSignal.timeout(10_000) });
+    validatedIdentity(after?.etag, "head_etag_validation");
+    if (before.etag !== after.etag) {
+      diagnose("etag_comparison", { before: etagMetadata(before.etag), after: etagMetadata(after.etag), reason: "version_changed", matches: false });
+      throw new InstagramError("STATE_CONFLICT");
+    }
+    return { state: decryptState(content, key), etag: before.etag };
+  }
+
   const store = {
     async read() {
       try {
@@ -54,6 +99,10 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
         if (!result) return null;
         if (result.statusCode !== 200 || !result.stream || !result.blob?.etag) throw new InstagramError("STORAGE_INVALID_RESPONSE");
         let etag = result.blob.etag;
+        if (typeof etag === "string" && /^W\/"[\x21\x23-\x7e\x80-\xff]+"$/.test(etag)) {
+          await result.stream.cancel().catch(() => {});
+          return await readWithApiVersion(sdk);
+        }
         try {
           validatedIdentity(etag, "get_etag_validation");
         } catch (error) {
@@ -73,21 +122,7 @@ export function createTokenStore({ env = process.env, loadSdk = () => import("@v
             throw error;
           }
         }
-        const reader = result.stream.getReader();
-        let size = 0;
-        const chunks = [];
-        try {
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            size += value.byteLength;
-            if (size > 65_536) throw new InstagramError("STATE_INVALID");
-            chunks.push(Buffer.from(value));
-          }
-        } finally {
-          await reader.cancel().catch(() => {});
-        }
-        return { state: decryptState(Buffer.concat(chunks).toString("utf8"), key), etag };
+        return { state: decryptState(await readContent(result), key), etag };
       } catch (error) {
         if (error instanceof InstagramError) throw error;
         throw new InstagramError("STORAGE_UNAVAILABLE");
