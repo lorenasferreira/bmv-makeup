@@ -7,11 +7,11 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import styles from "./Hero.module.css";
 
 const slides = [
-  { id: 1, desktop: "/assets/images/shared/weddings/bride-behind-white-bouquet.webp", mobile: "/assets/images/home/hero/mobile/red-dress-glamour-portrait.webp" },
+  { id: 1, desktop: "/assets/images/shared/weddings/bride-behind-white-bouquet.webp", mobile: "/assets/images/home/hero/mobile/brunette-soft-glamour-portrait.webp" },
   { id: 2, desktop: "/assets/images/home/hero/desktop/bride-holding-makeup-mirror.webp", mobile: "/assets/images/home/hero/mobile/newlyweds-garden-embrace.webp" },
-  { id: 3, desktop: "/assets/images/home/hero/desktop/newlyweds-closeup.webp", mobile: "/assets/images/shared/beauty/structured-bodice-portrait.webp" },
-  { id: 4, desktop: "/assets/images/home/hero/desktop/blonde-soft-glamour-closeup.webp", mobile: "/assets/images/home/hero/mobile/bruno-preparing-male-client.webp" },
-  { id: 5, desktop: "/assets/images/home/hero/desktop/sunlit-curls-and-sunglasses.webp", mobile: "/assets/images/home/hero/mobile/brunette-soft-glamour-portrait.webp" },
+  { id: 3, desktop: "/assets/images/home/hero/desktop/newlyweds-closeup.webp", mobile: "/assets/images/home/hero/mobile/red-dress-glamour-portrait.webp" },
+  { id: 4, desktop: "/assets/images/home/hero/desktop/blonde-soft-glamour-closeup.webp", mobile: "/assets/images/shared/beauty/structured-bodice-portrait.webp" },
+  { id: 5, desktop: "/assets/images/home/hero/desktop/sunlit-curls-and-sunglasses.webp", mobile: "/assets/images/home/hero/mobile/bruno-preparing-male-client.webp" },
 ];
 
 function Hero() {
